@@ -1,7 +1,7 @@
 # ArchivesSpace-localization
 Dutch localization files for the ArchivesSpace application v. 3.0 - but should work in older versions too (not tested)
-These are drafts, replacing the en.yml files (dutch as an additional language should be configured, is TODO)
-No localization for the PUI, sorry :(
+- These are drafts, replacing the en.yml files (dutch as an additional language should be configured, is TODO)
+- No localization for the PUI, sorry :(
 
 3 files
 1. en_YYYYMMDD.yml: 
