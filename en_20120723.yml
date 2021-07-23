@@ -1,0 +1,2906 @@
+en:
+  states:
+    suppressed: Verborgen
+    deleted: Verwijderd
+    auto_generated: Gecreëerd door systeem na Bewaar
+
+  boolean:
+    "true": "Ja"
+    "false": "Nee"
+
+  user_defined: &user_defined_attributes
+    boolean_1: Boolean 1
+    boolean_2: Boolean 2
+    boolean_3: Boolean 3
+    integer_1: Integer 1
+    integer_2: Integer 2
+    integer_3: Integer 3
+    real_1: Real 1
+    real_2: Real 2
+    real_3: Real 3
+    string_1: String 1
+    string_2: String 2
+    string_3: String 3
+    string_4: String 4
+    text_1: Brocade record history
+    text_2: Text 2
+    text_3: Text 3
+    text_4: Text 4
+    text_5: Text 5
+    date_1: Datum 1
+    date_1_inline_help: bv. YYYY-MM-DD
+    date_2: Datum 2
+    date_2_inline_help: bv. YYYY-MM-DD
+    date_3: Datum 3
+    date_3_inline_help: bv. YYYY-MM-DD
+    enum_1: Controlled Value 1
+    enum_2: Controlled Value 2
+    enum_3: Controlled Value 3
+    enum_4: Controlled Value 4
+    _singular: User Defined
+    _plural: User Defined
+
+  slug: &slug_attributes
+    slug: Slug
+    slug_tooltip: |
+        <p>Bij gebruik van human-readable URLs: het laatste deel van de publieke URL voor dit record in de ArchivesSpace publieke interface. De slug kan handmatig worden toegevoegd of bijgewerkt, of automatisch worden gegenereerd op basis van de configuratie-instellingen voor human-readable URL's in het config.rb bestand op de server.</p>
+    public_url: Publieke URL
+    public_url_tooltip: |
+        <p>Als dit record is gepubliceerd of is bijgewerkt om gepubliceerd te worden, de volledige URL voor dit record in de publieke gebruikersinterface. Als menselijk leesbare URL's worden gebruikt, zal het einde van de URL de slug zijn.</p>
+        <p>De oorspronkelijke URI voor deze record blijft altijd geldig, ook als er geen human-readable URL's worden gebruikt.</p>
+    is_slug_auto: Automatisch Slug genereren?
+    is_slug_auto_tooltip: |
+        <p>Als dit veld is aangevinkt, wordt de slug voor dit record automatisch gegenereerd wanneer het record wordt opgeslagen, gebaseerd op de configuratie-instellingen voor menselijk leesbare URL's in het config.rb bestand op de server.</p>
+    autogen_disabled: "Een slug kan niet automatisch worden gegenereerd uit de aangeleverde gegevens op basis van de huidige configuratie-instellingen"
+    autogen_repo_slug: "Omdat er niet handmatig een slug is ingevoerd, is de slug van de repository automatisch gegenereerd met de korte naam van de repository"
+
+  content_items:
+    content: Inhoud
+    content_tooltip: |
+        <p>De inhoud van het nootveld.</p>
+
+  section_tooltips: &section_tooltips
+    lang_materials_tooltip: |
+        <p>Taal en schrift van de beschreven materialen.</p>
+        <p>Zie DACS 4.5</p>
+    dates_tooltip: |
+        <p>Identificeert en registreert de data die betrekking hebben op de creatie, montage, accumulatie en / of onderhoud en gebruik van de beschreven materialen.</p>
+        <p>Zie DACS 2.4</p>
+    extents_tooltip: |
+        <p>Geeft de omvang en de fysieke aard van de materialen aan die worden beschreven.</p>
+        <p>Zie DACS 2.5</p>
+    linked_agents_tooltip: |
+        <p>Koppelt agents maker, bron of onderwerp van de beschreven materialen.</p>
+    subjects_tooltip: |
+        <p>Gebruikt om Onderwerpen te koppelen met de beschreven materialen.</p>
+    notes_tooltip: |
+        <p>Aanvullende beschrijvende informatie over de beschreven materialen, meestal in de vorm van tekst of gestructureerde lijsten.</p>
+    external_documents_tooltip: |
+        <p>Links naar informatie in andere beschrijvings- of beheersystemen, zoals donorbestanden, verwerkingsplannen, enz.</p>
+    rights_statements_tooltip: |
+        <p>Informatie over de rechtenstatus van de beschreven materialen en vermelding van specifieke beperkingen of toestemmingen.</p>
+    instances_tooltip: |
+        <p>Koppelt beschrijving naar informatie over fysieke of digitale versies van het beschreven materiaal.</p>
+    deaccessions_tooltip: |
+        <p>Registreert informatie over materialen die mogelijk werden verwijderd, teruggegeven aan een donor of overgedragen aan een andere instelling.</p>
+    collection_management_tooltip: |
+        <p>Aanvullende, interne informatie over hoe de beschreven materialen werden verwerkt of zullen worden verwerkt.</p>
+    classification_tooltip: |
+        <p>Wordt gebruikt voor het koppelen van de beschreven materialen aan een classificatie of een classificatieterm die binnen de applicatie beheerd wordt.</p>
+    user_defined_tooltip: |
+        <p>Door de gebruiker gedefinieerde velden voor het vastleggen van aanvullende informatie die niet is vastgelegd in andere secties van de applicatie.</p>
+
+  digital_object: &digital_object_attributes
+    <<: *section_tooltips
+    <<: *slug_attributes
+    user_defined:
+      <<: *user_defined_attributes
+    title: Titel
+    title_tooltip: |
+        <p>Een titel voor het digitale object. De titel kan worden getranscribeerd van het object, of worden overgenomen van een resourcerecord, of geleverd door de repository.</p>
+         <p> De titel van het digitale object als geheel kan dezelfde zijn als die van het bron- of broncomponentrecord waaraan het digitale objectrecord is gekoppeld. Het kan echter anders zijn dan uitgedrukt in het gekoppelde bronrecord.</p>
+         <p> Voorbeelden: </p>
+         <ul>
+         <li> Stanley Elkins, grootvader <em>(gekoppeld aan een broncomponentrecord met de titel "Familieportretten")</em> </li>
+         <li> Brief aan New Atlantic <em>(gekoppeld aan een broncomponentrecord met de titel "Brief aan New Atlantic")</em> </li>
+         <li> Cedar Fire <em>(gekoppeld aan een broncomponentrecord met de titel "Cedar Fire")</em> </li>
+         </ul>
+    digital_object_id: Identifier
+    digital_object_id_tooltip: |
+        <p>Een unieke identificatie voor het digitale object als geheel. Dit kan een ARK, HANDLE, een URI of een willekeurige tekenreeks zijn die het digitale object uniek identificeert. Het veld moet worden ingevuld om een geldig METS-record te kunnen exporteren.</p>
+        <p>Voorbeelden:</p>
+         <ul>
+        <li>http://hdl.handle.net/1813/13524</li>
+         </ul>
+    publish: Publiceren
+    publish_tooltip: |
+        <p>Bepaalt of dit digitale object of component wordt gepubliceerd naar Publieke interface (PUI).</p>
+    level: VRA Core Level
+    level_tooltip: |
+        <p>Hoofdzakelijk voor gebruik in VRA Core-compatibele records met meerdere niveaus om aan te geven dat de beschrijving over een collectie, een werk of een afbeelding gaat.</p>
+    digital_object_type: Digital Object Type
+    digital_object_type_tooltip: |
+        <p>Een algemene term die het inhoudelijk basistype van het digitale object aangeeft. De standaardopties komen overeen met het MODS &lt;typeOfResource&gt; element.</p>
+    restrictions: Beperkingen?
+    restrictions_tooltip: |
+        <p>Een selectievakje om aan te geven dat er beperkingen gelden. De beperkingen kunnen worden toegelicht in een Note-subrecord of Rights-subrecord.</p>
+    file_versions_tooltip: |
+        <p>Koppelt een digitaal object of digitale objectcomponent aan een bijbehorend inhoudsbestand, adresseerbaar via URI.</p>
+    _singular: Digitaal object
+    _plural: Digitale objecten
+
+  digital_object_component:
+    <<: *digital_object_attributes
+    <<: *slug_attributes
+    label: Label
+    label_tooltip: |
+        <p>Een term die wordt gebruikt om het onderdeel en zijn positie binnen het beschreven digitale object te beschrijven. Vaker gebruikt voor de samenstellende delen van het digitale object dan het digitale objectrecord op het hoogste niveau.</p>
+        <p>Voorbeelden:</p>
+         <ul>
+        <li>Audio: Tape 1, Track 1, Sectie 1, enz.</li>
+        <li>Beeld: Image 1, Picture 1, enz.</li>
+        <li>Kekst: Pagina 1, Blad 1, Hoofdstuk 1, Sectie 1, enz.</li>
+        <li>Video:  Tape 1, Deel 1, Sectie 1, enz.</li>
+         </ul>
+    component_id: Identifier
+    component_id_tooltip: |
+        <p>Een unieke Identifier voor de Digitale object component.</p>
+    dates: Data
+    has_unpublished_ancestor: Heeft niet-gepubliceerde Ancestor?
+    _singular: Digitale Object Component
+    _plural: Digitale Object Componenten
+
+  location: &location_attributes
+    title: Locatie
+    temporary_question: Tijdelijk?
+    temporary: Tijdelijk
+    temporary_tooltip: |
+        <p>Wordt gebruikt om aan te geven of deze locatie een specifiek type tijdelijke locatie is (bijv. een tentoonstellingsruimte).</p>
+    building: Gebouw
+    building_tooltip: |
+        <p>VERPLICHT VELD. Wordt gebruikt om het gebouw van de locatie aan te duiden.</p>
+    floor: Verdieping
+    floor_tooltip: |
+        <p>Wordt gebruikt om de verdieping van de locatie aan te duiden.</p>
+    room: Lokaal
+    room_tooltip: |
+        <p>Wordt gebruikt om het lokaal van de locatie aan te duiden.</p>
+    area: Plaats
+    area_tooltip: |
+        <p>Wordt gebruikt om de plaats (bv. binnen een lokaal) van de locatie aan te duiden.</p>
+    barcode: Barcode
+    barcode_tooltip: |
+        <p>VOORWAARDELIJK VERPLICHT VELD: Eén van 'Barcode', 'Classificatie', of 'Coördinate 1 Label' en 'Coördinate 1 Indicator' moeten ingevuld zijn.</p>
+        <p>Wordt gebruikt om de streepjescode vast te leggen van bijvoorbeeld een schap of reeks die een unieke locatie identificeert.</p>
+    classification: Classificatie
+    classification_tooltip: |
+        <p>VOORWAARDELIJK VERPLICHT VELD: Eén van 'Barcode', 'Classificatie', of 'Coördinate 1 Label' en 'Coördinate 1 Indicator' moeten ingevuld zijn.</p>
+        <p>Wordt gebruikt om een classificatienummer vast te leggen dat een locatie uniek identificeert.</p>
+    coordinates: Coördinaten
+    coordinate_1_label: Coördinaat Label 1
+    coordinate_1_label_tooltip: |
+        <p>VOORWAARDELIJK VERPLICHT VELD: Eén van 'Barcode', 'Classificatie', of 'Coördinaat 1 Label' en 'Coördinaat 1 Indicator' moeten ingevuld zijn.</p>
+        <p>Wordt gebruikt om een label op te nemen (bijv. "Plank", "Bereik", "Lade") voor een specifieke locatie.</p>
+    coordinate_1_indicator: Coördinaat Indicator 1
+    coordinate_1_indicator_tooltip: |
+        <p>VOORWAARDELIJK VERPLICHT VELD: Eén van 'Barcode', 'Classificatie', of 'Coördinaat 1 Label' en 'Coördinaat 1 Indicator' moeten ingevuld zijn.</p>
+        <p>Wordt gebruikt om een indicator op te nemen, zoals een cijfer of letter, die een unieke locatie identificeert in combinatie met het bijbehorende coördinaat label.</p>
+    coordinate_2_label: Coördinaat Label 2
+    coordinate_2_label_tooltip: |
+        <p>Wordt gebruikt om een label op te nemen (bijv. "Plank", "Bereik", "Lade") voor een specifieke locatie.</p>
+    coordinate_2_indicator: Coordinaat Indicator 2
+    coordinate_2_indicator_tooltip: |
+        <p>Wordt gebruikt om een indicator op te nemen, zoals een cijfer of letter, die een unieke locatie identificeert in combinatie met het bijbehorende coördinaat label.</p>
+    coordinate_3_label: Coordinaat Label 3
+    coordinate_3_label_tooltip: |
+        <p>Wordt gebruikt om een label op te nemen (bijv. "Plank", "Bereik", "Lade") voor een specifieke locatie.</p>
+    coordinate_3_indicator: Coordinaat Indicator 3
+    coordinate_3_indicator_tooltip: |
+        <p>Wordt gebruikt om een indicator op te nemen, zoals een cijfer of letter, die een unieke locatie identificeert in combinatie met het bijbehorende coördinaat label.</p>
+    display_string: Getoonde tekst
+    has_unpublished_ancestor: Heeft ongepubliceerde Ancestor?
+    holdings: Bezit
+    owner_repo: Gereserveerd voor
+    owner_repo_tooltip: Een repository die deze locatie heeft gereserveerd
+    _singular: Locatie
+    _plural: Locaties
+
+  location_batch:
+    <<: *location_attributes
+    label: Label
+    prefix: Prefix
+    suffix: Suffix
+    coordinate_1_range: Coördinaat Bereik 1
+    coordinate_2_range: Coördinaat Bereik 2
+    coordinate_3_range: Coördinaat Bereik 3
+    start: Bereik start
+    end: Bereik einde
+    _singular: Batch Locaties
+    _plural: Batch Locaties
+
+  location_function:
+    location_function_type: Functietype
+    _singular: Functie
+    _plural: Functies
+
+  function:
+    _singular: Functie
+    _plural: Functies
+    _frontend:
+      action:
+        add: Voeg Functie toe
+
+  dates_of_existence:
+    _frontend:
+      action:
+        add: Voeg datum toe
+
+  container_location:
+    status: Status
+    status_tooltip: |
+        <p>VERPLICHT VELD. Geeft aan of de locatie-instructie voor dit record actueel is of verwijst naar een eerdere locatie voor het beschreven exemplaar.</p>
+    start_date: Startdatum
+    start_date_tooltip: |
+        <p>VERPLICHT VELD. Geeft aan of de locatie-instructie voor dit record actueel is of verwijst naar een eerdere locatie voor het beschreven exemplaar.</p>
+    end_date: Einddatum
+    end_date_tooltip: |
+        <p>Geeft de datum aan waarop het beschreven exemplaar uit deze locatie werd verwijderd.</p>
+    note: Note
+    note_tooltip: |
+        <p>Wordt gebruikt om aanvullende informatie over de instantie en de relatie met deze locatie vast te leggen.</p>
+    location: Locatie
+    ref: Locatie
+    _singular: Locatie
+    _plural: Locaties
+
+  linked_record:
+    role: Rol
+    role_tooltip: |
+        <p>De rol waarin het gekoppelde record betrekking heeft op het huidige record.</p>
+    ref: Record
+    ref_plural: Records
+    _singular: Record koppelingen
+    _plural: Record koppelingen
+
+  linked_agent: &linked_agent_attributes
+    role: Rol
+    role_tooltip: |
+        <p>VERPLICHT VELD. Een indicatie van de functie (maker, bron of onderwerp) die de Agent heeft met betrekking tot zijn link naar een bepaald beschrijvingsrecord.</p>
+    relator: Relator
+    relator_tooltip: |
+        <p>Een indicatie van de rol die de Agent heeft met betrekking tot zijn functie, zoals aangegeven in de koppeling (bijvoorbeeld maker, bron of onderwerp) aan een bepaald beschrijvingsrecord. Een Agent kan bijvoorbeeld als maker aan een record worden gekoppeld, maar met de meer specifieke rol van "illustrator".</p>
+        <p>Zie MARC Code List for Relators (https://www.loc.gov/marc/relators/).</p>
+    ref: Agent
+    # ref_tooltip is not displaying
+    ref_tooltip: |
+        <p>De agent met betrekking tot het materiaal beschreven in het record.</p>
+        <p>Agenten kunnen worden gezocht met behulp van autocomplete, met behulp van een bladerfunctie, of kunnen worden toegevoegd.</p>
+    terms: Termen
+    title: Titel
+    title_tooltip: |
+        <p>Optioneel veld: noteer hier de geautoriseerde titel van een werk om een naam- of titel-ingang te maken voor een Agent die als maker of onderwerp is gekoppeld:</p>
+        <p>Bijvoorbeeld:</p>
+        <ul><li>Shakespeare, William, 1564-1616. King Lear</li><li> Pound, Ezra, 1885-1972. Cantos</li><li> Lincoln, Abraham, 1809-1865. Emancipation Proclamation</li></ul>
+    _singular: Agent koppeling
+    _plural: Agent koppelingen
+
+  accession_linked_agent:
+    <<: *linked_agent_attributes
+
+  event_linked_agent:
+    <<: *linked_agent_attributes
+
+  resource_linked_agent:
+    <<: *linked_agent_attributes
+
+  archival_object_linked_agent:
+    <<: *linked_agent_attributes
+
+  digital_object_linked_agent:
+    <<: *linked_agent_attributes
+
+  digital_object_component_linked_agent:
+    <<: *linked_agent_attributes
+
+  event: &event
+    <<: *section_tooltips
+    event_type: Type
+    event_type_tooltip: |
+        <p>Een categorisering van de aard van de gebeurtenis. </p>
+        <p>Waarden in deze lijst met gecontroleerde waarden kunnen worden gewijzigd.</p>
+        <p>Zie PREMIS eventType</p>
+    outcome: Resultaat
+    outcome_tooltip: |
+        <p>Een categorisering van het algehele resultaat van het evenement in termen van succes, gedeeltelijk succes of mislukking. De aanbevolen oefening is om een ​​gecontroleerd vocabulaire te gebruiken waarop een systeem automatisch kan reageren. Meer details over de uitkomst kunnen worden vastgelegd in een uitkomstnota. De aanbevolen praktijk is om gebeurtenissen zo gedetailleerd te definiëren dat elke gebeurtenis een enkele uitkomst heeft.</p>
+        <p>Waarden in deze lijst met gecontroleerde waarden kunnen worden gewijzigd.</p>
+    outcome_note: Resultaat Noot
+    outcome_note_tooltip: |
+        <p>Een gedetailleerde beschrijving van het resultaat van het evenement. Dit kan worden gebruikt om alle fout- en waarschuwingsberichten op te nemen die zijn gecreëerd door een programma dat bij de gebeurtenis is betrokken, of om een ​​verwijzing naar een error log vast te leggen.</p>
+    date: Gebeurtenis Datum/Tijdstip
+    date_type: Gebeurtenis type
+    timestamp: UTC Timestamp
+    timestamp_inline_help: YYYY-MM-DD HH:MM:SS
+    timestamp_tooltip: |
+        <p>Een specifieke Timestamp, met volledige datum- en tijdinformatie, over wanneer de gebeurtenis plaatsvond. Standaard gaat de toepassing ervan uit dat de Timestamp in UTC is.</p>
+    chronotype_label: Datum/Tijdstip specificatie
+    chronotype_label_tooltip: |
+        <p>Geeft aan welk type datum aan deze gebeurtenis is gekoppeld.</p>
+    chronotype:
+      subrecord: Datum Subrecord
+      timestamp: UTC Timestamp
+    date_tooltip: |
+        <p>De datum en tijd, of het datum- en tijdbereik, waarop of tijdens welke de gebeurtenis plaatsvond.</p>
+        <p>Als de enkele datum / tijd of begin- of einddatum / -tijd onbekend is, voert u "onbekend" in het veld Datum in.</p>
+    linked_agents_tooltip: |
+        <p>VERPLICHT SUBRECORD: Koppelt één of meer Agents als deelnemer aan deze gebeurtenis.</p>
+    linked_records_tooltip: |
+        <p>VERPLICHT SUBRECORD: Koppelt Aanwinsten, Digitale Objecten, of Resources met deze Gebeurtenis.</p>
+    types:
+      accession: Aanwinst
+      accumulation: Aanvulling
+      acknowledgement: Bevestiging
+      acknowledgement_sent: Bevestiging verstuurd
+      agreement_signed: Overeenkomst getekend
+      agreement_received: Overeenkomst ontvangen
+      agreement_sent: Overeenkomst verstuurd
+      appraisal: Waardering
+      assessment: Assessment
+      capture: Vastlegging
+      cataloged: Catalografie
+      collection: Verzameling
+      compression: Compressie
+      contribution: Bijdrage
+      copyright_transfer: Overdracht auteursrecht
+      custody_transfer: Overdracht van beheer
+      deaccession: Afstoting
+      decompression: Decompressie
+      decryption: Decryptie
+      deletion: Vernietiging
+      digital_signature_validation: Validatie digitale handtekening
+      fixity_check: Fixity controle
+      ingestion: Opname
+      message_digest_calculation: Berekening Message Digest
+      migration: Migratie
+      normalization: Normalisatie
+      processed: Verwerking
+      publication: Publicatie
+      replication: Replicatie
+      resource_merge: Samenvoeging
+      resource_component_transfer: Overdracht component
+      validation: Validatie
+      virus_check: Viruscontrole
+    _singular: Gebeurtenis
+    _plural: Gebeurtenissen
+
+  linked_event:
+    <<: *event
+
+  deaccession:
+    <<: *section_tooltips
+    scope: Deel
+    scope_tooltip: |
+        <p>VERPLICHT VELD: Wordt gebruikt om aan te geven of de beschrijving van de omvang betrekking heeft op het geheel of een deel van een gegeven beschreven aggregatie of object.</p>
+    description: Beschrijving
+    description_tooltip: |
+        <p>VERPLICHT VELD: Beschrijving van de materialen die werden afgestoten.</p>
+        <p>Voorbeelden:</p>
+         <ul>
+        <li>Tijdschriften, krantenknipsels en financiële documenten..</li>
+        <li>Trofeeën die op hondenshows worden uitgereikt.</li>
+         </ul>
+    reason: Reden
+    reason_tooltip: |
+        <p>De reden voor het afstoten van de beschreven materialen.</p>
+        <p>Voorbeelden:</p>
+         <ul>
+        <li>De donor was niet van plan deze materialen over te dragen.</li>
+         </ul>
+    disposition: Bestemming
+    disposition_tooltip: |
+        <p>Een beschrijving die aangeeft wat er met de afgestoten materialen is gedaan.</p>
+        <p>Voorbeelden:</p>
+         <ul>
+        <li> Financiële gegevens worden teruggegeven aan de familie. </li>
+        <li> Trofeeën voor hondenshows teruggestuurd naar de vrouw van de donor. </li>
+         </ul>
+    notification: Kennisgeving gegeven?
+    notification_tooltip: |
+        <p>Een selectievakje dat aangeeft dat er een kennisgeving van de afstoting is gedaan.</p>
+    dates: Afstotingsdatum
+    _plural: Afstotingen
+    _singular: Afstoting
+
+  parallel_name: &parallel_name_attributes
+    _frontend:
+      action:
+        add: Voeg Parallelle naam toe
+  agent_name: &agent_name_attributes
+    authority_id: Authority ID
+    authority_id_tooltip: |
+        <p>De unieke identificatie voor het naamformulier voor een agent binnen de bron waarvan deze is verkregen (d.w.z. een MADS-record-ID of EAC-record-ID). De identificatie kan worden weergegeven als een URI.</p>
+        <p>Zie DACS 13.2</p>
+        <p>Voorbeelden:</p>
+         <ul>
+        <li>nr92045078 <em>voor een LCNAF name heading</em></li>
+        <li>500115393 <em>voor een ULAN name heading</em></li>
+        <li>http://viaf.org/viaf/134138653 <em>voor een VIAF name heading</em>
+         </ul>
+    source: Bron
+    source_tooltip: |
+        <p> VOORWAARDELIJK VERPLICHT VELD, als naam Regels niet gebruikt is. Een indicator van de geaurthoriseerde bron waaruit de naam is gehaald.</p>
+        <p>Waarden in deze lijst met gecontroleerde waarden kunnen worden gewijzigd.</p>
+    rules: Regels
+    rules_tooltip: |
+        <p> VOORWAARDELIJK VERPLICHT VELD, als naam Bron niet gebruikt is. Een indicatie van de regels die worden gebruikt om de naaminvoer te formuleren.</p>
+        <p>Waarden in deze lijst met gecontroleerde waarden kunnen worden gewijzigd.</p>
+    name_order: Naam volgorde
+    name_order_tooltip: |
+        <p>Geeft aan of de naamvorm moet worden weergegeven in omgekeerde volgorde (achternaam, voornaam) of in directe volgorde (voornaam achternaam).</p>
+    prefix: Prefix
+    prefix_tooltip: |
+        <p>Elke term die is gekoppeld aan een naam die bij normatief gebruik de volledige naam zou voorafgaan.</p>
+        <p>Voorbeelden:</p>
+         <ul>
+        <li>Mevr.</li>
+         </ul>
+    title: Titel
+    title_tooltip: |
+        <p>Een titel die deel uitmaakt van de naam.</p>
+        <p>Voorbeelden:</p>
+        <ul>
+        <li>Sir <em>(voor Churchill, Winston, Sir, 1874-1965)</em></li>
+        <li>Chief (voor Black Foot, Chief, ?-1877)</li>
+        <li>Keizer <em>(voor Karel V)</em></li>
+        </ul>
+    primary_name: Primaire deel van de naam
+    primary_name_tooltip: |
+        <p>Het primaire deel van een naamvorm (bijvoorbeeld een achternaam of familienaam van een persoon).</p>
+        <p>Voorbeelden:</p>
+         <ul>
+        <li>Churchill <em>(voor Churchill, Winston, Sir, 1874-1965 [persoon])</em></i>
+        <li>Black Foot <em>(voor Black Foot, Chief, ?-1877 [persoon])</em></li>
+        <li>International Business Machines <em>(voor International Business Machines. Microelectronics Division [corporatie])</em></li>
+         </ul>
+    rest_of_name: Overige deel van de naam
+    rest_of_name_tooltip: |
+        <p>Het voornaamelement of de voornaam en aanvullende namen, bijvoorbeeld middelste namen, voor de persoon die in het record wordt genoemd.</p>
+        <p>Voorbeelden:</p>
+        <ul>
+        <li>Winston <em>(voor Churchill, Winston, Sir, 1874-1965)</em></li>
+        <li>Humphrey <em>(voor Ward, Humphrey, Mrs., 1851-1920)</em></li>
+        </ul>
+    suffix: Suffix
+    suffix_tooltip: |
+        <p>Een term die volgt op een naam die de naam kwalificeert, maar geen titel is.</p>
+        <p>Voorbeelden:</p>
+        <ul>
+        <li>Jr.</li>
+        <li>zoon</li>
+        </ul>
+    fuller_form: Volledige naamvorm
+    fuller_form_tooltip: |
+        <p>De volledige naamvorm van de eerste en middelste namen, wanneer die werden afgekort.</p>
+        <p>Voorbeelden:</p>
+        <ul>
+        <li>Hilda Doolittle <em>(voor H.D., Hilda Doolittle, 1886-1961)</em></li>
+        </ul>
+    number: Nummer
+    number_tooltip: |
+        <p>Een nummer, soms met een woord, dat de naam kwalificeert. Voor persoonsnamen, vaak een Romeins cijfer of een Romeins cijfer en een volgend deel van een voornaam. Voor bedrijfsnamen het nummer van een onderdeel, sectie of vergadering.</p>
+        <p>Voorbeelden:</p>
+        <ul>
+        <li>II Comnenus <em>(voor John II Comnenus, Emperor of the East</em>/li>
+        <li>II <em>(voor John Paul II)</em></li>
+        <li>97th, 2nd session <em>(voor United States Congress, 97th, 2nd session)</em></li>
+        </ul>
+    dates: Data
+    dates_tooltip: |
+        <p>Gebruik dit veld voor afstemming met MARC-autorisatierecords. Deze datums worden in plaats van de datums van bestaan toegevoegd aan de naaminvoer op het scherm.</p>
+        <p>Bestaansdata voor de genoemde entiteit.</p>
+        <p>Voorbeelden:<p>
+        <ul>
+        <li>1886-1961 <em>(voor H.D., Hilda Doolittle, 1886-1961)</em></li>
+         </ul>
+    use_dates: Datering gebruik
+    use_dates_tooltip: |
+        <p>Datums waarop deze naam is gebruikt voor de agent.</p>
+    parallel_names_tooltip: |
+        <p>Can be used to record a parallel form of the name in different languages and/or scripts or transliterated forms of the name.</p>
+    qualifier: Qualifier
+    qualifier_tooltip: |
+        <p>Een term of zin om twee naamvormen te onderscheiden die identiek zijn, maar twee verschillende entiteiten identificeren. De term kan een datum, een plaats of een andere geschikte omschrijving zijn.</p>
+         <p> Voorbeelden: </p>
+         <ul>
+        <li>Bloemisten <em>(voor de familie Smith family (Bloemisten))</em>)</li>
+        <li>Bronx, New York, N.Y. <em>(voor St. James Church (Bronx, New York, N.Y.))</em></li>
+         </ul>
+    sort_name: Sorteernaam
+    sort_name_tooltip: |
+        <p>Een versie van de naam die alle delen van de naam in een bepaald agentrecord samenvoegt. Wordt gebruikt voor weergave of export.</p>
+        <p>De sorteernaam kan worden bewerkt door het selectievakje voor Automatisch genereren uit te schakelen en vervolgens de gewenste sorteernaam in te voeren.</p>
+    authorized: Geautoriseerd
+    is_display_name: Getoonde naam
+    language: Talen
+    language_tooltip: |
+        <p>Geeft de taal aan die wordt gebruikt bij het opnemen van het naamformulier. Voorbeeld: Russisch (voor Каспаров, Г. К. (Гарри Кимович))</p>
+    script: Schrift
+    script_tooltip: |
+        <p>Indicates the script used in recording the name form. Example: Cyrillic (for Каспаров, Г. К. (Гарри Кимович))</p>
+    transliteration: Transliteratie
+    transliteration_tooltip: |
+        <p>Indicates the transliteration scheme used in recording the name form.</p>
+    _singular: Naamvorm
+    _plural: Naamvormen
+
+  name_person:
+    <<: *agent_name_attributes
+
+  parallel_name_person:
+    <<: *agent_name_attributes
+    _singular: Parallelle Naam
+    _plural: Parallelle Namen
+
+  name_family: &agent_family_attributes
+    <<: *agent_name_attributes
+    family_name: Familienaam
+    family_name_tooltip: |
+        <p>De familienaam of achternaam van een gezin, meestal aangevuld met de term 'familie'.</p>
+    family_type: Familie Type
+    family_type_tooltip: |
+        <p>Type of family used as a qualifier to distinguish similar name entries. Examples: Family, Dynasty, Royal house.</p>
+    location: Locatie
+    location_tooltip: |
+        <p>Een locatie die als kwalificatie wordt gebruikt om vergelijkbare naamvermeldingen te onderscheiden. Voorbeelden: Trigg County, Ky. (Voor Cunningham (Family: 1795-: Trigg County, Ky.)), Canadian Embassy, Tokyo (voor Twinning Conference Canada-Japan (1991: Canadian Embassy, Tokyo))</p>
+
+  parallel_name_family:
+    <<: *agent_family_attributes
+
+  name_corporate_entity: &agent_corporate_entity_attributes
+    <<: *agent_name_attributes
+    subordinate_name_1: Ondergeschikte entiteit 1
+    subordinate_name_1_tooltip: |
+        <p>Een hiërarchische eenheid van de bedrijfsentiteit genoemd in het veld Primaire naam.</p>
+        <p>Voorbeelden:</p>
+         <ul>
+        <li>Microelectronics Division <em>(voor International Business Machines. Microelectronics Division)</em></li>
+         </ul>
+    subordinate_name_2: Ondergeschikte entiteit 2
+    subordinate_name_2_tooltip: |
+        <p>Een hiërarchische eenheid met de bedrijfsentiteit genoemd in het veld Primaire naam en lager dan de eenheid genoemd in het veld Ondergeschikte entiteit 1.</p>
+
+    jurisdiction: Jurisdictie
+    jurisdiction_tooltip: |
+        <p>Geeft aan of de entiteit een juridische naam is.</p>
+    conference_meeting: Conferentie?
+    conference_meeting_tooltip: |
+        <p>Geeft aan of de entiteit een standaardbedrijfsorgaan is, of een conferentie, vergadering of evenement met een andere naam.</p>
+    location: Locatie
+    location_tooltip: |
+        <p>Een locatie die als kwalificatie wordt gebruikt om vergelijkbare naamvermeldingen te onderscheiden. Voorbeelden: Trigg County, Ky. (Voor Cunningham (Family: 1795-: Trigg County, Ky.)), Canadian Embassy, Tokyo (voor Twinning Conference Canada-Japan (1991: Canadian Embassy, Tokyo))</p>
+
+  parallel_name_corporate_entity:
+    <<: *agent_corporate_entity_attributes
+
+  name_software: &agent_software_attributes
+    <<: *agent_name_attributes
+    software_name: Naam software
+    software_name_tooltip: |
+        <p>De naam van een softwarepakket.</p>
+         <p> Voorbeelden: </p>
+         <ul>
+        <li>Photoshop <em>(voor Adobe Photoshop CS3)</em></li>
+        <li>Bagger <em>(voor Library of Congress Bagger 2.1.2)</em></li>
+         </ul>
+    version: Versie
+    version_tooltip: |
+        <p>Het versienummer of een andere indicatie van een specifieke versie van een softwarepakket.</p>
+        <p>Voorbeelden:</p>
+         <ul>
+        <li>CS3 <em>(voor Adobe Photoshop CS3)</em></li>
+        <li>2.1.2 <em>(voor Library of Congress Bagger 2.1.2)</em></li>
+         </ul>
+    manufacturer: Producent
+    manufacturer_tooltip: |
+        <p>De producent, maker of andere verantwoordelijke partij voor de distributie, ontwikkeling of onderhoud van een softwarepakket.</p>
+        <p>Voorbeelden:</p>
+         <ul>
+        <li>Adobe <em>(voor Adobe Photoshop CS3)</em></li>
+        <li>Library of Congress <em>(voor Library of Congress Bagger 2.1.2)</em></li>
+         </ul>
+
+  parallel_name_software:
+    <<: *agent_software_attributes
+
+  agent_record_identifiers:
+    identifier_type_tooltip: |
+        <p>Geeft het type of formaat van de authenticatie-ID aan. Waarden in deze gecontroleerde lijst kunnen worden gewijzigd.</p>
+    source_tooltip: |
+        <p>Geeft het oorspronkelijke machtigingsbestand aan van een bijbehorende identificator. Voorbeeld: NAF (voor nr2003017069). Waarden in deze gecontroleerde lijst kunnen worden gewijzigd.</p>
+    record_identifier_tooltip: |
+        <p>De identificatie voor het Agent-record, meestal bestaande uit een unieke alfanumerieke reeks. De Identifier kan afkomstig zijn uit een extern autoriteitsbestand, of lokaal worden gegenereerd.</p>
+    is_primary: Primary
+
+  agent_record_control:
+    maintenance_status_tooltip: |
+        <p>Geeft de huidige status van het record.</p>
+    publication_status_tooltip: |
+        <p>Geeft aan of een agentrecord gepubliceerd wordt.</p>
+    romanization_tooltip: |
+        <p>Geeft aan of het geautoriseerde naamvorm is geromaniseerd vanuit een niet-Latijns schrift, en het type romanisatieschema. Voorbeeld: standaard voor nationale bibliotheek of bibliografisch bureau (voor ALA-LC Romanization Table (bijv.Kasparov, G. K. (Garri Kimovich) voor Каспаров, Г. К. (Гарри Кимович)).</p>
+    government_agency_type_tooltip: |
+        <p>Geeft het type instantie of rechtsgebied aan dat wordt vertegenwoordigd door het geautoriseerde naamformulier.</p>
+    reference_evaluation_tooltip: |
+        <p>Geeft de mate van consistentie aan tussen het geautoriseerde naamvorm en andere naamvormen in het agentrecord. Als er geen aanvullende vormen zijn, moet het veld worden geregistreerd als "Niet van toepassing".</p>
+    name_type_tooltip: |
+        <p>Geeft het unieke karakter van het geautoriseerde naamvorm binnen de Agents-module aan. Unieke namen moeten worden geregistreerd als 'Gedifferentieerd', terwijl agentrecords die worden gebruikt om meerdere agenten met identieke namen te verzamelen, moeten worden gemarkeerd als 'Ongedifferentieerd'.</p>
+    level_of_detail_tooltip: |
+        <p>Geeft de volledigheid aan van het Agentrecord volgens de lokale vereisten.</p>
+    modified_record_tooltip: |
+        <p>Geeft aan of een agentrecord is gewijzigd en hoe deze is gewijzigd.</p>
+    cataloging_source_tooltip: |
+        <p>Geeft aan waar een agentrecord vandaan komt. Lokaal geproduceerde records die niet zijn ingediend bij een coöperatief catalogusprogramma, moeten worden geregistreerd als "Overige".</p>
+    maintenance_agency_tooltip: |
+        <p>Codewaarde voor het bureau of de organisatie die verantwoordelijk is voor het maken of bijhouden van een agentrecord. De codewaarde moet uit een register worden gehaald en worden vastgelegd met behulp van ISO 15511-conventies. Voorbeeld: US-UPB (voor Brigham Young University, met gebruikmaking van de MARC-organisatiecode van de Library of Congress).</p>
+    agency_name_tooltip: |
+        <p>De naam van het bureau of de organisatie die verantwoordelijk is voor het maken of bijhouden van een agentrecord. De geregistreerde naam moet overeenkomen met het naamformulier dat is gekoppeld aan de codewaarde in het register. Voorbeeld: Brigham Young University, Harold B. Lee Library (voor codewaarde UPB, gebruikmakend van Library of Congress MARC Organization Code).</p>
+    maintenance_agency_note_tooltip: |
+        <p>De inhoud van de notitie, met details over het onderhoudsbedrijf dat verantwoordelijk is voor de agentbeschrijving.</p>
+    language_tooltip: |
+        <p>De taal die wordt gebruikt bij het opstellen van de agentbeschrijving. Voorbeeld: Engels.</p>
+    script_tooltip: |
+        <p> Het tekstscript dat wordt gebruikt bij het opstellen van de agentbeschrijving. Voorbeeld: Latijn. </p>
+    language_note_tooltip: |
+        <p> De inhoud van de notitie, met details over de taal en scripts die worden gebruikt bij het opstellen van de Agentbeschrijving. </p>
+
+  agent_alternate_set:
+    set_component_tooltip: |
+        <p> Een bijschrift om identificatie en toegang tot een gelijkwaardig gekoppeld geautoriseerd record te bieden. </p>
+    descriptive_note_tooltip: |
+        <p> De inhoud van de notitie, met details over het gekoppelde geautoriseerde record. </p>
+    file_uri_tooltip: |
+        <p> Een URI voor een gelijkwaardig record in een extern machtigingsbestand. Voorbeeld: http://id.loc.gov/authorities/names/n80060393 (voor Library of Congress Linked Data Serviceentry voor Robert W. Service). </p>
+    file_version_xlink_actuate_attribute_tooltip: |
+        <p> Geeft aan of de bijbehorende URI moet worden opgelost wanneer het agentrecord wordt weergegeven. </p>
+    file_version_xlink_show_attribute_tooltip: |
+        <p> Geeft aan waar de externe bron die in de bijbehorende URI is gekoppeld, moet worden weergegeven. </p>
+    xlink_title_attribute_tooltip: |
+        <p> Titel van de externe bronnen die zijn gekoppeld in de bijbehorende URI, die als bijschrift kan worden gebruikt. </p>
+    xlink_role_attribute_tooltip: |
+        <p> Type of aard van de externe bron die is gekoppeld in de bijbehorende URI. </p>
+    xlink_arcrole_attribute_tooltip: |
+        <p> Type of aard van de externe bron die is gekoppeld in de bijbehorende URI. </p>
+    last_verified_date_tooltip: |
+        <p> Laatste datum of datum en tijd waarop de gekoppelde bron die in de bijbehorende URI is gekoppeld, is geverifieerd. </p>
+
+  agent_conventions_declaration:
+    name_rule_tooltip: |
+        <p> Een inhoudsnorm die wordt gebruikt bij het formuleren van de inhoud van het Agent-record. Voorbeeld: archieven beschrijven: een inhoudsnorm. </p>
+    citation_tooltip: |
+        <p> Bibliografische vermelding voor een conventie die wordt gebruikt bij het formuleren van de inhoud van de Agent-record. Voorbeeld: Society of American Archivists. Archieven beschrijven: een inhoudsnorm (Chicago: Society of American Archivists, 2013). </p>
+    descriptive_note_tooltip: |
+        <p> De inhoud van de notitie, met details over de conventie, werd gebruikt bij het opstellen van de Agentbeschrijving. Voorbeeld: gebruikt voor het formuleren van de inhoud van biografische geschiedenissen. (voor het beschrijven van archieven: een inhoudsnorm). </p>
+    file_uri_tooltip: |
+        <p> Een URI voor de online locatie van de conventie die wordt gebruikt bij het opstellen van de agentbeschrijving. Voorbeeld: http://www2.archivists.org/standards/DACS/ (voor het beschrijven van archieven: een inhoudsnorm). </p>
+    file_version_xlink_actuate_attribute_tooltip: |
+        <p> Geeft aan of de bijbehorende URI moet worden opgelost wanneer het agentrecord wordt weergegeven. </p>
+    file_version_xlink_show_attribute_tooltip: |
+        <p> Geeft aan waar de externe bron die in de bijbehorende URI is gekoppeld, moet worden weergegeven. </p>
+    xlink_title_attribute_tooltip: |
+        <p> Titel van de externe bronnen die zijn gekoppeld in de bijbehorende URI, die als bijschrift kan worden gebruikt. </p>
+    xlink_role_attribute_tooltip: |
+        <p> Type of aard van de externe bron die is gekoppeld in de bijbehorende URI. </p>
+    xlink_arcrole_attribute_tooltip: |
+        <p> Type of aard van de externe bron die is gekoppeld in de bijbehorende URI. </p>
+    last_verified_date_tooltip: |
+        <p> Laatste datum of datum en tijd waarop de gekoppelde bron die in de bijbehorende URI is gekoppeld, is geverifieerd. </p>
+
+  agent_other_agency_codes:
+     agency_code_type_tooltip: |
+         <p> De bron van de onderhoudscode. Voorbeeld: OCLC. </p>
+     maintenance_agency_tooltip: |
+         <p> Alternatieve codewaarden voor het bureau of de organisatie die verantwoordelijk is voor het maken of bijhouden van een agentrecord. De codewaarde moet uit een register worden gehaald en worden vastgelegd met behulp van ISO 15511-conventies. Voorbeeld: OCLC-UBY (voor de Verenigde Staten, Brigham Young University, met het OCLC-symbool). </p>
+
+
+  agent_maintenance_histories:
+     maintenance_event_type_tooltip: |
+         <p> Geeft het type onderhoudsgebeurtenis aan. </p>
+     maintenance_agent_type_tooltip: |
+         <p> Geeft aan of de onderhoudsgebeurtenis werd uitgevoerd door een persoon of door een softwaresysteem. </p>
+     agent_tooltip: |
+         <p> Naam van de persoon, instantie of software die verantwoordelijk is voor de onderhoudsgebeurtenis. </p>
+     event_date_tooltip: |
+         <p> Tijdstempel van de opname van de onderhoudsgebeurtenis. </p>
+     descriptive_note_tooltip: |
+         <p> De inhoud van de notitie, met details over het uitgevoerde onderhoud. </p>
+
+  agent_sources:
+    source_entry_tooltip: |
+        <p> Bibliografische bronvermelding voor een bron die wordt gebruikt bij het formuleren van de inhoud van het Agent-record. Voorbeeld: Lockhart, G. W. In het spoor van Robert Service (Edinburgh: Luath Press, 1991). </p>
+    descriptive_note_tooltip: |
+        <p> De inhoud van de notitie, met details over de inhoud van de bronnen die zijn gebruikt ter voorbereiding van de Agentbeschrijving. </p>
+    file_uri_tooltip: |
+        <p> Een URI voor de online locatie van de bron die is gebruikt bij het opstellen van de agentbeschrijving. Voorbeeld: http://www.findagrave.com/cgi-bin/fg.cgi?page=gr&GRid=8373 (voor Find-A-Grave-invoer voor Robert W. Service). </p>
+    file_version_xlink_actuate_attribute_tooltip: |
+        <p> Geeft aan of de bijbehorende URI moet worden opgelost wanneer het agentrecord wordt weergegeven. </p>
+    file_version_xlink_show_attribute_tooltip: |
+        <p> Geeft aan waar de externe bron die in de bijbehorende URI is gekoppeld, moet worden weergegeven. </p>
+    xlink_title_attribute_tooltip: |
+        <p> Titel van de externe bronnen die zijn gekoppeld in de bijbehorende URI, die als bijschrift kan worden gebruikt. </p>
+    xlink_role_attribute_tooltip: |
+        <p> Type of aard van de externe bron die is gekoppeld in de bijbehorende URI. </p>
+    xlink_arcrole_attribute_tooltip: |
+        <p> Type of aard van de externe bron die is gekoppeld in de bijbehorende URI. </p>
+    last_verified_date_tooltip: |
+        <p> Laatste datum of datum en tijd waarop de gekoppelde bron die in de bijbehorende URI is gekoppeld, is geverifieerd. </p>
+
+  agent_identifiers:
+     entity_identifier_tooltip: |
+         <p> Registreert ID's die aan een entiteit zijn gekoppeld, zoals juridische ID's die zijn toegewezen door een gezaghebbende instantie. </p>
+     identifier_type_tooltip: |
+         <p> Geeft het type of de bron van de geregistreerde entiteits-ID aan. </p>
+
+
+  used_language:
+     language_tooltip: |
+         <p> De taal / talen die aan de agent zijn gekoppeld. Voorbeeld: Engels. </p>
+     script_tooltip: |
+         <p> Het tekstscript dat aan de agent is gekoppeld. Voorbeeld: Latijn. </p>
+
+  agent_gender:
+     gender_tooltip: |
+         <p> Geslacht van het onderwerp. </p>
+         <p> Waarden voor deze lijst kunnen worden toegevoegd of gewijzigd via het menu Systeem - Beheer gecontroleerde waardenlijsten. </p>
+
+  agent_place:
+     place_role_tooltip: |
+         <p> Geeft de relatie aan tussen de geografische locatie en de agent. </p>
+
+  agent_resource:
+    linked_agent_role_tooltip: |
+        <p> VEREIST VELD: het type relatie van de entiteit dat wordt beschreven met de bron. </p>
+    linked_resource_tooltip: |
+        <p> Een bron gerelateerd aan de agent / entiteit. </p>
+    linked_resource_description_tooltip: |
+        <p> Vrij tekstveld voor het opnemen van bibliografische informatie, gerelateerde verzamelingsinformatie, enz. </p>
+    file_uri_tooltip: |
+        <p> Een URI voor de online locatie van de bron die is gebruikt bij het opstellen van de agentbeschrijving. Voorbeeld: http://www.findagrave.com/cgi-bin/fg.cgi?page=gr&GRid=8373 (voor Find-A-Grave-invoer voor Robert W. Service). </p>
+    file_version_xlink_actuate_attribute_tooltip: |
+        <p> Geeft aan of de bijbehorende URI moet worden opgelost wanneer het agentrecord wordt weergegeven. </p>
+    file_version_xlink_show_attribute_tooltip: |
+        <p> Geeft aan waar de externe bron die in de bijbehorende URI is gekoppeld, moet worden weergegeven. </p>
+    xlink_title_attribute_tooltip: |
+        <p> Titel van de externe bronnen die zijn gekoppeld in de bijbehorende URI, die als bijschrift kan worden gebruikt. </p>
+    xlink_role_attribute_tooltip: |
+        <p> Type of aard van de externe bron die is gekoppeld in de bijbehorende URI. </p>
+    xlink_arcrole_attribute_tooltip: |
+        <p> Type of aard van de externe bron die is gekoppeld in de bijbehorende URI. </p>
+    last_verified_date_tooltip: |
+        <p> Laatste datum of datum en tijd waarop de gekoppelde bron die in de bijbehorende URI is gekoppeld, is geverifieerd. </p>
+
+  subrecord_subject_agent_place:
+    subjects_tooltip: |
+        <p> Een geografische locatie die aan de agent is gekoppeld. </p>
+
+  subrecord_subject_agent_occupation:
+    subjects_tooltip: |
+         <p> Het beroep van de makelaar. </p>
+
+  subrecord_subject_agent_occupation_place:
+     places_tooltip: |
+         <p> Een geografische locatie die verband houdt met de beroepen. </p>
+
+  subrecord_subject_agent_function:
+    subjects_tooltip: |
+         <p> Termen die worden gebruikt om de functies, processen, taken, activiteiten of transacties te identificeren die door de agent worden uitgevoerd. </p>
+
+  subrecord_subject_agent_function_place:
+    places_tooltip: |
+         <p> Een geografische locatie die is gekoppeld aan de functies. </p>
+
+  subrecord_subject_agent_topic:
+    subjects_tooltip: |
+         <p> Een onderwerp dat verband houdt met de agent. </p>
+
+  subrecord_subject_agent_topic_place:
+    places_tooltip: |
+         <p> Een geografische locatie die is gekoppeld aan de onderwerpen. </p>
+
+  subrecord_subject_agent_resource_place:
+    places_tooltip: |
+         <p> Een geografische locatie die is gekoppeld aan de gekoppelde bron. </p>
+
+  name:
+    _singular: Naamvorm
+    _plural: Naamvormen
+
+  structured_date_label: &sdl_attributes
+    date_label_tooltip: |
+        <p> Beschrijft wat voor soort activiteit de datum aangeeft </p>
+  date_type_structured_tooltip: |
+         <p> Geeft het type datuminformatie aan, een enkele datum of een datumbereik. </p>
+  date_certainty_tooltip: |
+        <p>Het betrouwbaarheidsniveau voor de informatie in een datumverklaring. Deze informatie is optioneel en mag alleen worden toegevoegd als informatie over de kwalificatiedatum als mogelijk onzeker wordt beschouwd op basis van de gebruikte beschrijvingsregels.</p>
+  date_era_tooltip: |
+        <p>Periode waarin jaren worden geteld en datums worden berekend, zoals voor Chr. of na Chr. De waarde "ce" is de standaardwaarde.</p>
+  date_calendar_tooltip: |
+        <p>Systeem van tijdrekening, zoals de Gregoriaanse kalender of Juliaanse kalender. De waarde "gregoriaans" is de standaardwaarde.</p>
+
+  structured_date_label_existence:
+    <<: *sdl_attributes
+
+  date_fields:
+    <<: *sdl_attributes
+
+  structured_date_label_common_fields:
+    <<: *sdl_attributes
+
+  structured_date_single: &sds_attributes
+    date_role_tooltip: |
+        <p>Voor een enkele datum, gebruikt om aan te geven of de datum moet worden begrepen als een begindatum of een einddatum. De standaardwaarde is Begin.</p>
+
+    date_expression_tooltip: |
+        <p>Een uitdrukking in natuurlijke taal die de datum of het datumbereik specificeert. Vereist als er geen gestandaardiseerde datum is vastgelegd.</p>
+
+    date_standardized_tooltip: |
+        <p> Een uitdrukking in natuurlijke taal die de datum of het datumbereik specificeert. Vereist als er geen gestandaardiseerde datum is vastgelegd. </p>
+
+    date_standardized_type_tooltip: |
+        <p> Wordt gebruikt om aan te geven of de gestandaardiseerde datum de werkelijke datum weergeeft of een schatting van het vroegste of laatste dat iets had kunnen gebeuren. </p>
+
+  structured_date_range: &sdr_attributes
+    begin_date_expression_tooltip: |
+        <p> Een uitdrukking in natuurlijke taal die het begin van een datumbereik specificeert. Vereist als er geen gestandaardiseerde datum is vastgelegd. </p>
+
+    begin_date_standardized_tooltip: |
+        <p> Een datum (in de vorm JJJJ, JJJJ-MM of JJJJ-MM-DD) die een enkele datum of de eerste datum in een datumbereik vertegenwoordigt. </p>
+
+    begin_date_standardized_type_tooltip: |
+        <p> Wordt gebruikt om aan te geven of de eerste gestandaardiseerde datum de werkelijke datum weergeeft of een schatting van het vroegste of laatste dat iets had kunnen gebeuren. </p>
+
+    end_date_expression_tooltip: |
+        <p> Een uitdrukking in natuurlijke taal die het einde van een datumbereik aangeeft. Vereist als er geen gestandaardiseerde datum is vastgelegd. </p>
+
+    end_date_standardized_tooltip: |
+        <p> Een datum (in de vorm JJJJ, JJJJ-MM of JJJJ-MM-DD) die de laatste datum in een datumbereik vertegenwoordigt. </p>
+
+    end_date_standardized_type_tooltip: |
+        <p> Wordt gebruikt om aan te geven of de gestandaardiseerde einddatum de werkelijke datum weergeeft of een schatting van het vroegste of laatste iets dat zou kunnen hebben plaatsgevonden. </p>
+
+  structured_date_single_fields:
+    <<: *sds_attributes
+
+  structured_date_range_fields:
+    <<: *sdr_attributes
+
+  agent_contact: &agent_contact
+    name: Naam contact
+    name_tooltip: |
+        <p>Naam van de persoon die fungeert als contactpersoon voor de entiteit in het hoofdrecord.</p>
+    salutation: Aanspreking
+    salutation_tooltip: |
+        <p>Aanspreking voor de contactpersoon.</p>
+        <p>Waarden in deze lijst met gecontroleerde waarden kunnen worden gewijzigd.</p>
+    address_1: Adres 1
+    address_1_tooltip: |
+        <p>Adres van de contactpersoon.</p>
+    address_2_tooltip: |
+         <p> Een vervolg op het adres van de contactpersoon. </p>
+    address_3_tooltip: |
+         <p> Een vervolg op het adres van de contactpersoon. </p>
+    address_2: Adres 2
+    address_3: Adres 3
+    city: Stad
+    city_tooltip: |
+        <p>Stad waar de contactpersoon zich bevindt.</p>
+    region: Staat/Regio
+    region_tooltip: |
+        <p>Staat of regio waar de contactpersoon zich bevindt.</p>
+    country: Land
+    country_tooltip: |
+        <p>Land waar de contactpersoon zich bevindt.</p>
+    post_code: Postcode
+    post_code_tooltip: |
+        <p>Postcode van het adres van de contactpersoon.</p>
+    telephone: Telefoonnummer
+    telephone_ext: Telefoonnummer - extensie
+    fax: Fax
+    fax_tooltip: |
+        <p>Faxnummer van de contactpersoon.</p>
+    email: E-mail
+    email_tooltip: |
+        <p>E-mailadres van de contactpersoon.</p>
+    email_signature: E-mail handtekening
+    email_signature_tooltip: |
+        <p>E-mail handtekeniung van de contactpersoon.</p>
+    note: Contact opmerkingen
+    note_tooltip: |
+        <p>Opmerkingen bij de contactpersoon.</p>
+    telephones: Telefoonnummers
+    _singular: Contact
+    _plural: Contact details
+
+  note_contact_note:
+    contact_notes_tooltip: |
+        <p>Details over de interactie met het contact</p>
+
+    date_of_contact_tooltip: |
+        <p>Wordt gebruikt om de specifieke datum of tijdsbestek van een interactie vast te leggen</p>
+
+  telephone: &telephone
+    _plural: Telefoonnummers
+    number_type: Nummer type
+    number: Nummer
+    number_tooltip: |
+        <p>Telefoonnummer van de contactpersoon.</p>
+    ext: Telefoonnummer - extensie
+    ext_tooltip: |
+        <p>Extensie van het telefoonnummer van de contactpersoon.</p>
+    number_type_tooltip: |
+        <p>Geeft het type van het telefoonnummer aan</p>
+
+
+
+  telephone_required: &telephone
+    _plural: Telefoonnummers
+    number_type: Nummer type
+    number: Nummer
+    number_tooltip: |
+        <p>Telefoonnummer van de contactpersoon.</p>
+    ext: Telefoonnummer - extensie
+    ext_tooltip: |
+        <p>Extensie van het telefoonnummer van de contactpersoon.</p>
+
+  telephone_merge: &telephone
+    _plural: Telefoonnummers
+    number_type: Nummer type
+    number: Nummer
+    number_tooltip: |
+        <p>Telefoonnummer van de contactpersoon.</p>
+    ext: Telefoonnummer - extensie
+    ext_tooltip: |
+        <p>Extensie van het telefoonnummer van de contactpersoon.</p>
+
+  telephone_merge_target: &telephone
+    _plural: Telefoonnummers
+    number_type: Nummer type
+    number: Nummer
+    number_tooltip: |
+        <p>Telefoonnummer van de contactpersoon.</p>
+    ext: Telefoonnummer - extensie
+    ext_tooltip: |
+        <p>Extensie van het telefoonnummer van de contactpersoon.</p>
+
+  note_attributes: &note_attributes
+    label: Label
+    label_tooltip: |
+        <p>Een label of titel voor de specifieke Noot. Als er geen label wordt gebruikt, wordt het notitietype waar nodig als label gebruikt.</p>
+    persistent_id: Persistente ID
+    content: Inhoud
+    content_tooltip: |
+        <p>De inhoud van het nootveld.</p>
+    items: Items
+    items_singular: Item
+    item_singular: Item
+    publish: Publiceren
+    publish_tooltip: |
+      <p>Bepaalt of deze informatie op de publieke interface wordt gepubliceerd.</p>
+    title: Titel
+    title_tooltip: |
+      <p>Een element voor het opnemen van een specifiek label of titel voor de subnoot.</p>
+    type: Type
+    type_tooltip: |
+      <p>Het type Noot voor de inhoud. Noottypes worden gebruikt om de export van Noot-inhoud naar bepaalde elementen in specifieke gegevensformaten aan te sturen.</p>
+  related_agent: &related_agent_attributes
+    relationship_type: Algemeen relatietype
+    relationship_type_tooltip: Een term die de algemene aard van de relatie tussen de agents beschrijft.
+    relator: Directioneel relatietype
+    specific_relator: Specifiek relatietype
+    specific_relator_tooltip: Een term die de algemene relatie tussen agents verder specificeert.
+    relationship_uri: Relatie URI
+    relationship_uri_tooltip: Een URI die verwijst naar een bron voor relatietypes, gebruikt voor EAC-CPF.
+    relator_tooltip: Wanneer een algemeen relatietype deel uitmaakt van een paar met twee mogelijkheden voor richting (zoals ouder-kind), een gecontroleerde term die de richting van de relatie aangeeft.
+    description: Beschrijving
+    description_tooltip: Een vrij tekstveld dat de aard van de realtie beschrijft
+    date: Datum
+    dates: Data
+    ref: Gerelateerde Agent
+    related_agent_tooltip: De persoon, familie of organisatie die verband houdt met de primaire agent.
+    _singular: Gerelateerde Agent
+    _plural: Gerelateerde Agents
+
+  related_agents:
+    <<: *related_agent_attributes
+
+  agent_relationship_parentchild:
+    <<: *related_agent_attributes
+    _singular: Ouder/Kind relatie
+
+  agent_relationship_earlierlater:
+    <<: *related_agent_attributes
+    _singular: Vroeger/Later relatie
+
+  agent_relationship_subordinatesuperior:
+    <<: *related_agent_attributes
+    _singular: Ondergeschikte/bovengeschikte relatie
+
+  agent_relationship_associative:
+    <<: *related_agent_attributes
+    _singular: Associative relatie
+
+  agent_relationship_identity:
+    <<: *related_agent_attributes
+    _singular: Identiteitsrelatie
+
+  agent_relationship_hierarchical:
+    <<: *related_agent_attributes
+    _singular: Hiërarchische relatie
+
+  agent_relationship_temporal:
+    <<: *related_agent_attributes
+    _singular: Temporele relatie
+
+  agent_relationship_family:
+    <<: *related_agent_attributes
+    _singular: Familie relatie
+
+  note:
+    item: Item
+    content_item: Inhoud Item
+    note_singlepart: Enkelvoudige noot
+    note_orderedlist: Geordende lijst
+    note_multipart: Meervoudige noot
+    note_definedlist: Gedefinieerde lijst
+    note_chronology: Chronologie
+    note_index: Index
+    note_bibliography: Bibliografie
+    note_digital_object: Digitaal Object Noot
+    note_langmaterial: Taal van de materialen noot
+    note_bioghist: "Biografische/Historische Noot"
+    note_citation: Citatie
+    note_abstract: Abstract
+    note_outline: Overzicht
+    note_text: Tekst
+    note_type: Noot type
+    note_rights_statement: Rechtenstatus noot
+    note_rights_statement_act: Rechtenstatus regelgeving noot
+    note_agent_rights_statement: Rights Statement Noot (niet gebruiken)
+    note_general_context: Algemene context
+    note_mandate: Mandaat
+    note_contact_note: Contact Noot
+    note_legal_status: Wettelijke Status
+    note_structure_or_genealogy: Structuur of genealogie
+    _singular: Noot
+    _plural: Noten
+
+  note_text:
+    <<: *note_attributes
+    option: Tekst
+
+  note_index:
+    <<: *note_attributes
+    option: Index
+
+  note_index_item:
+    value: Waarde
+    value_tooltip: De inhoud van elk item in de bibliografie. Er is minimaal één vereist voor elke indexnotitie.
+    type: Type
+    type_tooltip: Het type van de Index entry.
+    reference: Referentie
+    reference_tooltip: Het doel van de Index entry
+    reference_text: Referentie tekst
+    reference_text_tooltip: Een beschrijving voor de referentie, indien gerechtvaardigd.
+
+  note_singlepart:
+    <<: *note_attributes
+
+  note_multipart:
+    <<: *note_attributes
+    subnotes: Subnoten
+    sub_notes: Subnoten
+    sub_notes_singular: Subnoot
+
+  note_digital_object:
+    <<: *note_attributes
+
+  note_langmaterial:
+    <<: *note_attributes
+
+  note_rights_statement:
+    <<: *note_attributes
+
+  note_rights_statement_act:
+    <<: *note_attributes
+
+  note_agent_rights_statement:
+    <<: *note_attributes
+
+  note_bibliography:
+    <<: *note_attributes
+    option: Bibliografie
+
+  note_chronology:
+    <<: *note_attributes
+    option: Chronologie
+    title: Titel
+    items: Gebeurtenissen
+
+  chronology_item:
+    event_date: Datum gebeurtenis
+    event_date_tooltip: |
+        <p>De datum van een gebeurtenis in een chronologielijst.</p>
+    events: Gebeurtenis items
+    events_tooltip: |
+        <p>Een beschrijving van een gebeurtenis die overeenkomt met het chronologische datumitem.</p>
+    events_singular: Gebeurtenis item
+    place: Gebeurtenis plaats
+
+  note_definedlist:
+    <<: *note_attributes
+    option: Gedefinieerde lijst
+
+  definedlist_item:
+    label: Label
+    label_tooltip: |
+        Een tekst die de inhoud van het gedefinieerde item in de lijstnotitie contextualiseert of erdoor wordt verklaard.
+    value: Waarde
+    value_tooltip: |
+        Een gedefinieerd lijstitem in een gedefinieerde lijst.
+
+  note_orderedlist:
+    <<: *note_attributes
+    option: Geordende lijst
+    enumeration: Opsomming
+    enumeration_tooltip: |
+        <p>Een attribuut om het type nummering aan te geven dat op de nootitems moet worden toegepast</p>
+
+  note_bioghist:
+    <<: *note_attributes
+    subnotes: Subnoten
+
+  note_general_context:
+    <<: *note_attributes
+    subnotes: Subnoten
+
+  note_mandate:
+    <<: *note_attributes
+    subnotes: Subnoten
+
+  note_contact_note:
+    <<: *note_attributes
+    subnotes: Subnoten
+    date_of_contact: Datum van het contact
+    contact_notes: Contact noten
+
+  note_legal_status:
+    <<: *note_attributes
+    subnotes: Subnoten
+
+  note_structure_or_genealogy:
+    <<: *note_attributes
+    subnotes: Subnoten
+
+  note_abstract:
+    <<: *note_attributes
+    option: Abstract
+
+  note_citation:
+    <<: *note_attributes
+    option: Citatie
+    xlink: XLink
+
+  note_citation_xlink:
+    actuate: Actuate@en
+    arcrole: Arc Role@en
+    href: Href
+    role: Rol
+    show: Toon
+    title: Titel
+    type: Type
+
+  note_outline:
+    <<: *note_attributes
+    option: Overzicht
+    levels: Niveaus
+
+  instance: &instance_attributes
+    is_representative: Is Representatief?
+    instance_type: Type
+    instance_type_tooltip: |
+        <p>Een aanduiding van de manifestatie voor de beschreven materialen. De instantie-aanduiding is optioneel, maar vereist om een containerrecord voor het beschreven materiaal te openen en in te vullen.</p>
+        <p>Waarden in deze lijst met gecontroleerde waarden kunnen worden gewijzigd.</p>
+    digital_object: Digital Object
+    _plural: Instanties
+    _singular: Instantie
+
+  instance_container:
+    <<: *instance_attributes
+    barcode: Barcode
+
+  instance_digital_object:
+    <<: *instance_attributes
+
+  file_version:
+    _plural: Bestandsversies
+    _singular: Bestandsversie
+    file: Bestand
+    file_uri: Bestand URI
+    file_uri_tooltip: |
+        <p>Een identificatie voor een bestand dat is gekoppeld aan een digitaal object, toegankelijk op internet of in een bestandsmap.</p>
+    publish: Publiceren
+    publish_tooltip: |
+        <p>Bepaalt of deze informatie op de publieke interface wordt gepubliceerd.</p>
+    use_statement: Verklaring m.b.t. gebruik
+    use_statement_tooltip: |
+        <p>A descriptor indicating the use for which the digital file is intended (e.g., a thumbnail).</p>
+        <p>Waarden in deze lijst met gecontroleerde waarden kunnen worden gewijzigd.</p>
+    xlink_actuate_attribute: XLink Actuate Attribute
+    xlink_actuate_attribute_tooltip: |
+        <p>Een XLink-attribuut dat wordt gebruikt voor export om aan te geven hoe het digitale object moet worden weergegeven (bijvoorbeeld of de link automatisch plaatsvindt of moet worden aangevraagd door de gebruiker). Het wordt gebruikt in combinatie met het kenmerk XLink Toon.</p>
+    xlink_show_attribute: XLink Toon Attribuut
+    xlink_show_attribute_tooltip: |
+        <p>Een XLink-attribuut dat wordt gebruikt voor export om aan te geven hoe het doel van een link moet worden weergegeven. Het wordt gebruikt in combinatie met de XLink Actuate attribuut.</p>
+    file_format_name: Naam bestandsformaat
+    file_format_name_tooltip: |
+        <p>De naam van het bestandsformaat.</p>
+        <p>Waarden in deze lijst met gecontroleerde waarden kunnen worden gewijzigd.</p>
+         <p> Voorbeelden: </p>
+         <ul>
+        <li>Audio Interchange File Format (aiff)</li>
+        <li>Audio/Video Interleaved Format (avi)</li>
+        <li>JPEG File Interchange Format (jpeg)</li>
+        <li>MPEG-Audio Layer 3 (mp3)</li>
+        <li>Portable Document Format (pdf)</li>
+         </ul>
+    file_format_version: Versie bestandsfromaat
+    file_format_version_tooltip: |
+        <p>De versie van het bestandsformaat.</p>
+         <p> Voorbeelden: </p>
+         <ul>
+        <li>5.0 <em>(voor TIFF 5.0)</em></li>
+         </ul>
+    file_size_bytes: Bestandsgrootte (Bytes)
+    file_size_bytes_tooltip: |
+        <p>The size (in bytes) of the digital file.</p>
+    checksum: Checksum
+    checksum_tooltip: |
+        <p>Een digitale handtekening voor het controleren van de integriteit en authenticiteit van een digitaal bestand.</p>
+    checksum_method: Checksum methode
+    checksum_method_tooltip: |
+        <p>Het algoritme dat wordt gebruikt voor het genereren van checksums.</p>
+        <p>Waarden in deze lijst met gecontroleerde waarden kunnen worden gewijzigd.</p>
+         <p> Voorbeelden: </p>
+         <ul>
+        <li>MD5</li>
+        <li>CRC-32</li>
+        <li>SHA-1</li>
+        <li>SHA-256</li>
+         </ul>
+    identifier: Identifier
+    caption: Onderschrift
+    is_representative: Representatief
+
+  extent: &extent_attributes
+    portion: Deel
+    portion_tooltip: |
+        <p>VERPLICHT VELD: Wordt gebruikt om aan te geven of de beschrijving van de omvang betrekking heeft op het geheel of een deel van een gegeven beschreven aggregatie of object.</p>
+        <p>Zie DACS 2.5.7</p>
+    number: Aantal
+    number_tooltip: |
+        <p>VERPLICHT VELD: Een numerieke waarde voor het aangeven van het aantal eenheden in de omvangverklaring, bijvoorbeeld 5, 11.5, 245. Wordt gebruikt in combinatie met het type omvang om een gestructureerde omvangverklaring te geven.</p>
+        <p>Zie DACS 2.5</p>
+    extent_type: Type
+    extent_type_tooltip: &extent_type_tooltip |
+        <p>VERPLICHT VELD: Een term die het type eenheid aangeeft dat wordt gebruikt om de omvang van de beschreven materialen te meten.</p>
+        <p>Waarden in deze lijst met gecontroleerde waarden kunnen worden gewijzigd.</p>
+        <p>Zie DACS 2.5</p>
+    container_summary: Samenvatting verpakking
+    container_summary_tooltip: |
+        <p>Een lijst met containers en containertypen waarin de materialen zijn ondergebracht die worden beschreven in het componentrecord.</p>
+         <p> Voorbeelden: </p>
+         <ul>
+        <li>10 archiefdozen.</li>
+        <li>12 schoendozen.</li>
+
+         </ul>
+    physical_details: Fysieke kenmerken
+    physical_details_tooltip: |
+        <p>Andere fysieke details van de beschreven materialen, bijv. analoog, zwart-wit, negatieven.</p>
+        <p>Zie DACS 2.5</p>
+    dimensions: Afmetingen
+    dimensions_tooltip: |
+        <p>Afmetingen van de beschreven materialen.</p>
+        <p>Zie DACS 2.5</p>
+         <p> Voorbeelden: </p>
+         <ul>
+        <li>29 cm</li>
+        <li>1/2 in. tape</li>
+
+         </ul>
+    _plural: Omvang
+    _singular: Omvang
+
+  lang_material: &lang_material_attributes
+    _plural: Talen
+    _singular: Taal
+
+  language_and_script:
+    <<: *lang_material_attributes
+    language: Talen
+    language_tooltip: &language_language_tooltip |
+        <p>VERPLICHT VELD De taalterm en code weergegeven in het / de beschreven materiaal (en). Codes ontleend aan ISO 639-2b. Codes for the Representation of Names of Languages.</p>
+    script: Schrift
+    script_tooltip: &language_script_tooltip |
+        <p>De scriptterm en code weergegeven in het / de beschreven materiaal (en). Codes ontleend aan ISO 15924. Codes for the representation of names of scripts.</p>
+        <p>Zie DACS 4.5</p>
+
+  language_note:
+    <<: *lang_material_attributes
+
+  external_document: &external_document_attributes
+    title: Titel
+    title_tooltip: |
+        <p>De titel van een extern document waarnaar in het record wordt verwezen. Het document kan elke vorm of inhoud hebben. Een via het web toegankelijk bestand, een via het netwerk toegankelijk bestand, een bestand op dezelfde computer als de applicatie, enz.</p>
+    location: Locatie
+    location_tooltip: |
+        <p>De locatie van het bestand, bij voorkeur een resolvable URI.</p>
+         <p> Voorbeelden: </p>
+         <ul>
+        <li>http://www.archivesspace.org/</li>
+        <li>file:///c:/path/to/the%20file.txt</li>
+         </ul>
+    publish: Publiceren
+    publish_tooltip: |
+        <p>Bepaalt of dit externe document wordt gepubliceerd naar openbare (publieke) interfaces.</p>
+    document_link: Documentkoppeling
+    _plural: Externe documenten
+    _singular: Extern document
+
+  rights_statement_external_document:
+    <<: *external_document_attributes
+    identifier_type: Identifiertype
+    identifier_type_tooltip: |
+        <p>Het identifiertype geeft aan tot welk domein het externe document behoort.</p>
+
+  external_id:
+    _plural: Externe IDs
+    _singular: Externe ID
+    source: Bron
+    external_id: Externe ID
+
+
+  rights_statement: &rights_statement_attributes
+    identifier: Identifier
+    identifier_tooltip: |
+        <p>Identificeert op unieke wijze de rechtenverklaring binnen het repository-domein. Rechtenverklaring-ID's worden meestal automatisch gegenereerd door de toepassing.</p>
+    identifier_auto_generate_message: "-- auto-generated upon save --"
+    rights_type: Rechtentype
+    rights_type_tooltip: |
+        <p>De basis voor het maken van de rechtenverklaring. Vier bases zijn toegestaan: Copyright, Licentie, Statuut en Overig.
+    rights_type_message: Selecteer een Rechtentype
+    status: Status
+    status_tooltip: |
+        <p>Een gecodeerde aanduiding voor de copyrightstatus van het object op het moment dat de rechtenverklaring wordt vastgelegd.</p>
+         <ul>
+          <li>Copyright</li>
+          <li>Publiek Domein</li>
+          <li>Onbekend </li>
+         </ul>
+    license_terms: Licentievoorwaarden
+    license_terms_tooltip: |
+        <p>Een verklaring (feitelijk tekstfragment of samenvatting) van de machtigingen die in de licentie zijn verleend.</p>
+    statute_citation: Statuut citatie
+    statute_citation_tooltip: |
+        <p>Een citaat, URI of andere verwijzing naar het statuut met betrekking tot deze Rechtenverklaring.</p>
+         <p> Voorbeelden: </p>
+         <ul>
+        <li>Freedom of Information and Protection of Privacy Act [RSBC 1996] Chapter 165</li>
+         </ul>
+    jurisdiction: Jurisdictie
+    jurisdiction_tooltip: |
+        <p> Copyright: het land waarvan de copyrightwetten van toepassing zijn. </p>
+        <p> Statuut: het land of een ander politiek orgaan dat het statuut uitvaardigt. </p>
+        <p> Voldoet aan ISO 3166. </p>
+    type_note: Noot type
+    type_note_tooltip: |
+        <p>Alle aanvullende informatie over het auteursrecht, de licentie, het statuut of het institutionele beleid en / of over de toepassing ervan op het beschreven materiaal.</p>
+         <p> Voorbeelden: </p>
+         <ul>
+        <li>Gebruiksbeperking (en): Dit werk is mogelijk beschermd door copyrightwetgeving. Voor gebruik van dit werk op een andere manier dan toegestaan door de toepasselijke copyrightwet is de schriftelijke toestemming van de copyrighthouder (s) vereist. De verantwoordelijkheid voor het verkrijgen van toestemming voor elk gebruik en distributie van dit werk berust uitsluitend bij de gebruiker en niet bij de UC San Diego-bibliotheken. Voor inlichtingen kunt u terecht bij de Mandeville Special Collections Library (http://libraries.ucsd.edu/locations/mscl/).</li>
+         </ul>
+    determination_date: Datum vaststelling
+    determination_date_tooltip: |
+        <p> Copyright: de datum waarop de copyrightstatus die in de copyrightstatus is vastgelegd, is bepaald. </p>
+        <p>Statute: The date that the determination was made that the statute authorized the permission(s) noted.</p>
+    start_date: Startdatum
+    start_date_tooltip: |
+        <p>De datum waarop de rechtenverklaring in werking is getreden.</p>
+    end_date: Einddatum
+    end_date_tooltip: |
+        <p>De datum waarop de rechtenverklaring wordt beëindigd.</p>
+    other_rights_basis: Andere rechtengrondslag
+    other_rights_basis_tooltip: |
+      <p>Rechtentype van andere rechtenverklaringen die geen statuten, licenties of copyright zijn.</p>
+    _plural: Rechtenverklaringen
+    _singular: Rechtenverklaring
+
+  rights_type_copyright:
+    <<: *rights_statement_attributes
+
+  rights_type_license:
+    <<: *rights_statement_attributes
+
+  rights_type_statute:
+    <<: *rights_statement_attributes
+
+  rights_type_other:
+    <<: *rights_statement_attributes
+
+  date: &date_attributes
+    label: Label
+    label_tooltip: |
+        <p>VERPLICHT VELD: Beschrijft wat voor soort activiteit de datum betekent.</p>
+        <p>Zie DACS 2.4 and 2.4.3</p>
+    date_type: Type
+    date_type_tooltip: |
+        <p>VERPLICHT VELD: Geeft het type aan voor genormaliseerde datuminformatie, een enkele datum of een datumbereik (inclusief of bulk).</p>
+    date_type_message: Selecteer een type om een genormaliseerde datum of datumbereik in te voeren
+    expression: Bewoording
+    expression_tooltip: |
+        <p>VOORWAARDELIJK VERPLICHT VELD: een uitdrukking in natuurlijke taal die de datum of het datumbereik van de materialen specificeert. Vereist als er geen genormaliseerde datum is vastgelegd.</p>
+        <p>Zie DACS 2.4</p>
+         <p> Voorbeelden: </p>
+         <ul>
+        <li>1968</li>
+        <li>1979-1993</li>
+        <li>1785-1960, bulk 1916-1958</li>
+        <li>1827, 1952-1978</li>
+        <li>circa 1870-1879</li>
+        <li>17 maart 1917</li>
+        <li>ongedateerd</li>
+        <li>onbekend <em>(voor gebeurtenissen)</em></li>
+         </ul>
+    begin: Begin
+    begin_inline_help: bv. JJJJ, JJJJ-MM, or JJJJ-MM-DD
+    begin_tooltip: |
+        <p> Een genormaliseerde datum (in de vorm JJJJ, JJJJ-MM of JJJJ-MM-DD) die een enkele datum of de eerste datum in een datumbereik vertegenwoordigt. </p>
+        <p>Zie DACS 2.4.7-2.4.16</p>
+        <p>Jaren na Chr. worden uitgedrukt met vier cijfers. </p>
+        <p>Jaren voor Chr. worden uitgedrukt als een negatief getal, bijvoorbeeld -214 voor 214 v.Chr. </p>
+    end: Einde
+    end_inline_help: e.g. YYYY, YYYY-MM, or YYYY-MM-DD
+    end_tooltip: |
+        <p>Een genormaliseerde datum (in de vorm JJJJ, JJJJ-MM of JJJJ-MM-DD) die de tweede datum in een datumbereik vertegenwoordigt.</p>
+        <p>Zie DACS 2.4.7-2.4.16</p>
+        <p>Jaren na Chr. worden uitgedrukt met vier cijfers. </p>
+        <p>Jaren voor Chr. worden uitgedrukt als een negatief getal, bijvoorbeeld -214 voor 214 v.Chr. </p>
+    certainty: Zekerheid
+    certainty_tooltip: |
+        <p>Het betrouwbaarheidsniveau voor de informatie in een datumverklaring. Deze informatie is optioneel en mag alleen worden toegevoegd als informatie over de kwalificatiedatum als mogelijk onzeker wordt beschouwd op basis van de gebruikte beschrijvingsregels.</p>
+        <p>Zie EAD attribuut "certainty".</p>
+    era: Jaartelling
+    era_tooltip: |
+        <p>Periode waarin jaren worden geteld en datums worden berekend, zoals voor Chr. of na Chr. De waarde "ce" is de standaardwaarde.</p>
+        <p>Zie EAD attribuut "era".</p>
+    calendar: Kalender
+    calendar_tooltip: |
+        <p>Systeem van tijdrekening, zoals de Gregoriaanse kalender of Juliaanse kalender. De waarde "gregoriaans" is de standaardwaarde.</p>
+        <p>Zie EAD attribuut "calendar" en DACS 2.4.5.</p>
+    _plural: Data
+    _singular: Datum
+
+  date_type_single:
+    <<: *date_attributes
+
+  date_type_bulk:
+    <<: *date_attributes
+    bulk: bulk
+
+  date_type_inclusive:
+    <<: *date_attributes
+
+  date_type_range:
+    <<: *date_attributes
+
+  date_label:
+    <<: *date_attributes
+
+  existence_date:
+    <<: *date_attributes
+
+  usage_date:
+    <<: *date_attributes
+
+  event_date:
+    <<: *date_attributes
+
+  archival_record_date:
+    <<: *date_attributes
+
+  date_fields:
+    <<: *date_attributes
+
+  accession:
+    <<: *section_tooltips
+    <<: *slug_attributes
+    user_defined:
+      <<: *user_defined_attributes
+    accession_date: Datum aanwinst
+    accession_date_unknown: onbekend
+    accession_date_inline_help: bv. 2021-04-14
+    accession_date_tooltip: |
+        <p>De datum waarop de verwerving plaatsvond. Het is niet noodzakelijkerwijs dezelfde datum als waarop het record is gemaakt.</p>
+
+    accession_id: Identifier
+    accession_id_tooltip: |
+        <p>Het interne databasenummer voor een specifiek verwervingsrecord.</p>
+    identifier: Identifier
+    id_0: Identifier
+    id_1: Identifier 2
+    id_2: Identifier 3
+    id_3: Identifier 4
+    id_0_tooltip: |
+        <p>VERPLICHT VELD:  De unieke identificatie voor een toetreding binnen een repository. </p>
+
+         <p> In ArchivesSpace zijn vier velden voorzien voor het ontleden van een toegangs-ID in zijn samenstellende delen. Elk segment is beperkt tot 50 tekens, of 200 tekens in totaal voor de identificatie. Ten minste het eerste deel moet worden gebruikt voor een geldig toetredingsrecord. </p>
+
+
+
+         <p> Standaardwaarden kunnen worden gebruikt om de componenten te vullen die voor alle toegangsnummers hetzelfde zijn.</p>
+
+        <p>Zie DACS 5.2.5</p>
+    content_description: Inhoudelijke beschrijving
+    content_description_tooltip: |
+        <p>Een beschrijving van de documenttypes en inhoud van de aanwinst.</p>
+
+        <p>Zie DACS 3.1.4-3.1.7</p>
+         <p> Voorbeelden: </p>
+        <p>Tien dozen met materiaal met veldaantekeningen, dagboeken en ontwerpen van kaarten die de 10 jaar verblijf van dhr. Smith op de Otay Mesa Ranch documenteren.</p>
+
+
+    condition_description: Conditie beschrijving
+    condition_description_tooltip: |
+        <p>Een beschrijving van de fysieke toestand van de inhoud van de Aanwinst, inclusief eventuele speciale afhandelingsvereisten.</p>
+
+         <p> Voorbeelden: </p>
+        <p>De kaarten in doos 4 zijn broos en verschillende zijn bedekt met schimmel. Tijdens de verwerking moeten inademingsbeschermers worden gedragen.</p>
+
+    disposition: Bestemming
+    disposition_tooltip: |
+        <p>Een Noot om te beschrijven hoe een bepaalde Aanwinst aan verschillende bronnen kan zijn toegewezen.</p>
+         <p> Voorbeelden: </p>
+        <p>Foto's werden gescheiden en toegewezen aan Foto's 025.</p>
+        <p>De brieven aan William Colton werden toegevoegd aan de correspondentiecollectie van William Colton, terwijl de kaarten van lokale landstromen werden toegevoegd aan de archieven van de County River-collectie.</p>
+    general_note: Algemene Noot
+    general_note_tooltip: |
+        <p>Een generiek Nootveld voor alle informatie die niet in één van de meer specifiek gedefinieerde velden past.</p>
+    inventory: Inventaris
+    inventory_tooltip: |
+        <p>Een lijst van de containers en hun inhoud waaruit een toetreding bestaat. De dozenlijst kan in het veld worden samengesteld, gekopieerd en in het veld worden geplakt, of er kan naar worden verwezen als een extern document. De verwijzing naar het externe document kan hier worden opgenomen of in een subrecord Externe documenten.</p>
+        <p>Voorbeeld:</p>
+         <ul>
+        <li>Box 1:   Dagboeken</li>
+        <li>Box 2:   Brieven nnaar de familie van Mr. Smith</li>
+        <li>Box 3:   Persoonlijke records van bedienden</li>
+        <li>Box 4:   Schetsen van landkaarten</li>
+         </ul>
+    provenance: Herkomst
+    provenance_tooltip: |
+       <p>Een notitie met herkomstinformatie over een toetreding, zoals bewaringsgeschiedenis, gedetailleerde verwervingsgegevens, enz.</p>
+       <p>Zie DACS 5.1-5.2</p>
+    retention_rule: Bewaarregels
+    retention_rule_tooltip: |
+        <p>Een notitie met de bewaarbevoegdheid of regel voor de Aanwinst.
+         <p> Voorbeelden: </p>
+         <ul>
+        <li>Zie het bewaarschema.</li>
+         </ul>
+    restrictions_apply: Beperkingen?
+    restrictions_apply_tooltip: |
+        <p>Indicatie of er beperkingen gelden voor de Aanwinst.</p>
+        <p>Zie DACS 4.1.5-4.1.6; 4.2.5-4.2.7, 4.3.4-4.3.6</p>
+    resource_type: Resource Type
+    resource_type_tooltip: |
+        <p>Een lijst met termen die door een repository worden gebruikt om zijn Resources in basistypen te categoriseren.</p>
+        <p>Waarden in deze lijst met gecontroleerde waarden kunnen worden gewijzigd.</p>
+    access_restrictions: Toegankelijkheid beperkt?
+    access_restrictions_tooltip: |
+        <p>Een selectievakje om aan te geven of de toegang tot de materialen beperkt is.</p>
+        <p>Zie DACS 4.1.5-4.1.6; 4.2.5-4.2.7, 4.3.5-4.3.6</p>
+    access_restrictions_note: Toegankelijkheid beperkt Noot
+    access_restrictions_note_tooltip: |
+        <p>Een verklaring waarin wordt aangegeven tot welk materiaal in de Aanwinst de toegang beperkt is, wat de bevoegdheid van de beperking is en hoe lang de beperking van kracht zal zijn. Aanvullende informatie kan ook worden vastgelegd in een subrecord Rechten.</p>
+         <p> Voorbeelden: </p>
+         <ul>
+        <li>Dagboeken in box 10 zijn tot 2030 door de donor beperkt.</li>
+         </ul>
+    use_restrictions: Beperkingen op gebruik?
+    use_restrictions_tooltip: |
+        <p>Een selectievakje om aan te geven dat er gebruiksbeperkingen zijn voor materialen bij de Aanwinst.</p>
+    use_restrictions_note: Gebruiksbeperkingen Noot
+    use_restrictions_note_tooltip: |
+        <p>Een verklaring die aangeeft voor welke materialen gebruiksbeperkingen gelden, hoe de materialen kunnen worden gebruikt, wat de autoriteit van de beperking is en hoe lang de beperking van kracht zal zijn. Aanvullende informatie kan ook worden vastgelegd in een onderregistratie Rechten.</p>
+         <p> Voorbeelden: </p>
+        <p>Manuscripten in doos 33 zijn kwetsbaar; in plaats daarvan moeten fotokopieën worden gebruikt.</p>
+    acquisition_type: Aanwinsttype
+    acquisition_type_tooltip: |
+        <p>Een categorische descriptor voor het type Aanwinst. Repositories kunnen de lijst met gegevenswaarden aanpassen.</p>
+        <p> Voorbeelden: </p>
+         <ul>
+        <li>Schenking</li>
+        <li>Aankoop</li>
+        <li>Overdracht</li>
+         </ul>
+    publish: Publiceren
+    publish_help: Vink dit aan als je deze Aanwinst wil publiceren.
+    publish_tooltip: |
+        <p>Bepaalt of deze aanwinst wordt gepubliceerd op openbare (gebruikers) interfaces.</p>
+    restrictions: Beperkingen?
+    restrictions_tooltip: |
+        <p>Indicatie of er beperkingen gelden voor de Aanwinst.</p>
+        <p>Zie DACS 4.1.5 - 4.1.6; 4.2.5 - 4.2.7, 4.3.4 - 4.3.6</p>
+    title: Titel
+    title_tooltip: |
+        <p>De titel die is toegewezen aan een Aanwinst of Resource. De Aanwinst-titel hoeft niet hetzelfde te zijn als de Resource-titel. Bovendien hoeft voor het Aanwinst-record geen titel te worden uitgedrukt, aangezien deze impliciet kan worden overgenomen van het Resource-record waaraan de Aanwinst is gekoppeld.</p>
+        <p>Zie DACS 2.3.18-2.3.22</p>
+    related_resources_tooltip: |
+        <p>Gebruikt voor het koppelen van bijbehorende Resources aan deze Aanwinst.</p>
+    relator: Relator
+    relator_type: Relator Type
+    _singular: Aanwinst
+    _plural: Aanwinsten
+
+  interrelated_accession:
+    _plural: Gerelateerde Aanwinsten
+    relationship_type: Type relatie
+
+  accession_sibling_relationship:
+    _singular: Broer/zus relatie
+    relator: Deze Aanwinst
+    sibling_of: Broer/zus van
+    relator_type: Relator Type
+    bound_with: "\"Verbonden met\" relatie"
+
+  accession_parts_relationship:
+    _singular: "\"Deel van\" relatie"
+    part: "\"Deel van\" relatie"
+    relator: Deze Aanwinst
+    forms_part_of: Is deel van
+    has_part: Heeft deel
+    relator_type: Relator Type
+
+
+  agent: &agent_attributes
+    <<: *slug_attributes
+    type: Agent type
+    type_tooltip: |
+        <p>Het type entiteit dat wordt vertegenwoordigd door het agentrecord.</p>
+        <p>Zie DACS 10.2 and PREMIS Agent entity</p>
+    agent_type:
+      agent_family: Familie
+      agent_person: Persoon
+      agent_corporate_entity: Organisatie
+      agent_software: Software
+    name: Agent naam
+    names: Naamvormen
+    names_tooltip: |
+        <p>VERPLICHT SUBRECORD: Registreert verschillende vormen van de naam van een agent. Elk agentrecord moet ten minste één subrecord Naamvorm hebben.</p>
+    agent_contacts: Contactdetails
+    contacts_tooltip: |
+        <p>Registreert contactgegevens over een bepaalde agent.</p>
+    notes: Notes
+    notes_tooltip: |
+        <p>Registreert aanvullende beschrijvende informatie over een agent, zoals een biografische aantekening of een administratieve geschiedenis.</p>
+    agent_contact_notes_tooltip: |
+        <p>Noten m.b.t. interacties met de Agent.</p>
+    related_agents_tooltip: |
+        <p>Staat koppelingen toe van dit Agent-record naar een ander in associatieve, hiërarchische of bovenliggende / onderliggende relaties.</p>
+    external_documents_tooltip: |
+        <p>Staat links toe naar externe documentatie, bv. biografische bestanden, naslagwerken, enz. over deze Agent.</p>
+    dates_of_existence: Bestaansperiode
+    dates_of_existence_tooltip: |
+        <p>Het aangeven van de bestaansperiode van de organisatie, persoon of familie. </p>
+    publish: Publiceren
+    _singular: Agent
+    _plural: Agents
+    agent_record_controls_tooltip: |
+        <p>Information about the record describing the Agent.</p>
+    agent_alternate_sets_tooltip: |
+        <p>Wordt gebruikt om naar gekoppelde autorisatierecords te verwijzen wanneer twee of meer records voor dezelfde entiteit zijn afgeleid van twee of meer autorisatiesystemen.</p>
+    agent_conventions_declarations_tooltip: |
+        <p>A content standard used in the formulation of the Agent record content. Example: Describing Archives: A Content Standard. This sub-record can be used instead of Rules entries on individual name forms.</p>
+    agent_other_agency_codes_tooltip: |
+        <p>Informatie over alternatieve codes voor de instantie of organisatie die verantwoordelijk is voor het aanmaken of bijhouden van een agentrecord.</p>
+    agent_maintenance_histories_tooltip: |
+        <p>Gebeurtenissen die verband houden met het maken of onderhouden van de agentrecord.</p>
+    agent_record_identifiers_tooltip: |
+        <p>Identifiers m.b.t. het Agent record.</p>
+    agent_sources_tooltip: |
+        <p>Een bron die wordt gebruikt bij het formuleren van de inhoud van het Agent-record.</p>
+    agent_identifiers_tooltip: |
+        <p>ID's die aan een entiteit zijn gekoppeld, zoals juridische ID's die zijn toegewezen door een gezaghebbende instantie. Voorbeelden zijn onder meer een ORCID-ID voor een persoon of een MARC Repository Code voor een bedrijfsentiteit.</p>
+    agent_genders_tooltip: Geslacht.
+    agent_places_tooltip: Plaats informatie die aan de agent is gekoppeld.
+    agent_occupations_tooltip: Beroepsinformatie die aan de agent is gekoppeld.
+    agent_functions_tooltip: Termen die worden gebruikt om de functies, processen, taken, activiteiten of transacties te identificeren die door de agent worden uitgevoerd.
+    agent_topics_tooltip: Een onderwerp dat verband houdt met de agent.
+    agent_contacts_tooltip: |
+        <p>Contactgegevens voor de agent of een vertegenwoordiger die namens hem/haar werkt.</p>
+    used_languages_tooltip: "De taal / talen die aan de agent zijn gekoppeld. Voorbeeld: Engels."
+    related_agents_tooltip: Andere agenten die aan de agent zijn gekoppeld.
+    agent_resources_tooltip: Bronnen en andere records die aan de agent zijn gekoppeld.
+    related_agent_tooltip: Wordt gebruikt om andere agenten met een relatie met de agent te verbinden en om de aard van de relatie aan te geven.
+    publish_tooltip: |
+      <p>Geeft aan of de agent al dan niet is opgenomen in exports en gepubliceerd naar de openbare interface (indien gebruikt)</p>
+  agent_person:
+    <<: *agent_attributes
+    <<: *slug_attributes
+    _singular: Persoon
+    _plural: Personen
+
+  agent_family:
+    <<: *agent_attributes
+    <<: *slug_attributes
+    _singular: Familie
+    _plural: Families
+
+  agent_software:
+    <<: *agent_attributes
+    <<: *slug_attributes
+    _singular: Software
+    _plural: Software
+
+  agent_corporate_entity:
+    <<: *agent_attributes
+    <<: *slug_attributes
+    _singular: Organisatie
+    _plural: Organisaties
+
+  related_agents_agent_person:
+    related_agents: Gerelateerde Agents
+  related_agents_agent_family:
+    related_agents: Gerelateerde Agents
+  related_agents_agent_software:
+    related_agents: Gerelateerde Agents
+  related_agents_agent_corporate_entity:
+    related_agents: Gerelateerde Agents
+
+  archival_object: &archival_object_attributes
+    <<: *section_tooltips
+    <<: *slug_attributes
+    title: Titel
+    title_tooltip: |
+        <p>VOORWAARDELIJK VERPLICHT VELD: De titel die is toegewezen aan de beschreven materialen. Een Archiefobject moet een subrecord Titel of Datum hebben.</p>
+        <p>Zie DACS 2.3</p>
+         <p> Voorbeelden: </p>
+         <ul>
+        <li>Graciany Miranda Archilla papers</li>
+        <li>Love Makes a Familie records</li>
+        <li>Cameron family account book</li>
+        <li>Caroline and Erwin Swann collection of caricatures and cartoons</li>
+        <li>National Academy of Sciences correspondence</li>
+        <li>Audio and video recordings</li>
+         </ul>
+    ref_id: Refentie ID
+    ref_id_tooltip: |
+        <p>Een automatisch aangeleverde en bij te werken referentie-ID, die kan worden gebruikt als een doel om te linken, enz. De Ref-ID is bedoeld om automatisch te worden gegenereerd of geïmporteerd vanuit een bestaand systeem en om persistent te blijven.</p>
+    ref_id_export_prefix: aspace_
+    dates: Data
+    dates_tooltip: |
+        <p> VOORWAARDELIJK VERPLICHT SUBRECORD. Een Archiefobject moet minstens een Titel of een Datum hebben.</p>
+    extents: Omvang
+    lang_materials: Talen
+    ref_id_auto_generation_message: "-- automatisch geegenereerd bij bewaren --"
+    component_id: Component Unieke Identifier
+    component_id_tooltip: |
+        <p>Drukt een unieke ID uit, binnen de context van de resourcebeschrijving, voor het componentonderdeel.</p>
+         <p> Voorbeelden: </p>
+         <ul>
+        <li>Reeks I</li>
+        <li>Deelreeks 8</li>
+        <li>Aanwinst 2005-M-078</li>
+         </ul>
+    level: Beschrijvingsniveau
+    level_tooltip: |
+        <p>VERPLICHT VELD. Geeft het hiërarchische niveau aan van de materialen die worden beschreven.</p>
+        <p>Zie DACS Chapter 1</p>
+        <p>Waarden worden voorgeschreven door het EAD-schema.</p>
+    other_level: Ander niveau
+    other_level_tooltip: |
+        <p>VERPLICHT VELD als "Ander niveau" de waarde is die is geselecteerd voor Niveau. Geeft het type niveau weer buiten de waarden die zijn opgegeven in het EAD-schema.</p>
+    container_summary: Samenvatting containers
+    container_summary_tooltip: |
+        <p>Voor het registreren van het aantal en type containers met een resourcebeschrijving. Dit wordt beschouwd als een tekstuele samenvatting en is niet identiek aan de subrecords van de omvang.</p>
+        <p>Zie DACS 2.5</p>
+         <p> Voorbeelden: </p>
+         <ul>
+        <li>10 archiefdozen.</li>
+        <li>12 schoendozen.</li>
+
+         </ul>
+    publish: Publiceren
+    publish_tooltip: |
+        <p>Bepaalt of dit archiefobject wordt gepubliceerd naar openbare (publieke) interfaces.</p>
+    restrictions_apply: Beperkingen van toepassing?
+    restrictions_apply_tooltip: |
+        <p>Geeft aan of de beschreven materialen op enigerlei wijze aan beperkingen onderhevig zijn. Een aanvullende beschrijving van de beperking dient te worden verstrekt in de desbetreffende opmerkingen of rechtenverklaringen voor de goede orde waar de beperking zich voordoet.</p>
+        <p>Zie DACS 4.1-4.4</p>
+    repository_processing_note: Repository verwerkingsnoot
+    repository_processing_note_tooltip: |
+         <p>Een toepassingsspecifiek veld voor het vastleggen van informatie over de verwerking van de materialen. Deze notitie is niet opgenomen in export of rapporten, en wordt niet gevuld door import.</p>
+    automate_title: Genereer Titel automatisch
+    "[:resource_id, :ref_id]": Ref ID
+    has_unpublished_ancestor: Heeft een niet-gepubliceerde voorouder?
+    _singular: Archiefobject
+    _plural: Archiefobjecten
+
+  group:
+    group_code: Groepcode
+    group_code_tooltip: |
+        <p>Een korte versie van de naam van de groep.</p>
+    description: Beschrijving
+    description_tooltip: |
+        <p>Een korte beschrijving van de groep</p>
+        <p>Voorbeelden:
+         <ul>
+        <li>Stagiairs zomer 2013</li>
+        <li>Verantwoordelijken collectiebeheer</li>
+         </ul>
+    member_usernames: Leden
+    member_usernames_tooltip: |
+        <p>Leden die deel zijn van de groep</p>
+    permissions: "Leden kunnen:"
+    permission_types:
+      manage_repository: beheer deze repository (verander groepen en andere instellingen)
+      update_location_record: locatierecords in deze Repository maken/wijzigen/verwijderen
+      update_subject_record: onderwerprecords maken/aanpassen
+      update_agent_record: agentrecords maken/aanpassen
+      view_agent_contact_record: contactgegevens voor agentrecords bekijken
+      show_full_agents: work with agents in full mode
+      update_vocabulary_record: records maken/aanpassen
+      update_accession_record: aanwinsten in deze Repository maken/aanpassen
+      update_resource_record: resources in deze Repository maken/aanpassen
+      update_digital_object_record: create/update digitale objecten in deze Repository maken/aanpassen
+      update_event_record: gebeurtenis records in deze Repository maken/aanpassen
+      view_repository: de records in deze Repository bekijken
+      view_suppressed: verborgen records in deze Repository bekijk
+      suppress_archival_record: de belangrijkste recordtypes in deze Repository verbergen
+      delete_archival_record: de belangrijkste record types in deze Repository verwijderen
+      delete_event_record: gebeurtenisrecords in deze Repository verwijderen
+      update_classification_record: classificaties en classificatietermen maken/aanpassen
+      delete_classification_record: classificaties en classificatietermen verwijderen
+      merge_agents_and_subjects: agent/subject records samenvoegen
+      merge_archival_record: de belangrijkse recordtypes in deze Repository samenvoegen
+      manage_rde_templates: RDE templates beheren
+      transfer_repository: de volledige inhoud van een repository overdragen
+      transfer_archival_record: de belangrijkste recordtypes in deze Repository overdragen
+      manage_subject_record: onderwerpsrecords maken/aanpassen/verwijderen
+      manage_agent_record: agentrecords maken/aanpassen/verwijderen
+      manage_vocabulary_record: vocabularyrecords maken/aanpassen/verwijderen
+      import_records: import jobs starten
+      cancel_importer_job: import jobs annuleren
+      update_container_record: top container records maken/aanpassen
+      manage_container_record: top container records verwijderen/in bulk aanpassen
+      manage_container_profile_record: container profielrecords maken/aanpassen/verwijderen
+      manage_location_profile_record: locatie profielrecords maken/aanpassen/verwijderen
+      create_job: achtergrondtaken maken en uitvoeren
+      cancel_job: achtergrondtaken annuleren
+      update_assessment_record: assessment records maken/aanpassen
+      delete_assessment_record: assessment records verwijderen
+      manage_assessment_attributes: repository assessment attributes definities maken/aanpassen/verwijderen
+      manage_enumeration_record: waardenlijsten maken/aanpassen/verwijderen
+    _singular: Groep
+    _plural: Groepen
+
+  resource:
+    <<: *archival_object_attributes
+    <<: *section_tooltips
+    <<: *slug_attributes
+    user_defined:
+      <<: *user_defined_attributes
+    id_0: Identifier
+    id_1: Identifier 2
+    id_2: Identifier 3
+    id_3: Identifier 4
+    id_0_tooltip: |
+        <p>VERPLICHT VELD. Het identificatienummer dat aan elke afzonderlijke Resource binnen een Repository is toegewezen.</p>
+        <p>Zie DACS 2.1.3</p>
+        <p>Voorbeelden:</p>
+         <ul>
+        <li>R.001 (Twee elementen "R" + "001")</li>
+        <li>MSS 025 (Een enkel element)</li>
+        <li>Archieven.RSS.0333 (Drie elementen "Archieven" + "RSS" + "0333")</li>
+         </ul>
+    "[:id_0, :id_1, :id_2, :id_3]": Identifier
+    "[:repo_id, :identifier]": Identifier
+    identifier: Identifier
+    title_tooltip: |
+        <p>VERPLICHT VELD. De titel die aan de Resource is toegekend.</p>
+        <p>Zie DACS 2.3</p>
+         <p> Voorbeelden: </p>
+         <ul>
+        <li>Graciany Miranda Archilla papers</li>
+        <li>Love Makes a Familie records</li>
+        <li>Cameron family account book</li>
+        <li>Caroline and Erwin Swann collection of caricatures and cartoons</li>
+        <li>National Academy of Sciences correspondence</li>
+        <li>Audio and video recordings</li>
+         </ul>
+    resource_type: Resource Type
+    resource_type_tooltip: |
+        <p>Een lijst met termen die door een repository worden gebruikt om zijn Resources in basistypen te categoriseren.</p>
+        <p>Waarden in deze lijst met gecontroleerde waarden kunnen worden gewijzigd.</p>
+    repository_processing_note: Repository verwerkingsnoot
+    extents_tooltip: |
+        <p>VERPLICHT SUBRECORD: Wordt gebruikt om de grootte van de beschreven materialen vast te leggen.</p>
+        <p>Zie DACS 2.5</p>
+    related_accessions_tooltip: |
+        <p>Wordt gebruikt om met de Resource gekoppelde Aanwinsten vast te leggen.</p>
+    publish_tooltip: |
+        <p>Bepaalt of deze Resource wordt gepubliceerd naar publieke interfaces.</p>
+    restrictions: Beperkingen?
+    restrictions_tooltip: |
+        <p>Geeft aan of de beschreven materialen op enigerlei wijze aan beperkingen onderhevig zijn. Een aanvullende beschrijving van de beperking dient te worden verstrekt in de desbetreffende opmerkingen of rechtenverklaringen voor de goede orde waar de beperking zich voordoet.</p>
+        <p>Zie DACS 4.1-4.4</p>
+    repository_processing_note_tooltip: |
+        <p>Een toepassingsspecifiek veld voor het vastleggen van informatie over de verwerking van de materialen. Deze notitie is niet opgenomen in export of rapporten, en wordt niet gevuld door import.</p>
+    ead_id: EAD ID
+    ead_id_tooltip: |
+        <p>De identificatie voor de EAD die is gegenereerd op basis van de resourcebeschrijving, meestal een bestandsnaam. Moet uniek zijn binnen de repositorycontext.</p>
+    ead_location: EAD Locatie
+    ead_location_tooltip: |
+        <p>De locatie voor de EAD die is gegenereerd op basis van de bronbeschrijving, een URL of een pad naar een bestandsmap. De locatie eindigt meestal.</p>
+    finding_aid_tooltip: |
+        <p>Wordt gebruikt om administratieve gegevens over de archiefbeschrijvingsinstantie vast te leggen, meestal voor wanneer de beschrijving wordt geëxporteerd naar Encoded Archival Description (EAD).</p>
+    finding_aid_title: Toegang Titel
+    finding_aid_title_tooltip: |
+        <p>De (bibliografische) titel van het zoekhulpmiddel behorende bij deze bron.</p>
+         <p> Voorbeelden: </p>
+         <ul>
+        <li>Register van de Collectie van Jason Twirly</li>
+        <li>Inventaris van de documenten van de familie Reese</li>
+        <li>Lijst van tekeningen en modellen van het architectenbureau Simon and Simon</li>
+         </ul>
+    finding_aid_subtitle: Toegang ondertitel
+    finding_aid_filing_title: Toegang sorteertitel
+    finding_aid_filing_title_tooltip: |
+        <p>Een gewijzigde versie van de formele titel van de toegang, ter ondersteuning van bladeren en sorteren.</p>
+         <p> Voorbeelden: </p>
+         <ul>
+        <li>Wayne (Bruce M.) Papers</li>
+        <li>Rooney Familie Papers</li>
+        <li>Communist Party of the United States Records</li>
+         </ul>
+    finding_aid_date: Toegangsdatum
+    finding_aid_date_tooltip: |
+        <p>De datumexpressie die aangeeft wanneer de huidige toegang is gegenereerd op basis van de resourcebeschrijving.</p>
+    finding_aid_author: Toegang Auteur
+    finding_aid_author_tooltip: |
+        <p>De namen (namen) van de agenten die verantwoordelijk zijn voor het creëren van de inhoud van het zoekhulpmiddel of de codering ervan.</p>
+    finding_aid_description_rules: Regelwerk van de Toegang
+    finding_aid_description_rules_tooltip: |
+        <p>Geeft de beschrijvingsregels aan die worden gebruikt om de beschrijving van de bron te begeleiden.</p>
+        <p>Waarden in deze lijst met gecontroleerde waarden kunnen worden gewijzigd.</p>
+    finding_aid_language: Taal van de Toegang
+    finding_aid_language_tooltip: |
+        <p>Geeft alle talen aan die aanwezig zijn in de toegang die is gegenereerd op basis van de bronbeschrijving.</p>
+    finding_aid_langusage_label: "Beschrijving is geschreven in: "
+    finding_aid_script: Schrift van de Toegang
+    finding_aid_script_tooltip: |
+        <p>Geeft alle schriftsoorten aan die aanwezig zijn in de toegang die is gegenereerd op basis van de bronbeschrijving.</p>
+    finding_aid_language_note: Taal van beschrijving Noot
+    finding_aid_language_note_tooltip: |
+        <p>Opmerkingen over de talen die aanwezig zijn in de toegang die zijn gegenereerd op basis van de bronbeschrijving.</p>
+    finding_aid_sponsor: Sponsor
+    finding_aid_sponsor_tooltip: |
+        <p>Geeft alle sponsors aan die hebben bijgedragen aan de beschrijving van de toegang.</p>
+    finding_aid_edition_statement: Editie van de toegang
+    finding_aid_edition_statement_tooltip: |
+        <p>For recording information about the edition of the toegang.</p>
+    finding_aid_series_statement: Serie van de toegang
+    finding_aid_series_statement_tooltip: |
+        <p>Geeft elke bibliografische reeks aan waartoe de toegang behoort.</p>
+    finding_aid_status: Toegang Status
+    finding_aid_status_tooltip: |
+        <p>Geeft de status van de toegang aan.</p>
+    finding_aid_note: Toegang Noot
+    finding_aid_note_tooltip: |
+        <p>Voor het vastleggen van eventuele aanvullende informatie over het zoekhulpmiddel (niet de beschreven bron) die niet wordt gedekt door de andere gegevenselementen van het zoekhulpmiddel.</p>
+    _singular: Resource
+    _plural: Resources
+
+  related_accession:
+    _singular: Gerelateerde Aanwinst
+    _plural: Gerelateerde Aanwinsten
+
+  revision_statement:
+    _singlular: Revisie toelichting
+    _plural: Revisie toelichtingen
+    date: Revisie Datum
+    date_tooltip: |
+        <p>Geeft de datum aan waarop de toegang voor het laatst is herzien.</p>
+    description: Revisie Beschrijving
+    description_tooltip: |
+        <p>Een beschrijving van de laatste revisie(s) die aan het zoekhulpmiddel zijn gedaan.</p>
+    publish: Publiceren
+    publish_tooltip: |
+        <p>Bepaalt of deze Revisieverklaring wordt gepubliceerd naar publieke interfaces.</p>
+
+  related_resource:
+    _singular: Gerelateerde Resource
+    _plural: Gerelateerde Resources
+
+  repository:
+    <<: *slug_attributes
+    repo_code: Repository afkorting
+    repo_code_tooltip: |
+        <p>VERPLICHT VELD. Een afkorting of acroniem van de repositorynaam, die beter geschikt is voor de gebruikersinterface.</p>
+         <p> Voorbeelden: </p>
+         <ul>
+        <li>YNHSCL <em>(for Your Name Here Special Collections Library)</em></li>
+        <li>MSCL <em>(for Mandeville Special Collections Library)</em></li>
+        <li>Tamwag <em>(for Tamiment Library and Robert F. Wagner Labor Archives)</em></li>
+         </ul>
+    name: Repository Naam
+    name_tooltip: |
+        <p>VERPLICHT VELD. De naam van de repository die de administratieve verantwoordelijkheid heeft voor en de bewaring van de materialen beschreven in de Aanwinst-, Resource- en Digitale objectmodules van de applicatie.</p>
+        <p>Zie DACS 2.2</p>
+         <p> Voorbeelden: </p>
+         <ul>
+        <li>Letterenhuis Special Collections Library</li>
+        <li>Mandeville Special Collections Library</li>
+        <li>Tamiment Library and Robert F. Wagner Labor Archives</li>
+         </ul>
+    org_code: Organisatie Code
+    org_code_tooltip: |
+        <p>een code i.o.m. ISO/DIS 15511 Information and Documentation International Standard Identifier for Libraries and Related Organizations (ISIL).</p>
+         <p> Voorbeelden: </p>
+         <ul>
+        <li>NNU-TL <em>(for Tamiment Library and Robert F. Wagner Labor Archives)</em></li>
+        <li>IU-Ar <em>(for University of Illinois Archives)</em></li>
+         </ul>
+    parent_institution_name: Naam van de koepelorganisatie
+    parent_institution_name_tooltip: |
+        <p>De naam van de moederinstelling waarvan de repository deel uitmaakt.</p>
+         <p> Voorbeelden: </p>
+         <ul>
+        <li>University of Illinois <em>(for University of Illinois Archives)</em></li>
+        <li>New York University <em>(for Tamiment Library and Robert F. Wagner Labor Archives)</em></li>
+         </ul>
+    address_1: Adres 1
+    address_1_tooltip: &address_tooltip |
+        <p>Het postadres of straatadres voor de Repository.</p>
+    address_2: Adres 2
+    address_2_tooltip: *address_tooltip
+    city: Stad
+    district: Staat of provincie
+    country: Land
+    country_tooltip: |
+        <p>Het land waarin de repository zich bevindt, ontleend aan de ISO 3166-codelijst.</p>
+    description: Beschrijving
+    description_tooltip: |
+        <p>Een beschrijvende samenvatting voor de repository.</p>
+    post_code: Postcode
+    telephone: Telefoonnummer
+    telephone_ext: Extensie
+    fax: Fax
+    email: Email
+    email_signature: Email handtekening
+    url: Homepage URL
+    url_tooltip: |
+        <p>A URL for the repository's webpage.</p>
+    contact_persons: Contactpersonen
+    image_url: Logo URL
+    image_url_tooltip: |
+        <p>Een externe URL of pad naar een lokaal bestand dat een merkafbeelding bevat (zoals een logo of zegel) voor gebruik in de online vindhulpmiddelen van de repository. Deze afbeelding verschijnt op de openbare pdf's, pdf's aan de personeelszijde en op de repositories-pagina.</p>
+    _singular: Repository
+    _plural: Repositories
+    publish: Publiceren
+    publish_tooltip: |
+        <p>Bepaalt of deze repository en elk record dat het bevat, zal worden gepubliceerd naar publieke interfaces.</p>
+
+
+  term: &term_attributes
+    # tooltips not displaying
+    term: Term
+    term_tooltip: |
+        <p>VERPLICHT VELD. Een descriptor voor een deel van een onderwerpkop. Aan een onderwerpkop moet ten minste 1 term zijn gekoppeld.</p>
+    term_type: Type
+    term_type_tooltip: |
+        <p>VERPLICHT VELD. Een indicator om het type of de categorie van een  subject term uit te drukken.</p>
+    _singular: Term
+    _plural: Termen
+
+  subject:
+    <<: *slug_attributes
+    authority_id: Authority ID
+    authority_id_tooltip: |
+        <p>De unieke identificatie voor het record binnen de bron waarvan het is verkregen (d.w.z. een LCSH-nummer). De identificatie kan worden weergegeven als een URI.</p>
+    source: Bron
+    subject_source: Bron onderwerp
+    source_tooltip: |
+        <p>De vocabulary waaruit een vastgestelde term is overgenomen.</p>
+        <p>Waarden in deze lijst met gecontroleerde waarden kunnen worden gewijzigd.</p>
+         <p> Voorbeelden: </p>
+         <ul>
+        <li>Medical Subject Headings (mesh)</li>
+        <li>Library of Congress Subject Headings (lcsh)</li>
+         </ul>
+    scope_note: Scope note
+    scope_note_tooltip: |
+        <p>Een opmerking die uitlegt en verduidelijkt wat wordt bedoeld en wat niet wordt bedoeld in de definitie van de term en in het gebruik ervan als subject heading.</p>
+         <p> Voorbeelden: </p>
+         <ul>
+        <li>Hier zijn werken over biologische studies van bacteriën ingevoerd. Werken over de wetenschap worden ingevoerd onder de kop Bacteriologie. </li>
+        <li> "Het recht op veiligheid en privacy in het huis van een man." - Black, Law Dictionary, 4e druk, 1951. </li>
+         </ul>
+    terms: Termen
+    terms_tooltip: |
+        <p>VERPLICHT SUBRECORD. Wordt gebruikt om elke term of onderverdeling binnen een bepaalde subject heading te beheren. Aan elk onderwerprecord moet ten minste één term zijn gekoppeld.</p>
+    external_documents_tooltip: |
+        <p>Staat links toe naar externe documentatie, bijv. hoe een bepaalde heading moet worden gebruikt.</p>
+    heading: Subject Heading
+    _singular: Onderwerp
+    _plural: Onderwerpen
+
+  user:
+    username: Gebruikersnaam
+    username_tooltip: |
+        <p>VERPLICHT VELD. De gebruikersnaam voor het account dat de gebruiker zal gebruiken om zich bij de applicatie te verifiëren. Toegestane tekens zijn a-z, A-Z, @, cijfers, koppelteken, streepje en punt.</p>
+    name: Volledige naam
+    name_tooltip: |
+        <p>VERPLICHT VELD. De volledige naam van de gebruiker aangeduid met de gebruikersnaam.</p>
+    password: Wachtwoord
+    password_tooltip: |
+        <p>Het wachtwoord dat wordt gebruikt met de gebruikersnaam om te verifiëren bij de applicatie.</p>
+    confirm_password: Bevestig wachtwoord
+    confirm_password_tooltip: |
+        <p>Een tweede veld dat wordt gebruikt om een overeenkomst te bevestigen met het wachtwoord dat in het eerste veld is ingevoerd.</p>
+    email: Email
+    email_tooltip: |
+        <p>Het e-mailadres van de gebruiker.</p>
+    first_name: Voornaam
+    first_name_tooltip: |
+        <p>De voornaam van de gebruiker.</p>
+    last_name: Familienaam
+    last_name_tooltip: |
+        <p>De familienaam van de gebruiker.</p>
+    telephone: Telefoonnummer
+    telephone_tooltip: |
+        <p>Het telefoonnummer van de gebruiker</p>
+    title: Titel
+    title_tooltip: |
+        <p>een naam die iemands positie of baan beschrijft.</p>
+    department: Afdeling
+    department_tooltip: |
+        <p>De afdeling van de gebruiker.</p>
+    additional_contact: Bijkomende contactgegevens
+    additional_contact_tooltip: |
+        <p>Aanvullende contactgegevens voor de gebruiker, of informatie zoals het werkschema van de gebruiker.</p>
+    is_admin: Verleen systeembeheerdersmachtigingen
+    is_admin_tooltip: |
+        <p>Wordt gebruikt om aan te geven of de gebruiker volledige beheerdersrechten voor de toepassing moet hebben.</p>
+    _singular: Gebruiker
+    _plural: Gebruikers
+
+  collection_management: &collection_management_attributes
+    cataloged_note: Noot m.b.t. Beschrijving
+    cataloged_note_tooltip: |
+        <p>Een opmerking over het catalogiseren van de archiefeenheid (toetreding, bron, digitaal object), inclusief het verstrekken van catalogusrecord-ID's.</p>
+         <p> Voorbeelden: </p>
+         <ul>
+        <li>Catalogusnummer: 21345672</li>
+         </ul>
+    processing_hours_per_foot_estimate: Inschatting verwerkingstijd per uur/eenheid
+    processing_hours_per_foot_estimate_tooltip: |
+        <p>De tijd die een repository schat die nodig is om een eenheid archiefmateriaal te verwerken (bijvoorbeeld een lineaire voet of een item in het geval van digitale objecten). De schatting kan al dan niet rekening houden met de productie van zoekhulpmiddelen, catalogusrecords en andere toegangsproducten.</p>
+    processing_total_extent: Verwerking totale omvang
+    processing_total_extent_tooltip: |
+        <p>Een numerieke uitdrukking voor het totale verwerkte bereik (kubieke voet, lineaire voet, items, enz.). In combinatie met dit veld moet een Extent Type worden opgegeven.</p>
+    processing_total_extent_type: Omvangtype
+    processing_total_extent_type_tooltip: *extent_type_tooltip
+    processing_total_extent_type_: --
+    processing_hours_total: Totaal aantal uren voor verwerking
+    processing_hours_total_short: Totaal uren
+    processing_hours_total_tooltip: |
+        <p>Het numerieke resultaat van het vermenigvuldigen van "Inschatting verwerkingstijd per uur/eenheid" met "Verwerking totale omvang". De waarde kan worden overschreven om de werkelijke verwerkingstijd weer te geven en niet een waarde die is gebaseerd op de geschatte verwerkingsuren / eenheidswaarde.</p>
+    processing_plan: Verwerkingsplan
+    processing_plan_tooltip: |
+        <p>Voor het vastleggen van een plan voor verwerking van de archiefeenheid. Het plan kan een schets van de opstelling van de archiefeenheid bevatten, evenals instructies voor het behandelen van bepaalde objecten in de archiefeenheid. Het plan kan ook verschillende toewijzingen voor verschillende repositorymedewerkers specificeren.</p>
+         <p> Voorbeelden: </p>
+         <ul>
+        <li>Onderwerpbestanden alfabetisch rangschikken en bestanden in chronologische volgorde ordenen.</li>
+        <li>Margaret's leerlingen zullen beschrijvende records maken.</li>
+        <li>De projectmanager zal het gecodeerde zoekhulpmiddel beoordelen, uitvoeren en laden.</li>
+         </ul>
+    processing_priority: Verwerkingsprioriteit
+    processing_priority_tooltip: |
+        <p>Geeft de prioriteit aan die is toegewezen aan de verwerking van een archiefeenheid.</p>
+        <p>Waarden in deze lijst met gecontroleerde waarden kunnen worden gewijzigd.</p>
+         <p> Voorbeelden: </p>
+         <ul>
+        <li>Hoog</li>
+        <li>Gemiddeld</li>
+        <li>Laag</li>
+         </ul>
+    processing_started_date: Startdatum verwerking
+    processing_status: Status verwerking
+    processing_status_tooltip: |
+        <p>Voor het aangeven van de huidige verwerkingsstatus voor een archiefeenheid (toetreding, bron of digitaal object).</p>
+        <p>Waarden in deze lijst met gecontroleerde waarden kunnen worden gewijzigd.</p>
+         <p> Voorbeelden: </p>
+         <ul>
+        <li>Nieuw</li>
+        <li>Bezig</li>
+        <li>Voltooid</li>
+         </ul>
+    processing_funding_source: Financieringsbron
+    processing_funding_source_tooltip: |
+        <p>Wordt gebruikt om de financieringsbron voor de verwerking van de beschreven materialen aan te geven.</p>
+    processors: Verwerkers
+    processors_tooltip: |
+        <p>Voor het opsommen van personeel aan wie de verwerking van de archiefeenheid (accession, resource of digitale objecten) is toegewezen.</p>
+    rights_determined: Rechten vastgesteld?
+    rights_determined_tooltip: |
+        <p>Geeft aan of de rechten voor een archiefeenheid (accession, resource of digitaal object) zijn bepaald en dat er een rechtenrecord is gemaakt en aan de archiefeenheid is gekoppeld.</p>
+    rights_determined_true: Ja
+    rights_determined_false: Nee
+    parent: Ouder
+    _singular: Collectiebeheer
+    _plural: Collectiebeheer
+
+
+  enumeration:
+    # tooltips not displaying
+    name: Naam
+    name_tooltip: |
+        <p>De naam van de Gecontroleerde Waardenlijst waaraan u een waarde wilt toevoegen.</p>
+    value: Waarde
+    value_tooltip: |
+        <p> De waarde voor de Gecontroleerde Waardenlijst die u wilt toevoegen of bewerken.</p>
+        <p>Waar mogelijk moeten waarden in kleine letters zijn en onderstrepingstekens ("_") bevatten in plaats van spaties. Vertalingen voor de waarden moeten worden toegevoegd aan het locales-bestand.</p>
+    translation: Vertaling
+    position: Positie
+    suppress: Verberg
+    unsuppress: Toon verborgen records
+    merge_into: Voeg samen in
+    _singular: Gecontroleerde Waardenlijst
+    _plural: Gecontroleerde Waardenlijsten
+
+  classification:
+    <<: *slug_attributes
+    _singular: Classificatie
+    _plural: Classificaties
+    identifier: Identifier
+    title: Titel
+    description: Beschrijving
+    creator: Creator
+    id_separator: /
+
+  classification_term:
+    <<: *slug_attributes
+    _singular: Classificatieterm
+    _plural: Classificatietermen
+    identifier: Identifier
+    title: Titel
+    description: Beschrijving
+    creator: Creator
+
+  preference: &preference_attributes
+    defaults: Standaardwaarden
+    global: Standaardinstellingen voor algemene voorkeuren
+    global_message: Bewerk deze waarden om systeembrede standaardinstellingen voor gebruikersvoorkeuren in te stellen. Deze waarden kunnen worden overschreven door de standaardinstellingen van de repository of de eigen voorkeuren van de gebruiker.
+    repo: Repository-voorkeuren
+    repo_message: Bewerk deze waarden om voorkeuren in te stellen voor de huidige repository. Deze waarden kunnen worden overschreven door de eigen voorkeuren van de gebruiker.
+    user_global: Algemene voorkeuren
+    user_global_message: Bewerk deze waarden om uw gebruikersvoorkeuren in te stellen. Deze waarden kunnen worden overschreven door de standaardinstellingen van een repository of door uw eigen voorkeuren voor een repository.
+    user_repo: Gebruikersvoorkeuren
+    user_repo_message: Bewerk deze waarden om uw voorkeuren voor deze opslagplaats in te stellen. Deze waarden kunnen niet worden overschreven.
+    _singular: Voorkeuren
+    _plural: Voorkeuren
+
+  defaults: &defaults_attributes
+    general_section: Algemene instellingen
+    show_suppressed: Verborgen records tonen?
+    show_suppressed_tooltip: Of u verborgen records wilt weergeven waarvoor u toestemming hebt om deze te zien tijdens het browsen.
+    publish: Publiceren
+    publish_tooltip: Of er nieuwe records standaard moeten worden gepubliceerd.
+    default_values: Records vooraf invullen?
+    default_values_tooltip: Of nieuwe Aanwinst- en Resource-records vooraf moeten worden ingevuld met standaardwaarden.
+    browse_column: Kolom %{num}
+    browse_column_tooltip: Het veld dat wordt getoond in de kolom %{num}.
+    sort_column: Standaard sorteerkolom
+    sort_column_tooltip: Het standaardveld voor het sorteren van resultaten.
+    sort_direction: Standaard sorteerrichting
+    sort_direction_tooltip: Standaardrichting om resultaten te sorteren.
+    locale: Taalkeuze
+    search_browse_columns: Zoek en blader door kolomvoorkeuren
+    accession_browse_section: Aanwinst blader door kolommen
+    resource_browse_section: Resource blader door kolommen
+    archival_object_browse_section: Archiefobject blader door kolommen
+    digital_object_browse_section: Digitaal Object blader door kolommen
+    digital_object_component_browse_section: Digitaal Object Component blader door kolommen
+    subject_browse_section: Onderwerp blader door kolommen
+    agent_browse_section: Agent blader door kolommen
+    location_browse_section: Locatie blader door kolommen
+    event_browse_section: Gebeurtenis blader door kolommen
+    collection_management_browse_section: Collectiebeheer blader door kolommen
+    top_container_browse_section: Top Container blader door kolommen
+    classification_browse_section: Classificatie blader door kolommen
+    assessment_browse_section: Assessment blader door kolommen
+    repositories_browse_section: Repository blader door kolommen
+    location_profile_browse_section: Locatie Profiel blader door kolommen
+    container_profile_browse_section: Container Profiel blader door
+    multi_browse_section: Zoek kolommen
+    job_browse_section: Background Jobs kolommen
+    note_order_section: Volgorde noten
+    accept_default_message: '> Accept Default:'
+    no_value: '[geen waarde]'
+    _singular: Standaardwaarden
+    _plural: Standaardwaarden
+
+  reports:
+    parameters:
+      from: Van
+      from_tooltip:
+      to: Tot
+      locations: Locaties
+      scope_by_date: Scope naar Datum
+      template: Template
+    formats:
+      json: JSON
+      csv: CSV
+      pdf: PDF
+      html: HTML
+      rtf: RTF
+
+  validation_errors:
+    agent_must_be_unique: Agentrecords kunnen niet identiek zijn
+    subject_must_be_unique: Onderwerpsrecords mogen niet identiek zijn
+    subject_heading_identifier_must_be_unique_within_source: Subject heading identifier moet unioek zijn binnen de bron
+    conflicting_record: Conflicterend record
+    missing_required_property: Eigenschap is vereist maar ontbreekt
+    missing_property: Eigenschap ontbreekt
+    not_a_valid_date: Geen geldige datum
+    must_not_be_before_begin: mag niet voor begin zijn
+    must_be_in_yyyy-mm-dd_format: De datum moet de indeling jjjj-mm-dd hebben
+    is_required_unless_a_begin_or_end_date_is_given: is vereist tenzij een begin- of einddatum gegeven is
+    is_required_unless_an_expression_or_an_end_date_is_given: is vereist, tenzij er een uitdrukking of een einddatum is opgegeven
+    is_required_unless_an_expression_or_a_begin_date_is_given: is vereist, tenzij er een uitdrukking of een begindatum is opgegeven
+    must_specify_either_a_date_or_a_timestamp: moet een datum of een timestamp specificeren
+    did_not_match_regular_expression: Komt niet overeen met reguliere expressie %{regexp}
+    too_few_characters: Moet minstens %{min_length} karakters zijn
+    too_many_characters: Moet %{max_length} karakters of minder zijn
+    max_length_is_50_characters: Mag niet langer zijn dan 50 tekens
+    too_few_items: Minstens %{min_items} item(s) zijn vereist
+    must_contain_at_least_one_subnote: Moet ten minste één subnoot bevatten
+    must_contain_at_least_one_language: Moet ten minste één taal bevatten
+    invalid_value: Ongeldige waarde '%{value}'. Moet één van '%{valid_set}' zijn
+    wrong_type: Moet een %{desired_type} zijn (je gaf een %{actual_type})
+    must_be_one_of: Moet één van %{allowed_types} zijn (je gaf een %{actual_type})
+    id_already_in_use: Die ID is al in gebruik
+    username_already_in_use: Gebruikersnaam '%{username}' is al in gebruik
+    cant_be_empty: mag niet leeg zijn
+    password_did_not_match: De ingevoerde waarde komt niet overeen met het wachtwoord
+    group_code_already_in_use: Groep code moet uniek zijn binnen de Repository
+    one_or_more_required_(or_enter_a_title): een of meer zijn vereist (of geef een titel)
+    must_not_be_an_empty_string_(or_enter_a_date): mag niet leeg zijn (of geef een datum)
+    is_required_when__source__is_blank: is vereist wanneer 'Bron' leeg is
+    is_required_when__rules__is_blank: is vereist wanneer 'Rules' leeg is
+    is_required_if_there_is_an_authority_id: is vereist als er een 'Authority ID' is
+    you_must_provide_a_label__title_or_date: je moet een label, titel of datum opgeven
+    location_fields_error: >
+      Je moet een streepjescode, een classificatie of zowel een coördinaat 1-label als een coördinaat 1-indicator specificeren
+    location_must_be_unique_within_a_record: Moet binnen een record iniek zijn
+    location_cannot_be_deleted_if_linked: Locatierecord is momenteel gekoppeld aan een of meer Instance-records en kan niet worden verwijderd. Koppel deze instanties aan nieuwe locaties voordat je de locatierecord verwijdert.
+    cannot_be_previous_if_location_is_not_temporary: Kan niet overdragen naar vorige als de locatie niet tijdelijk is.
+    authority_id_must_be_unique: Authority ID is al in gebruik
+    either_type_1_or_barcode_is_required: Een container moet Container 1 Type of Barcode bevatten.
+    must_be_a_number_with_no_more_than_nine_digits_and_five_decimal_places: Moet een getal zijn met niet meer dan negen cijfers en vijf decimalen.
+    container_2_requires_both_a_type_and_indicator: Je moet een Indicator geven als je een Type geeft
+    container_3_requires_both_a_type_and_indicator: Je moet een Indicator geven als je een Type geeft
+    container_2_is_required_if_container_3_is_provided: Je moet een Kind-container geven als ke een Kleinkind-container geeft.
+    a_barcode_must_be_unique_within_a_repository: Een barcode moet uniek zijn binnen de Repository
+    container_profile_name_not_unique: Container Profilenaam moet uniek zijn
+    must_be_a_number_with_no_more_than_2_decimal_places: Moet een getal zijn met niet meer dan 2 decimalen
+    length_must_be_within_the_range_set_in_configuration: De lengte moet binnen het bereik zijn dat in de configuratie is ingesteld
+    is_required_if_status_is_previous: is vereist als 'Status' gelijk is aan 'Vorige'
+    location_profile_name_not_unique: Locatie Profile name moet uniek zijn
+    must_be_a_positive_integer: Must be a positive integer
+    must_be_unique_to_its_level_in_the_tree: Deze waarde moet uniek zijn voor dit niveau in de hierarchie
+    short_name_already_in_use: De korte naam voor de repository moet uniek zijn in deze ArchivesSpace instantie
+    custom_report_template_name_not_unique: De naam van het aangepast rapport template moet uniek zijn.
+    custom_report_must_include_field_or_subreport: Het aangepaste rapporttemplate moet ten minste één veld of subrapport bevatten.
+    missing_filter_values: Geselecteerd om resultaten op veld te filteren, maar geen waarde(n) opgegeven
+    must_be_a_valid_email_address: Het e-mailadresveld moet een geldig adres bevatten
+    repo_set_desc_required: Beschrijving van repository-set is vereist voor het maken van een OAI-repository-set
+    repo_set_name_required: Naam van repositoryset is vereist voor het maken van een OAI-repositoryset
+    is_not_present: Verplicht veld ontbreekt
+    must_be_a_valid_email_address: Moet een geldig adres bevatten
+    sponsor_set_desc_required: Een sponsorsetbeschrijving is vereist voor het maken van een OAI-sponsorset
+    sponsor_set_name_required: De naam van de sponsorset is vereist voor het maken van een OAI-sponsorset
+    invalid_characters: Bevat ongeldige tekens
+    conflicting_record: "<a href='/resolve/readonly?uri=%{record_uri}' target='_blank'>Bekijk conflicting record</a>"
+    or_date_expression_is_required: Data moeten minstens één datumexpressie geven
+    must_specify_either_a_single_or_ranged_date: Data moeten gespecificeerd als ofwel enkelvoudig ofwel datumbereik
+    must_be_in_yyyy[yyy][yy][y]__yyyy[yyy][yy][y]-mm__or_yyyy-mm-dd_format: Gestandaardiseerde datums moeten in een gestandaardiseerd formaat zijn
+    generic_validation_error: Validatiefout
+    requires_that_end_dates_are_after_begin_dates: Einddatums moeten na de startdatums liggen
+    must_specify_a_primary_subject: "Beschrijving informatie: record mist een primair onderwerp"
+    subrecord_not_allowed_for_agent_software: "Software Agents cannot have record control or relation subrecords"
+
+  job:
+    _singular: Achtergrond taak
+    _plural: Achtergrond taken
+    job_type: Taak type
+    types:
+      print_to_pdf_job: Maak PDF
+      report_job: Maak rapport
+      container_labels_job: Container Labels
+      container_conversion_job: Maak rapport
+      import_job: Importeer Data
+      generate_slugs_job: Maak Slugs in Bulk
+      generate_arks_job: Maak ARKs in Bulk
+      find_and_replace_job: Batch Find and Replace (Beta)
+      trim_whitespace_job: Verwijder witruimte
+      unknown_job_type: Onbekend taaktype
+      bulk_import_job: Laad via Spreadsheet
+      find_and_replace_job: Batch Find and Replace (Beta)
+    status: Status
+    status_completed: Voltooid
+    status_queued: In wachtrij
+    status_running: Lopend
+    status_failed: Mislukt
+    status_canceled: Geannuleerd
+    time_submitted: Tijd ingediend
+    time_started: Tijd gestart
+    time_finished: Tijd voltooid
+    time_submitted: Tijd ingediend
+    owner: Eigenaar
+    show_description: Toon beschrijving
+    input_file: Invoer bestand
+    output_file: Uitvoer bestand
+
+  container_labels_job:
+    source: Bron
+    format: Formaat
+
+  report_job:
+    report_type: Tapporttype
+    format: Formaat
+
+  import_job:
+    _singular: Import taak
+    import_events: Import Maintenance Events?
+    filenames: Bestanden
+    import_type: Importtype
+    import_type_ead_xml: EAD
+    import_type_assessment_csv: Assessment CSV
+    import_type_accession_csv: Aanwinst CSV
+    import_type_digital_object_csv: Digitaal Object CSV
+    import_type_eac_xml: EAC-CPF
+    import_type_location_csv: Locatie CSV
+    import_type_marcxml: MarcXML Bibliographic (Resource)
+    import_type_marcxml_accession: MarcXML Bibliographic (Accession)
+    import_type_marcxml_subjects_and_agents: MarcXML Bibliographic (Subjects and Agents Only)
+    import_type_marcxml_auth_agent: MarcXML Authority (Agents)
+    import_type_marcxml_auth_subject: MarcXML Authority (Subjects)
+
+  find_and_replace_job:
+    _singular: Zoek en vervang taak
+    find: Zoek tekens
+    replace: Vervang tekens
+    jsonmodel_type: Record of subrecord type
+    record_type: Record of subrecord type
+    property: Target eigenschap
+    base_record_uri: Base Record URI
+
+  print_to_pdf_job:
+    include_unpublished: Inclusief niet-gepubliceerd
+    source: Bron
+
+  top_container_linker_job:
+    _singular: Top Container Linker Job
+    filename: Bestand
+    content_type: Bestandstype
+    resource_id: Resource ID
+    load_type: Laad Type
+    type:
+      top_container_linker_job: Top Container Linker
+
+  bulk_import_job:
+    resource_uri: Resource URI
+    content_type: Spreadsheet type
+    load_type: Laad Type
+    only_validate: Alleen valideren
+    type:
+      csv: CSV
+      xlsx: Excel Spreadsheet
+      ao: Archiefobject
+      digital: Digitaal Object
+
+  trim_whitespace_job:
+    description: Verwijdert begin- en eindspaties uit titels voor Resources, Aanwinsten, Digitale objecten, Archiefobjecten en Digitale objectcomponenten.
+
+  advanced_search:
+    type:
+      text: Tekst
+      date: Datum
+      boolean: Boolean
+      controlled_value: Gecontroleerde waarde
+    text:
+      keyword: Trefwoord
+      title: Titel
+      creators: Maker
+      notes: Noten
+      subjects: Onderwerp
+      identifier: Identifier
+      created_by: Gemaakt door
+      last_modified_by: Laatst gewijzigd door
+    boolean:
+      published: Gepubliceerd?
+      suppressed: Verborgen?
+    date:
+      create_time: Gemaakt
+      user_mtime: Aangepast
+  system_info:
+    frontend: Frontend UI
+    backend: Backend
+    frontend_info: Frontend Systeeminformatie
+    frontend_log: Frontend Log
+    backend_info: Backend Systeeminformatie
+    backend_log: Backend Log
+
+  resource_component:
+    _singular: Resource Component
+
+  largetree:
+    reparent_error:
+      title: Kan niet verplaatsen
+      message: De verplaatsing is niet toegestaan omdat een ouder niet zijn eigen kind kan worden.
+
+  rights_statement_act: &rights_statement_act_attributes
+    _singular: Regel
+    _plural: Regels
+    act_type: Regeltype
+    act_type_tooltip: |
+        <p>De regel die deze rechtenverklaring toestaat.</p>
+    restriction: Beperking
+    restriction_tooltip: |
+        <p>Een voorwaarde of beperking van de regel.</p>
+         <p> Voorbeelden: </p>
+         <ul>
+          <li>Niet meer dan drie</li>
+          <li>Alleen toegestaan nadat een jaar van archivering is verstreken</li>
+          <li>Rechthebbende moet worden geïnformeerd na voltooiing van de actie</li>
+         </ul>
+    start_date: Startdatum
+    start_date_tooltip: |
+        <p>De datum waarop de regel in werking trad.</p>
+    end_date: Einddatum
+    end_date_tooltip: |
+        <p>De datum waarop de regel  eindigt.</p>
+
+  act:
+    <<: *rights_statement_act_attributes
+
+  oai:
+    sample_page:
+      title: "%{oai_repository_name} - Voorbeelden OAI-PMH verzoeken"
+      introduction: "<p>Sample Requests Using the Open Archives Initiative Protocol for Metadata Harvesting (OAI-PMH v 2.0).</p>"
+      form_header: Stuur een '%{verb}' verzoek
+      form_submit: Verzend
+
+  assessment:
+    records: Records
+    records_tooltip: |
+        <p>VERPLICHT VELD: een link naar de bron (en), de toegang (en), archiefobject (en) of digitale object (en) die het onderwerp zijn van de beoordeling.</p>
+    accession_report: Aanwinstrapport
+    appraisal: Waardering
+    container_list: Box/Container Lijst
+    catalog_record: Catalog Record (MARC)
+    collections: Collecties
+    control_file: Collectie/Controle bestand
+    conservation_note: Conservatie Noot
+    conservation_note_tooltip: <p>Geeft gebieden aan die bijzondere zorg vragen met betrekking tot de instandhouding van de collectie.</p>
+    deed_of_gift: Akte van schenking
+    existing_description_notes: Bestaande beschrijving Noten
+    existing_description_notes_tooltip: <p>Alle verdere informatie over bestaande beschrijving van de materialen.</p>
+    finding_aid_ead: Finding Aid (EAD-encoding)
+    finding_aid_online: Finding Aid (online)
+    finding_aid_paper: Finding Aid (paper only)
+    finding_aid_word: Finding Aid (word processing document)
+    finding_aid_spreadsheet: Finding Aid (spreadsheet)
+    id: ID
+    inactive: Inactief?
+    inactive_tooltip: <p>Geeft aan of het beoordelingsrecord niet langer als "actief" wordt beschouwd en dus niet in zoekopdrachten of rapporten moet worden opgenomen.</p>
+    inactive_true: "Ja"
+    inactive_false: "Nee"
+    monetary_value: Financiële waarde
+    monetary_value_tooltip: <p>Appraised or estimated market value of the assessed materials (numerical value).</p>
+    monetary_value_note: Financiële waarde Noot
+    monetary_value_note_tooltip: <p>Geeft aan wie de geldwaarde, de taxatiedatum en andere relevante informatie heeft verstrekt.</p>
+    surveyed_by: Onderzocht door
+    surveyed_by_tooltip: |
+        <p>REQUIRED FIELD: Name(s) of the person(s) who performed the assessment. This field is restricted to those with user records in ArchivesSpace.</p>
+    survey_begin: Begindatum onderzoek
+    survey_begin_tooltip: |
+        <p>VERPLICHT VELD: De datum waarop de enquête begon, in de indeling jjjj-mm-dd.</p>
+    survey_end: Einddatum onderzoek
+    survey_end_tooltip: <p>De datum waarop de enquête eindigde, in de indeling jjjj-mm-dd.</p>
+    surveyed_duration: Tijd vereist om onderzoek uit te voeren
+    surveyed_duration_tooltip: <p>De tijd die nodig was om de enquête in te vullen, gemeten in stappen van een uur.</p>
+    surveyed_extent: Omvang onderzochte materialen
+    surveyed_extent_tooltip: <p>De omvang van het onderzochte materiaal in eenheden zoals kubieke of lineaire voet.</p>
+    related_eac_records: Related EAC Record(s)
+    research_value: Onderzoekwaarde
+    research_value_tooltip: <p>Deze waarde wordt automatisch berekend door de waarde in het veld Documentatiekwaliteit toe te voegen aan de waarde in het veld Belang.</p>
+    review_required: Review vereist?
+    review_required_tooltip: <p>Geeft aan of een Review vereist is voor de collectie vanwege de indeling, het onderwerp of de omstandigheden.</p>
+    review_required_true: "Ja"
+    review_required_false: "Nee"
+    review_note: Review Noot
+    review_note_tooltip: <p>Toelichting bij de uitkomst van een eventuele speciale Review.</p>
+    reviewer: Review uitgevoerd door
+    reviewer_tooltip: <p>Geeft aan wie de beoordeling moet uitvoeren. Dit veld is beperkt tot degenen met gebruikersrecords in ArchivesSpace.</p>
+    purpose: Doel van het Assessment
+    purpose_tooltip: |
+        <p>Geeft de reden aan waarom de Assessment is uitgevoerd. Voorbeelden: instandhoudingsprioriteiten; verwerkingsprioriteiten; beoordeling; enz.</p>
+    scope: Reikwijdte van het Assessment
+    scope_tooltip: |
+        <p>Voorbeelden: 10% sampling; geheel; een bepaald formaat of genre binnen of tussen collecties; of andere beperkingen of voorwaarden voor materialen die actief worden beoordeeld tijdens een Assessment.</p>
+    sensitive_material: Sensitive Material?
+    sensitive_material_tooltip: <p>Geeft aan of er gevoelige materialen aanwezig zijn.</p>
+    sensitive_material_true: "Ja"
+    sensitive_material_false: "Nee"
+    general_assessment_note: Algemene Assessment Noot
+    general_assessment_note_tooltip: <p>Eventuele verdere opmerkingen over een Assessment.</p>
+    special_format_note: Bijzondere formaten Noot
+    special_format_note_tooltip: <p>Aanvullende of verklarende informatie over de aanwezige speciale formaten.</p>
+    exhibition_value_note: Tentoonstellinsgwaarde Noot
+    exhibition_value_note_tooltip: <p>Geeft aan of de collectie zelf of de afzonderlijke items in de collectie bijzonder geschikt zijn voor tentoonstellingen. Dit veld kan bijvoorbeeld een uniek artefact of een brief of foto van historische betekenis vermelden.</p>
+    rating_attributes_value:
+      rating_none: Geen rating
+      rating_1: "1"
+      rating_2: "2"
+      rating_3: "3"
+      rating_4: "4"
+      rating_5: "5"
+    rating_note: "%{label} Note"
+    _singular: Assessment
+    _plural: Assessments
+
+  assessment_attribute:
+    rating:
+      "Reformatting Readiness": Gereedheid voor opnieuw formatteren
+      "Reformatting Readiness_tooltip": <p>A rating from 1 to 5 that indicates how easily materials can be reformatted.</p>
+      "Housing Quality": Opslagkwaliteit
+      "Housing Quality_tooltip": <p>A rating from 1 to 5 intended to describe the overall quality of housing of the materials in a collection; items or groups of materials within a collection may be in better or poorer housing than what the overall rating indicates.</p>
+      "Physical Condition": Fysieke toestand
+      "Physical Condition_tooltip": <p>A rating from 1 to 5 intended to describe the overall condition of the materials in a collection; items or groups of materials of particular concern will be indicated in the conservation note.</p>
+      "Physical Access (arrangement)": Fysieke toegang (ordening)
+      "Physical Access (arrangement)_tooltip": <p>Een beoordeling van 1 tot 5 die van toepassing is op de fysieke opstelling van een collectie, rekening houdend met de complexiteit en omvang van de collectie. Een kleine, relatief homogene collectie in grove volgorde is bijvoorbeeld over het algemeen fysiek toegankelijker dan een grote, heterogene collectie in grove volgorde, en de beoordelingen zullen dat feit weerspiegelen. (Houd er rekening mee dat het rangschikken van het itemniveau voor veel collecties misschien niet wenselijk is; een beoordeling van 4 kan de hoogste beoordeling zijn die wenselijk is voor een collectie.)</p>
+      "Intellectual Access (description)": Intellectuele toegang (beschrijving)
+      "Intellectual Access (description)_tooltip": <p>Een beoordeling van 1 tot 5 die van toepassing is op de intellectuele beschrijving van een collectie en de toegankelijkheid van die beschrijving voor gebruikers.</p>
+      "Interest": Belang
+      "Interest_tooltip": <p>Een beoordeling van 1 tot 5 die onderzoeker, donor of lokale interesse in het materiaal aangeeft. Interesse + Documentatiekwaliteit creëren de score "Onderzoekswaarde".</p>
+      "Documentation Quality": Kwaliteit documentatie
+      "Documentation Quality_tooltip": <p>Een waardering van 1 tot 5 die van toepassing is op de rijkdom en diepte van documentatie die in een collectie beschikbaar is. Interesse + Documentatiekwaliteit creëren de score "Onderzoekswaarde".</p>
+      "Documentation Quality_values_tooltip": "<ul><li><b>Rating 1</b>: Slight</li><li><b>Rating 2</b>: Incidentally valuable</li><li><b>Rating 3</b>: Moderately rich</li><li><b>Rating 4</b>: Rich</li><li><b>Rating 5</b>: Very rich</li></ul>"
+      "Housing Quality_values_tooltip": "<ul><li><b>Rating 1</b>: Collectie gehuisvest in niet-archiefdozen, mogelijk losse items op de plank. Het merendeel van het materiaal zit niet in mappen en / of dozen zijn overvol of onderbezet. Voor gebonden volumes is de binding in slechte staat, ontbreken planken of wordt het tekstblok anderszins aangetast. </li> <li> <b> Beoordeling 2 </b>: collectie ondergebracht in niet-archiefdozen en mappen. Een aanzienlijk aantal dozen en mappen kan een onredelijke hoeveelheid materiaal bevatten of niet de juiste maat en type hebben voor de materialen waarin ze zijn ondergebracht. Voor gebonden delen is de binding in redelijke staat (borden kunnen losgemaakt zijn). </li> <li> <b> Beoordeling 3 </b>: collectie ondergebracht in niet-archiefdozen en mappen, maar ze zijn in goede staat. In de meeste dozen en mappen zit een redelijke hoeveelheid materiaal. De meeste dozen en mappen hebben het juiste formaat en type voor de materialen waarin ze zijn ondergebracht. Voor ingebonden banden is de band in goede staat (iets slechter voor slijtage maar toch intact). </li> <li> <b> Beoordeling 4 </b>: Collectie gedeeltelijk ondergebracht in zuurvrije dozen en mappen in goede staat. In de meeste dozen en mappen zit een redelijke hoeveelheid materiaal. De meeste dozen en mappen hebben het juiste formaat en type voor de materialen waarin ze zijn ondergebracht. Voor gebonden banden is de band in zeer goede staat (verwachte slijtage). </li> <li> <b> Beoordeling 5 </b>: Collectie geheel ondergebracht in zuurvrije dozen en mappen in goede staat. Dozen en mappen bevatten een redelijke hoeveelheid materiaal. Dozen en mappen hebben het juiste formaat en type voor de materialen waarin ze zijn ondergebracht. Voor gebonden banden is de band in uitstekende staat.</li></ul>"
+      "Intellectual Access (description)_values_tooltip": "<ul><li><b>Rating 1</b>: Onderzoeker heeft geen toegang tot collectie: Interne documentatie, zoals een donor- / controledossier of een kort of ontoegankelijk registratiedossier, dient als enige beschrijving van de collectie. Hoewel dergelijke interne documentatie kan variëren in kwantiteit en kwaliteit, is deze van nature ontoegankelijk voor onderzoekers. </li> <li> <b> Beoordeling 2 </b>: onderzoeker heeft slechte toegang tot collectie: collectie heeft geen een ondermaats zoekhulpmiddel. De collectie heeft gedrukte cataloguskaarten of een ander type offline beschrijving op collectieniveau, maar geen MARC-record op collectieniveau in de OPAC of een nationaal bibliografisch hulpprogramma. Collectie heeft geen zoekhulp of een ondermaats zoekhulpmiddel. De collectie heeft een MARC-record in de OPAC of nationale bibliografische utility, maar dat biedt onvoldoende toegang omdat het een grote of complexe collectie is. In beide gevallen kan de collectie worden beschreven in andere online of offline bronnen die beschikbaar zijn voor onderzoekers, maar vanwege de complexiteit van de collectie of de ontoereikendheid van de bronnen biedt dit onvoldoende toegang. </li> <li> <b> Beoordeling 3 </b>: Onderzoeker heeft eerlijke toegang tot collectie: het zoekhulpmiddel is ondermaats of er is geen zoekhulpmiddel. Er is een MARC-record op collectieniveau voor de collectie in de OPAC van de instelling en / of in een nationaal bibliografisch hulpprogramma zoals OCLC. Bij gebrek aan een volledig MARC-record is er een ander type beschrijving op online collectieniveau. De beschrijving op collectieniveau in online of offline bronnen die beschikbaar zijn voor onderzoekers, biedt voldoende toegang omdat het een kleine of eenvoudige collectie is. </li> <li> <b> Beoordeling 4 </b>: onderzoeker heeft goede toegang tot collectie: daar is een goede zoekhulp, maar is niet online beschikbaar. Er is een MARC-record op collectieniveau voor de collectie in de OPAC van de instelling en / of in een nationaal bibliografisch hulpprogramma zoals OCLC. Er is een goede zoekhulp, online of offline, maar er is geen MARC-record op collectieniveau voor de collectie in de OPAC van de instelling en / of in een nationaal bibliografisch hulpprogramma zoals OCLC. Gezien de kwaliteit van het vindhulpmiddel biedt alleen het vindhulpmiddel een goede toegang. In beide gevallen kan de collectie ook worden beschreven in andere online of offline bronnen die beschikbaar zijn voor onderzoekers. </li> <li> <b> Beoordeling 5 </b>: onderzoeker heeft uitstekende toegang tot collectie: er is een goede online zoekhulpmiddel (EAD, HTML, PDF of ander formaat). Er is een MARC-record op collectieniveau voor de collectie in de OPAC van de instelling en / of in een nationaal bibliografisch hulpprogramma zoals OCLC. De collectie kan ook worden beschreven in andere online of offline bronnen die beschikbaar zijn voor onderzoekers (zoals een gedrukte of online gids voor collecties).</li></ul>"
+      "Interest_values_tooltip": "<ul><li><b>Rating 1</b>: Negligible</li><li><b>Rating 2</b>: Slight</li><li><b>Rating 3</b>: Moderate</li><li><b>Rating 4</b>: High</li><li><b>Rating 5</b>: Very high</li></ul>"
+      "Physical Access (arrangement)_values_tooltip": "<ul><li><b>Rating 1</b>: Totally unarranged; many, sometimes most, documents not yet removed from envelopes, unfolded, and flattened. Completely inaccessible to researcher.</li><li><b>Rating 2</b>: Partial or superficial arrangement and/or non‐standard housing and labeling discourage use except with special staff assistance.</li><li><b>Rating 3</b>: Rough arrangement by date, document type, function, source, or other characteristic; papers not thoroughly screened, but have been unfolded and flattened; series not fully established; files not fully established; researchers often must work through voluminous extraneous material to locate pertinent items. Single volumes might havehad more than one use, or have items pasted in or otherwise be somewhat disorganized.</li><li><b>Rating 4</b>: Arrangement in series to file level. There is generally good order within the files. Single volumes are orderly (i.e. an account book in alphabetical order or a neat scrapbook in thematic order).</li><li><b>Rating 5</b>: Full arrangement to item level in series and, as appropriate, subseries. Single volumes are orderly and indexed (i.e. chronological accounts with a name index).</li></ul>"
+      "Physical Condition_values_tooltip": "<ul><li><b>Rating 1</b>: Poor: Significant damage/deterioration that makes collection difficult to use.</li><li><b>Rating 2</b>: Fair: Somewhat worse than expected deterioration with some further deterioration possible.</li><li><b>Rating 3</b>: Good: Expected deterioration with some further deterioration possible.</li><li><b>Rating 4</b>: Very good: Little damage with some further deterioration possible, due to the mixed quality of the material.</li><li><b>Rating 5</b>: Excellent: Little damage with no further deterioration expected, based on the high quality of the material.</li></ul>"
+      "Reformatting Readiness_values_tooltip": "<ul><li><b>Rating 1</b>: Materials would be extremely difficult to reformat. They might have serious conservation issues, be in an extremely obsolete format, or have intellectual property concerns that restrict reformatting. Metadata might be missing or incomplete.</li><li><b>Rating 2</b>: Materials would be difficult to reformat. They might have conservation issues, be in an obsolete format, or have some intellectual property concerns. Metadata might be missing or incomplete.</li><li><b>Rating 3</b>: Materials would be moderately easy to reformat. They may have some conservation issues, be in an obsolete format, or have monimal intellectual property concerns. Metadata is present or could be created easily.</li><li><b>Rating 4</b>: Materials would be relatively easy to reformat. Conservation issues are minor, formats are not completely obsolete, or there are minimal intellectual property concerns. Metadata is present.</li><li><b>Rating 5</b>: Materials could be reformatted with no difficulty. There are no conservation issues, formats are recent, or there are no intellectual property concerns. Metadata is present and complete.</li></ul>"
+      "Documentation Quality_note_tooltip": "Further information on the documentation quality of the materials."
+      "Housing Quality_note_tooltip": "Indicates areas of particular concern with regard to the housing of the collection."
+      "Intellectual Access_note_tooltip": "Further information on intellectual access to and description of the materials."
+      "Interest_note_tooltip": "Further information on interest in the materials."
+      "Physical Access_note_tooltip": "Further information on physical access to and arrangement of the materials."
+      "Physical Condition_note_tooltip": "Indicates areas of particular concern with regard to the physical condition of the collection."
+      "Reformatting Readiness_note_tooltip": "Indicates areas of concern with regard to the potential digitization or other reformatting of the materials. "
+    format:
+      "Architectural Materials": Architecturale materialen
+      "Art Originals": Originele kunstwerken
+      "Artifacts": Artefacten
+      "Audio Materials": Audiobestanden
+      "Biological Specimens": Biologische Specimens
+      "Botanical Specimens": Botanische Specimens
+      "Computer Storage Units": Computer opslag eenheden
+      "Film (negative, slide, or motion picture)": Film (negatief, dia of bewegend beeld)
+      "Glass": Glas
+      "Photographs": Foto
+      "Scrapbooks": Plakboeken
+      "Technical Drawings & Schematics": Technische tekeningen en schemas
+      "Textiles": Textiel
+      "Vellum & Parchment": Vellum & Perkament
+      "Video Materials": Video
+      "Other": Andere
+    conservation_issue:
+      "Potential Mold or Mold Damage": Mogelijke schimmels of schade door schimmel
+      "Recent Pest Damage": Recente schade door ongedierte
+      "Deteriorating Film Base": Deteriorating filmdrager
+      "Brittle Paper": Broos papier
+      "Metal Fasteners": Nietjes
+      "Newspaper": Krantenpapier
+      "Tape": Tape
+      "Heat-Sensitive Paper": Hiitegevoelig papier
+      "Water Damage": Waterschade
+
+  custom_report_template:
+    name: Naam
+    description: Beschrijving
+    record_type: Recordtype
+    display: Toon?
+    narrow_by: Beperken tot?
+    values: Waarden
+    value: Waarde
+    "true": "Ja"
+    "false": "Nee"
+    start_date: Startdatum
+    end_date: Einddatum
+    field: Veld
+    _singular: Aangepast rapporttemplate
+    _plural: Aangepaste rapporttemplates
+
+  repository_oai:
+    oai_is_disabled_tooltip: OAI is disabled tooltip
+    oai_sets_available_tooltip: OAI sets available tooltip
+
+  oai_config:
+    oai_record_prefix_tooltip: OAI Record Prefix Tooltip
+    oai_admin_email_tooltip: OAI Admin Email tooltip
+    oai_repository_name_tooltip: OAI Repository name tooltip
+    repo_set_name_tooltip: Repo Set name tooltip
+    repo_set_section_tooltip: Repo Set section tooltip
+    repo_set_description_tooltip: Repo set description tooltip
+    sponsor_set_name_tooltip: Sponsor set name tooltip
+    sponsor_set_names_tooltip: Sponsor set names tooltip
+    sponsor_set_description_tooltip: Sponsor set description tooltip
+
+  bulk_import:
+    row: "Rij %{row}"
+    processing_row: "Rij %{row} verwerken"
+    dig_assoc: Digitaal object toegevoegd aan Archiefobject
+    row_error: "Rij %{row} wordt niet verwerkt door fouten: %{errs}"
+    created: "%{what} gemaakt: %{id}"
+    could_be: "%{what} wordt gemaakt"
+    updated: "%{what}: %{id}"
+    clip_btn: Kopieren naar klembord
+    clip_created:  "\t%{what} created: \t%{nm}\t%{id}\t%{ref_id}"
+    clip_what: "\t%{what} : \t%{nm}\t%{id}\t%{ref_id}"
+    clip_info: "\t\t\t\t\t%{what}\n"
+    clip_err: "\t\t\t\t\tERROR: %{err}\n"
+    clip_header: "Row\tStatus\tTitle\tURI\tRef ID\tInfo or Error"
+    log_complete: "Import van %{file} voltooid"
+    log_validation: "Validatie van %{file} voltooid"
+    log_created: "%{row}: %{what} gemaakt"
+    log_created_be: "%{row}: %{what} zal worden gemaakt"
+    log_info: "%{row}:\t%{what}"
+    log_error: "%{row}:\tERROR %{what}"
+    log_obj: "%{what} '%{nm}' %{id} %{ref_id}"
+    log_obj_be: "%{what} '%{nm}' "
+    log_results: CSV bestand samenstellen
+    ao: Archiefobject
+    tc: Top Container
+    subj: Onderwerp
+    agent: Agent
+    dig: Digitaal object
+    cont_inst: Container Instantie
+    unfound_id: "%{type} ID %{id} NIET GEVONDEN. Dit is een PLACEHOLDER"
+    ref_id_notfound: "Ref Id %{refid} niet gevonden"
+    processed: Het bestand werd verwerkt
+    file_info: "%{size}K met %{rows} rijen"
+    max_file_info: "%{size}K en %{rows} rijen"
+    object_created: "%{what} gemaakt"
+    object_created_be: "%{what} wordt gemaakt"
+    object_not_created_be: "%{what} wordt niet gemaakt"
+    date_type_default: Er is geen datumtype opgegeven. Standaard ingesteld op 'inclusief'.
+    warn:
+      dup: "Managed Controlled Value List %{which} has multiple instances for the translation '%{trans}'. '%{used}' will be used as the value."
+      disam: "Multiple match(es) found for '%{which}'. Creating '%{name}' for disabiguation."
+      disamuse: "Multiple match(es) found for '%{which}'. Using already-created '%{name}' for disabiguation."
+      single_date_end: "Single date %{date_str} has end date that will be ignored."
+    error:
+      date_type: "Date type [%{what}] invalid for %{date_str}. The date will not be processed."
+      date_label: "Date label [%{what}] invalid for %{date_str}. The date will not be processed."
+      certainty: "Invalid 'date certainty' ignored for %{date_str}: (%{what})"
+      below_bad_ao: Cannot process because it is a child of the bad Archiefobject
+      enum: "NIET GEVONDEN: '%{label}' niet gevonden in lijst %{which}"
+      error: "ERROR: Error(s) detected: %{term}"
+      invalid_date: "Invalid date definition (%{what}) for %{date_str}. The date will not be processed."
+      invalid_date_label: "Invalid date label definition in first date (%{what})"
+      too_many: Er werd meer dan één overeenkomst gevonden in de database
+      type_undef: Kan type niet bepalen
+      file_name: Bestandsnaam kan niet worden bepaald
+      system: "Some system error has occurred  [%{msg}]."
+      initialize: "Processing is terminated [%{msg}]"
+      stopped: "Processing stopped at row %{row} [%{msg}]"
+      duplicates: "Deze spreadsheet heeft dubbele veldcodes voor ArchivesSpace: %{codes}"
+      res_ead: De bron van dit formulier heeft geen EAD-ID
+      row_ead: Deze rij mist een EAD-ID
+      row_missing_ead_uri: Deze rij mist zowel een EAD-ID als een URI
+      ead_mismatch:  "Form's EAD ID [%{res_ead}] does not match row's EAD ID [%{row_ead}]"
+      uri_mismatch: "Input resource's URI [%{res_uri}] does not match row's URI [%{row_uri}]"
+      title: Titel ontbreekt
+      title_and_date: Ontbrekende titel EN geldige datumdefinitie
+      hier_miss: Ontbrekende hiërarchie - moet een getal zijn groter dan 0
+      hier_zero: Hiërarchie moet groter zijn dan 0
+      hier_wrong: Hiërarchie kan niet meer dan één niveau dieper zijn dan de vorige rij
+      hier_wrong_resource:  Did you mean to start processing with an archival object selected?
+      hier_wrong_resource_validation:  "WAARSCHUWING: niets onder deze rij zou zijn verwerkt"
+      hier_below_error_level: Het bovenliggende Archiefobject is niet gemaakt
+      level: Geldig beschrijvingsniveau ontbreekt
+      date: "Datum moet ten minste één van de volgende hebben: Datum begin; Datum Einde; of Datum Expressie"
+      number: Nummer van omvang ontbreekt
+      extent_type:  Type omvang ontbreekt
+      extent_validation: "Unable to validate Extent (%{ext}): %{msg}"
+      no_header: No header (field codes) row found; are you using the correct template?
+      no_data: Geen verwerkbare gegevensrijen gevonden!
+      spreadsheet: "Error(s) parsing spreadsheet: %{errs}"
+      no_agent: "Unable to create Agent %{num}: [%{why}]"
+      find_tc: "Unable to find the Top Container with params: %{where}."
+      no_tc: "Unable to create Top Container %{number}: [%{why}]"
+      missing_instance_type: Ontbrekend type containerinstantie
+      no_ao: Geen archiefobject gemaakt
+      no_ao_be: Archiefobject zou niet worden gemaakt
+      no_container_instance: "Unable to create Container Instance %{number}: [%{why}]"
+      no_create: "Unable to create: [%{why}]"
+      no_move: "Unable to move the archival objects from the end of the list (response code %{code})"
+      bad_note: "%{type} noot is niet goed gevormd: %{msg}"
+      bad_note_type: "Noottype '%{type}' wordt niet ondersteund"
+      bad_relator: "Kan Agent koppeling niet maken: '%{label}' is geen geldige Relator"
+      relator_invalid: "Kan Agent koppeling niet maken door een probleem met Relator '%{label}': %{why}"
+      bad_role: "Kan Agent koppeling niet maken: '%{label}' is geen geldige Rol"
+      role_invalid: "Kan Agent koppeling niet maken door een probleem met Rol '%{label}': %{why}"
+      has_dig_obj: "Archiefobject heeft al een gekoppeld digitaal object"
+      dig_unassoc: "Kan Archiefobject niet bewaren met geassocieerd digitaal object: %{msg}"
+      ref_id_miss: Er werd geen Ref ID gespecificeerd
+      dig_info_miss: De URI van het digitale object of de miniatuur-URI is niet gespecificeerd
+      dig_validation: "Kan het digitale object niet maken %{err}"
+      initial_save_error: "Probleem met de eerste opslag van %{title} -- %{msg}"
+      second_save_error: "Error on attempt to re-save archival object with 'instances' %{title} position: %{pos}.This means that the archival object has been created, but possibly not linked to its associated instances (digital object, top container, subject, etc.) [%{what}]"
+      ao_validation: "Validatiefout bij het opslaan van Archiefobject: %{err}"
+      validation_error: "Kan niet %{what} valideren: %{err}"
+      validated: "%{what} gevalideerd"
+      lang_code: "Cannot validate language (%{lang})"
+      script_code: "Cannot validate a language script (%{script})"
+      process_error: "Fout bij verwerken %{type} %{num}: %{why}"
+      bad_ao_uri: " met uri %{uri}"
+      bad_ao_ref_id: " met Ref ID  %{ref_id}"
+      bad_ao: "Kan Archiefobject niet vinden %{errs}"
+      no_uri_or_ref: Er is geen Archiefobject-URI of referentie-ID opgegeven
+      file_too_big: "Dit bestand, in %{file_info}, overschrijdt de limieten voor grootte en/of rijnummers van %{limits}"
+      wrong_file_type: "Het bestand is geen Excel-spreadsheet of CSV-bestand"
+      dig_obj_unique: "Digital Object ID '%{id}' already exists."
+      cannot: Kan niet doorgaan vanwege eerdere fouten
+      sc_barcode: "Can not find a Sub Container with this Child Barcode %{barcode}"
+  top_container_linker:
+    error:
+      ref_id_miss: "Ref ID missing from spreadsheet in row %{row_num} ."
+      ao_not_in_db: "Can not find Archival Object %{ref_id} in the database in row %{row_num}."
+      instance_type_miss: "Instance Type missing from spreadsheet for row %{row_num} Archival Object %{ref_id}. "
+      instance_type_does_not_exist: "Instance Type %{instance_type} does not exist in the database (see row %{row_num} Archival Object %{ref_id}). "
+      tc_indicator_and_record_no_miss: "Either a Top Container Indicator or TC Record Number must be present for %{ref_id} in row %{row_num}."
+      tc_indicator_and_record_no_exist: "Only a Top Container Indicator OR TC Record Number can be present for %{ref_id} in row %{row_num}."
+      tc_barcode_exists: "The Top Container Barcode, %{barcode} already exists in the database (see  %{ref_id} in row %{row_num})."
+      tc_barcode_differs: "The Top Container Barcode, %{barcode} is different than another entry in your spreadsheet for %{type} %{indicator} (see  %{ref_id} in row %{row_num})."
+      tc_ind_ct_exists: "The Top Container Indicator and Container Type combo %{tc_type} %{indicator} already exists in the database for an AO in resource %{ead_id} (see  %{ref_id} in row %{row_num})."
+      sc_barcode_exists: "The Child Barcode, %{barcode} already exists in the database (see %{ref_id} in row %{row_num})."
+      sc_barcode_differs: "The Child Barcode, %{barcode} is different than another entry in your spreadsheet for %{type} %{indicator} (see  %{ref_id} in row %{row_num})."
+      loc_not_in_db: "The given Location ID, %{loc_id} cannot be found in the database (see %{ref_id} in row %{row_num})."
+      cp_not_in_db: "The given Container Profile ID, %{cp_id} cannot be found in the database (see %{ref_id} in row %{row_num})."
+      no_tc: "Unable to create Top Container (see %{ref_id} in row %{row_num}): [%{why}]"
+      problem_adding_current_location: "Problem adding the current location (see %{ref_id} in row %{row_num}): [%{why}]"
+      problem_setting_container_profile: "Problem setting the container profile (see %{ref_id} in row %{row_num}): [%{why}]"
+      error_linking_tc_to_ao: "There was a problem linking the Archival Object with the Top Container: %{why}"
+      ead_id_miss: "This row is missing an EAD ID: (see %{ref_id} in row %{row_num})"
+      tc_record_no_missing: "The Top Container ID cannot be found: %{tc_id} (see %{ref_id} in row %{row_num})"
+      resource_not_in_db: "Can not find Resource %{ead_id} in the database in row %{row_num}"
+      resources_do_not_match: "The resource in the spreadsheet %{spreadsheet_resource} (EAD ID: %{ead_id}) does not match the current resource %{current_resource} in row %{row_num}"
+      job_file_empty: "No file to process for top container linking"
+    log_creating_linker: "Creating new top container linker for repository: %{repo_id}"
+    log_validate_only: "Skipping creation and linking of top containers since validate only option is enabled."
+    log_skipping_due_to_errors: "Skipping creation and linking of top containers due to errors."
+    log_validating: "Validating spreadsheet data..."
+    log_creating_and_linking: "Creating and linking top containers..."
