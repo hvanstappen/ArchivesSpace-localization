@@ -97,7 +97,7 @@ en:
       <<: *user_defined_attributes
     title: Titel
     title_tooltip: |
-        <p>Een titel voor het digitale object. De titel kan worden getranscribeerd van het object, of worden overgenomen van een resourcerecord, of geleverd door de repository.</p>
+        <p>Een titel voor het digitale object. De titel kan worden getranscribeerd van het object, of worden overgenomen van een archief/collectie-record, of geleverd door de repository.</p>
          <p> De titel van het digitale object als geheel kan dezelfde zijn als die van het bron- of broncomponentrecord waaraan het digitale objectrecord is gekoppeld. Het kan echter anders zijn dan uitgedrukt in het gekoppelde bronrecord.</p>
          <p> Voorbeelden: </p>
          <ul>
@@ -281,8 +281,8 @@ en:
         <p>Optioneel veld: noteer hier de geautoriseerde titel van een werk om een naam- of titel-ingang te maken voor een Agent die als maker of onderwerp is gekoppeld:</p>
         <p>Bijvoorbeeld:</p>
         <ul><li>Shakespeare, William, 1564-1616. King Lear</li><li> Pound, Ezra, 1885-1972. Cantos</li><li> Lincoln, Abraham, 1809-1865. Emancipation Proclamation</li></ul>
-    _singular: Agent koppeling
-    _plural: Agent koppelingen
+    _singular: Gerelateerde actor
+    _plural: Gerelateerde actoren
 
   accession_linked_agent:
     <<: *linked_agent_attributes
@@ -334,7 +334,7 @@ en:
     linked_agents_tooltip: |
         <p>VERPLICHT SUBRECORD: Koppelt één of meer Agents als deelnemer aan deze gebeurtenis.</p>
     linked_records_tooltip: |
-        <p>VERPLICHT SUBRECORD: Koppelt Aanwinsten, Digitale Objecten, of Resources met deze Gebeurtenis.</p>
+        <p>VERPLICHT SUBRECORD: Koppelt Aanwinsten, Digitale Objecten, of Archieven/Collecties met deze Gebeurtenis.</p>
     types:
       accession: Aanwinst
       accumulation: Aanvulling
@@ -1600,7 +1600,7 @@ en:
         <p>Zie DACS 4.1.5-4.1.6; 4.2.5-4.2.7, 4.3.4-4.3.6</p>
     resource_type: Resource Type
     resource_type_tooltip: |
-        <p>Een lijst met termen die door een repository worden gebruikt om zijn Resources in basistypen te categoriseren.</p>
+        <p>Een lijst met termen die door een repository worden gebruikt om zijn Archieven/Collecties in basistypen te categoriseren.</p>
         <p>Waarden in deze lijst met gecontroleerde waarden kunnen worden gewijzigd.</p>
     access_restrictions: Toegankelijkheid beperkt?
     access_restrictions_tooltip: |
@@ -1640,10 +1640,10 @@ en:
         <p>Zie DACS 4.1.5 - 4.1.6; 4.2.5 - 4.2.7, 4.3.4 - 4.3.6</p>
     title: Titel
     title_tooltip: |
-        <p>De titel die is toegewezen aan een Aanwinst of Resource. De Aanwinst-titel hoeft niet hetzelfde te zijn als de Resource-titel. Bovendien hoeft voor het Aanwinst-record geen titel te worden uitgedrukt, aangezien deze impliciet kan worden overgenomen van het Resource-record waaraan de Aanwinst is gekoppeld.</p>
+        <p>De titel die is toegewezen aan een Aanwinst of Archief/Collectie. De Aanwinst-titel hoeft niet hetzelfde te zijn als de titel van het Archief/Collectie-record. Bovendien hoeft voor het Aanwinst-record geen titel te worden uitgedrukt, aangezien deze impliciet kan worden overgenomen van het Archief/Collectie-record waaraan de Aanwinst is gekoppeld.</p>
         <p>Zie DACS 2.3.18-2.3.22</p>
     related_resources_tooltip: |
-        <p>Gebruikt voor het koppelen van bijbehorende Resources aan deze Aanwinst.</p>
+        <p>Gebruikt voor het koppelen van bijbehorende Archieven/Collecties aan deze Aanwinst.</p>
     relator: Relator
     relator_type: Relator Type
     _singular: Aanwinst
@@ -1792,7 +1792,7 @@ en:
     ref_id_auto_generation_message: "-- automatisch geegenereerd bij bewaren --"
     component_id: Component Unieke Identificatiecode
     component_id_tooltip: |
-        <p>Drukt een unieke ID uit, binnen de context van de resourcebeschrijving, voor het componentonderdeel.</p>
+        <p>Drukt een unieke ID uit, binnen de context van de archief/collectiebeschrijving, voor het componentonderdeel.</p>
          <p> Voorbeelden: </p>
          <ul>
         <li>Reeks I</li>
@@ -1809,7 +1809,7 @@ en:
         <p>VERPLICHT VELD als "Ander niveau" de waarde is die is geselecteerd voor Niveau. Geeft het type niveau weer buiten de waarden die zijn opgegeven in het EAD-schema.</p>
     container_summary: Samenvatting containers
     container_summary_tooltip: |
-        <p>Voor het registreren van het aantal en type containers met een resourcebeschrijving. Dit wordt beschouwd als een tekstuele samenvatting en is niet identiek aan de subrecords van de omvang.</p>
+        <p>Voor het registreren van het aantal en type containers met een archief/collectiebeschrijving. Dit wordt beschouwd als een tekstuele samenvatting en is niet identiek aan de subrecords van de omvang.</p>
         <p>Zie DACS 2.5</p>
          <p> Voorbeelden: </p>
          <ul>
@@ -1858,7 +1858,7 @@ en:
       show_full_agents: work with agents in full mode
       update_vocabulary_record: records maken/aanpassen
       update_accession_record: aanwinsten in deze Repository maken/aanpassen
-      update_resource_record: resources in deze Repository maken/aanpassen
+      update_resource_record: archieven/collecties in deze Repository maken/aanpassen
       update_digital_object_record: create/update digitale objecten in deze Repository maken/aanpassen
       update_event_record: gebeurtenis records in deze Repository maken/aanpassen
       view_repository: de records in deze Repository bekijken
@@ -1902,7 +1902,7 @@ en:
     id_2: Identificatiecode 3
     id_3: Identificatiecode 4
     id_0_tooltip: |
-        <p>VERPLICHT VELD. Het identificatienummer dat aan elke afzonderlijke Resource binnen een Repository is toegewezen.</p>
+        <p>VERPLICHT VELD. Het identificatienummer dat aan elke afzonderlijke Archief/Collectie-record binnen een Repository is toegewezen.</p>
         <p>Zie DACS 2.1.3</p>
         <p>Voorbeelden:</p>
          <ul>
@@ -1914,7 +1914,7 @@ en:
     "[:repo_id, :identifier]": Identificatiecode
     identifier: Identificatiecode
     title_tooltip: |
-        <p>VERPLICHT VELD. De titel die aan de Resource is toegekend.</p>
+        <p>VERPLICHT VELD. De titel die aan het Arhief/Collectie-record is toegekend.</p>
         <p>Zie DACS 2.3</p>
          <p> Voorbeelden: </p>
          <ul>
@@ -1927,16 +1927,16 @@ en:
          </ul>
     resource_type: Resource Type
     resource_type_tooltip: |
-        <p>Een lijst met termen die door een repository worden gebruikt om zijn Resources in basistypen te categoriseren.</p>
+        <p>Een lijst met termen die door een repository worden gebruikt om zijn Archieven/Collecties in basistypen te categoriseren.</p>
         <p>Waarden in deze lijst met gecontroleerde waarden kunnen worden gewijzigd.</p>
     repository_processing_note: Repository verwerkingsnoot
     extents_tooltip: |
         <p>VERPLICHT SUBRECORD: Wordt gebruikt om de grootte van de beschreven materialen vast te leggen.</p>
         <p>Zie DACS 2.5</p>
     related_accessions_tooltip: |
-        <p>Wordt gebruikt om met de Resource gekoppelde Aanwinsten vast te leggen.</p>
+        <p>Wordt gebruikt om Aanwinsten vast te leggen die gekoppeld zijn aan het Archief/Collectie-record.</p>
     publish_tooltip: |
-        <p>Bepaalt of deze Resource wordt gepubliceerd naar publieke interfaces.</p>
+        <p>Bepaalt of dit Archief/Collectie-record wordt gepubliceerd naar publieke interfaces.</p>
     restrictions: Beperkingen?
     restrictions_tooltip: |
         <p>Geeft aan of de beschreven materialen op enigerlei wijze aan beperkingen onderhevig zijn. Een aanvullende beschrijving van de beperking dient te worden verstrekt in de desbetreffende opmerkingen of rechtenverklaringen voor de goede orde waar de beperking zich voordoet.</p>
@@ -1945,7 +1945,7 @@ en:
         <p>Een toepassingsspecifiek veld voor het vastleggen van informatie over de verwerking van de materialen. Deze notitie is niet opgenomen in export of rapporten, en wordt niet gevuld door import.</p>
     ead_id: EAD ID
     ead_id_tooltip: |
-        <p>De identificatie voor de EAD die is gegenereerd op basis van de resourcebeschrijving, meestal een bestandsnaam. Moet uniek zijn binnen de repositorycontext.</p>
+        <p>De identificatie voor de EAD die is gegenereerd op basis van de archief/collectiebeschrijving, meestal een bestandsnaam. Moet uniek zijn binnen de repositorycontext.</p>
     ead_location: EAD Locatie
     ead_location_tooltip: |
         <p>De locatie voor de EAD die is gegenereerd op basis van de bronbeschrijving, een URL of een pad naar een bestandsmap. De locatie eindigt meestal.</p>
@@ -1972,7 +1972,7 @@ en:
          </ul>
     finding_aid_date: Toegangsdatum
     finding_aid_date_tooltip: |
-        <p>De datumexpressie die aangeeft wanneer de huidige toegang is gegenereerd op basis van de resourcebeschrijving.</p>
+        <p>De datumexpressie die aangeeft wanneer de huidige toegang is gegenereerd op basis van de archief/collectiebeschrijving.</p>
     finding_aid_author: Toegang Auteur
     finding_aid_author_tooltip: |
         <p>De namen (namen) van de agenten die verantwoordelijk zijn voor het creëren van de inhoud van het zoekhulpmiddel of de codering ervan.</p>
@@ -2005,8 +2005,8 @@ en:
     finding_aid_note: Toegang Noot
     finding_aid_note_tooltip: |
         <p>Voor het vastleggen van eventuele aanvullende informatie over het zoekhulpmiddel (niet de beschreven bron) die niet wordt gedekt door de andere gegevenselementen van het zoekhulpmiddel.</p>
-    _singular: Resource
-    _plural: Resources
+    _singular: Archief/Collectie
+    _plural: Archieven/Collecties
 
   related_accession:
     _singular: Gerelateerde Aanwinst
@@ -2026,8 +2026,9 @@ en:
         <p>Bepaalt of deze Revisieverklaring wordt gepubliceerd naar publieke interfaces.</p>
 
   related_resource:
-    _singular: Gerelateerde Resource
-    _plural: Gerelateerde Resources
+#archiefbestanden? cf. https://trello.com/c/LLOMAmCi/338-aanwinsten-vertaling-label-gerelateerde-resources
+    _singular: Gerelateerd Archief/Collectie 
+    _plural: Gerelateerde Archieven/Collecties
 
   repository:
     <<: *slug_attributes
@@ -2042,7 +2043,7 @@ en:
          </ul>
     name: Repository Naam
     name_tooltip: |
-        <p>VERPLICHT VELD. De naam van de repository die de administratieve verantwoordelijkheid heeft voor en de bewaring van de materialen beschreven in de Aanwinst-, Resource- en Digitale objectmodules van de applicatie.</p>
+        <p>VERPLICHT VELD. De naam van de repository die de administratieve verantwoordelijkheid heeft voor en de bewaring van de materialen beschreven in de Aanwinst-, Archief/Collectie- en Digitale objectmodules van de applicatie.</p>
         <p>Zie DACS 2.2</p>
          <p> Voorbeelden: </p>
          <ul>
@@ -2238,10 +2239,10 @@ en:
         <p>Wordt gebruikt om de financieringsbron voor de verwerking van de beschreven materialen aan te geven.</p>
     processors: Verwerkers
     processors_tooltip: |
-        <p>Voor het opsommen van personeel aan wie de verwerking van de archiefeenheid (accession, resource of digitale objecten) is toegewezen.</p>
+        <p>Voor het opsommen van personeel aan wie de verwerking van de archiefeenheid (aanwinst, archief/collectie of digitale objecten) is toegewezen.</p>
     rights_determined: Rechten vastgesteld?
     rights_determined_tooltip: |
-        <p>Geeft aan of de rechten voor een archiefeenheid (accession, resource of digitaal object) zijn bepaald en dat er een rechtenrecord is gemaakt en aan de archiefeenheid is gekoppeld.</p>
+        <p>Geeft aan of de rechten voor een archiefeenheid (aanwinst, archief/collectie of digitaal object) zijn bepaald en dat er een rechtenrecord is gemaakt en aan de archiefeenheid is gekoppeld.</p>
     rights_determined_true: Ja
     rights_determined_false: Nee
     parent: Ouder
@@ -2305,7 +2306,7 @@ en:
     publish: Publiceren
     publish_tooltip: Of er nieuwe records standaard moeten worden gepubliceerd.
     default_values: Records vooraf invullen?
-    default_values_tooltip: Of nieuwe Aanwinst- en Resource-records vooraf moeten worden ingevuld met standaardwaarden.
+    default_values_tooltip: Of nieuwe Aanwinst- en Archief/Collectie-records vooraf moeten worden ingevuld met standaardwaarden.
     browse_column: Kolom %{num}
     browse_column_tooltip: Het veld dat wordt getoond in de kolom %{num}.
     sort_column: Standaard sorteerkolom
@@ -2315,7 +2316,7 @@ en:
     locale: Taalkeuze
     search_browse_columns: Zoek en blader door kolomvoorkeuren
     accession_browse_section: Aanwinst blader door kolommen
-    resource_browse_section: Resource blader door kolommen
+    resource_browse_section: Archief/Collectie blader door kolommen
     archival_object_browse_section: Archiefonderdeel blader door kolommen
     digital_object_browse_section: Digitaal Object blader door kolommen
     digital_object_component_browse_section: Digitaal Object Component blader door kolommen
@@ -2502,13 +2503,13 @@ en:
     _singular: Top Container Linker Job
     filename: Bestand
     content_type: Bestandstype
-    resource_id: Resource ID
+    resource_id: Archief/Collectie ID
     load_type: Laad Type
     type:
       top_container_linker_job: Top Container Linker
 
   bulk_import_job:
-    resource_uri: Resource URI
+    resource_uri: Archief/Collectie URI
     content_type: Spreadsheet type
     load_type: Laad Type
     only_validate: Alleen valideren
@@ -2519,7 +2520,7 @@ en:
       digital: Digitaal Object
 
   trim_whitespace_job:
-    description: Verwijdert begin- en eindspaties uit titels voor Resources, Aanwinsten, Digitale objecten, Archiefonderdelen en Digitale objectcomponenten.
+    description: Verwijdert begin- en eindspaties uit titels voor Archieven/Collecties, Aanwinsten, Digitale objecten, Archiefonderdelen en Digitale objectcomponenten.
 
   advanced_search:
     type:
@@ -2551,7 +2552,7 @@ en:
     backend_log: Backend Log
 
   resource_component:
-    _singular: Resource Component
+    _singular: Archief/Collectie Component
 
   largetree:
     reparent_error:
@@ -2849,10 +2850,10 @@ en:
       no_move: "Unable to move the archival objects from the end of the list (response code %{code})"
       bad_note: "%{type} noot is niet goed gevormd: %{msg}"
       bad_note_type: "Noottype '%{type}' wordt niet ondersteund"
-      bad_relator: "Kan Agent koppeling niet maken: '%{label}' is geen geldige Relator"
-      relator_invalid: "Kan Agent koppeling niet maken door een probleem met Relator '%{label}': %{why}"
-      bad_role: "Kan Agent koppeling niet maken: '%{label}' is geen geldige Rol"
-      role_invalid: "Kan Agent koppeling niet maken door een probleem met Rol '%{label}': %{why}"
+      bad_relator: "Kan koppeling met Actor niet maken: '%{label}' is geen geldige Relator"
+      relator_invalid: "Kan koppeling met Actor niet maken door een probleem met Relator '%{label}': %{why}"
+      bad_role: "Kan koppeling met Actor niet maken: '%{label}' is geen geldige Rol"
+      role_invalid: "Kan koppeling met Actor niet maken door een probleem met Rol '%{label}': %{why}"
       has_dig_obj: "Archiefonderdeel heeft al een gekoppeld digitaal object"
       dig_unassoc: "Kan Archiefonderdeel niet bewaren met geassocieerd digitaal object: %{msg}"
       ref_id_miss: Er werd geen Ref ID gespecificeerd

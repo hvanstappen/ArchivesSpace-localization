@@ -22,7 +22,7 @@ en:
     edit_batch: Bewerk batch
     edit_groups: Bewerk groepen
     edit_default_values: Bewerk standaard waarden
-    edit_default_archival_object_values: Bewerk component standaard waarden
+    edit_default_archival_object_values: Bewerk standaard waarden voor archiefonderdeel
     edit_required_fields: Bewerk verplichte velden
     edit_global_oai: Bekijk/Bewerk globale OAI instellingen
     required: Verplichte velden
@@ -43,7 +43,7 @@ en:
     merge_subject_confirm_message: "Het trefwoord '%{source}' zal de geselecteerde records erin samenvoegen. Alle geselecteerde records worden verwijderd en eventuele gekoppelde records worden opnieuw aan dit onderwerp gekoppeld."
     merge_agent_confirm_message: "Het geselecteerde record zal worden samengevoegd met de Agent '%{source}'. Het geselecteerde record wordt verwijderd en alle gekoppelde records worden opnieuw aan deze Agent gekoppeld. Als je op de knop Agents vergelijken klikt, verschijnt een scherm waarin je kan kiezen welke velden en subrecords je van elk record wil behouden."
     merge_agent_from_browse_confirm_message: "Bij de eerste geselecteerde Agent worden de daaropvolgende geselecteerde records erin samengevoegd. Alle volgende geselecteerde records worden verwijderd en alle gekoppelde records worden opnieuw gekoppeld aan de eerste geselecteerde Agent."
-    merge_resource_confirm_message: "De resource '%{source}' zal de geselecteerde records erin samenvoegen. Alle geselecteerde records worden verwijderd en alle gekoppelde records worden opnieuw aan deze bron gekoppeld."
+    merge_resource_confirm_message: "Het archief/collectie-record '%{source}' zal de geselecteerde records erin samenvoegen. Alle geselecteerde records worden verwijderd en alle gekoppelde records worden opnieuw aan deze bron gekoppeld."
     merge_container_profile_confirm_message: "De geselecteerde records worden samengevoegd met het containerprofiel '%{target}'. Alle geselecteerde records worden verwijderd en alle gekoppelde records worden opnieuw aan dit containerprofiel gekoppeld."
     batch_merge: "Selecteer het record waarin alle andere getoonde record(s) moeten worden samengevoegd. Alle gekoppelde records worden opnieuw aan dit record gekoppeld en alle informatie voor de andere record (s) wordt verwijderd."
     merge_n_records: "Voeg %{n} records samen"
@@ -121,7 +121,7 @@ en:
     view_search_results: Ga naar zoekresultaten
     view_published: Toon gepubliceerd
     print_to_pdf: Genereer PDF
-    resource_to_pdf: Resource to Print
+    resource_to_pdf: Druk af als PDF
     download_pdf: Download PDF
     download_report: Download rapport
     click_to_show: Klik om records te laden.
@@ -235,7 +235,7 @@ en:
       score: Relevantie
       title: Titel
       publish: Gepubliceerd
-      context: Ouder Resource
+      context: Bovenliggend Archief/Collectie-record
       identifier: Onderdeel ID
       ref_id: Ref ID
       level: Niveau
@@ -396,7 +396,7 @@ en:
       type: Type
       indicator: Indicator
       barcode: Barcode
-      context: Resource/Aanwinst
+      context: Archief/Collectie / Aanwinst
       audit_info: Audit informatie
       user_mtime: Aangepast
       create_time: Gemaakt
@@ -613,19 +613,19 @@ en:
 
   default_values:
     form_title:
-      archival_object: Onderdeel Record standaardinstellingen
-      resource: Resource Record standaardinstellingen
-      accession: Accession Record standaardinstellingen
-      subject: Onderwerp Record standaardinstellingen
-      agent_person: Agent Record standaardinstellingen (Persoon)
-      agent_family: Agent Record standaardinstellingen (Familie)
-      agent_corporate_entity: Agent Record standaardinstellingen (Organisatie)
-      agent_software: Agent Record standaardinstellingen (Software)
+      archival_object: Archiefonderdeel-record standaardinstellingen
+      resource: Archief/Collectie-record standaardinstellingen
+      accession: Aanwinstenrecord standaardinstellingen
+      subject: Onderwerprecord standaardinstellingen
+      agent_person: Agentrecord standaardinstellingen (Persoon)
+      agent_family: Agentrecord standaardinstellingen (Familie)
+      agent_corporate_entity: Agentrecord standaardinstellingen (Organisatie)
+      agent_software: Agentrecord standaardinstellingen (Software)
       digital_object: Digitaal object standaardinstellingen
       digital_object_component: Digitaal object onderdeel standaardinstellingen
-      location: Locatie Record standaardinstellingen
-      event: Gebeurtenis Record standaardinstellingen
-      classification: Classificatie Record standaardinstellingen
+      location: Locatierecord standaardinstellingen
+      event: Gebeurtenisrecord standaardinstellingen
+      classification: Classificatierecord standaardinstellingen
       classification_term: Classificatie Term standaardinstellingen
     messages:
       defaults_updated: Standaard waarden aangepast
@@ -758,12 +758,12 @@ en:
     external_ark_url_tooltip: Externe ARK URL Tooltip
     _frontend:
       messages:
-        created: Archiefonderdeel <strong>%{archival_object.display_string}</strong> gemaakt op Resource <strong>%{resource.title}</strong>
-        created_with_parent: Archiefonderdeel <strong>%{archival_object.display_string}</strong> gemaakt als kind van <strong>%{parent.display_string}</strong> op Resource <strong>%{resource.title}</strong>
+        created: Archiefonderdeel <strong>%{archival_object.display_string}</strong> gemaakt op Archief/Collectie <strong>%{resource.title}</strong>
+        created_with_parent: Archiefonderdeel <strong>%{archival_object.display_string}</strong> gemaakt als kind van <strong>%{parent.display_string}</strong> op Archief/Collectie <strong>%{resource.title}</strong>
         updated: Archiefonderdeel <strong>%{archival_object.display_string}</strong> aangepast
         updated_with_parent: Archiefonderdeel <strong>%{archival_object.display_string}</strong> aangepast
-        please_select_a_resource_for_transfer: Kies een Resource
-        transfer_success: “Archiefonderdeel <strong>%{archival_object.display_string}</strong> overgebracht naar Resource <strong>%{resource.title}</strong>”
+        please_select_a_resource_for_transfer: Kies een Archief/Collectie
+        transfer_success: “Archiefonderdeel <strong>%{archival_object.display_string}</strong> overgebracht naar Archief/Collectie <strong>%{resource.title}</strong>”
         transfer_error: "Kan Archiefonderdeel niet overbrengen wegens een fou of conflict: <pre>%{exception}</pre>"
         deleted: "Archiefonderdeel <strong>%{archival_object.display_string}</strong> verwijderd"
         published: "Het Archiefonderdeel <strong>%{archival_object.title}</strong>, kinderen, subrecords en componenten werden gepubliceerd"
@@ -885,7 +885,7 @@ en:
         merge_description: Selecteer Digitale objecten om mee samen te voegen
         please_select_a_digital_object_to_merge: Selecteer een Digitaal object
         merged: Digitale object(en) samengevoegd
-        transfer_description: Breng deze Resource over naar...
+        transfer_description: Breng dit Archief/Collectie-record over naar...
         transfer_target: Selecteer een repository voor overdracht
         unsuppressed: Digitaal Object <strong>%{digital_object.title}</strong> zichtbaar gemaakt
         suppressed: Digitaal Object <strong>%{digital_object.title}</strong> verborgen
@@ -956,7 +956,7 @@ en:
       action:
         save: Bewaar Gebeurtenis
         create: Maak Gebeurtenis
-    linked_agents: Agent Koppelingen
+    linked_agents: Gerelateerde Actoren
 
   extent:
     _frontend:
@@ -998,7 +998,7 @@ en:
   linked_agent:
     _frontend:
       action:
-        add: Voeg Agent Koppeling toe
+        add: Voeg koppeling met Actor toe
 
   linked_record:
     _frontend:
@@ -1103,7 +1103,7 @@ en:
   related_resource:
     _frontend:
       action:
-        add: Voeg gerelateerde Resource toe
+        add: Voeg gerelateerde Archieven/Collecties toe
 
   revision_statement:
     _frontend:
@@ -1146,30 +1146,30 @@ en:
   resource:
     _frontend:
       messages:
-        created: "Resource <strong>%{resource.title}</strong> gemaakt"
-        updated: "Resource <strong>%{resource.title}</strong> aangepast"
-        spawned: "Er is een nieuwe bron gespawned uit Aanwinst <strong>% {accession.display_string} </strong>"
-        deleted: "Resource <strong>%{resource.title}</strong> verwijderd"
-        published: "Resource <strong>%{resource.title}</strong>, subrecords en componenten werden gepubliceerd"
-        unpublished:  "Publicatie van Resource <strong>%{resource.title}</strong>, kinderen, subrecords en componenten werd ongedaan gemaakt"
-        merge_description: Selecteer de Resources waarmee moet worden samengevoegd
-        please_select_a_resource_to_merge: Selecteer een Resource
-        merged: Resource(s) samengevoegd
-        transfer_description: Breng deze Resource over naar...
+        created: "Archief/Collectie-record <strong>%{resource.title}</strong> gemaakt"
+        updated: "Archief/Collectie-record <strong>%{resource.title}</strong> aangepast"
+        spawned: "Er is een nieuw Archief/Collectie-record gecreëerd uit Aanwinst <strong>% {accession.display_string} </strong>"
+        deleted: "Archief/Collectie-record <strong>%{resource.title}</strong> verwijderd"
+        published: "Archief/Collectie-record <strong>%{resource.title}</strong>, subrecords en componenten werden gepubliceerd"
+        unpublished:  "Publicatie van Archief/Collectie-record <strong>%{resource.title}</strong>, kinderen, subrecords en componenten werd ongedaan gemaakt"
+        merge_description: Selecteer de Archief/Collectie-records waarmee moet worden samengevoegd
+        please_select_a_resource_to_merge: Selecteer een Archief/Collectie-record
+        merged: Archief/Collectie-records samengevoegd
+        transfer_description: Breng dit Archief/Collectie-record over naar...
         transfer_target: Selecteer een repository voor overdracht
-        unsuppressed: Resource <strong>%{resource.title}</strong> zichtbaar gemaakt
-        suppressed: Resource <strong>%{resource.title}</strong> verborgen
-        suppressed_info: Resource is verborgen en kan niet worden aangepast
-        delete_conflict: "Resource kon niet worden verwijderd: <pre>%{error}</pre>"
+        unsuppressed: Archief/Collectie-record <strong>%{resource.title}</strong> zichtbaar gemaakt
+        suppressed: Archief/Collectie-record <strong>%{resource.title}</strong> verborgen
+        suppressed_info: Archief/Collectie-record is verborgen en kan niet worden aangepast
+        delete_conflict: "Archief/Collectie-record kon niet worden verwijderd: <pre>%{error}</pre>"
       section:
         basic_information: Basisgegevens
         finding_aid: Toegangsgegevens
       action:
         add_child: Voeg Kind toe
-        create: Maak Resource
+        create: Maak Archief/Collectie-record
         load_bulk: Laad via Spreadsheet
-        save: Bewaar Resource
-        delete_multiple: Verwijder Resources
+        save: Bewaar Archief/Collectie-record
+        delete_multiple: Verwijder archieven/collecties
     external_ark_url: Externe ARK URL
     external_ark_url_tooltip: Archival Resource Key (ARK) persistent identifier werd gegenereerd buiten ArchivesSpace.Als dit veld een waarde heeft, heeft het voorrang op een ARK die is gegenereerd in ArchivesSpace.
 
@@ -1368,9 +1368,9 @@ en:
         slug_config_msg: <b>Gebaseerd op je configuratie instellingen in config.rb:</b>
         slug_config_id: Slugs worden waar nodig gegenereerd met behulp van de entiteits-Identificatiecode.
         slug_config_title: Slugs worden gegenereerd met behulp van de naam of titel van de entiteit.
-        slug_config_eadid: Slugs voor <b> Resources </b> worden gegenereerd met behulp van de EAD-ID waar van toepassing.
+        slug_config_eadid: Slugs voor <b> archieven/collecties </b> worden gegenereerd met behulp van de EAD-ID waar van toepassing.
         slug_config_cuid: Slugs voor <b> Archiefonderdelen </b> worden gegenereerd met behulp van de unieke ID van het onderdeel, waar van toepassing.
-        ark_generation: Deze taak genereert ARK's voor alle <b> Resources </b> en <b> Archiefonderdeel </b> die nog geen ARK hebben. <br /> <br /> <em> Externe ARK's worden niet gewijzigd.</em>
+        ark_generation: Deze taak genereert ARK's voor alle <b> archieven/collecties </b> en <b> Archiefonderdeel </b> die nog geen ARK hebben. <br /> <br /> <em> Externe ARK's worden niet gewijzigd.</em>
 
   shortcuts:
     quick_reference_window: "Overzicht: Sneltoetsen"
@@ -1487,10 +1487,10 @@ en:
         no_active_restrictions: Geen actieve beperkingen
       bulk_operations:
         title: Bulk Operaties
-        collection_singular: Resource/Aanwinst
-        collection_plural: Resources/Aanwinsten
-        collection_resource_singular: Resource
-        collection_resource_plural: Resources
+        collection_singular: Archief/Collectie / Aanwinst
+        collection_plural: Archieven/Collecties / Aanwinsten
+        collection_resource_singular: Archief/collectie
+        collection_resource_plural: Archieven/Collecties
         collection_accession_singular: Aanwinst
         collection_accession_plural: Aanwinsten
         series: Reeksen
@@ -1516,15 +1516,15 @@ en:
         rapid_barcode_entry_new_barcode: Nieuwe Barcode
         rapid_barcode_entry_help: Voer een Barcode in voor elke geselecteerde container. Laat het veld Nieuwe streepjescode leeg om de huidige Barcode te verwijderen zonder deze te vervangen door een nieuwe waarde.
         batch_merge: Voeg Topcontainers samen
-        batch_merge_instructions: Select the top container into which all of the other listed top container(s) will merge. Linked accessions, resources, resource components, and events will be re-linked to this container. Container profiles will be moved to this container only when it does not already have one. Locations and all other information for the other top container(s) will be deleted.
+        batch_merge_instructions: Selecteer de Topconcainer waarmee alle andere Topcontainers in de lijst zullen worden samengevoegd. Gekoppelde Aanwinsten, Archieven/Collecties, Archiefonderdelen en Gebeurtenissen zullen opnieuw worden gekoppeld aan deze Topcontainer. Containerprofielen zullen overgebracht worden naar deze Topcontainer indien die er nog geen bevat. Locaties en alle andere informatie van de andere Topcontainers zullen worden verwijderd.
         batch_merge_confirm: Bevestig Topcontainers samenvoegen
-        batch_merge_confirm_question: Are you sure you want to merge the top containers as listed below? This action is irreversible.
+        batch_merge_confirm_question: Weet je zeker dat je onderstaande Topcontainers wil samenvoegen? Deze actie is onomkeerbaar.
         batch_merge_container_profile_too_many_warning: Deze topcontainers hebben verschillende containerprofielen. Geen van deze containerprofielen wordt samengevoegd in de doelcontainer.
         batch_merge_container_profile_mismatch_warning: Deze topcontainers hebben een ander containerprofiel dan de target topcontainer. Het containerprofiel wordt niet samengevoegd met de doelcontainer.
-        batch_merge_confirm_victims: "Merge the following top container(s):"
+        batch_merge_confirm_victims: "Voeg volgende Topcpontainers samen:"
         batch_merge_confirm_target: "In deze topcontainer:"
         batch_delete: Verwijder Topcontainers
-        batch_delete_help: Verwijder all selected containers.
+        batch_delete_help: Verwijder alle geselecteerde containers.
         update_n_records: "Update %{n} records"
         select_merge_target: Selecteer doel om samen te voegen
         merge_n_records: "Voeg %{n} records samen"
@@ -2205,17 +2205,17 @@ en:
   agent_resource: &agent_resource_attributes
     _frontend:
       action:
-        add: Voeg gerelateerde externe Resource toe
+        add: Voeg gerelateerd extern Archief/Collectie-record toe
     section:
       dates: Data
       places: Plaatsen
-    _plural: Gerelateerde externe Resources
-    _singular: Gerelateerde externe Resource
+    _plural: Gerelateerde externe Archief/Collectie-records
+    _singular: Gerelateerde externe Archief/Collectie-record
     dates: Data
     places: Plaatsen
     publish: Gepubliceerd
-    linked_agent_role: Resource relatie type
-    linked_resource: Gerelateerde externe Resource
+    linked_agent_role: Archief/Collectie relatie type
+    linked_resource: Gerelateerde externe Archief/Collectie-records
     linked_resource_description: Beschrijving
     file_uri: BestandsURI
     xlink_title_attribute: Xlink Titel Attribuut
@@ -2263,7 +2263,7 @@ en:
       actions:
         add_file: Selecteer bestand
         add_archival_objects: Importeer Archiefonderdeel
-        add_digital_objects: Voeg Digitaale objecten toe aan Archiefonderdelen
+        add_digital_objects: Voeg Digitale objecten toe aan Archiefonderdelen
         import: Import via SpreadSheet
         drag_drop: Sleep het bestand hierheen.
         clip_btn: Kopieer naar klembord
@@ -2280,7 +2280,7 @@ en:
         submitted: "<p>Job werd naar Background Jobs gestuurd. <br/> Klik 'Sluiten' om deze pagina te verversen.</p>"
   bulk_import_job:
     active: "Er is een bulkimporttaak actief voor dit record, probeer het later te bewerken: <a href ='%{url}'>%{uri}</a>"
-    resource_id: Resource Identificatiecode
+    resource_id: Archief/Collectie Identificatiecode
     format: Download bestand
     filename: Spreadsheet bestandsnaam
     not_direct: Op dit moment kan deze taak alleen worden gemaakt op basis van het bronrecord
