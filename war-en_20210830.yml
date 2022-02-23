@@ -236,8 +236,8 @@ en:
       title: Titel
       publish: Gepubliceerd
       context: Bovenliggend Archief/Collectie-record
-      identifier: Onderdeel ID
-      ref_id: Ref ID
+      identifier: Identificatiecode
+      ref_id: Referentie ID
       level: Niveau
       audit_info: Audit informatie
       langcode: Taal van de materialen

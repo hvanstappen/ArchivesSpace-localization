@@ -1293,7 +1293,7 @@ en:
         <p>VERPLICHT VELD: Een term die het type eenheid aangeeft dat wordt gebruikt om de omvang van de beschreven materialen te meten.</p>
         <p>Waarden in deze lijst met gecontroleerde waarden kunnen worden gewijzigd.</p>
         <p>Zie DACS 2.5</p>
-    container_summary: Samenvatting verpakking
+    container_summary: Overzicht verpakking
     container_summary_tooltip: |
         <p>Een lijst met containers en containertypen waarin de materialen zijn ondergebracht die worden beschreven in het componentrecord.</p>
          <p> Voorbeelden: </p>
@@ -1598,7 +1598,7 @@ en:
     restrictions_apply_tooltip: |
         <p>Indicatie of er beperkingen gelden voor de Aanwinst.</p>
         <p>Zie DACS 4.1.5-4.1.6; 4.2.5-4.2.7, 4.3.4-4.3.6</p>
-    resource_type: Resource Type
+    resource_type: Samenstelling
     resource_type_tooltip: |
         <p>Een lijst met termen die door een repository worden gebruikt om zijn Archieven/Collecties in basistypen te categoriseren.</p>
         <p>Waarden in deze lijst met gecontroleerde waarden kunnen worden gewijzigd.</p>
@@ -1780,7 +1780,7 @@ en:
         <li>National Academy of Sciences correspondence</li>
         <li>Audio and video recordings</li>
          </ul>
-    ref_id: Refentie ID
+    ref_id: Referentie ID
     ref_id_tooltip: |
         <p>Een automatisch aangeleverde en bij te werken referentie-ID, die kan worden gebruikt als een doel om te linken, enz. De Ref-ID is bedoeld om automatisch te worden gegenereerd of geïmporteerd vanuit een bestaand systeem en om persistent te blijven.</p>
     ref_id_export_prefix: aspace_
@@ -1790,7 +1790,7 @@ en:
     extents: Omvang
     lang_materials: Talen
     ref_id_auto_generation_message: "-- automatisch geegenereerd bij bewaren --"
-    component_id: Component Unieke Identificatiecode
+    component_id: Identificatiecode
     component_id_tooltip: |
         <p>Drukt een unieke ID uit, binnen de context van de archief/collectiebeschrijving, voor het componentonderdeel.</p>
          <p> Voorbeelden: </p>
@@ -1807,7 +1807,7 @@ en:
     other_level: Ander niveau
     other_level_tooltip: |
         <p>VERPLICHT VELD als "Ander niveau" de waarde is die is geselecteerd voor Niveau. Geeft het type niveau weer buiten de waarden die zijn opgegeven in het EAD-schema.</p>
-    container_summary: Samenvatting containers
+    container_summary: Overzicht verpakking
     container_summary_tooltip: |
         <p>Voor het registreren van het aantal en type containers met een archief/collectiebeschrijving. Dit wordt beschouwd als een tekstuele samenvatting en is niet identiek aan de subrecords van de omvang.</p>
         <p>Zie DACS 2.5</p>
@@ -1925,7 +1925,7 @@ en:
         <li>National Academy of Sciences correspondence</li>
         <li>Audio and video recordings</li>
          </ul>
-    resource_type: Resource Type
+    resource_type: Samenstelling
     resource_type_tooltip: |
         <p>Een lijst met termen die door een repository worden gebruikt om zijn Archieven/Collecties in basistypen te categoriseren.</p>
         <p>Waarden in deze lijst met gecontroleerde waarden kunnen worden gewijzigd.</p>
@@ -2868,7 +2868,7 @@ en:
       script_code: "Cannot validate a language script (%{script})"
       process_error: "Fout bij verwerken %{type} %{num}: %{why}"
       bad_ao_uri: " met uri %{uri}"
-      bad_ao_ref_id: " met Ref ID  %{ref_id}"
+      bad_ao_ref_id: " met Referentie ID  %{ref_id}"
       bad_ao: "Kan Archiefonderdeel niet vinden %{errs}"
       no_uri_or_ref: Er is geen Archiefonderdeel-URI of referentie-ID opgegeven
       file_too_big: "Dit bestand, in %{file_info}, overschrijdt de limieten voor grootte en/of rijnummers van %{limits}"
