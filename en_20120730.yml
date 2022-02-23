@@ -1602,21 +1602,21 @@ en:
     resource_type_tooltip: |
         <p>Een lijst met termen die door een repository worden gebruikt om zijn Archieven/Collecties in basistypen te categoriseren.</p>
         <p>Waarden in deze lijst met gecontroleerde waarden kunnen worden gewijzigd.</p>
-    access_restrictions: Toegankelijkheid beperkt?
+    access_restrictions: Toegankelijkheidsbeperkingen?
     access_restrictions_tooltip: |
         <p>Een selectievakje om aan te geven of de toegang tot de materialen beperkt is.</p>
         <p>Zie DACS 4.1.5-4.1.6; 4.2.5-4.2.7, 4.3.5-4.3.6</p>
-    access_restrictions_note: Toegankelijkheid beperkt Noot
+    access_restrictions_note: Omschrijving toegankelijkheidsbeperkingen
     access_restrictions_note_tooltip: |
         <p>Een verklaring waarin wordt aangegeven tot welk materiaal in de Aanwinst de toegang beperkt is, wat de bevoegdheid van de beperking is en hoe lang de beperking van kracht zal zijn. Aanvullende informatie kan ook worden vastgelegd in een subrecord Rechten.</p>
          <p> Voorbeelden: </p>
          <ul>
         <li>Dagboeken in box 10 zijn tot 2030 door de donor beperkt.</li>
          </ul>
-    use_restrictions: Beperkingen op gebruik?
+    use_restrictions: Gebruiksbeperkingen?
     use_restrictions_tooltip: |
         <p>Een selectievakje om aan te geven dat er gebruiksbeperkingen zijn voor materialen bij de Aanwinst.</p>
-    use_restrictions_note: Gebruiksbeperkingen Noot
+    use_restrictions_note: Omschrijving gebruiksbeperkingen
     use_restrictions_note_tooltip: |
         <p>Een verklaring die aangeeft voor welke materialen gebruiksbeperkingen gelden, hoe de materialen kunnen worden gebruikt, wat de autoriteit van de beperking is en hoe lang de beperking van kracht zal zijn. Aanvullende informatie kan ook worden vastgelegd in een onderregistratie Rechten.</p>
          <p> Voorbeelden: </p>
@@ -1820,7 +1820,7 @@ en:
     publish: Publiceren
     publish_tooltip: |
         <p>Bepaalt of dit Archiefonderdeel wordt gepubliceerd naar openbare (publieke) interfaces.</p>
-    restrictions_apply: Beperkingen van toepassing?
+    restrictions_apply: Beperkingen?
     restrictions_apply_tooltip: |
         <p>Geeft aan of de beschreven materialen op enigerlei wijze aan beperkingen onderhevig zijn. Een aanvullende beschrijving van de beperking dient te worden verstrekt in de desbetreffende opmerkingen of rechtenverklaringen voor de goede orde waar de beperking zich voordoet.</p>
         <p>Zie DACS 4.1-4.4</p>

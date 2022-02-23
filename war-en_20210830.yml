@@ -196,8 +196,8 @@ en:
       accession_date: Aanwinst datum
       resource_type: Resource type
       restrictions_apply: Er zijn beperkingen van toepassing
-      access_restrictions: Beperkingen op toegang
-      use_restrictions: Beperkingen op gebruik
+      access_restrictions: Toegankelijkheidsbeperkingen
+      use_restrictions: Gebruiksbeperkingen
       audit_info: Audit informatie
       creators: Makers
       accession_date_year: Aanwinst datum
@@ -1466,7 +1466,7 @@ en:
 
     _frontend:
       section:
-        active_restrictions: Active Beperkingen
+        active_restrictions: Actieve Beperkingen
         linked_records: Linked Records
         basic_information: Container informatie
       action:
@@ -1605,7 +1605,7 @@ en:
     end: Beperking Einde
     end_tooltip: |
         <p>Voor een tijdgebonden beperking: de einddatum voor een toegangsbeperking. Moet een enkele datum zijn in de notatie JJJJ-MM-DD. Wordt losgekoppeld van de containers zodra deze vervalt. Gebruik de notitietekst om een minder nauwkeurige datum of datumbereik aan te geven.</p>
-    local_access_restriction_type: Type beperking lokale toegang
+    local_access_restriction_type: Type beperking op toegankelijkheid
     local_access_restriction_type_inline_help: "Hou CTRL (Windows) / Command (Mac/Linux) ingedrukt om meerdere opties te selecteren of een optie te deselecteren"
     local_access_restriction_type_tooltip: |
         <p>Voor beperkingen die niet tijdgebonden zijn, een indicatie van de reden voor de beperking.</p>
