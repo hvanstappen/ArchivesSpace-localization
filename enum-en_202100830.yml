@@ -423,7 +423,7 @@ en:
       cubic_feet: Kubieke meter
       files: Bestanden
       gigabytes: Gigabytes
-      leaves: Paginas
+      leaves: Pagina's
       linear_feet: Strekkende meter
       megabytes: Megabytes
       photographic_prints: Photografische afdrukken
@@ -431,14 +431,14 @@ en:
       reels: Spoelen
       sheets: Bladen
       terabytes: Terabytes
-      volumes: Volumes
-      part: Stuk
-      box: Dozen
+      volumes: Banden
+      part: Stukken
+      box: Archiefdozen
       gb: Gigabytes
       mb: Megabytes
-      notspecified: niet gespecificeerd
-      packet: Pakketten
-      parcel: Omslag
+      notspecified: Niet gespecificeerd
+      packet: Pakken
+      parcel: Omslagen
     collection_management_processing_priority:
       none: Niet gespecificeerd
       high: Hoog
@@ -1310,10 +1310,10 @@ en:
       fonds: Archief
       item: Object
       otherlevel: Ander niveau
-      recordgrp: Record Group@en
+      recordgrp: Inschrijvingsgroep
       series: Reeks
       subfonds: Deelarchief
-      subgrp: Sub-Group@en
+      subgrp: Deelgroep
       subseries: Deelreeks
     container_location_status:
       current: Huidig

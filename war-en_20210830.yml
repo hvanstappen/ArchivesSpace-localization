@@ -70,7 +70,7 @@ en:
     transfer_successful: Overbrengen geslaagd.  Het kan even duren voordat records in de doelrepository verschijnen terwijl het opnieuw indexeren plaatsvindt.
     transfer_failed: Overbrengen mislukt
     transfer_failed_records_using_digital_objects: "De volgende records hebben een koppeling naar een digitaal object die zouden worden overgebracht, maar daardoor worden de links met hun instanties verbroken."
-    transfer_failed_digital_objects_linked_to_records: "Dit digitaal object heeft een koppeling met andere records indit Repository. Verwijder de koppelingen in de volgende records om het overbrengen uit te voeren"
+    transfer_failed_digital_objects_linked_to_records: "Dit digitaal object heeft een koppeling met andere records in dit Repository. Verwijder de koppelingen in de volgende records om het overbrengen uit te voeren"
     unset_default: Standaardwaarde uitschakelen
     unsuppress: Zichtbaar maken
     unsuppress_confirm_title: Dit record zichtbaar maken?
