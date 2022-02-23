@@ -201,7 +201,7 @@ en:
       audit_info: Audit informatie
       creators: Makers
       accession_date_year: Aanwinst datum
-      dates: Data
+      dates: Datums
       extents: Omvang
       processing_priority: Prioriteit verwerking
       processors: Verwerkers
@@ -223,7 +223,7 @@ en:
       audit_info: Audit informatie
       classification_path: Classificatie Path
       subjects: Onderwerp
-      dates: Data
+      dates: Datums
       extents: Omvang
       processing_priority: Prioriteit verwerking
       processors: Verwerkers
@@ -241,7 +241,7 @@ en:
       level: Niveau
       audit_info: Audit informatie
       langcode: Taal van de materialen
-      dates: Data
+      dates: Datums
       extents: Omvang
       user_mtime: Aangepast
       create_time: Gemaakt
@@ -269,7 +269,7 @@ en:
       restrictions: Beperkingen
       audit_info: Audit informatie
       langcode: Taal van de materialen
-      dates: Data
+      dates: Datums
       extents: Omvang
       user_mtime: Aangepast
       create_time: Gemaakt
@@ -282,7 +282,7 @@ en:
       context: Gevonden in
       audit_info: Audit informatie
       langcode: Taal van de materialen
-      dates: Data
+      dates: Datums
       extents: Omvang
       user_mtime: Aangepast
       create_time: Gemaakt
@@ -456,7 +456,7 @@ en:
       relevance: Relevantie
       user_mtime: Aangepast
       create_time: Gemaakt
-      dates: Data
+      dates: Datums
       extents: Omvang
       langcode: Taal van de materialen
       asc: Oplopend
@@ -698,7 +698,7 @@ en:
         description_information: Beschrijvingsinformatie
         relation_information: Relatie informatie
         date_of_existence: Datum van bestaan
-        dates_of_existence: Data van bestaan
+        dates_of_existence: Datums van bestaan
         name: Naamvormen
         contacts: Contactgegevens
         search_embedded: Gekoppelde Records
@@ -1049,7 +1049,7 @@ en:
     _frontend:
       section:
         use_date: Datum(s) van naamgebruik
-        dates: Data
+        dates: Datums
         parallel_names: Parallele namen
       action:
         add: Voeg Naamvorm toe
@@ -1681,17 +1681,17 @@ en:
       location_cannot_fit_container: Op de locatie passen momenteel geen containers van dit type
 
   date_calculator:
-    toolbar_button: Bereken data
+    toolbar_button: Bereken datums
     calculate_button: Bereken datum record
-    modal_title: Bereken data
-    all_labels: Bereken voor alle data
+    modal_title: Bereken datums
+    all_labels: Bereken voor alle datums
     no_object_message: Record niet Gevonden
     results_title: Berekend datum record
     create_date_button: Maak datum record
     generic_create_error: Datum is ongeldig en kan niet worden gemaakt
     create_success: Datum succesvol gemaakt. Pagina verversen...
-    no_dates: Geen geschikte data gevonden
-    no_dates_for_label: Geen geschikte %{label} data gevonden
+    no_dates: Geen geschikte datums gevonden
+    no_dates_for_label: Geen geschikte %{label} datums gevonden
 
   act:
     _frontend:
@@ -1871,11 +1871,11 @@ en:
         add: Voeg geslacht toe
     gender: Geslacht
     note: Noot
-    dates: Data
+    dates: Datums
 
   dates_of_existence:
     _singular: Bestaansdatum
-    _plural: Bestaansdata
+    _plural: Bestaansdatums
 
   agent_genders:
     <<: *agent_gender_attributes
@@ -1936,12 +1936,12 @@ en:
       action:
         add: Voeg Plaats toe
     section:
-      dates: Data
+      dates: Datums
     _plural: Plaatsen
     _singular: Plaats
     place_role: Agent Plaats rol
     text_note: Noot
-    dates: Data
+    dates: Datums
     subjects: Plaatsen
     publish: Gepubliceerd
 
@@ -1962,11 +1962,11 @@ en:
       action:
         add: Voeg beroep toe
     section:
-      dates: Data
+      dates: Datums
     _plural: Beroepen
     _singular: Beroep
     text_note: Noot
-    dates: Data
+    dates: Datums
     subjects: Beroepen
     places: Plaatsen
     publish: Gepubliceerd
@@ -1988,11 +1988,11 @@ en:
       action:
         add: Add Function
     section:
-      dates: Data
+      dates: Datums
     _plural: Functies
     _singular: Functie
     text_note: Noot
-    dates: Data
+    dates: Datums
     subjects: Functies
     places: Plaatsen
     publish: Gepubliceerd
@@ -2014,11 +2014,11 @@ en:
       action:
         add: Voeg Topic toe
     section:
-      dates: Data
+      dates: Datums
     _plural: Topics
     _singular: Topic
     text_note: Noot
-    dates: Data
+    dates: Datums
     subjects: Topics
     places: Plaatsen
     publish: Gepubliceerd
@@ -2197,21 +2197,21 @@ en:
 
   agent_parallel_name:
     _plural: Parallele Namen
-    use_dates: Data gebruik
+    use_dates: Datums gebruik
 
   agent_name:
-    use_dates: Data gebruik
+    use_dates: Datums gebruik
 
   agent_resource: &agent_resource_attributes
     _frontend:
       action:
         add: Voeg gerelateerd extern Archief/Collectie-record toe
     section:
-      dates: Data
+      dates: Datums
       places: Plaatsen
     _plural: Gerelateerde externe Archief/Collectie-records
     _singular: Gerelateerde externe Archief/Collectie-record
-    dates: Data
+    dates: Datums
     places: Plaatsen
     publish: Gepubliceerd
     linked_agent_role: Archief/Collectie relatie type
@@ -2239,7 +2239,7 @@ en:
 
   subsections:
     notes: Noten
-    dates: Data
+    dates: Datums
 
   section_headings:
     basic_information_tooltip: |

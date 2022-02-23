@@ -64,7 +64,7 @@ en:
         <p>Taal en schrift van de beschreven materialen.</p>
         <p>Zie DACS 4.5</p>
     dates_tooltip: |
-        <p>Identificeert en registreert de data die betrekking hebben op de creatie, montage, accumulatie en / of onderhoud en gebruik van de beschreven materialen.</p>
+        <p>Identificeert en registreert de datums die betrekking hebben op de creatie, montage, accumulatie en / of onderhoud en gebruik van de beschreven materialen.</p>
         <p>Zie DACS 2.4</p>
     extents_tooltip: |
         <p>Geeft de omvang en de fysieke aard van de materialen aan die worden beschreven.</p>
@@ -139,13 +139,13 @@ en:
          <ul>
         <li>Audio: Tape 1, Track 1, Sectie 1, enz.</li>
         <li>Beeld: Image 1, Picture 1, enz.</li>
-        <li>Kekst: Pagina 1, Blad 1, Hoofdstuk 1, Sectie 1, enz.</li>
+        <li>Tekst: Pagina 1, Blad 1, Hoofdstuk 1, Sectie 1, enz.</li>
         <li>Video:  Tape 1, Deel 1, Sectie 1, enz.</li>
          </ul>
     component_id: Identificatiecode
     component_id_tooltip: |
         <p>Een unieke Identificatiecode voor de Digitale object component.</p>
-    dates: Data
+    dates: Datums
     has_unpublished_ancestor: Heeft niet-gepubliceerde Ancestor?
     _singular: Digitale Object Component
     _plural: Digitale Object Componenten
@@ -493,10 +493,10 @@ en:
         <li>II <em>(voor John Paul II)</em></li>
         <li>97th, 2nd session <em>(voor United States Congress, 97th, 2nd session)</em></li>
         </ul>
-    dates: Data
+    dates: Datums
     dates_tooltip: |
         <p>Gebruik dit veld voor afstemming met MARC-autorisatierecords. Deze datums worden in plaats van de datums van bestaan toegevoegd aan de naaminvoer op het scherm.</p>
-        <p>Bestaansdata voor de genoemde entiteit.</p>
+        <p>Bestaansdatums voor de genoemde entiteit.</p>
         <p>Voorbeelden:<p>
         <ul>
         <li>1886-1961 <em>(voor H.D., Hilda Doolittle, 1886-1961)</em></li>
@@ -1002,7 +1002,7 @@ en:
     description: Beschrijving
     description_tooltip: Een vrij tekstveld dat de aard van de realtie beschrijft
     date: Datum
-    dates: Data
+    dates: Datums
     ref: Gerelateerde Agent
     related_agent_tooltip: De persoon, familie of organisatie die verband houdt met de primaire agent.
     _singular: Gerelateerde Agent
@@ -1485,7 +1485,7 @@ en:
     calendar_tooltip: |
         <p>Systeem van tijdrekening, zoals de Gregoriaanse kalender of Juliaanse kalender. De waarde "gregoriaans" is de standaardwaarde.</p>
         <p>Zie EAD attribuut "calendar" en DACS 2.4.5.</p>
-    _plural: Data
+    _plural: Datums
     _singular: Datum
 
   date_type_single:
@@ -1784,7 +1784,7 @@ en:
     ref_id_tooltip: |
         <p>Een automatisch aangeleverde en bij te werken referentie-ID, die kan worden gebruikt als een doel om te linken, enz. De Ref-ID is bedoeld om automatisch te worden gegenereerd of geïmporteerd vanuit een bestaand systeem en om persistent te blijven.</p>
     ref_id_export_prefix: aspace_
-    dates: Data
+    dates: Datums
     dates_tooltip: |
         <p> VOORWAARDELIJK VERPLICHT SUBRECORD. Een Archiefonderdeel moet minstens een Titel of een Datum hebben.</p>
     extents: Omvang
@@ -2421,8 +2421,8 @@ en:
     sponsor_set_name_required: De naam van de sponsorset is vereist voor het maken van een OAI-sponsorset
     invalid_characters: Bevat ongeldige tekens
     conflicting_record: "<a href='/resolve/readonly?uri=%{record_uri}' target='_blank'>Bekijk conflicting record</a>"
-    or_date_expression_is_required: Data moeten minstens één datumexpressie geven
-    must_specify_either_a_single_or_ranged_date: Data moeten gespecificeerd als ofwel enkelvoudig ofwel datumbereik
+    or_date_expression_is_required: Datums moeten minstens één datumexpressie geven
+    must_specify_either_a_single_or_ranged_date: Datums moeten gespecificeerd als ofwel enkelvoudig ofwel datumbereik
     must_be_in_yyyy[yyy][yy][y]__yyyy[yyy][yy][y]-mm__or_yyyy-mm-dd_format: Gestandaardiseerde datums moeten in een gestandaardiseerd formaat zijn
     generic_validation_error: Validatiefout
     requires_that_end_dates_are_after_begin_dates: Einddatums moeten na de startdatums liggen
