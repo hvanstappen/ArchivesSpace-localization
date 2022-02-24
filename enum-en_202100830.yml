@@ -1310,7 +1310,7 @@ en:
       fonds: Archief
       item: Object
       otherlevel: Ander niveau
-      recordgrp: Inschrijvingsgroep
+      recordgrp: Archiefblok #http://www.ciscra.org/mat/mat/term/3503
       series: Reeks
       subfonds: Deelarchief
       subgrp: Deelgroep
