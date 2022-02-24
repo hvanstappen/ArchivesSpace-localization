@@ -18,12 +18,12 @@ en:
     real_1: Real 1
     real_2: Real 2
     real_3: Real 3
-    string_1: String 1
+    string_1: Aankoopprijs
     string_2: String 2
     string_3: String 3
     string_4: String 4
     text_1: Brocade record history
-    text_2: Text 2
+    text_2: Magazijnplaatsing
     text_3: Text 3
     text_4: Text 4
     text_5: Text 5
@@ -33,12 +33,12 @@ en:
     date_2_inline_help: bv. YYYY-MM-DD
     date_3: Datum 3
     date_3_inline_help: bv. YYYY-MM-DD
-    enum_1: Controlled Value 1
+    enum_1: Archiefeenheid
     enum_2: Controlled Value 2
     enum_3: Controlled Value 3
     enum_4: Controlled Value 4
-    _singular: User Defined
-    _plural: User Defined
+    _singular: Extra gegevens
+    _plural: Extra gegevens
 
   slug: &slug_attributes
     slug: Slug
@@ -1621,9 +1621,9 @@ en:
         <p>Een verklaring die aangeeft voor welke materialen gebruiksbeperkingen gelden, hoe de materialen kunnen worden gebruikt, wat de autoriteit van de beperking is en hoe lang de beperking van kracht zal zijn. Aanvullende informatie kan ook worden vastgelegd in een onderregistratie Rechten.</p>
          <p> Voorbeelden: </p>
         <p>Manuscripten in doos 33 zijn kwetsbaar; in plaats daarvan moeten fotokopieën worden gebruikt.</p>
-    acquisition_type: Aanwinsttype
+    acquisition_type: Verwervingsprocedure
     acquisition_type_tooltip: |
-        <p>Een categorische descriptor voor het type Aanwinst. Repositories kunnen de lijst met gegevenswaarden aanpassen.</p>
+        <p>Een aanduiding van de verwervingsprocedure. Repositories kunnen de lijst met gegevenswaarden aanpassen.</p>
         <p> Voorbeelden: </p>
          <ul>
         <li>Schenking</li>
@@ -2009,8 +2009,8 @@ en:
     _plural: Archieven/Collecties
 
   related_accession:
-    _singular: Gerelateerde Aanwinst
-    _plural: Gerelateerde Aanwinsten
+    _singular: Aanwinst
+    _plural: Aanwinsten
 
   revision_statement:
     _singlular: Revisie toelichting
