@@ -20,11 +20,11 @@ en:
       not_after: Niet na
     begin_date_standardized_type:
       standard: Standaard
-      not_before: Niet Voor
+      not_before: Niet voor
       not_after: Niet na
     end_date_standardized_type:
       standard: Standaard
-      not_before: Niet Voor
+      not_before: Niet voor
       not_after: Niet na
     maintenance_status:
       new: Nieuw

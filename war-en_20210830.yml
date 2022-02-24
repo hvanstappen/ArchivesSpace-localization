@@ -16,19 +16,19 @@ en:
     container_labels: Download verpakkinglabels
     create: Maak
     cut: Knip
-    defaults: Standaard waarden
+    defaults: Standaardwaarden
     edit: Bewerk
     edit_oai: Bewerk OAI instellingen
     edit_batch: Bewerk batch
     edit_groups: Bewerk groepen
-    edit_default_values: Bewerk standaard waarden
-    edit_default_archival_object_values: Bewerk standaard waarden voor archiefonderdeel
+    edit_default_values: Bewerk standaardwaarden
+    edit_default_archival_object_values: Bewerk standaardwaarden voor archiefonderdeel
     edit_required_fields: Bewerk verplichte velden
-    edit_global_oai: Bekijk/Bewerk globale OAI instellingen
+    edit_global_oai: Bekijk/bewerk globale OAI instellingen
     required: Verplichte velden
-    export: Export
+    export: Exporteer
     view: Bekijk
-    spawn: Spawn
+    spawn: Spawn #todo
     show_all: Toon alle
     transfer_record: Transfer
     more: Meer
@@ -628,7 +628,7 @@ en:
       classification: Classificatierecord standaardinstellingen
       classification_term: Classificatie Term standaardinstellingen
     messages:
-      defaults_updated: Standaard waarden aangepast
+      defaults_updated: Standaardwaarden aangepast
 
   required_fields:
     form_title:
@@ -926,7 +926,7 @@ en:
         deleted: Waarde verwijderd
         delete_error: Kan waarde niet verwijderen
         delete_conflict: "Kan waarde niet verwijderen omdat er door een record naar verwezen wordt"
-        default_set: Standaard waarde ingesteld
+        default_set: Standaardwaarde ingesteld
         created: Waarde gemaakt
         create_error: Kan Waarde niet maken
         merged: Waarde samengevoegd
