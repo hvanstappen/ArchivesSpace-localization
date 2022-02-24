@@ -344,7 +344,7 @@ en:
       agreement_received: Overeenkomst ontvangen
       agreement_sent: Overeenkomst verstuurd
       appraisal: Selectie
-      assessment: Assessment
+      assessment: Waardering
       capture: Vastlegging
       cataloged: Catalografie
       collection: Verzameling
@@ -1884,9 +1884,9 @@ en:
       manage_location_profile_record: locatie profielrecords maken/aanpassen/verwijderen
       create_job: achtergrondtaken maken en uitvoeren
       cancel_job: achtergrondtaken annuleren
-      update_assessment_record: assessment records maken/aanpassen
-      delete_assessment_record: assessment records verwijderen
-      manage_assessment_attributes: repository assessment attributes definities maken/aanpassen/verwijderen
+      update_assessment_record: waarderingsrecords maken/aanpassen
+      delete_assessment_record: waarderingsrecords verwijderen
+      manage_assessment_attributes: waarderingscriteria maken/aanpassen/verwijderen
       manage_enumeration_record: waardenlijsten maken/aanpassen/verwijderen
     _singular: Groep
     _plural: Groepen
@@ -2327,7 +2327,7 @@ en:
     collection_management_browse_section: Collectiebeheer blader door kolommen
     top_container_browse_section: Top Container blader door kolommen
     classification_browse_section: Classificatie blader door kolommen
-    assessment_browse_section: Assessment blader door kolommen
+    assessment_browse_section: Waardering blader door kolommen
     repositories_browse_section: Repository blader door kolommen
     location_profile_browse_section: Locatie Profiel blader door kolommen
     container_profile_browse_section: Container Profiel blader door
@@ -2475,7 +2475,7 @@ en:
     filenames: Bestanden
     import_type: Importtype
     import_type_ead_xml: EAD
-    import_type_assessment_csv: Assessment CSV
+    import_type_assessment_csv: Waardering CSV
     import_type_accession_csv: Aanwinst CSV
     import_type_digital_object_csv: Digitaal Object CSV
     import_type_eac_xml: EAC-CPF
@@ -2622,7 +2622,7 @@ en:
     monetary_value_note_tooltip: <p>Geeft aan wie de geldwaarde, de taxatiedatum en andere relevante informatie heeft verstrekt.</p>
     surveyed_by: Onderzocht door
     surveyed_by_tooltip: |
-        <p>REQUIRED FIELD: Name(s) of the person(s) who performed the assessment. This field is restricted to those with user records in ArchivesSpace.</p>
+        <p>VERPLICHT VELD: Geeft aan wie de waardering uitvoerde. De waarden zijn beperkt tot gebruikers van ArchivesSpace.</p>
     survey_begin: Begindatum onderzoek
     survey_begin_tooltip: |
         <p>VERPLICHT VELD: De datum waarop de enquête begon, in de indeling jjjj-mm-dd.</p>
@@ -2643,18 +2643,18 @@ en:
     review_note_tooltip: <p>Toelichting bij de uitkomst van een eventuele speciale Review.</p>
     reviewer: Review uitgevoerd door
     reviewer_tooltip: <p>Geeft aan wie de beoordeling moet uitvoeren. Dit veld is beperkt tot degenen met gebruikersrecords in ArchivesSpace.</p>
-    purpose: Doel van het Assessment
+    purpose: Doel van de waardering
     purpose_tooltip: |
-        <p>Geeft de reden aan waarom de Assessment is uitgevoerd. Voorbeelden: instandhoudingsprioriteiten; verwerkingsprioriteiten; beoordeling; enz.</p>
-    scope: Reikwijdte van het Assessment
+        <p>Geeft de reden aan waarom de waardering is uitgevoerd. Voorbeelden: instandhoudingsprioriteiten; verwerkingsprioriteiten; beoordeling; enz.</p>
+    scope: Reikwijdte van de waardering
     scope_tooltip: |
-        <p>Voorbeelden: 10% sampling; geheel; een bepaald formaat of genre binnen of tussen collecties; of andere beperkingen of voorwaarden voor materialen die actief worden beoordeeld tijdens een Assessment.</p>
-    sensitive_material: Sensitive Material?
+        <p>Voorbeelden: 10% sampling; geheel; een bepaald formaat of genre binnen of tussen collecties; of andere beperkingen of voorwaarden voor materialen die actief worden beoordeeld tijdens een waardering.</p>
+    sensitive_material: Gevoelig materiaal?
     sensitive_material_tooltip: <p>Geeft aan of er gevoelige materialen aanwezig zijn.</p>
     sensitive_material_true: "Ja"
     sensitive_material_false: "Nee"
-    general_assessment_note: Algemene Assessment Noot
-    general_assessment_note_tooltip: <p>Eventuele verdere opmerkingen over een Assessment.</p>
+    general_assessment_note: Algemene opmerking bij de waardering
+    general_assessment_note_tooltip: <p>Eventuele verdere opmerkingen over een waardering.</p>
     special_format_note: Bijzondere formaten Noot
     special_format_note_tooltip: <p>Aanvullende of verklarende informatie over de aanwezige speciale formaten.</p>
     exhibition_value_note: Tentoonstellinsgwaarde Noot
@@ -2667,8 +2667,8 @@ en:
       rating_4: "4"
       rating_5: "5"
     rating_note: "%{label} Note"
-    _singular: Assessment
-    _plural: Assessments
+    _singular: Waardering
+    _plural: Waarderingen
 
   assessment_attribute:
     rating:

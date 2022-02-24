@@ -358,7 +358,7 @@ en:
       desc: Aflopend
     assessment:
       score: Relevantie
-      assessment_id: Assessment ID
+      assessment_id: Waardering ID
       assessment_records: Record
       assessment_record_types: Record type
       assessment_surveyors: Surveyor
@@ -368,7 +368,7 @@ en:
       assessment_inactive: Niet actief
       assessment_survey_year: Survey jaar
       assessment_collecties: Verzamelingen
-      assessment_completed: Assessment voltooid
+      assessment_completed: Waardering voltooid
       assessment_formats: Formaten
       assessment_ratings: Beoordelingen
       assessment_conservation_issues: Conservatieproblemen
@@ -532,7 +532,7 @@ en:
     global_admin: Systeem
     system_info: Systeeminformatie
     unpublished: Niet gepubliceerd
-    manage_assessment_attributes: Beheer Assessment Attributen
+    manage_assessment_attributes: Beheer waarderingscriteria
     toggle_navigation: Schakel navigatie
 
   header:
@@ -557,8 +557,8 @@ en:
       success: Locaties verwijderd
       error: "Kan Locaties niet verwijderen:"
     assessments:
-      success: Assessments verwijderd
-      error: "Kan Assessments niet verwijderen:"
+      success: Waarderingsrecord verwijderd
+      error: "Kan waarderingsrecords niet verwijderen:"
 
   welcome:
     heading: Welkom bij ArchivesSpace
@@ -659,7 +659,7 @@ en:
     merge_denied_for_system_user: Eén of meer Agents is een system user.
     merge_denied_relationship: These agents have a relationship. Remove relationship before proceeding with merge.
     merge_restricted_contact_details: De samenvoeging kan niet worden voltooid omdat een of meer van de agenten contactgegevens hebben waartoe je geen toegang hebt.
-    linked_to_assessment: Record kan niet worden verwijderd omdat het is gekoppeld aan een Assesment
+    linked_to_assessment: Record kan niet worden verwijderd omdat het is gekoppeld aan een waarderingsrecord.
 
   accession:
     _frontend:
@@ -1700,22 +1700,22 @@ en:
 
   assessment:
     _frontend:
-      form_header: Assessment %{display_string}
+      form_header: Waardering %{display_string}
       formats: Materiaaltypes / formaten
       ratings: Beoordelingen
       conservation_issues: Conservatieproblemen
       record_types: Recordtypes
       action:
-        create: Maak Assessment
-        save: Bewaar Assessment
+        create: Maak waardering
+        save: Bewaar waardering
         add_rating_note: Voeg Noot toe
         remove_rating_note: Verwijder Noot
-        create_for_record: Maak Assessment
+        create_for_record: Maak waardering
       section:
         basic_information: Basisgegevens
         existing_description: Bestaande beschrijving
-        rating_attributes: Assessment gegevens
-        rating_attributes_empty: Geen assessmentgegevens ingevoerd
+        rating_attributes: Waarderingsgegevens
+        rating_attributes_empty: Geen waarderingsgegevens ingevoerd
         rating_attributes_additional: Bijkomende beoordeling(en)
         format_attributes: Lijst materiaaltypes / formaten
         format_attributes_empty: Geen materiaaltypes / formaten ingevoerd
@@ -1724,9 +1724,9 @@ en:
         conservation_issue_attributes_empty: Geen conservatieproblemen ingevoerd
         conservation_issue_attributes_additional: Bijkomende conservatieproblemen
       messages:
-        created: Assessment gemaakt
-        updated: Assessment aangepast
-        deleted: Assessment verwijderd
+        created: Waardering gemaakt
+        updated: Waardering aangepast
+        deleted: Waardering verwijderd
         attributes_hint: Neem contact op met uw beheerder om extra %{attribute_type} toe te voegen
         manage_attributes_hint: Beheer de bijkomende %{attribute_type} voor deze repository
       assessment_review_required:
@@ -1743,11 +1743,11 @@ en:
         false_value: "Nee"
       browse_reviewers: Reviewers
       linked_records:
-        heading: Gekoppelde ecords
+        heading: Gekoppelde records
         loading: Laden...
-        linked_via_assessment_records: Assessments
-        linked_via_assessment_surveyed_by: Assessments - Onderzocht door
-        linked_via_assessment_reviewer: Assessments - Reviewer
+        linked_via_assessment_records: Waarderingen
+        linked_via_assessment_surveyed_by: Waarderingen - Onderzocht door
+        linked_via_assessment_reviewer: Waarderingen - Reviewer
         record_type: Recordtype
         title: Titel
         identifier: Identificatiecode
@@ -1758,7 +1758,7 @@ en:
 
   assessment_attribute_definitions:
     _frontend:
-      title: Assessment Attributen
+      title: Waarderingscriteria
       section:
         formats: Materiaaltypes/formaten
         ratings: Beoordelingen
@@ -1766,7 +1766,7 @@ en:
       global: Globaal %{type}
       repository: Repository %{type}
       action:
-        save: Bewaar Assessmentattributen
+        save: Bewaar waarderingscriteria
         add_type: Voeg %{type} toe
         find_rating: Zoek records met een %{rating_type} rating
         find_format: Zoek records met een %{format_type} materiaaltype/formaat
@@ -1775,10 +1775,10 @@ en:
         remove_format: Verwijder %{format_type} materiaal type/formaat
         remove_issue: Verwijder %{issue_type} conservatie issue
       messages:
-        updated: Assessment attributen aangepast
-        error: Fout bij het updaten van Assessmentattributen
-        conflict: "Fout bij het bijwerken van Assessment attributen. De volgende labels zijn in strijd met bestaande vermeldingen: %{conflicts}"
-        attribute_in_use: Kan een attribuut niet verwijderen dat momenteel wordt gebruikt door een Assessment
+        updated: Waarderingscriteria aangepast
+        error: Fout bij het updaten van waarderingscriteria
+        conflict: "Fout bij het bijwerken van waarderingscriteria. De volgende labels zijn in strijd met bestaande vermeldingen: %{conflicts}"
+        attribute_in_use: Kan een waarderingscriterium niet verwijderen dat momenteel in gebruik is.
       database_value: Database waarde
       translation: Vertaling
 
