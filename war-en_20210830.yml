@@ -16,19 +16,19 @@ en:
     container_labels: Download verpakkinglabels
     create: Maak
     cut: Knip
-    defaults: Standaard waarden
+    defaults: Standaardwaarden
     edit: Bewerk
     edit_oai: Bewerk OAI instellingen
     edit_batch: Bewerk batch
     edit_groups: Bewerk groepen
-    edit_default_values: Bewerk standaard waarden
-    edit_default_archival_object_values: Bewerk component standaard waarden
+    edit_default_values: Bewerk standaardwaarden
+    edit_default_archival_object_values: Bewerk standaardwaarden voor archiefonderdeel
     edit_required_fields: Bewerk verplichte velden
-    edit_global_oai: Bekijk/Bewerk globale OAI instellingen
+    edit_global_oai: Bekijk/bewerk globale OAI instellingen
     required: Verplichte velden
-    export: Export
+    export: Exporteer
     view: Bekijk
-    spawn: Spawn
+    spawn: Spawn #todo
     show_all: Toon alle
     transfer_record: Transfer
     more: Meer
@@ -43,7 +43,7 @@ en:
     merge_subject_confirm_message: "Het trefwoord '%{source}' zal de geselecteerde records erin samenvoegen. Alle geselecteerde records worden verwijderd en eventuele gekoppelde records worden opnieuw aan dit onderwerp gekoppeld."
     merge_agent_confirm_message: "Het geselecteerde record zal worden samengevoegd met de Agent '%{source}'. Het geselecteerde record wordt verwijderd en alle gekoppelde records worden opnieuw aan deze Agent gekoppeld. Als je op de knop Agents vergelijken klikt, verschijnt een scherm waarin je kan kiezen welke velden en subrecords je van elk record wil behouden."
     merge_agent_from_browse_confirm_message: "Bij de eerste geselecteerde Agent worden de daaropvolgende geselecteerde records erin samengevoegd. Alle volgende geselecteerde records worden verwijderd en alle gekoppelde records worden opnieuw gekoppeld aan de eerste geselecteerde Agent."
-    merge_resource_confirm_message: "De resource '%{source}' zal de geselecteerde records erin samenvoegen. Alle geselecteerde records worden verwijderd en alle gekoppelde records worden opnieuw aan deze bron gekoppeld."
+    merge_resource_confirm_message: "Het archief/collectie-record '%{source}' zal de geselecteerde records erin samenvoegen. Alle geselecteerde records worden verwijderd en alle gekoppelde records worden opnieuw aan deze bron gekoppeld."
     merge_container_profile_confirm_message: "De geselecteerde records worden samengevoegd met het containerprofiel '%{target}'. Alle geselecteerde records worden verwijderd en alle gekoppelde records worden opnieuw aan dit containerprofiel gekoppeld."
     batch_merge: "Selecteer het record waarin alle andere getoonde record(s) moeten worden samengevoegd. Alle gekoppelde records worden opnieuw aan dit record gekoppeld en alle informatie voor de andere record (s) wordt verwijderd."
     merge_n_records: "Voeg %{n} records samen"
@@ -70,7 +70,7 @@ en:
     transfer_successful: Overbrengen geslaagd.  Het kan even duren voordat records in de doelrepository verschijnen terwijl het opnieuw indexeren plaatsvindt.
     transfer_failed: Overbrengen mislukt
     transfer_failed_records_using_digital_objects: "De volgende records hebben een koppeling naar een digitaal object die zouden worden overgebracht, maar daardoor worden de links met hun instanties verbroken."
-    transfer_failed_digital_objects_linked_to_records: "Dit digitaal object heeft een koppeling met andere records indit Repository. Verwijder de koppelingen in de volgende records om het overbrengen uit te voeren"
+    transfer_failed_digital_objects_linked_to_records: "Dit digitaal object heeft een koppeling met andere records in dit Repository. Verwijder de koppelingen in de volgende records om het overbrengen uit te voeren"
     unset_default: Standaardwaarde uitschakelen
     unsuppress: Zichtbaar maken
     unsuppress_confirm_title: Dit record zichtbaar maken?
@@ -121,7 +121,7 @@ en:
     view_search_results: Ga naar zoekresultaten
     view_published: Toon gepubliceerd
     print_to_pdf: Genereer PDF
-    resource_to_pdf: Resource to Print
+    resource_to_pdf: Druk af als PDF
     download_pdf: Download PDF
     download_report: Download rapport
     click_to_show: Klik om records te laden.
@@ -196,12 +196,12 @@ en:
       accession_date: Aanwinst datum
       resource_type: Resource type
       restrictions_apply: Er zijn beperkingen van toepassing
-      access_restrictions: Beperkingen op toegang
-      use_restrictions: Beperkingen op gebruik
+      access_restrictions: Toegankelijkheidsbeperkingen
+      use_restrictions: Gebruiksbeperkingen
       audit_info: Audit informatie
       creators: Makers
       accession_date_year: Aanwinst datum
-      dates: Data
+      dates: Datums
       extents: Omvang
       processing_priority: Prioriteit verwerking
       processors: Verwerkers
@@ -223,7 +223,7 @@ en:
       audit_info: Audit informatie
       classification_path: Classificatie Path
       subjects: Onderwerp
-      dates: Data
+      dates: Datums
       extents: Omvang
       processing_priority: Prioriteit verwerking
       processors: Verwerkers
@@ -235,13 +235,13 @@ en:
       score: Relevantie
       title: Titel
       publish: Gepubliceerd
-      context: Ouder Resource
-      identifier: Onderdeel ID
-      ref_id: Ref ID
+      context: Bovenliggend Archief/Collectie-record
+      identifier: Identificatiecode
+      ref_id: Referentie ID
       level: Niveau
       audit_info: Audit informatie
       langcode: Taal van de materialen
-      dates: Data
+      dates: Datums
       extents: Omvang
       user_mtime: Aangepast
       create_time: Gemaakt
@@ -269,7 +269,7 @@ en:
       restrictions: Beperkingen
       audit_info: Audit informatie
       langcode: Taal van de materialen
-      dates: Data
+      dates: Datums
       extents: Omvang
       user_mtime: Aangepast
       create_time: Gemaakt
@@ -282,7 +282,7 @@ en:
       context: Gevonden in
       audit_info: Audit informatie
       langcode: Taal van de materialen
-      dates: Data
+      dates: Datums
       extents: Omvang
       user_mtime: Aangepast
       create_time: Gemaakt
@@ -358,7 +358,7 @@ en:
       desc: Aflopend
     assessment:
       score: Relevantie
-      assessment_id: Assessment ID
+      assessment_id: Waardering ID
       assessment_records: Record
       assessment_record_types: Record type
       assessment_surveyors: Surveyor
@@ -368,7 +368,7 @@ en:
       assessment_inactive: Niet actief
       assessment_survey_year: Survey jaar
       assessment_collecties: Verzamelingen
-      assessment_completed: Assessment voltooid
+      assessment_completed: Waardering voltooid
       assessment_formats: Formaten
       assessment_ratings: Beoordelingen
       assessment_conservation_issues: Conservatieproblemen
@@ -396,7 +396,7 @@ en:
       type: Type
       indicator: Indicator
       barcode: Barcode
-      context: Resource/Aanwinst
+      context: Archief/Collectie / Aanwinst
       audit_info: Audit informatie
       user_mtime: Aangepast
       create_time: Gemaakt
@@ -456,7 +456,7 @@ en:
       relevance: Relevantie
       user_mtime: Aangepast
       create_time: Gemaakt
-      dates: Data
+      dates: Datums
       extents: Omvang
       langcode: Taal van de materialen
       asc: Oplopend
@@ -532,7 +532,7 @@ en:
     global_admin: Systeem
     system_info: Systeeminformatie
     unpublished: Niet gepubliceerd
-    manage_assessment_attributes: Beheer Assessment Attributen
+    manage_assessment_attributes: Beheer waarderingscriteria
     toggle_navigation: Schakel navigatie
 
   header:
@@ -557,8 +557,8 @@ en:
       success: Locaties verwijderd
       error: "Kan Locaties niet verwijderen:"
     assessments:
-      success: Assessments verwijderd
-      error: "Kan Assessments niet verwijderen:"
+      success: Waarderingsrecord verwijderd
+      error: "Kan waarderingsrecords niet verwijderen:"
 
   welcome:
     heading: Welkom bij ArchivesSpace
@@ -613,22 +613,22 @@ en:
 
   default_values:
     form_title:
-      archival_object: Onderdeel Record standaardinstellingen
-      resource: Resource Record standaardinstellingen
-      accession: Accession Record standaardinstellingen
-      subject: Onderwerp Record standaardinstellingen
-      agent_person: Agent Record standaardinstellingen (Persoon)
-      agent_family: Agent Record standaardinstellingen (Familie)
-      agent_corporate_entity: Agent Record standaardinstellingen (Organisatie)
-      agent_software: Agent Record standaardinstellingen (Software)
+      archival_object: Archiefonderdeel-record standaardinstellingen
+      resource: Archief/Collectie-record standaardinstellingen
+      accession: Aanwinstenrecord standaardinstellingen
+      subject: Onderwerprecord standaardinstellingen
+      agent_person: Agentrecord standaardinstellingen (Persoon)
+      agent_family: Agentrecord standaardinstellingen (Familie)
+      agent_corporate_entity: Agentrecord standaardinstellingen (Organisatie)
+      agent_software: Agentrecord standaardinstellingen (Software)
       digital_object: Digitaal object standaardinstellingen
       digital_object_component: Digitaal object onderdeel standaardinstellingen
-      location: Locatie Record standaardinstellingen
-      event: Gebeurtenis Record standaardinstellingen
-      classification: Classificatie Record standaardinstellingen
+      location: Locatierecord standaardinstellingen
+      event: Gebeurtenisrecord standaardinstellingen
+      classification: Classificatierecord standaardinstellingen
       classification_term: Classificatie Term standaardinstellingen
     messages:
-      defaults_updated: Standaard waarden aangepast
+      defaults_updated: Standaardwaarden aangepast
 
   required_fields:
     form_title:
@@ -659,7 +659,7 @@ en:
     merge_denied_for_system_user: Eén of meer Agents is een system user.
     merge_denied_relationship: These agents have a relationship. Remove relationship before proceeding with merge.
     merge_restricted_contact_details: De samenvoeging kan niet worden voltooid omdat een of meer van de agenten contactgegevens hebben waartoe je geen toegang hebt.
-    linked_to_assessment: Record kan niet worden verwijderd omdat het is gekoppeld aan een Assesment
+    linked_to_assessment: Record kan niet worden verwijderd omdat het is gekoppeld aan een waarderingsrecord.
 
   accession:
     _frontend:
@@ -698,7 +698,7 @@ en:
         description_information: Beschrijvingsinformatie
         relation_information: Relatie informatie
         date_of_existence: Datum van bestaan
-        dates_of_existence: Data van bestaan
+        dates_of_existence: Datums van bestaan
         name: Naamvormen
         contacts: Contactgegevens
         search_embedded: Gekoppelde Records
@@ -758,12 +758,12 @@ en:
     external_ark_url_tooltip: Externe ARK URL Tooltip
     _frontend:
       messages:
-        created: Archiefonderdeel <strong>%{archival_object.display_string}</strong> gemaakt op Resource <strong>%{resource.title}</strong>
-        created_with_parent: Archiefonderdeel <strong>%{archival_object.display_string}</strong> gemaakt als kind van <strong>%{parent.display_string}</strong> op Resource <strong>%{resource.title}</strong>
+        created: Archiefonderdeel <strong>%{archival_object.display_string}</strong> gemaakt op Archief/Collectie <strong>%{resource.title}</strong>
+        created_with_parent: Archiefonderdeel <strong>%{archival_object.display_string}</strong> gemaakt als kind van <strong>%{parent.display_string}</strong> op Archief/Collectie <strong>%{resource.title}</strong>
         updated: Archiefonderdeel <strong>%{archival_object.display_string}</strong> aangepast
         updated_with_parent: Archiefonderdeel <strong>%{archival_object.display_string}</strong> aangepast
-        please_select_a_resource_for_transfer: Kies een Resource
-        transfer_success: “Archiefonderdeel <strong>%{archival_object.display_string}</strong> overgebracht naar Resource <strong>%{resource.title}</strong>”
+        please_select_a_resource_for_transfer: Kies een Archief/Collectie
+        transfer_success: “Archiefonderdeel <strong>%{archival_object.display_string}</strong> overgebracht naar Archief/Collectie <strong>%{resource.title}</strong>”
         transfer_error: "Kan Archiefonderdeel niet overbrengen wegens een fou of conflict: <pre>%{exception}</pre>"
         deleted: "Archiefonderdeel <strong>%{archival_object.display_string}</strong> verwijderd"
         published: "Het Archiefonderdeel <strong>%{archival_object.title}</strong>, kinderen, subrecords en componenten werden gepubliceerd"
@@ -885,7 +885,7 @@ en:
         merge_description: Selecteer Digitale objecten om mee samen te voegen
         please_select_a_digital_object_to_merge: Selecteer een Digitaal object
         merged: Digitale object(en) samengevoegd
-        transfer_description: Breng deze Resource over naar...
+        transfer_description: Breng dit Archief/Collectie-record over naar...
         transfer_target: Selecteer een repository voor overdracht
         unsuppressed: Digitaal Object <strong>%{digital_object.title}</strong> zichtbaar gemaakt
         suppressed: Digitaal Object <strong>%{digital_object.title}</strong> verborgen
@@ -926,7 +926,7 @@ en:
         deleted: Waarde verwijderd
         delete_error: Kan waarde niet verwijderen
         delete_conflict: "Kan waarde niet verwijderen omdat er door een record naar verwezen wordt"
-        default_set: Standaard waarde ingesteld
+        default_set: Standaardwaarde ingesteld
         created: Waarde gemaakt
         create_error: Kan Waarde niet maken
         merged: Waarde samengevoegd
@@ -956,7 +956,7 @@ en:
       action:
         save: Bewaar Gebeurtenis
         create: Maak Gebeurtenis
-    linked_agents: Agent Koppelingen
+    linked_agents: Gerelateerde Actoren
 
   extent:
     _frontend:
@@ -998,7 +998,7 @@ en:
   linked_agent:
     _frontend:
       action:
-        add: Voeg Agent Koppeling toe
+        add: Voeg koppeling met Actor toe
 
   linked_record:
     _frontend:
@@ -1049,7 +1049,7 @@ en:
     _frontend:
       section:
         use_date: Datum(s) van naamgebruik
-        dates: Data
+        dates: Datums
         parallel_names: Parallele namen
       action:
         add: Voeg Naamvorm toe
@@ -1103,7 +1103,7 @@ en:
   related_resource:
     _frontend:
       action:
-        add: Voeg gerelateerde Resource toe
+        add: Voeg gerelateerde Archieven/Collecties toe
 
   revision_statement:
     _frontend:
@@ -1146,30 +1146,30 @@ en:
   resource:
     _frontend:
       messages:
-        created: "Resource <strong>%{resource.title}</strong> gemaakt"
-        updated: "Resource <strong>%{resource.title}</strong> aangepast"
-        spawned: "Er is een nieuwe bron gespawned uit Aanwinst <strong>% {accession.display_string} </strong>"
-        deleted: "Resource <strong>%{resource.title}</strong> verwijderd"
-        published: "Resource <strong>%{resource.title}</strong>, subrecords en componenten werden gepubliceerd"
-        unpublished:  "Publicatie van Resource <strong>%{resource.title}</strong>, kinderen, subrecords en componenten werd ongedaan gemaakt"
-        merge_description: Selecteer de Resources waarmee moet worden samengevoegd
-        please_select_a_resource_to_merge: Selecteer een Resource
-        merged: Resource(s) samengevoegd
-        transfer_description: Breng deze Resource over naar...
+        created: "Archief/Collectie-record <strong>%{resource.title}</strong> gemaakt"
+        updated: "Archief/Collectie-record <strong>%{resource.title}</strong> aangepast"
+        spawned: "Er is een nieuw Archief/Collectie-record gecreëerd uit Aanwinst <strong>% {accession.display_string} </strong>"
+        deleted: "Archief/Collectie-record <strong>%{resource.title}</strong> verwijderd"
+        published: "Archief/Collectie-record <strong>%{resource.title}</strong>, subrecords en componenten werden gepubliceerd"
+        unpublished:  "Publicatie van Archief/Collectie-record <strong>%{resource.title}</strong>, kinderen, subrecords en componenten werd ongedaan gemaakt"
+        merge_description: Selecteer de Archief/Collectie-records waarmee moet worden samengevoegd
+        please_select_a_resource_to_merge: Selecteer een Archief/Collectie-record
+        merged: Archief/Collectie-records samengevoegd
+        transfer_description: Breng dit Archief/Collectie-record over naar...
         transfer_target: Selecteer een repository voor overdracht
-        unsuppressed: Resource <strong>%{resource.title}</strong> zichtbaar gemaakt
-        suppressed: Resource <strong>%{resource.title}</strong> verborgen
-        suppressed_info: Resource is verborgen en kan niet worden aangepast
-        delete_conflict: "Resource kon niet worden verwijderd: <pre>%{error}</pre>"
+        unsuppressed: Archief/Collectie-record <strong>%{resource.title}</strong> zichtbaar gemaakt
+        suppressed: Archief/Collectie-record <strong>%{resource.title}</strong> verborgen
+        suppressed_info: Archief/Collectie-record is verborgen en kan niet worden aangepast
+        delete_conflict: "Archief/Collectie-record kon niet worden verwijderd: <pre>%{error}</pre>"
       section:
         basic_information: Basisgegevens
         finding_aid: Toegangsgegevens
       action:
         add_child: Voeg Kind toe
-        create: Maak Resource
+        create: Maak Archief/Collectie-record
         load_bulk: Laad via Spreadsheet
-        save: Bewaar Resource
-        delete_multiple: Verwijder Resources
+        save: Bewaar Archief/Collectie-record
+        delete_multiple: Verwijder archieven/collecties
     external_ark_url: Externe ARK URL
     external_ark_url_tooltip: Archival Resource Key (ARK) persistent identifier werd gegenereerd buiten ArchivesSpace.Als dit veld een waarde heeft, heeft het voorrang op een ARK die is gegenereerd in ArchivesSpace.
 
@@ -1364,13 +1364,13 @@ en:
         find_and_replace_instructions: Kies een basisrecord om deze zoek- en vervangbewerking uit te voeren. Kies vervolgens een recordtype om te targeten en een eigenschap van dat type. De bewerking wordt uitgevoerd in elk doelrecord in de boomstructuur van het basisrecord, of in het basisrecord zelf als het doeltype 'Bron' is..
         report_instructions: Kies een rapport om uit te voeren met de knop <b> Selecteren </b>.
         slug_lost_warning: <b> WAARSCHUWING! </b> Alle automatisch gegenereerde slugs worden opnieuw gegenereerd! Deze taak is van toepassing op alle records in alle repositories.
-        slug_generation: Deze job genereert slugs voor alle <b> Bronnen </b>, <b> Archiefonderdelen </b>, <b> Digitale objecten </b>, <b> Digitaal object Componenten </b>, <b> Accessions </b>, <b> Classificaties </b>, <b> Agents </b>, <b> Onderwerpen </b> en <b> Repositories </b> die nog geen handmatig toegevoegde slug hebben. <br /> <br /> <em> Slugs die handmatig zijn toegevoegd, worden niet gewijzigd, tenzij het vakje Automatisch slug genereren op de record is aangevinkt om aan te geven dat de slug moet worden vervangen. </em>
+        slug_generation: Deze job genereert slugs voor alle <b> Bronnen </b>, <b> Archiefonderdelen </b>, <b> Digitale objecten </b>, <b> Digitaal object Componenten </b>, <b> Aanwinsten </b>, <b> Classificaties </b>, <b> Agents </b>, <b> Onderwerpen </b> en <b> Repositories </b> die nog geen handmatig toegevoegde slug hebben. <br /> <br /> <em> Slugs die handmatig zijn toegevoegd, worden niet gewijzigd, tenzij het vakje Automatisch slug genereren op de record is aangevinkt om aan te geven dat de slug moet worden vervangen. </em>
         slug_config_msg: <b>Gebaseerd op je configuratie instellingen in config.rb:</b>
         slug_config_id: Slugs worden waar nodig gegenereerd met behulp van de entiteits-Identificatiecode.
         slug_config_title: Slugs worden gegenereerd met behulp van de naam of titel van de entiteit.
-        slug_config_eadid: Slugs voor <b> Resources </b> worden gegenereerd met behulp van de EAD-ID waar van toepassing.
+        slug_config_eadid: Slugs voor <b> archieven/collecties </b> worden gegenereerd met behulp van de EAD-ID waar van toepassing.
         slug_config_cuid: Slugs voor <b> Archiefonderdelen </b> worden gegenereerd met behulp van de unieke ID van het onderdeel, waar van toepassing.
-        ark_generation: Deze taak genereert ARK's voor alle <b> Resources </b> en <b> Archiefonderdeel </b> die nog geen ARK hebben. <br /> <br /> <em> Externe ARK's worden niet gewijzigd.</em>
+        ark_generation: Deze taak genereert ARK's voor alle <b> archieven/collecties </b> en <b> Archiefonderdeel </b> die nog geen ARK hebben. <br /> <br /> <em> Externe ARK's worden niet gewijzigd.</em>
 
   shortcuts:
     quick_reference_window: "Overzicht: Sneltoetsen"
@@ -1466,7 +1466,7 @@ en:
 
     _frontend:
       section:
-        active_restrictions: Active Beperkingen
+        active_restrictions: Actieve Beperkingen
         linked_records: Linked Records
         basic_information: Container informatie
       action:
@@ -1487,10 +1487,10 @@ en:
         no_active_restrictions: Geen actieve beperkingen
       bulk_operations:
         title: Bulk Operaties
-        collection_singular: Resource/Aanwinst
-        collection_plural: Resources/Aanwinsten
-        collection_resource_singular: Resource
-        collection_resource_plural: Resources
+        collection_singular: Archief/Collectie / Aanwinst
+        collection_plural: Archieven/Collecties / Aanwinsten
+        collection_resource_singular: Archief/collectie
+        collection_resource_plural: Archieven/Collecties
         collection_accession_singular: Aanwinst
         collection_accession_plural: Aanwinsten
         series: Reeksen
@@ -1516,15 +1516,15 @@ en:
         rapid_barcode_entry_new_barcode: Nieuwe Barcode
         rapid_barcode_entry_help: Voer een Barcode in voor elke geselecteerde container. Laat het veld Nieuwe streepjescode leeg om de huidige Barcode te verwijderen zonder deze te vervangen door een nieuwe waarde.
         batch_merge: Voeg Topcontainers samen
-        batch_merge_instructions: Select the top container into which all of the other listed top container(s) will merge. Linked accessions, resources, resource components, and events will be re-linked to this container. Container profiles will be moved to this container only when it does not already have one. Locations and all other information for the other top container(s) will be deleted.
+        batch_merge_instructions: Selecteer de Topconcainer waarmee alle andere Topcontainers in de lijst zullen worden samengevoegd. Gekoppelde Aanwinsten, Archieven/Collecties, Archiefonderdelen en Gebeurtenissen zullen opnieuw worden gekoppeld aan deze Topcontainer. Containerprofielen zullen overgebracht worden naar deze Topcontainer indien die er nog geen bevat. Locaties en alle andere informatie van de andere Topcontainers zullen worden verwijderd.
         batch_merge_confirm: Bevestig Topcontainers samenvoegen
-        batch_merge_confirm_question: Are you sure you want to merge the top containers as listed below? This action is irreversible.
+        batch_merge_confirm_question: Weet je zeker dat je onderstaande Topcontainers wil samenvoegen? Deze actie is onomkeerbaar.
         batch_merge_container_profile_too_many_warning: Deze topcontainers hebben verschillende containerprofielen. Geen van deze containerprofielen wordt samengevoegd in de doelcontainer.
         batch_merge_container_profile_mismatch_warning: Deze topcontainers hebben een ander containerprofiel dan de target topcontainer. Het containerprofiel wordt niet samengevoegd met de doelcontainer.
-        batch_merge_confirm_victims: "Merge the following top container(s):"
+        batch_merge_confirm_victims: "Voeg volgende Topcpontainers samen:"
         batch_merge_confirm_target: "In deze topcontainer:"
         batch_delete: Verwijder Topcontainers
-        batch_delete_help: Verwijder all selected containers.
+        batch_delete_help: Verwijder alle geselecteerde containers.
         update_n_records: "Update %{n} records"
         select_merge_target: Selecteer doel om samen te voegen
         merge_n_records: "Voeg %{n} records samen"
@@ -1605,7 +1605,7 @@ en:
     end: Beperking Einde
     end_tooltip: |
         <p>Voor een tijdgebonden beperking: de einddatum voor een toegangsbeperking. Moet een enkele datum zijn in de notatie JJJJ-MM-DD. Wordt losgekoppeld van de containers zodra deze vervalt. Gebruik de notitietekst om een minder nauwkeurige datum of datumbereik aan te geven.</p>
-    local_access_restriction_type: Type beperking lokale toegang
+    local_access_restriction_type: Type beperking op toegankelijkheid
     local_access_restriction_type_inline_help: "Hou CTRL (Windows) / Command (Mac/Linux) ingedrukt om meerdere opties te selecteren of een optie te deselecteren"
     local_access_restriction_type_tooltip: |
         <p>Voor beperkingen die niet tijdgebonden zijn, een indicatie van de reden voor de beperking.</p>
@@ -1681,17 +1681,17 @@ en:
       location_cannot_fit_container: Op de locatie passen momenteel geen containers van dit type
 
   date_calculator:
-    toolbar_button: Bereken data
+    toolbar_button: Bereken datums
     calculate_button: Bereken datum record
-    modal_title: Bereken data
-    all_labels: Bereken voor alle data
+    modal_title: Bereken datums
+    all_labels: Bereken voor alle datums
     no_object_message: Record niet Gevonden
     results_title: Berekend datum record
     create_date_button: Maak datum record
     generic_create_error: Datum is ongeldig en kan niet worden gemaakt
     create_success: Datum succesvol gemaakt. Pagina verversen...
-    no_dates: Geen geschikte data gevonden
-    no_dates_for_label: Geen geschikte %{label} data gevonden
+    no_dates: Geen geschikte datums gevonden
+    no_dates_for_label: Geen geschikte %{label} datums gevonden
 
   act:
     _frontend:
@@ -1700,22 +1700,22 @@ en:
 
   assessment:
     _frontend:
-      form_header: Assessment %{display_string}
+      form_header: Waardering %{display_string}
       formats: Materiaaltypes / formaten
       ratings: Beoordelingen
       conservation_issues: Conservatieproblemen
       record_types: Recordtypes
       action:
-        create: Maak Assessment
-        save: Bewaar Assessment
+        create: Maak waardering
+        save: Bewaar waardering
         add_rating_note: Voeg Noot toe
         remove_rating_note: Verwijder Noot
-        create_for_record: Maak Assessment
+        create_for_record: Maak waardering
       section:
         basic_information: Basisgegevens
         existing_description: Bestaande beschrijving
-        rating_attributes: Assessment gegevens
-        rating_attributes_empty: Geen assessmentgegevens ingevoerd
+        rating_attributes: Waarderingsgegevens
+        rating_attributes_empty: Geen waarderingsgegevens ingevoerd
         rating_attributes_additional: Bijkomende beoordeling(en)
         format_attributes: Lijst materiaaltypes / formaten
         format_attributes_empty: Geen materiaaltypes / formaten ingevoerd
@@ -1724,9 +1724,9 @@ en:
         conservation_issue_attributes_empty: Geen conservatieproblemen ingevoerd
         conservation_issue_attributes_additional: Bijkomende conservatieproblemen
       messages:
-        created: Assessment gemaakt
-        updated: Assessment aangepast
-        deleted: Assessment verwijderd
+        created: Waardering gemaakt
+        updated: Waardering aangepast
+        deleted: Waardering verwijderd
         attributes_hint: Neem contact op met uw beheerder om extra %{attribute_type} toe te voegen
         manage_attributes_hint: Beheer de bijkomende %{attribute_type} voor deze repository
       assessment_review_required:
@@ -1743,11 +1743,11 @@ en:
         false_value: "Nee"
       browse_reviewers: Reviewers
       linked_records:
-        heading: Gekoppelde ecords
+        heading: Gekoppelde records
         loading: Laden...
-        linked_via_assessment_records: Assessments
-        linked_via_assessment_surveyed_by: Assessments - Onderzocht door
-        linked_via_assessment_reviewer: Assessments - Reviewer
+        linked_via_assessment_records: Waarderingen
+        linked_via_assessment_surveyed_by: Waarderingen - Onderzocht door
+        linked_via_assessment_reviewer: Waarderingen - Reviewer
         record_type: Recordtype
         title: Titel
         identifier: Identificatiecode
@@ -1758,7 +1758,7 @@ en:
 
   assessment_attribute_definitions:
     _frontend:
-      title: Assessment Attributen
+      title: Waarderingscriteria
       section:
         formats: Materiaaltypes/formaten
         ratings: Beoordelingen
@@ -1766,7 +1766,7 @@ en:
       global: Globaal %{type}
       repository: Repository %{type}
       action:
-        save: Bewaar Assessmentattributen
+        save: Bewaar waarderingscriteria
         add_type: Voeg %{type} toe
         find_rating: Zoek records met een %{rating_type} rating
         find_format: Zoek records met een %{format_type} materiaaltype/formaat
@@ -1775,10 +1775,10 @@ en:
         remove_format: Verwijder %{format_type} materiaal type/formaat
         remove_issue: Verwijder %{issue_type} conservatie issue
       messages:
-        updated: Assessment attributen aangepast
-        error: Fout bij het updaten van Assessmentattributen
-        conflict: "Fout bij het bijwerken van Assessment attributen. De volgende labels zijn in strijd met bestaande vermeldingen: %{conflicts}"
-        attribute_in_use: Kan een attribuut niet verwijderen dat momenteel wordt gebruikt door een Assessment
+        updated: Waarderingscriteria aangepast
+        error: Fout bij het updaten van waarderingscriteria
+        conflict: "Fout bij het bijwerken van waarderingscriteria. De volgende labels zijn in strijd met bestaande vermeldingen: %{conflicts}"
+        attribute_in_use: Kan een waarderingscriterium niet verwijderen dat momenteel in gebruik is.
       database_value: Database waarde
       translation: Vertaling
 
@@ -1871,11 +1871,11 @@ en:
         add: Voeg geslacht toe
     gender: Geslacht
     note: Noot
-    dates: Data
+    dates: Datums
 
   dates_of_existence:
     _singular: Bestaansdatum
-    _plural: Bestaansdata
+    _plural: Bestaansdatums
 
   agent_genders:
     <<: *agent_gender_attributes
@@ -1936,12 +1936,12 @@ en:
       action:
         add: Voeg Plaats toe
     section:
-      dates: Data
+      dates: Datums
     _plural: Plaatsen
     _singular: Plaats
     place_role: Agent Plaats rol
     text_note: Noot
-    dates: Data
+    dates: Datums
     subjects: Plaatsen
     publish: Gepubliceerd
 
@@ -1962,11 +1962,11 @@ en:
       action:
         add: Voeg beroep toe
     section:
-      dates: Data
+      dates: Datums
     _plural: Beroepen
     _singular: Beroep
     text_note: Noot
-    dates: Data
+    dates: Datums
     subjects: Beroepen
     places: Plaatsen
     publish: Gepubliceerd
@@ -1988,11 +1988,11 @@ en:
       action:
         add: Add Function
     section:
-      dates: Data
+      dates: Datums
     _plural: Functies
     _singular: Functie
     text_note: Noot
-    dates: Data
+    dates: Datums
     subjects: Functies
     places: Plaatsen
     publish: Gepubliceerd
@@ -2014,11 +2014,11 @@ en:
       action:
         add: Voeg Topic toe
     section:
-      dates: Data
+      dates: Datums
     _plural: Topics
     _singular: Topic
     text_note: Noot
-    dates: Data
+    dates: Datums
     subjects: Topics
     places: Plaatsen
     publish: Gepubliceerd
@@ -2197,25 +2197,25 @@ en:
 
   agent_parallel_name:
     _plural: Parallele Namen
-    use_dates: Data gebruik
+    use_dates: Datums gebruik
 
   agent_name:
-    use_dates: Data gebruik
+    use_dates: Datums gebruik
 
   agent_resource: &agent_resource_attributes
     _frontend:
       action:
-        add: Voeg gerelateerde externe Resource toe
+        add: Voeg gerelateerd extern Archief/Collectie-record toe
     section:
-      dates: Data
+      dates: Datums
       places: Plaatsen
-    _plural: Gerelateerde externe Resources
-    _singular: Gerelateerde externe Resource
-    dates: Data
+    _plural: Gerelateerde externe Archief/Collectie-records
+    _singular: Gerelateerde externe Archief/Collectie-record
+    dates: Datums
     places: Plaatsen
     publish: Gepubliceerd
-    linked_agent_role: Resource relatie type
-    linked_resource: Gerelateerde externe Resource
+    linked_agent_role: Archief/Collectie relatie type
+    linked_resource: Gerelateerde externe Archief/Collectie-records
     linked_resource_description: Beschrijving
     file_uri: BestandsURI
     xlink_title_attribute: Xlink Titel Attribuut
@@ -2239,7 +2239,7 @@ en:
 
   subsections:
     notes: Noten
-    dates: Data
+    dates: Datums
 
   section_headings:
     basic_information_tooltip: |
@@ -2263,7 +2263,7 @@ en:
       actions:
         add_file: Selecteer bestand
         add_archival_objects: Importeer Archiefonderdeel
-        add_digital_objects: Voeg Digitaale objecten toe aan Archiefonderdelen
+        add_digital_objects: Voeg Digitale objecten toe aan Archiefonderdelen
         import: Import via SpreadSheet
         drag_drop: Sleep het bestand hierheen.
         clip_btn: Kopieer naar klembord
@@ -2280,7 +2280,7 @@ en:
         submitted: "<p>Job werd naar Background Jobs gestuurd. <br/> Klik 'Sluiten' om deze pagina te verversen.</p>"
   bulk_import_job:
     active: "Er is een bulkimporttaak actief voor dit record, probeer het later te bewerken: <a href ='%{url}'>%{uri}</a>"
-    resource_id: Resource Identificatiecode
+    resource_id: Archief/Collectie Identificatiecode
     format: Download bestand
     filename: Spreadsheet bestandsnaam
     not_direct: Op dit moment kan deze taak alleen worden gemaakt op basis van het bronrecord

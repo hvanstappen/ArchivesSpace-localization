@@ -20,11 +20,11 @@ en:
       not_after: Niet na
     begin_date_standardized_type:
       standard: Standaard
-      not_before: Niet Voor
+      not_before: Niet voor
       not_after: Niet na
     end_date_standardized_type:
       standard: Standaard
-      not_before: Niet Voor
+      not_before: Niet voor
       not_after: Niet na
     maintenance_status:
       new: Nieuw
@@ -423,7 +423,7 @@ en:
       cubic_feet: Kubieke meter
       files: Bestanden
       gigabytes: Gigabytes
-      leaves: Paginas
+      leaves: Pagina's
       linear_feet: Strekkende meter
       megabytes: Megabytes
       photographic_prints: Photografische afdrukken
@@ -431,14 +431,14 @@ en:
       reels: Spoelen
       sheets: Bladen
       terabytes: Terabytes
-      volumes: Volumes
-      part: Stuk
-      box: Dozen
+      volumes: Banden
+      part: Stukken
+      box: Archiefdozen
       gb: Gigabytes
       mb: Megabytes
-      notspecified: niet gespecificeerd
-      packet: Pakketten
-      parcel: Omslag
+      notspecified: Niet gespecificeerd
+      packet: Pakken
+      parcel: Omslagen
     collection_management_processing_priority:
       none: Niet gespecificeerd
       high: Hoog
@@ -477,8 +477,8 @@ en:
       agreement_received: Overeenkomst ontvangen
       agreement_sent: Overeenkomst verzonden
       agreement_signed: Overeenkomst getekend
-      appraisal: Appraisal@en
-      assessment: Assessment@en
+      appraisal: Selectie
+      assessment: Waardering
       capture: Vastlegging
       cataloged: Catalografie
       collection: Verzameling
@@ -1310,10 +1310,10 @@ en:
       fonds: Archief
       item: Object
       otherlevel: Ander niveau
-      recordgrp: Record Group@en
+      recordgrp: Archiefblok #http://www.ciscra.org/mat/mat/term/3503
       series: Reeks
       subfonds: Deelarchief
-      subgrp: Sub-Group@en
+      subgrp: Deelgroep
       subseries: Deelreeks
     container_location_status:
       current: Huidig
@@ -1664,7 +1664,7 @@ en:
     _note_types: &note_type_definitions
       accessrestrict: Voorwaarden voor raadpleging
       accruals: Aanvullingen
-      acqinfo: Verwervingsbron
+      acqinfo: Verwerving
       altformavail: Bestaan en bewaarplaats van kopieën
       appraisal: Selectie
       arrangement: Ordening
@@ -1672,7 +1672,7 @@ en:
       note_bibliography: Bibliografie
       bioghist: Biografische / historische noot
       custodhist: Geschiedenis archief
-      fileplan: File Plan@en
+      fileplan: Ordeningsplan
       index: Index
       odd: Algemeen
       otherfindaid: Andere toegangen
