@@ -2,13 +2,17 @@ en:
   actions:
     add: Voeg toe
     add_event: Voeg gebeurtenis toe
+    add_event_event_type: Voeg gebeurtenistype toe
     automate: Genereer automatisch
     batch: Batch
     browse: Blader
     bulk_import: Laad met spreadsheet
     bulk_import_job: Laad met spreadsheet
     download_bulk_import_report: Download rapport
+    download: Download
     cancel: Annuleer
+    check_all: Selecteer alle
+    uncheck_all: Deselecteer alle
     close: Sluit
     continue: Volgende
     confirm: Bevestig
@@ -16,6 +20,7 @@ en:
     container_labels: Download verpakkinglabels
     create: Maak
     cut: Knip
+    date_picker: Open kalender
     defaults: Standaardwaarden
     edit: Bewerk
     edit_oai: Bewerk OAI instellingen
@@ -70,7 +75,9 @@ en:
     transfer_successful: Overbrengen geslaagd.  Het kan even duren voordat records in de doelrepository verschijnen terwijl het opnieuw indexeren plaatsvindt.
     transfer_failed: Overbrengen mislukt
     transfer_failed_records_using_digital_objects: "De volgende records hebben een koppeling naar een digitaal object die zouden worden overgebracht, maar daardoor worden de links met hun instanties verbroken."
-    transfer_failed_digital_objects_linked_to_records: "Dit digitaal object heeft een koppeling met andere records in dit Repository. Verwijder de koppelingen in de volgende records om het overbrengen uit te voeren"
+    transfer_failed_digital_objects_linked_to_records: "Dit digitaal object heeft een koppeling met andere records in dit Repository. Verwijder de koppelingen in de volgende records om het overbrengen uit te voeren."
+    transfer_failed_top_containers_in_use: "De volgende topcontainers zijn gekoppeld aan andere archieven/collecties in dit repository, en kunnen niet worden overgebracht tot deze koppelingen verwijderd zijn."
+    transfer_failed_barcodes_in_use: "De volgende topcontainers gebruiken barcodes die in gebruik zijn in het doelrepository, en kunnen niet worden overgebracht tot die conflicten hersteld zijn."
     unset_default: Standaardwaarde uitschakelen
     unsuppress: Zichtbaar maken
     unsuppress_confirm_title: Dit record zichtbaar maken?
@@ -128,6 +135,8 @@ en:
     rapid_data_entry: Rapid Data Entry
     enable_reorder: Herordenen inschakelen
     reorder_active: Herordenen uitschakelen
+    copy: Kopieer
+    run: Voer uit
 
   database_warning:
     message: "<p><strong>Database Warning:</strong> You are currently using the embedded database (Apache Derby). The embedded database is for testing/demo purposes only. You should use MySQL for any data intended for production, including data in a test instance that you intend to move over to a production instance.</p>"
@@ -168,7 +177,7 @@ en:
     result_title: Titel
     result_identifier: Identificatiecode
     filtered_by: Gefilterd op
-    modified: <Laatste wijziging door
+    modified: Laatste wijziging door
     created: Gemaakt door
     actions: Acties
     text_placeholder: Filter op tekst
@@ -311,6 +320,9 @@ en:
       room: Kamer
       area: Gebied
       location_holdings: Holdings voor de huidige Repository
+      location_no_holdings: Geen holdings voor dit repository.
+      location_one_top_container: 1 topcontainer.
+      location_top_containers: " topcontainers."
       location_profile_display_string_u_ssort: Locatieprofiel
       owner_repo_display_string_u_ssort: Repository
       none: Geen
@@ -367,7 +379,7 @@ en:
       assessment_sensitive_material: Gevoelig materiaal
       assessment_inactive: Niet actief
       assessment_survey_year: Survey jaar
-      assessment_collecties: Verzamelingen
+      assessment_collections: Verzamelingen
       assessment_completed: Waardering voltooid
       assessment_formats: Formaten
       assessment_ratings: Beoordelingen
@@ -465,16 +477,19 @@ en:
       owner_repo_display_string_u_ssort: Repository
 
   advanced_search:
-    operator:
+    operator: 
+      operator: Functie
       AND: EN
       OR: OF
       NOT: NIET
     date_operator:
+      comparator: Vergelijking
       equal: is gelijk aan
       greater_than: groter dan
       lesser_than: kleiner dan
       empty: niet toegekend
     boolean_field:
+      boolean: Booleaanse vergelijking
       true_value: "Ja"
       false_value: "Nee"
     button_text: Zoek
@@ -486,18 +501,27 @@ en:
       show: Toon geavanceerd zoeken
       hide: Verberg geavanceerd zoeken
     text_operator:
+      comparator: Vergelijking
       contains: bevat
       empty: is leeg
     enum_field:
       empty: niet toegekend
+    search_field: Zoekveld
+    search_text: Zoektekst
+    search_date: Datum
+    search_terms: Velden met geavanceerde zoektermen %{number}
+    remove_row: Verwijder rij met geavanceerde zoektermen %{number}
+    add_row: Voeg rij toe
+
 
   become-user:
-    become-user: Wordt Gebruiker
-    failed: Kan niet overschakelen naar de opgegeven Gebruiker
-    success: Succesvol van Gebruiker gewisseld
+    become-user: Word gebruiker
+    failed: Kan niet overschakelen naar de opgegeven gebruiker
+    success: Succesvol van gebruiker gewisseld
+    username: Gebruikersnaam
 
   navbar:
-    become-user: Wordt Gebruiker
+    become-user: Word Gebruiker
     brand: ArchivesSpace
     create: Maak
     import: Import
@@ -514,6 +538,7 @@ en:
     hide_advanced_search_button_title: Verberg geavanceerd zoeken
     plugins: Plug-ins
     repositories_manage: Beheer Repositories
+    repository_settings: Repository instellingen
     oai_config: Beheer OAI-PMH instellingen
     manage_groups: Beheer Groepen
     manage_users: Beheer Gebruikers
@@ -521,9 +546,10 @@ en:
     manage_location_profiles: Beheer Locatieprofielen
     manage_top_containers: Beheer Topcontainers
     manage_enumerations: Beheer Waardenlijsten
-    global_preferences: Globale instellingen
-    user_repo_preferences: Gebruikersinstellingen
-    repo_preferences: Repository instellingen
+    global_preferences: Globale voorkeuren
+    global_settings: Globale instellingen
+    user_repo_preferences: Gebruikersvoorkeuren
+    repo_preferences: Repository voorkeuren
     manage_user_access: Beheer Gebruikerstoegang
     logout: Log uit
     register: Registreer nu
@@ -537,6 +563,11 @@ en:
 
   header:
     staff_interface: ArchivesSpace Staff Interface
+
+  footer:
+    public_interface: Bekoijk <a href="%{public_url}">gebruikersinterface</a>
+    archivesspace_home: Bezoek <a href='http://archivesspace.org'>archivesspace.org</a>
+    feedback: <a id='aspaceFeedbackLink' href='%{feedback_url}' target='_blank'>Verzend opmerkingen of rapporteer een probleem</a>
 
   session:
     gone: Je back-end-sessie is niet gevonden
@@ -571,6 +602,10 @@ en:
     login_expired_link: "%{link} opnieuw."
     login_fail: Login mislukt
     login_success: Succesvol ingelogd. Doorsturen...
+    username_placeholder: Gebruikersnaam
+    password_placeholder: Wachtwoord
+    username_aria_label: Gebruikersnaam
+    password_aria_label: Wachtwoord
 
   breadcrumb:
     home: Home
@@ -645,6 +680,7 @@ en:
       after: Voeg items achteraan toe
       as_child: Voeg items als kind toe
     unexpected_failure: Oeps! We hebben problemen met het ophalen van deze hiërarchie. Probeer de pagina te vernieuwen.
+    resize: Toon/Verberg hiërarchie
 
   errors:
     sidebar_label: Fouten en waarschuwingen
@@ -660,6 +696,7 @@ en:
     merge_denied_relationship: These agents have a relationship. Remove relationship before proceeding with merge.
     merge_restricted_contact_details: De samenvoeging kan niet worden voltooid omdat een of meer van de agenten contactgegevens hebben waartoe je geen toegang hebt.
     linked_to_assessment: Record kan niet worden verwijderd omdat het is gekoppeld aan een waarderingsrecord.
+    cannot_delete_repository_agent: Deze Agent is gekoppeld met een repository en kan niet worden verwijderd.
 
   accession:
     _frontend:
@@ -703,6 +740,7 @@ en:
         contacts: Contactgegevens
         search_embedded: Gekoppelde Records
         linked_via_rights_statement: Records gekoppeld via rechtenverklaring
+        events: Gebeurtenissen
         target_record: Dit record zal worden aangepast
         victim_record: Dit record zal worden verwijderd
         structured_date_single_fields: Enkelvoudige datum
@@ -712,11 +750,13 @@ en:
         preview: Voeg preview samen
 
   agent_contact:
+    is_representative: Is primair contact
     notes_tooltip: |
         <p>Additional notes or other information about the contact.</p>
     _frontend:
       action:
         add: Voeg Contact toe
+        make_representative: Make primair contact
 
   telephone:
     _frontend:
@@ -839,6 +879,8 @@ en:
         add: Voeg Datum toe
 
   dates_of_existence:
+    _singular: Bestaansdatum
+    _plural: Bestaansdatums
     _frontend:
       action:
         add: Voeg Datum toe
@@ -874,6 +916,10 @@ en:
     end_date_expression: Einddatum expressie
     end_date_standardized: Gestandaardiseerde einddatum
     end_date_standardized_type: Type gestandaardiseerde einddatum
+
+  date_type_structured:
+    single: Enkelvoudig
+    range: Bereik
 
   digital_object:
     _frontend:
@@ -937,6 +983,9 @@ en:
         name_selector_tooltip: |
             <p>De aan te passen Waardenlijst.</p>
         no_name_provided: Selecteer een Waardenlijst voor je een nieuwe waarde maakt
+        not_used: Niet gebruikt.
+        one_related_item: 1 gekoppeld item.
+        related_items: " gekoppelde items."
       action:
         create_value: Maak Waarde
         delete_value: Verwijder Waarde
@@ -1051,6 +1100,11 @@ en:
         use_date: Datum(s) van naamgebruik
         dates: Datums
         parallel_names: Parallele namen
+        place_subject: Plaats
+        topic_subject: Onderwerp
+        name_subject: Naam
+        function_subject: Functie
+        occupation_subject: Beroep
       action:
         add: Voeg Naamvorm toe
         make_authorized: Maak geauthoriseerde Naam
@@ -1170,6 +1224,7 @@ en:
         load_bulk: Laad via Spreadsheet
         save: Bewaar Archief/Collectie-record
         delete_multiple: Verwijder archieven/collecties
+      remove_subrecord: Verwijder subrecord
     external_ark_url: Externe ARK URL
     external_ark_url_tooltip: Archival Resource Key (ARK) persistent identifier werd gegenereerd buiten ArchivesSpace.Als dit veld een waarde heeft, heeft het voorrang op een ARK die is gegenereerd in ArchivesSpace.
 
@@ -1206,6 +1261,7 @@ en:
         merged: Subject(s) samengevoegd
         merge_description: Selecteer Onderwerpen hieronder om mee samen te voegen
         please_select_a_subject_to_merge: Selecteer een Onderwerp
+        delete_conflict: "Onerwerp kon niet worden verwijderd: <pre>%{error}</pre>"
       section:
         basic_information: Basisgegevens
         terms: Termen en subtermen
@@ -1216,6 +1272,9 @@ en:
         add: Voeg Onderwerp toe
 
   user:
+    is_active_user: Actief
+    active: "Ja"
+    inactive: "Nee"
     _frontend:
       messages:
         access_denied: Toegang geweigerd. Log in als de admin-gebruiker om deze actie uit te voeren.
@@ -1225,15 +1284,27 @@ en:
         error_update: Gebruiker niet bewaard
         error_create: Gebruiker niet gemaakt
         group_not_required: Gebruiker is admin-gebruiker of systeemgebruiker, selectie van een groep is niet vereist.
+        activated: Gebruiker geactiveerd
+        deactivated: Gebruiker gedeactiveerd
+        error_activate: Gebruiker niet geactiveerd
+        error_deactivate: Gebruiker niet gedeactiveerd
       section:
         manage_access: Beheer Gebruikerstoegang
         account: Account
         edit_account: Bewerk Account
         edit_account_submit: Update Account
+        new_account: Nieuw Account
       action:
         create_account: Maak Account
         update_account: Pas Account aan
         create: Maak Gebruiker
+        edit: Bewerk Gebruiker
+        show_active: Toon actieve gebruikers
+        show_inactive: Toon inactieve gebruikers
+        deactivate_user: Deactiveer
+        activate_user: Activeer
+        update_self: Beheer gebruikersaccount
+
 
   user_defined:
     _frontend:
@@ -1511,6 +1582,9 @@ en:
         update_locations_singular_help: Kies een locatie voor alle geselecteerde containers. Laat dit veld leeg om de huidige waarde te verwijderen zonder deze te vervangen door een andere waarde.
         update_locations_multiple: "Pas Locaties aan: meerdere Locaties"
         update_locations_multiple_help: Kies een locatie voor elke geselecteerde container. Laat dit veld leeg om de huidige waarde te verwijderen zonder deze te vervangen door een andere waarde.
+        rapid_indicator_entry: Werk indicators bij
+        rapid_indicator_entry_new_indicator: Nieuwe indicator
+        rapid_indicator_entry_help: Vul een indicator in voor elke geselecteerde container. Laat het nieuwe indicator veld leeg om de bestaande indicator ongewijzigd te laten.templates bevatten bijkomende instructies 
         rapid_barcode_entry: Snelle Barcode invoer
         rapid_barcode_entry_existing_barcode: Bestaande Barcode
         rapid_barcode_entry_new_barcode: Nieuwe Barcode
@@ -1783,8 +1857,8 @@ en:
       translation: Vertaling
 
   custom_report_template:
+    new_title: Nieuw aangepast Rapporttemplate
     _frontend:
-      new_title: Nieuw aangepast Rapporttemplate
       section:
         template_information: Template informatie
         basic_information_fields: Basisgegevens velden
@@ -1794,6 +1868,7 @@ en:
         create: Maak Template
         save: Bewaar Template
       messages:
+        copied: Aangepast rapporttemplate gekopieerd
         created: Aangepast rapporttemplate gemaakt
         updated: Aangepast rapporttemplate aangepast
 
@@ -1873,10 +1948,6 @@ en:
     note: Noot
     dates: Datums
 
-  dates_of_existence:
-    _singular: Bestaansdatum
-    _plural: Bestaansdatums
-
   agent_genders:
     <<: *agent_gender_attributes
 
@@ -1911,11 +1982,11 @@ en:
     <<: *used_language_attributes
 
   agent_identifier: &agent_identifier_attributes
-    _plural: Entity IDs
+    _plural: Identificatiecodes
     _singular: Identificatiecode
     _frontend:
       action:
-        add: Voeg Entity ID toe
+        add: Voeg identificatiecode toe
     identifier_type: Identificatiecode type
     entity_identifier: Entity IDs
 
@@ -2053,9 +2124,9 @@ en:
     xlink_title_attribute: Xlink Titel Attribuut
     xlink_role_attribute: Xlink Rol Attribuut
     xlink_arcrole_attribute: Xlink Arcrol Attribuut
-    file_version_xlink_actuate_attribute: Xlink Actuate Attribuut
+    file_version_xlink_actuate_attribute: Xlink Activeer Attribuut
     file_version_xlink_show_attribute: Xlink Toon Attribuut
-    last_verified_date: Laatste verificatiedatum
+    last_verified_date: Datum laatste verificatie
 
   agent_alternate_sets:
     <<: *agent_alternate_set_attributes
@@ -2081,10 +2152,10 @@ en:
     file_uri: BestandsURI
     xlink_title_attribute: Xlink Titel Attribuut
     xlink_role_attribute: Xlink Rol Attribuut
-    xlink_arcrole_attribute: Xlink Arcrole Attribuut
-    file_version_xlink_actuate_attribute: Xlink Actuate Attribuut
+    xlink_arcrole_attribute: Xlink Arcrol Attribuut
+    file_version_xlink_actuate_attribute: Xlink Activeer Attribuut
     file_version_xlink_show_attribute: Xlink Toon Attribuut
-    last_verified_date: Laatste verificatiedatum
+    last_verified_date: Datum laatste verificatie
 
   agent_conventions_declarations:
     <<: *agent_conventions_declaration_attributes
@@ -2178,7 +2249,7 @@ en:
     file_uri: BestandsURI
     xlink_title_attribute: Xlink Titel Attribuut
     xlink_role_attribute: Xlink Rol Attribuut
-    xlink_arcrole_attribute: Xlink Arcrole Attribuut
+    xlink_arcrole_attribute: Xlink Arcrol Attribuut
     file_version_xlink_actuate_attribute: Xlink Activeer Attribuut
     file_version_xlink_show_attribute: Xlink Toon Attribuut
     last_verified_date: Datum laatste verificatie
@@ -2220,7 +2291,7 @@ en:
     file_uri: BestandsURI
     xlink_title_attribute: Xlink Titel Attribuut
     xlink_role_attribute: Xlink Rol Attribuut
-    xlink_arcrole_attribute: Xlink Arcrole Attribuut
+    xlink_arcrole_attribute: Xlink Arcrol Attribuut
     file_version_xlink_actuate_attribute: Xlink Activeer Attribuut
     file_version_xlink_show_attribute: Xlink Toon Attribuut
     last_verified_date: Datum laatste verificatie
@@ -2291,3 +2362,44 @@ en:
 
     date_of_contact_tooltip: |
         <p>Wordt gebruikt om de specifieke datum of tijdsbestek van een interactie vast te leggen</p>
+
+  metadata_rights_declaration: &metadata_rights_declaration_attributes
+    _plural: Rechtenverklaringen over de metadata
+    _singular: Rechtenverklaring over de metadata
+    _frontend:
+      action:
+        add: Voeg rechtenverklaring over de metadata toe
+    license: Licentie
+    descriptive_note: Beschrijvende noot
+    file_uri: BestandsURI
+    xlink_title_attribute: Xlink Titel Attribuut
+    xlink_role_attribute: Xlink Rol Attribuut
+    xlink_arcrole_attribute: Xlink Arcrol Attribuut
+    file_version_xlink_actuate_attribute: Xlink Activeer Attribuut
+    file_version_xlink_show_attribute: Xlink Toon Attribuut
+    last_verified_date: Datum laatste verificatie
+
+  metadata_rights_declarations:
+    <<: *metadata_rights_declaration_attributes
+
+  metadata_rights_declaration_required:
+    <<: *metadata_rights_declaration_attributes
+
+  metadata_rights_declaration_merge_target:
+    <<: *metadata_rights_declaration_attributes
+
+  metadata_rights_declaration_merge_victim:
+    <<: *metadata_rights_declaration_attributes
+
+  bulk_import_templates:
+    overview: |
+      <p>Met deze templates kunnen spreadsheets worden opgeladen via de verschillende importeer-opties in de instellingen voor Achtergrondtaken. De benodigde gegevens voor een succesvolle import zijn afhankelijk van het recordtype. Niet elke rij en kolom moet worden ingevuld.</p><p>Elk CSV template bevat een rij met voorbeelddata. Om te vermijden dat een record met deze voorbeelddata wordt aangemaakt, moet deze rij worden verwijderd vóór het CSV bestand wordt opgeladen. <b>Verwijder de titelrij niet, voeg geen extra kolommen toe en herorden de bestaande kolommen niet.</b></p><p>De Excel templates bevatten bijkomende instructies over gebruik van de templates, en valideringsformules voor bepaalde cellen. <b>Verwijder deze instructies of valideringsformules niet.</b></p>
+    aspace_accession_import_template_csv: Maak aanwinstrecords en gekoppelde records zoals actoren, onderwerpen en gebeurtenissen.
+    aspace_digital_object_import_template_csv: Maak digitale objectenrecords en gekoppelde records zoals actoren, onderwerpen en gebeurtenissen.
+    bulk_import_template_csv: Maak en koppel archiefonderdelen aan een bestaand archief/collectierecord. Het is mogelijk om verschillende sub-records en gekoppelde records op te nemen, zoals datums, omvant, noten, containers en digitale objecten. Het CSV formaat wordt aangeboden voor wie geen toegang heeft tot Microsoft Excel.
+    bulk_import_template_xlsx: Maak en koppel archiefonderdelen aan een bestaand archief/collectierecord. Het is mogelijk om verschillende sub-records en gekoppelde records op te nemen, zoals datums, omvant, noten, containers en digitale objecten. Het XLSX formaat wordt aangeboden voor wie toegang heeft tot Microsoft Excel.
+    bulk_import_DO_template_csv: Maak en koppel digitale objectenrecords aan bestaande archiefonderdelen in een archief/collectie. Het CSV formaat wordt aangeboden voor wie geen toegang heeft tot Microsoft Excel.
+    bulk_import_DO_template_xlsx: Maak en koppel digitale objectenrecords aan bestaande archiefonderdelen in een archief/collectie. Het XLSX formaat wordt aangeboden voor wie toegang heeft tot Microsoft Excel.
+    aspace_location_import_template_csv: Maak nieuwe locatierecords. Merk op dat deze template bedoeld is om nieuwe locatierecords te creëren; niet om materialen te koppelen aan locaties.
+    aspace_assessment_import_template_csv: Maak en koppel waarderingsrecords aan bestaande aanwinsten, archieven/collecties, archiefonderdele of digitale objecten.
+
