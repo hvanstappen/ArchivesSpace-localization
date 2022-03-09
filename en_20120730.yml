@@ -79,6 +79,8 @@ en:
         <p>Links naar informatie in andere beschrijvings- of beheersystemen, zoals donorbestanden, verwerkingsplannen, enz.</p>
     rights_statements_tooltip: |
         <p>Informatie over de rechtenstatus van de beschreven materialen en vermelding van specifieke beperkingen of toestemmingen.</p>
+    metadata_rights_declarations_tooltip: |
+        <p>Based on DACS 8.2 and 13.11</p>
     instances_tooltip: |
         <p>Koppelt beschrijving naar informatie over fysieke of digitale versies van het beschreven materiaal.</p>
     deaccessions_tooltip: |
@@ -128,6 +130,7 @@ en:
         <p>Koppelt een digitaal object of digitale objectcomponent aan een bijbehorend inhoudsbestand, adresseerbaar via URI.</p>
     _singular: Digitaal object
     _plural: Digitale objecten
+    new_title: Nieuw Digitaal object
 
   digital_object_component:
     <<: *digital_object_attributes
@@ -204,6 +207,7 @@ en:
     owner_repo_tooltip: Een repository die deze locatie heeft gereserveerd
     _singular: Locatie
     _plural: Locaties
+    new_title: Nieuwe locatie
 
   location_batch:
     <<: *location_attributes
@@ -371,6 +375,7 @@ en:
       virus_check: Viruscontrole
     _singular: Gebeurtenis
     _plural: Gebeurtenissen
+    new_title: Nieuwe gebeurtenis
 
   linked_event:
     <<: *event
@@ -423,7 +428,7 @@ en:
          <ul>
         <li>nr92045078 <em>voor een LCNAF name heading</em></li>
         <li>500115393 <em>voor een ULAN name heading</em></li>
-        <li>http://viaf.org/viaf/134138653 <em>voor een VIAF name heading</em>
+        <li>http://viaf.org/viaf/134138653 <em>voor een VIAF name heading</em></li>
          </ul>
     source: Bron
     source_tooltip: |
@@ -457,7 +462,7 @@ en:
         <p>Het primaire deel van een naamvorm (bijvoorbeeld een achternaam of familienaam van een persoon).</p>
         <p>Voorbeelden:</p>
          <ul>
-        <li>Churchill <em>(voor Churchill, Winston, Sir, 1874-1965 [persoon])</em></i>
+        <li>Churchill <em>(voor Churchill, Winston, Sir, 1874-1965 [persoon])</em></li>
         <li>Black Foot <em>(voor Black Foot, Chief, ?-1877 [persoon])</em></li>
         <li>International Business Machines <em>(voor International Business Machines. Microelectronics Division [corporatie])</em></li>
          </ul>
@@ -489,7 +494,7 @@ en:
         <p>Een nummer, soms met een woord, dat de naam kwalificeert. Voor persoonsnamen, vaak een Romeins cijfer of een Romeins cijfer en een volgend deel van een voornaam. Voor bedrijfsnamen het nummer van een onderdeel, sectie of vergadering.</p>
         <p>Voorbeelden:</p>
         <ul>
-        <li>II Comnenus <em>(voor John II Comnenus, Emperor of the East</em>/li>
+        <li>II Comnenus <em>(voor John II Comnenus, Emperor of the East)</em></li>
         <li>II <em>(voor John Paul II)</em></li>
         <li>97th, 2nd session <em>(voor United States Congress, 97th, 2nd session)</em></li>
         </ul>
@@ -497,7 +502,7 @@ en:
     dates_tooltip: |
         <p>Gebruik dit veld voor afstemming met MARC-autorisatierecords. Deze datums worden in plaats van de datums van bestaan toegevoegd aan de naaminvoer op het scherm.</p>
         <p>Bestaansdatums voor de genoemde entiteit.</p>
-        <p>Voorbeelden:<p>
+        <p>Voorbeelden:</p>
         <ul>
         <li>1886-1961 <em>(voor H.D., Hilda Doolittle, 1886-1961)</em></li>
          </ul>
@@ -816,19 +821,16 @@ en:
   structured_date_label: &sdl_attributes
     date_label_tooltip: |
         <p> Beschrijft wat voor soort activiteit de datum aangeeft </p>
-  date_type_structured_tooltip: |
+    date_type_structured_tooltip: |
          <p> Geeft het type datuminformatie aan, een enkele datum of een datumbereik. </p>
-  date_certainty_tooltip: |
+    date_certainty_tooltip: |
         <p>Het betrouwbaarheidsniveau voor de informatie in een datumverklaring. Deze informatie is optioneel en mag alleen worden toegevoegd als informatie over de kwalificatiedatum als mogelijk onzeker wordt beschouwd op basis van de gebruikte beschrijvingsregels.</p>
-  date_era_tooltip: |
+    date_era_tooltip: |
         <p>Periode waarin jaren worden geteld en datums worden berekend, zoals voor Chr. of na Chr. De waarde "ce" is de standaardwaarde.</p>
-  date_calendar_tooltip: |
+    date_calendar_tooltip: |
         <p>Systeem van tijdrekening, zoals de Gregoriaanse kalender of Juliaanse kalender. De waarde "gregoriaans" is de standaardwaarde.</p>
 
   structured_date_label_existence:
-    <<: *sdl_attributes
-
-  date_fields:
     <<: *sdl_attributes
 
   structured_date_label_common_fields:
@@ -876,6 +878,7 @@ en:
     name: Naam contact
     name_tooltip: |
         <p>Naam van de persoon die fungeert als contactpersoon voor de entiteit in het hoofdrecord.</p>
+        <p>Voor organisaties waarvoor de naam wordt leeg gelaten zal het systeem een naam genereren.</p>
     salutation: Aanspreking
     salutation_tooltip: |
         <p>Aanspreking voor de contactpersoon.</p>
@@ -918,13 +921,6 @@ en:
     telephones: Telefoonnummers
     _singular: Contact
     _plural: Contact details
-
-  note_contact_note:
-    contact_notes_tooltip: |
-        <p>Details over de interactie met het contact</p>
-
-    date_of_contact_tooltip: |
-        <p>Wordt gebruikt om de specifieke datum of tijdsbestek van een interactie vast te leggen</p>
 
   telephone: &telephone
     _plural: Telefoonnummers
@@ -1170,6 +1166,10 @@ en:
     subnotes: Subnoten
     date_of_contact: Datum van het contact
     contact_notes: Contact noten
+    contact_notes_tooltip: |
+        <p>Details over de interactie met het contact</p>
+    date_of_contact_tooltip: |
+        <p>Wordt gebruikt om de specifieke datum of tijdsbestek van een interactie vast te leggen</p>
 
   note_legal_status:
     <<: *note_attributes
@@ -1323,6 +1323,10 @@ en:
     _plural: Talen
     _singular: Taal
 
+  language:
+    _plural: Talen
+    _singular: Taal
+
   language_and_script:
     <<: *lang_material_attributes
     language: Talen
@@ -1375,7 +1379,7 @@ en:
     identifier_auto_generate_message: "-- auto-generated upon save --"
     rights_type: Rechtentype
     rights_type_tooltip: |
-        <p>De basis voor het maken van de rechtenverklaring. Vier bases zijn toegestaan: Copyright, Licentie, Statuut en Overig.
+        <p>De basis voor het maken van de rechtenverklaring. Vier bases zijn toegestaan: Copyright, Licentie, Statuut en Overig.</p>
     rights_type_message: Selecteer een Rechtentype
     status: Status
     status_tooltip: |
@@ -1517,7 +1521,7 @@ en:
     <<: *date_attributes
 
   date_fields:
-    <<: *date_attributes
+    <<: [*date_attributes, *sdl_attributes]
 
   accession:
     <<: *section_tooltips
@@ -1589,7 +1593,7 @@ en:
        <p>Zie DACS 5.1-5.2</p>
     retention_rule: Bewaarregels
     retention_rule_tooltip: |
-        <p>Een notitie met de bewaarbevoegdheid of regel voor de Aanwinst.
+        <p>Een notitie met de bewaarbevoegdheid of regel voor de Aanwinst.</p>
          <p> Voorbeelden: </p>
          <ul>
         <li>Zie het bewaarschema.</li>
@@ -1602,6 +1606,12 @@ en:
     resource_type_tooltip: |
         <p>Een lijst met termen die door een repository worden gebruikt om zijn Archieven/Collecties in basistypen te categoriseren.</p>
         <p>Waarden in deze lijst met gecontroleerde waarden kunnen worden gewijzigd.</p>
+    language: Taal van de beschrijving
+    language_tooltip: |
+        <p>Aanduiding van alle talen die voorkomen in de beschrijving van de aanwinst.</p>
+    script: Schrift van de beschrijving
+    script_tooltip: |
+        <p>Aanduiding van alle schriften die voorkomen in de beschrijving van de aanwinst.</p>
     access_restrictions: Toegankelijkheidsbeperkingen?
     access_restrictions_tooltip: |
         <p>Een selectievakje om aan te geven of de toegang tot de materialen beperkt is.</p>
@@ -1646,8 +1656,13 @@ en:
         <p>Gebruikt voor het koppelen van bijbehorende Archieven/Collecties aan deze Aanwinst.</p>
     relator: Relator
     relator_type: Relator Type
+    created_by: Gemaakt door
+    last_modified_by: Laatst bewerkt door
+    create_time: Gemaakt
+    user_mtime: Bewerkt
     _singular: Aanwinst
     _plural: Aanwinsten
+    new_title: Nieuwe aanwinst
 
   interrelated_accession:
     _plural: Gerelateerde Aanwinsten
@@ -1680,6 +1695,9 @@ en:
       agent_person: Persoon
       agent_corporate_entity: Organisatie
       agent_software: Software
+    is_user: Gebruikersnaam
+    is_user_tooltip: |
+        <p>Indien ingevuld, is dit agent record gekoppeld aan een gebruiker van de applicatie met de opgegeven gebruikersnaam.</p>
     name: Agent naam
     names: Naamvormen
     names_tooltip: |
@@ -1702,6 +1720,11 @@ en:
     publish: Publiceren
     _singular: Agent
     _plural: Agents
+    new_title:
+      agent_family: Nieuwe familie
+      agent_person: Nieuwe persoon
+      agent_corporate_entity: Nieuwe organisatie
+      agent_software: Nieuwe software
     agent_record_controls_tooltip: |
         <p>Information about the record describing the Agent.</p>
     agent_alternate_sets_tooltip: |
@@ -1726,7 +1749,6 @@ en:
     agent_contacts_tooltip: |
         <p>Contactgegevens voor de agent of een vertegenwoordiger die namens hem/haar werkt.</p>
     used_languages_tooltip: "De taal / talen die aan de agent zijn gekoppeld. Voorbeeld: Engels."
-    related_agents_tooltip: Andere agenten die aan de agent zijn gekoppeld.
     agent_resources_tooltip: Bronnen en andere records die aan de agent zijn gekoppeld.
     related_agent_tooltip: Wordt gebruikt om andere agenten met een relatie met de agent te verbinden en om de aard van de relatie aan te geven.
     publish_tooltip: |
@@ -1840,7 +1862,7 @@ en:
     description: Beschrijving
     description_tooltip: |
         <p>Een korte beschrijving van de groep</p>
-        <p>Voorbeelden:
+        <p>Voorbeelden:</p>
          <ul>
         <li>Stagiairs zomer 2013</li>
         <li>Verantwoordelijken collectiebeheer</li>
@@ -1849,6 +1871,13 @@ en:
     member_usernames_tooltip: |
         <p>Leden die deel zijn van de groep</p>
     permissions: "Leden kunnen:"
+    default_group_names:
+      repository_managers: "Beheerders van het %{repo_code} repository"
+      repository_archivists: "Archivarissen van het %{repo_code} repository"
+      project_managers: "Projectleiders van het %{repo_code} repository"
+      advanced_data_entry: "Geavanceerde invoerders van het %{repo_code} repository"
+      basic_data_entry: "Basis-invoerders van het %{repo_code} repository"
+      repository_viewers: "Lezers van het %{repo_code} repository"
     permission_types:
       manage_repository: beheer deze repository (verander groepen en andere instellingen)
       update_location_record: locatierecords in deze Repository maken/wijzigen/verwijderen
@@ -1888,6 +1917,7 @@ en:
       delete_assessment_record: waarderingsrecords verwijderen
       manage_assessment_attributes: waarderingscriteria maken/aanpassen/verwijderen
       manage_enumeration_record: waardenlijsten maken/aanpassen/verwijderen
+      manage_custom_report_templates: aangepaste rapport templates beheren
     _singular: Groep
     _plural: Groepen
 
@@ -2005,8 +2035,17 @@ en:
     finding_aid_note: Toegang Noot
     finding_aid_note_tooltip: |
         <p>Voor het vastleggen van eventuele aanvullende informatie over het zoekhulpmiddel (niet de beschreven bron) die niet wordt gedekt door de andere gegevenselementen van het zoekhulpmiddel.</p>
+    created_by: Gemaakt door
+    last_modified_by: Laatst bewerkt door
+    create_time: Gemaakt
+    user_mtime: Bewerkt
     _singular: Archief/Collectie
     _plural: Archieven/Collecties
+    new_title: Nieuw(e) archief/collectie
+
+  resource_and_archival_object:
+    _singular: Archief/collectie en/of archiefonderdeel
+    _plural: Archieven/collecties en/of archiefonderdelen
 
   related_accession:
     _singular: Aanwinst
@@ -2051,6 +2090,8 @@ en:
         <li>Mandeville Special Collections Library</li>
         <li>Tamiment Library and Robert F. Wagner Labor Archives</li>
          </ul>
+    ark_shoulder: ARK Shoulder (lokale namespace)
+    ark_shoulder_tooltip: Een repository-specifieke string die wordt opgenomen in gegenereerde ARK's
     org_code: Organisatie Code
     org_code_tooltip: |
         <p>een code i.o.m. ISO/DIS 15511 Information and Documentation International Standard Identifier for Libraries and Related Organizations (ISIL).</p>
@@ -2095,9 +2136,10 @@ en:
         <p>Een externe URL of pad naar een lokaal bestand dat een merkafbeelding bevat (zoals een logo of zegel) voor gebruik in de online vindhulpmiddelen van de repository. Deze afbeelding verschijnt op de openbare pdf's, pdf's aan de personeelszijde en op de repositories-pagina.</p>
     _singular: Repository
     _plural: Repositories
+    new_title: Nieuw repository
     publish: Publiceren
     publish_tooltip: |
-        <p>Bepaalt of deze repository en elk record dat het bevat, zal worden gepubliceerd naar publieke interfaces.</p>
+        <p>Bepaalt of dit repository en elk record dat het bevat, zal worden gepubliceerd naar publieke interfaces.</p>
 
 
   term: &term_attributes
@@ -2142,6 +2184,7 @@ en:
     heading: Subject Heading
     _singular: Onderwerp
     _plural: Onderwerpen
+    new_title: Nieuw onderwerp
 
   user:
     username: Gebruikersnaam
@@ -2180,6 +2223,9 @@ en:
     is_admin: Verleen systeembeheerdersmachtigingen
     is_admin_tooltip: |
         <p>Wordt gebruikt om aan te geven of de gebruiker volledige beheerdersrechten voor de toepassing moet hebben.</p>
+    create_time: Gemaakt
+    user_mtime: Bewerkt
+    admin: Administrator
     _singular: Gebruiker
     _plural: Gebruikers
 
@@ -2266,11 +2312,13 @@ en:
     merge_into: Voeg samen in
     _singular: Gecontroleerde Waardenlijst
     _plural: Gecontroleerde Waardenlijsten
+    default: Standaardwaarde
 
   classification:
     <<: *slug_attributes
     _singular: Classificatie
     _plural: Classificaties
+    new_title: Nieuwe classificatie
     identifier: Identificatiecode
     title: Titel
     description: Beschrijving
@@ -2302,8 +2350,10 @@ en:
   defaults: &defaults_attributes
     general_section: Algemene instellingen
     show_suppressed: Verborgen records tonen?
+    include_unpublished: Niet-gepubliceerde records opnemen in exports?
     show_suppressed_tooltip: Of u verborgen records wilt weergeven waarvoor u toestemming hebt om deze te zien tijdens het browsen.
     publish: Publiceren
+    rde_sort_alpha: RDE templates alfabetisch sorteren?
     publish_tooltip: Of er nieuwe records standaard moeten worden gepubliceerd.
     default_values: Records vooraf invullen?
     default_values_tooltip: Of nieuwe Aanwinst- en Archief/Collectie-records vooraf moeten worden ingevuld met standaardwaarden.
@@ -2347,6 +2397,8 @@ en:
       locations: Locaties
       scope_by_date: Scope naar Datum
       template: Template
+      rating: Score
+      values: Waarden
     formats:
       json: JSON
       csv: CSV
@@ -2358,7 +2410,6 @@ en:
     agent_must_be_unique: Agentrecords kunnen niet identiek zijn
     subject_must_be_unique: Onderwerpsrecords mogen niet identiek zijn
     subject_heading_identifier_must_be_unique_within_source: Subject heading Identificatiecode moet uniek zijn binnen de bron
-    conflicting_record: Conflicterend record
     missing_required_property: Eigenschap is vereist maar ontbreekt
     missing_property: Eigenschap ontbreekt
     not_a_valid_date: Geen geldige datum
@@ -2411,12 +2462,12 @@ en:
     short_name_already_in_use: De korte naam voor de repository moet uniek zijn in deze ArchivesSpace instantie
     custom_report_template_name_not_unique: De naam van het aangepast rapport template moet uniek zijn.
     custom_report_must_include_field_or_subreport: Het aangepaste rapporttemplate moet ten minste één veld of subrapport bevatten.
-    missing_filter_values: Geselecteerd om resultaten op veld te filteren, maar geen waarde(n) opgegeven
+    missing_end_filter_date: Begin- en einddatums zijn vereist voor een datumfilter. Vul een einddatum in.
+    missing_start_filter_date: Begin- en einddatums zijn vereist voor een datumfilter. Vul een begindatum in.
     must_be_a_valid_email_address: Het e-mailadresveld moet een geldig adres bevatten
     repo_set_desc_required: Beschrijving van repository-set is vereist voor het maken van een OAI-repository-set
     repo_set_name_required: Naam van repositoryset is vereist voor het maken van een OAI-repositoryset
     is_not_present: Verplicht veld ontbreekt
-    must_be_a_valid_email_address: Moet een geldig adres bevatten
     sponsor_set_desc_required: Een sponsorsetbeschrijving is vereist voor het maken van een OAI-sponsorset
     sponsor_set_name_required: De naam van de sponsorset is vereist voor het maken van een OAI-sponsorset
     invalid_characters: Bevat ongeldige tekens
@@ -2428,10 +2479,14 @@ en:
     requires_that_end_dates_are_after_begin_dates: Einddatums moeten na de startdatums liggen
     must_specify_a_primary_subject: "Beschrijving informatie: record mist een primair onderwerp"
     subrecord_not_allowed_for_agent_software: "Software Agents cannot have record control or relation subrecords"
+    ark_collision: Er was een probleem bij het genereren van een ARK voor dit record. Contacteer de systeembeheerder.
+    external_ark_collision: Externe ARK is al in gebruik
+    ark_format_error: Eén van de opgegeven ARK's is ongeldig.
 
   job:
     _singular: Achtergrond taak
     _plural: Achtergrond taken
+    new_title: Nieuwe achtergrond taak
     job_type: Taak type
     types:
       print_to_pdf_job: Maak PDF
@@ -2445,17 +2500,17 @@ en:
       trim_whitespace_job: Verwijder witruimte
       unknown_job_type: Onbekend taaktype
       bulk_import_job: Laad via Spreadsheet
-      find_and_replace_job: Batch Find and Replace (Beta)
+      top_container_linker_job: Taak voor het koppelen van top containers
     status: Status
     status_completed: Voltooid
     status_queued: In wachtrij
     status_running: Lopend
     status_failed: Mislukt
     status_canceled: Geannuleerd
+    queue_position: "Nr. %{position}"
     time_submitted: Tijd ingediend
     time_started: Tijd gestart
     time_finished: Tijd voltooid
-    time_submitted: Tijd ingediend
     owner: Eigenaar
     show_description: Toon beschrijving
     input_file: Invoer bestand
@@ -2477,7 +2532,11 @@ en:
     import_type_ead_xml: EAD
     import_type_assessment_csv: Waardering CSV
     import_type_accession_csv: Aanwinst CSV
-    import_type_digital_object_csv: Digitaal Object CSV
+    bulk_import_csv: Bulk import AO CSV
+    bulk_import_xlsx: Bulk import AO XLSX
+    bulk_import_DO_csv: Bulk import DO CSV
+    bulk_import_DO_xlsx: Bulk import DO XLSX
+    import_type_digital_object_csv: Digitaal object CSV
     import_type_eac_xml: EAC-CPF
     import_type_location_csv: Locatie CSV
     import_type_marcxml: MarcXML Bibliographic (Resource)
@@ -2536,13 +2595,13 @@ en:
       subjects: Onderwerp
       identifier: Identificatiecode
       created_by: Gemaakt door
-      last_modified_by: Laatst gewijzigd door
+      last_modified_by: Laatst bewerkt door
     boolean:
       published: Gepubliceerd?
       suppressed: Verborgen?
     date:
       create_time: Gemaakt
-      user_mtime: Aangepast
+      user_mtime: Bewerkt
   system_info:
     frontend: Frontend UI
     backend: Backend
@@ -2660,7 +2719,7 @@ en:
     exhibition_value_note: Tentoonstellinsgwaarde Noot
     exhibition_value_note_tooltip: <p>Geeft aan of de collectie zelf of de afzonderlijke items in de collectie bijzonder geschikt zijn voor tentoonstellingen. Dit veld kan bijvoorbeeld een uniek artefact of een brief of foto van historische betekenis vermelden.</p>
     rating_attributes_value:
-      rating_none: Geen rating
+      rating_none: Geen score
       rating_1: "1"
       rating_2: "2"
       rating_3: "3"
@@ -2669,6 +2728,7 @@ en:
     rating_note: "%{label} Note"
     _singular: Waardering
     _plural: Waarderingen
+    new_title: Nieuwe waardering
 
   assessment_attribute:
     rating:
@@ -2733,7 +2793,7 @@ en:
     description: Beschrijving
     record_type: Recordtype
     display: Toon?
-    narrow_by: Beperken tot?
+    limit: Limiet
     values: Waarden
     value: Waarde
     "true": "Ja"
@@ -2741,8 +2801,13 @@ en:
     start_date: Startdatum
     end_date: Einddatum
     field: Veld
+    include: Toevoegen
     _singular: Aangepast rapporttemplate
     _plural: Aangepaste rapporttemplates
+
+  bulk_import_template:
+    _singular: Bulk import template
+    _plural: Bulk import templates
 
   repository_oai:
     oai_is_disabled_tooltip: OAI is disabled tooltip
@@ -2760,6 +2825,7 @@ en:
     sponsor_set_description_tooltip: Sponsor set description tooltip
 
   bulk_import:
+    templates: Bulk import templates
     row: "Rij %{row}"
     processing_row: "Rij %{row} verwerken"
     dig_assoc: Digitaal object toegevoegd aan Archiefonderdeel
@@ -2905,3 +2971,75 @@ en:
     log_skipping_due_to_errors: "Skipping creation and linking of top containers due to errors."
     log_validating: "Validating spreadsheet data..."
     log_creating_and_linking: "Creating and linking top containers..."
+
+  metadata_rights_declaration:
+    license_tooltip: |
+        <p>Naam van de licentie (indien van toepassing) die de voorwaarden bepaalt waaronder de metadata kan worden gebruikt en hergebruikt. Voorbeelden:</p>
+        <p>Dit record is beschikbaar onder een Universele 1.0 Publiek Domein Creative Commons licentie.</p>
+        <p>Dit record is beschikbaar onder een Naamsvermelding-NietCommercieel-GelijkDelen 4.0 Internationaal Creative Commons licentie.</p>
+        <p>Dit record is beschikbaar onder een Naamsvermelding-NietCommercieel-GeenAfgeleideWerken 4.0 Internationaal Creative Commons licentie.</p>
+        <p>Dit record is beschikbaar onder een Naamsvermelding-GeenAfgeleideWerken 4.0 Internationaal Creative Commons licentie.</p>
+        <p>Dit record is beschikbaar onder een Naamsvermelding-NietCommercieel-GelijkDelen 4.0 Internationaal Creative Commons licentie.</p>
+    descriptive_note_tooltip: |
+        <p>Niet-gestructureerde informatie over de voorwaarden waaronder de metadata ter beschikking worden gesteld voor gebruik en hergebruik. Voorbeelden:</p>
+        <p>i. Copyright Smith College, 1985</p>
+        <p>ii. Dit record mag worden gereproduceerd voor alle doeleinden.</p>
+        <p>iii. Dit werk behoort tot het publieke domein, wat betekent dat het zonder voorafgaande toestemming mag worden gekopieerd, gewijzigd, verdeeld en uitgevoerd, ook voor commerciële doeleinden.</p>
+        <p>iv. Het auteurstrecht voor de biografische noot behoort toe aan Ted Smith, 2015.  Alle andere metadata wordt ter beschikking gesteld onder CC BY 4.0.</p>
+    file_uri_tooltip: |
+        <p>Een URI voor de online locatie van de licentie of andere gepubliceerde informatie over de voorwaarden waaronder de metadata ter beschikking wordt gesteld voor gebruik en hergebruik. Voorbeeld: https://creativecommons.org/licenses/by/4.0/.</p>
+    file_version_xlink_actuate_attribute_tooltip: |
+        <p>Aanduiding of de vernoemde URI moet worden opgelost wanneer het agent record wordt getoond.</p>
+    file_version_xlink_show_attribute_tooltip: |
+        <p>Aanduiding of de bron waarnaar wordt verwezen in de vernoemde URI moet worden getoond.</p>
+    xlink_title_attribute_tooltip: |
+        <p>Titel van de bron waarnaar wordt verwezen in de vernoemde URI, die kan worden gebruikt als hoofding.</p>
+    xlink_role_attribute_tooltip: |
+        <p>Type of aard van de bron waarnaar wordt verwezen in de vernoemde URI.</p>
+    xlink_arcrole_attribute_tooltip: |
+        <p>Type of aard van de bron waarnaar wordt verwezen in de vernoemde URI.</p>
+    last_verified_date_tooltip: |
+        <p>Laatste datum (met eventueel tijdstip) waarop de bron waarnaar wordt verwezen in de vernoemde URI werd gecontroleerd.</p>
+
+  ratings:
+    _plural: Beoordelingen
+  conservation_issues:
+    _plural: Conservatieproblemen
+  surveyed_by:
+    _plural: Onderzocht door
+  reviewer:
+    _plural: Reviewers
+  formats:
+    _plural: Formaten
+  creator:
+    _plural: Makers
+  owner_repo:
+    _plural: Gereserveerd voor
+  groups:
+    _plural: Groupen
+  created_by: Gemaakt door
+  last_modified_by: Laatst bewerkt door
+  create_time: Gemaakt
+  user_mtime: Bewerkt
+
+  arks:
+    ark: ARK
+    edit: Bewerk ARK's
+    current: huidig
+    remove_ark: Verwijder
+    add_new: Voeg nieuwe ARK toe
+    set_current: Set to current
+    save: Bewaar ARK's
+    no_changes: Geen wijzigingen om op te slaan
+    modal_title: Bewerk ARK's voor huidige record
+    unsubmitted_input: Er zijn niet-opgeslagen wijzigingen
+    only_current_ark_can_be_external: De huidige ARK kan niet worden vervangen omdat hij gemarkeerd is als extern.
+    ark_editor_errors:
+      ark_collision: Eén van de opgegeven ARK's is al in gebruik.
+      ark_format_error: Eén van de opgegeven ARK's is ongeldig.
+
+  container_profile:
+    title: "%{name} [%{depth}d, %{height}h, %{width}w %{dimension_units}] extent measured by %{extent_dimension}"
+    new_title: New Container Profile
+  location_profile:
+    new_title: New Location Profile
