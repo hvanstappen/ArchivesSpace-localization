@@ -1,0 +1,2172 @@
+nl:
+  enumeration_names:
+    accession_acquisition_type: Aanwinst verwervingstype
+    accession_parts_relator: Aanwinst deel relator
+    accession_parts_relator_type: Aanwinst deel relator type
+    accession_resource_type: Aanwinst bron type
+    accession_sibling_relator: Verwante aanwinst relator
+    accession_sibling_relator_type: Verwante aanwinst relator type
+    agency_code_type: Record Control Agency Code Type
+    agent_contact_salutation: Agent contact aanspreking
+    agent_relationship_associative_relator: Agent relatie associatieve relator
+    agent_relationship_earlierlater_relator: Agent relatie vroeger/later relator
+    agent_relationship_family_relator: Agent Relationship Family Relator
+    agent_relationship_hierarchical_relator: Agent Relationship Hierarchical Relator
+    agent_relationship_identity_relator: Agent Relationship Identity Relator
+    agent_relationship_parentchild_relator: Agent relatie ouder/kind relator
+    agent_relationship_specific_relator: Agent Relationship Specific Relator
+    agent_relationship_subordinatesuperior_relator: Agent relatie ondergeschik/nevengeschikt relator
+    agent_relationship_temporal_relator: Agent Relationship Temporal Relator
+    archival_record_level: Beschrijvingsniveau
+    begin_date_standardized_type: Begindatum gestandaardiseerd type
+    cataloging_source: Record Control Cataloging Source
+    collection_management_processing_priority: Prioriteit verwerking collectiebeheer
+    collection_management_processing_status: Status verwerking collectiebeheer
+    container_location_status: Status locatie verpakking
+    container_type: Verpakking type
+    country_iso_3166: Land ISO 3166
+    date_calendar: Datum kalender
+    date_certainty: Datum zekerheid
+    date_era: Datum jaartelling
+    date_label: Datum label
+    date_role: Datum rol
+    date_standardized_type: Datum gestandardiseerd type
+    date_type: Datum type
+    date_type_structured: Datum type
+    deaccession_scope: Afstoting bereik
+    digital_object_digital_object_type: Digitaal object Digitaal object type
+    digital_object_level: Digitaal object niveau
+    dimension_units: Afmeting eenheden
+    end_date_standardized_type: Eindatum gestandardiseerd type
+    event_event_type: Gebeurtenis Gebeurtenis type
+    event_outcome: Gebeurtenis resultaat
+    extent_extent_type: Omvang Omvang type
+    extent_portion: Omvang deel
+    file_version_checksum_methods: Bestandsversie Checksum methodes
+    file_version_file_format_name: Bestandsversie Naam bestandsformaat
+    file_version_use_statement: Bestandsversie Verklaring over gebruik
+    file_version_xlink_actuate_attribute: File Version Xlink Actuate Attribute
+    file_version_xlink_show_attribute: File Version Xlink Show Attribute
+    gender: Agent Gender
+    government_agency_type: Record Control Government Agency Type
+    identifier_type: Record Control Identifier Type
+    instance_instance_type: Instantie Instantie type
+    job_type: Job type
+    language_iso639_2: Taal ISO 639-2
+    level_of_detail: Record Control Level of Detail
+    linked_agent_archival_record_relators: Gekoppelde Agent Archiefrecord Relators
+    linked_agent_event_roles: Gekoppelde Agent gebeurtenis rollen
+    linked_agent_role: Gekoppelde Agent Rol
+    linked_event_archival_record_roles: Gekoppelde gebeurtenis Archiefrecord rollen
+    location_function_type: Locatie functie type
+    location_temporary: Tijdelijke locatie
+    maintenance_agent_type: Record Control Maintenence Agent Type
+    maintenance_event_type: Record Control Maintenence Event Type
+    maintenance_status: Record Control Maintenence Status
+    metadata_license: Metadata licentie
+    modified_record: Record Control Modified Type
+    name_person_name_order: Naam Persoon Naamvorm
+    name_rule: Naam regelwerk
+    name_source: Naam bron
+    name_type: Record Control Name Type
+    note_bibliography_type: Noot Bibliografie type
+    note_digital_object_type: Noot digitaal object type
+    note_index_item_type: Noot Index Item type
+    note_index_type: Noot Index type
+    note_langmaterial_type: Noot taal van het materiaal type
+    note_multipart_type: Noot meerdelig type
+    note_orderedlist_enumeration: Noot lijst/opsomming
+    note_rights_statement_act_type: Noot rechtenverklaring wetgeving type
+    note_rights_statement_type: Noot rechtenverklaring type
+    note_singlepart_type: Noot eendelig type
+    place_role: Agent Place Role
+    publication_status: Record Control Publication Status
+    reference_evaluation: Record Control Reference Evaluation
+    resource_finding_aid_description_rules: Toegang beschrijvingsregels
+    resource_finding_aid_status: Toegang status
+    resource_resource_type: Archiefbestanddeel type
+    restriction_type: Lokale toegangsbepering type
+    rights_statement_act_restriction: Rechtenverklaring Regelgeving beperking
+    rights_statement_act_type: Rechtenverklaring Regelgeving type
+    rights_statement_external_document_identifier_type: Rechtenverklaring Extern document identifier type
+    rights_statement_ip_status: Rechtenverklaring IP Status
+    rights_statement_other_rights_basis: Rechtenverklaring Other Rights Basis
+    rights_statement_rights_type: Rechtenverklaring Rechten type
+    romanization: Romanization
+    script_iso15924: Taal Schrift ISO 15924
+    subject_source: Bron onderwerp
+    subject_term_type: Onderwerpsterm type
+    telephone_number_type: Telefoonnummer type
+    transliteration: Transliteration
+    user_defined_enum_1: User Defined Enum 1
+    user_defined_enum_2: User Defined Enum 2
+    user_defined_enum_3: User Defined Enum 3
+    user_defined_enum_4: User Defined Enum 4
+  enumerations:
+    accession_acquisition_type:
+      deposit: Levering
+      gift: Schenking
+      purchase: Aankoop
+      transfer: Overdracht
+    accession_parts_relator:
+      forms_part_of: Is deel van
+      has_part: Heeft deel
+    accession_parts_relator_type:
+      part: '"Part" relationship'
+    accession_resource_type:
+      collection: Collectie
+      papers: Documenten
+      publications: Publicaties
+      records: Records
+    accession_sibling_relator:
+      sibling_of: Broer/zus van gerelateerde Agent
+    accession_sibling_relator_type:
+      bound_with: '"Bound With" relationship'
+    agency_code_type:
+      local: Lokaal
+      oclc: OCLC
+    agent_contact_salutation:
+      madame: Mevrouw
+      mr: Dhr.
+      mrs: Mevr.
+      ms: Juffr.
+      sir: De heer
+    agent_relationship_associative_relator:
+      is_associative_with: Associatief met gerelateerde Agent
+    agent_relationship_earlierlater_relator:
+      is_earlier_form_of: Eerdere vorm van gerelateerde Agent
+      is_later_form_of: Latere vorm van gerelateerde Agent
+    agent_relationship_family_relator:
+      is_related_with: Agent Relatie relatie Relator
+    agent_relationship_hierarchical_relator:
+      is_hierarchical_with: Agent relatie hiërarchie Relator
+    agent_relationship_identity_relator:
+      is_identified_with: Agent relatie geïdentificeerd met Relator
+    agent_relationship_parentchild_relator:
+      is_child_of: Kind van gerelateerde Agent
+      is_grandparent_of: Grootouder van gerelateerde Agent
+      is_parent_of: Ouder van gerelateerde Agent
+    agent_relationship_subordinatesuperior_relator:
+      is_subordinate_to: Is ondergeschikt aan gerelateerde Agent
+      is_superior_of: Is bovengeschikt aan gerelateerde Agent
+    agent_relationship_temporal_relator:
+      is_temporal_with: Agent Relatie tijd Relator
+    archival_record_level:
+      class: Afdeling
+      collection: Verzameling
+      file: Bestanddeel
+      fonds: Archief
+      item: Object
+      otherlevel: Ander niveau
+      recordgrp: Archiefblok
+      series: Reeks
+      subfonds: Deelarchief
+      subgrp: Deelgroep
+      subseries: Deelreeks
+    begin_date_standardized_type:
+      not_after: Niet na
+      not_before: Niet voor
+      standard: Standaard
+    cataloging_source:
+      ccp: Cooperative cataloging program
+      nat_bib_agency: National bibliographic agency
+      natc: Geen poging tot coderen
+      other: Andere
+      unknown: Onbekend
+    collection_management_processing_priority:
+      high: Hoog
+      low: Laag
+      medium: Medium
+      none: Niet gespecificeerd
+    collection_management_processing_status:
+      completed: Voltooid
+      in_progress: In verwerking
+      new: Nieuw
+      none: Niet gespecificeerd
+    container_location_status:
+      current: Huidig
+      previous: Vorige
+    container_type:
+      box: Doos
+      carton: Karton
+      case: Kist
+      container: Container
+      folder: Map
+      frame: Kader
+      object: Object
+      page: Pagina
+      reel: Spoel
+      volume: Volume
+    country_iso_3166:
+      AD: Andorra
+      AE: Verenigde Arabische Emiraten
+      AF: Afghanistan
+      AG: Antigua en Barbuda
+      AI: Anguilla
+      AL: Albanië
+      AM: Armenië
+      AO: Angola
+      AQ: Antarctica
+      AR: Argentinië
+      AS: Amerikaans-Samoa
+      AT: Oostenrijk
+      AU: Australië
+      AW: Aruba
+      AX: Åland
+      AZ: Azerbeidzjan
+      BA: Bosnië en Herzegovina
+      BB: Barbados
+      BD: Bangladesh
+      BE: België
+      BF: Burkina Faso
+      BG: Bulgarije
+      BH: Bahrein
+      BI: Burundi
+      BJ: Benin
+      BL: Saint-Barthélemy
+      BM: Bermuda
+      BN: Brunei
+      BO: Bolivia
+      BQ: Nederland Carib
+      BR: Brazilië
+      BS: Bahama's
+      BT: Bhutan
+      BV: Bouvet
+      BW: Botswana
+      BY: Wit-Rusland
+      BZ: Belize
+      CA: Canada
+      CC: Cocoseilanden
+      CD: Congo-Kinshasa
+      CF: Centraal-Afrikaanse Republiek
+      CG: Congo-Brazzaville
+      CH: Zwitserland
+      CI: Ivoorkust
+      CK: Cookeilanden
+      CL: Chili
+      CM: Kameroen
+      CN: China
+      CO: Colombia
+      CR: Costa Rica
+      CU: Cuba
+      CV: Kaapverdië
+      CW: Curaçao
+      CX: Christmaseiland
+      CY: Cyprus
+      CZ: Tsjechië
+      DE: Duitsland
+      DJ: Djibouti
+      DK: Denemarken
+      DM: Dominica
+      DO: Dominicaanse Republiek
+      DZ: Algerije
+      EC: Ecuador
+      EE: Estland
+      EG: Egypte
+      EH: Westelijke Sahara
+      ER: Eritrea
+      ES: Spanje
+      ET: Ethiopië
+      FI: Finland
+      FJ: Fiji
+      FK: Falklandeilanden
+      FM: Micronesia
+      FO: Faeröer
+      FR: Frankrijk
+      GA: Gabon
+      GB: Verenigd Koninkrijk
+      GD: Grenada
+      GE: Georgië
+      GF: Frans-Guyana
+      GG: Guernsey
+      GH: Ghana
+      GI: Gibraltar
+      GL: Groenland
+      GM: Gambia
+      GN: Guinee
+      GP: Guadeloupe
+      GQ: Equatoriaal-Guinea
+      GR: Griekenland
+      GS: Zuid-Georgia en de Zuidelijke Sandwicheilanden
+      GT: Guatemala
+      GU: Guam
+      GW: Guinee-Bissau
+      GY: Guyana
+      HK: Hongkong
+      HM: Heard en McDonaldeilanden
+      HN: Honduras
+      HR: Kroatië
+      HT: Haïti
+      HU: Hongarije
+      ID: Indonesië
+      IE: Ierland
+      IL: Israël
+      IM: Man
+      IN: India
+      IO: Brits Indische Oceaanterritorium
+      IQ: Irak
+      IR: Iran
+      IS: IJsland
+      IT: Italië
+      JE: Jersey
+      JM: Jamaica
+      JO: Jordanië
+      JP: Japan
+      KE: Kenia
+      KG: Kirgizië
+      KH: Cambodja
+      KI: Kiribati
+      KM: Comoren
+      KN: Saint Kitts en Nevis
+      KP: Noord-Korea
+      KR: Zuid-Korea
+      KW: Koeweit
+      KY: Kaaimaneilanden
+      KZ: Kazachstan
+      LA: Laos
+      LB: Libanon
+      LC: Saint Lucia
+      LI: Liechtenstein
+      LK: Sri Lanka
+      LR: Liberia
+      LS: Lesotho
+      LT: Litouwen
+      LU: Luxemburg
+      LV: Letland
+      LY: Libië
+      MA: Marokko
+      MC: Monaco
+      MD: Moldavië
+      ME: Montenegro
+      MF: Sint-Maarten
+      MG: Madagaskar
+      MH: Marshalleilanden
+      MK: Noord-Macedonië
+      ML: Mali
+      MM: Myanmar
+      MN: Mongolië
+      MO: Macau
+      MP: Noordelijke Marianen
+      MQ: Martinique
+      MR: Mauritanië
+      MS: Montserrat
+      MT: Malta
+      MU: Mauritius
+      MV: Maldiven
+      MW: Malawi
+      MX: Mexico
+      MY: Maleisië
+      MZ: Mozambique
+      NA: Namibië
+      NC: Nieuw-Caledonië
+      NE: Niger
+      NF: Norfolk
+      NG: Nigeria
+      NI: Nicaragua
+      NL: Nederland
+      'NO': Noorwegen
+      NP: Nepal
+      NR: Nauru
+      NU: Niue
+      NZ: Nieuw-Zeeland
+      OM: Oman
+      PA: Panama
+      PE: Peru
+      PF: Frans-Polynesië
+      PG: Papoea-Nieuw-Guinea
+      PH: Filipijnen
+      PK: Pakistan
+      PL: Polen
+      PM: Saint-Pierre en Miquelon
+      PN: Pitcairneilanden
+      PR: Puerto Rico
+      PS: Palestina
+      PT: Portugal
+      PW: Palau
+      PY: Paraguay
+      QA: Qatar
+      RE: Réunion
+      RO: Roemenië
+      RS: Servië
+      RU: Rusland
+      RW: Rwanda
+      SA: Saoedi-Arabië
+      SB: Salomonseilanden
+      SC: Seychellen
+      SD: Soedan
+      SE: Zweden
+      SG: Singapore
+      SH: Sint-Helena - Verenigd Koninkrijk
+      SI: Slovenië
+      SJ: Spitsbergen en Jan Mayen
+      SK: Slowakije
+      SL: Sierra Leone
+      SM: San Marino
+      SN: Senegal
+      SO: Somalië
+      SR: Suriname
+      SS: Zuid-Soedan
+      ST: Sao Tomé en Principe
+      SV: El Salvador
+      SX: Sint Maarten
+      SY: Syrië
+      SZ: Swaziland
+      TC: Turks- en Caicoseilanden
+      TD: Tsjaad
+      TF: Franse Zuidelijke en Antarctische G
+      TG: Togo
+      TH: Thailand
+      TJ: Tadzjikistan
+      TK: Tokelau
+      TL: Oost-Timor
+      TM: Turkmenistan
+      TN: Tunesië
+      TO: Tonga
+      TR: Turkije
+      TT: Trinidad en Tobago
+      TV: Tuvalu
+      TW: Taiwan
+      TZ: Tanzania
+      UA: Oekraïne
+      UG: Oeganda
+      UM: Kleine Pacifische eilanden van de VS
+      US: Verenigde Staten
+      UY: Uruguay
+      UZ: Oezbekistan
+      VA: Vaticaanstad
+      VC: Saint Vincent en de Grenadines
+      VE: Venezuela
+      VG: Britse Maagdeneilanden
+      VI: Amerikaanse Maagdeneilanden
+      VN: Vietnam
+      VU: Vanuatu
+      WF: Wallis en Futuna
+      WS: Samoa
+      YE: Jemen
+      YT: Mayotte
+      ZA: Zuid-Afrika
+      ZM: Zambia
+      ZW: Zimbabwe
+    date_calendar:
+      gregorian: Gregoriaans
+    date_certainty:
+      approximate: Benadering
+      inferred: Afgeleid
+      questionable: Onzeker
+    date_era:
+      ce: v. Chr.
+    date_label:
+      agent_relation: Agent relatie
+      broadcast: Uitzending
+      copyright: Copyright
+      creation: Creatie
+      deaccession: Afstoting
+      digitized: Gedigitaliseerd
+      event: Gebeurtenis
+      existence: Bestaan
+      issued: Uitgave
+      modified: Wijziging
+      other: Andere
+      publication: Publicatie
+      record_keeping: Record beheer
+      usage: Gebruik
+    date_role:
+      begin: Begin
+      end: Einde
+    date_standardized_type:
+      not_after: Niet na
+      not_before: Niet voor
+      standard: Standaard
+    date_type:
+      bulk: Bulk data
+      expression: Bewoording
+      inclusive: Inclusieve Data
+      range: Bereik
+      single: Enkelvoudig
+    date_type_structured:
+      range: Bereik
+      single: Enkelvoudig
+    deaccession_scope:
+      part: Deel
+      whole: Geheel
+    digital_object_digital_object_type:
+      cartographic: Cartographisch
+      mixed_materials: Gemengde materialen
+      moving_image: Bewegend beeld
+      notated_music: Partituur
+      software_multimedia: Software, Multimedia
+      sound_recording: Geluidsopname
+      sound_recording_musical: Geluidsopname (muzikaal)
+      sound_recording_nonmusical: Geluidsopname (niet-muzikaal)
+      still_image: Stilstaand beeld
+      text: Tekst
+    digital_object_level:
+      collection: Collectie
+      image: Beeld
+      work: Werk
+    dimension_units:
+      centimeters: Centimeter
+      feet: Feet
+      inches: Inches
+      meters: Meter
+      millimeters: Millimeter
+      yards: Yards
+    end_date_standardized_type:
+      not_after: Niet na
+      not_before: Niet voor
+      standard: Standaard
+    event_event_type:
+      accession: Aanwinst
+      accumulation: Aanvulling
+      acknowledgement: Bevestiging
+      acknowledgement_received: Bevestiging ontvangen
+      acknowledgement_sent: Bevestiging verzonden
+      agreement_received: Overeenkomst ontvangen
+      agreement_sent: Overeenkomst verzonden
+      agreement_signed: Overeenkomst getekend
+      appraisal: Selectie
+      assessment: Waardering
+      capture: Vastlegging
+      cataloged: Catalografie
+      collection: Verzameling
+      component_transfer: Overdracht onderdeel
+      compression: Compressie
+      contribution: Bijdrage
+      copyright_transfer: Overdracht copyright
+      custody_transfer: Custody Transfer@en
+      deaccession: Afstoting
+      decompression: Decompressie
+      decryption: Decryptie
+      deletion: Vernietiging
+      digital_signature_validation: Validatie digitale handtekening
+      fixity_check: Fixity check
+      ingestion: Opname
+      message_digest_calculation: Berekening message digest
+      migration: Migratie
+      normalization: Normalisering
+      processed: Verwerkt
+      processing_completed: Verwerking - voltooid
+      processing_in_progress: Verwerking - in uitvoering
+      processing_new: Verwerking - nieuw
+      processing_started: Verwerking - start
+      publication: Publicatie
+      replication: Replicatie
+      request: Verzoek
+      rights_transferred: Rechten overgedragen
+      validation: Validatie
+      virus_check: Viruscontrole
+    event_outcome:
+      cancelled: Geannuleerd
+      fail: Mislukt
+      fulfilled: Voldaan
+      partial pass: Deels geslaagd
+      pass: Geslaagd
+      pending: Onbeslist
+    extent_extent_type:
+      box: Archiefdozen
+      cassettes: Cassettes
+      cubic_feet: Kubieke meter
+      files: Bestanden
+      gb: Gigabytes
+      gigabytes: Gigabytes
+      leaves: Pagina's
+      linear_feet: Strekkende meter
+      mb: Megabytes
+      megabytes: Megabytes
+      notspecified: Niet gespecificeerd
+      packet: Pakken
+      parcel: Omslagen
+      part: Stukken
+      photographic_prints: Photografische afdrukken
+      photographic_slides: Diapositieven
+      reels: Spoelen
+      sheets: Bladen
+      terabytes: Terabytes
+      volumes: Banden
+    extent_portion:
+      part: Deel
+      whole: Geheel
+    file_version_checksum_methods:
+      md5: MD5
+      sha-1: SHA-1
+      sha-256: SHA-256
+      sha-384: SHA-384
+      sha-512: SHA-512
+    file_version_file_format_name:
+      aiff: Audio Interchange File Format
+      avi: Audio/Video Interleaved Format
+      gif: Graphics Interchange Format
+      jpeg: JPEG File Interchange Format
+      mp3: MPEG Audio Layer 3
+      pdf: Portable Document Format
+      tiff: Tagged Image File Format
+      txt: Plain Tekst File
+    file_version_use_statement:
+      audio-clip: Audio-Clip
+      audio-master: Audio-Master
+      audio-master-edited: Audio-Master-Edited
+      audio-service: Audio-Service
+      audio-streaming: Audio-Streaming
+      image-master: Image-Master
+      image-master-edited: Image-Master-Edited
+      image-service: Image-Service
+      image-service-edited: Image-Service-Edited
+      image-thumbnail: Image-Thumbnail
+      text-codebook: Text-Codebook
+      text-data: Text-Data
+      text-data_definition: Text-Data Definition
+      text-georeference: Text-Georeference
+      text-ocr-edited: Text-Ocr-Edited
+      text-ocr-unedited: Text-Ocr-Unedited
+      text-tei-transcripted: Text-Tei-Transcripted
+      text-tei-translated: Text-Tei-Translated
+      video-clip: Video-Clip
+      video-master: Video-Master
+      video-master-edited: Video-Master-Edited
+      video-service: Video-Service
+      video-streaming: Video-Streaming
+    file_version_xlink_actuate_attribute:
+      none: geen
+      onLoad: onLoad
+      onRequest: onRequest
+      other: andere
+    file_version_xlink_show_attribute:
+      embed: embed
+      new: nieuw
+      none: geen
+      other: andere
+      replace: vervang
+    gender:
+      not_specified: Niet gespecificeerd
+    government_agency_type:
+      fed: Federaal/nationaal
+      int_gov: Internationaal intergovernmenteel
+      local: Lokaal
+      multilocal: Multilokaal
+      multistate: Multistate
+      natc: Geen poging tot coderen
+      ngo: Niet-gouvernementele organisatie
+      other: Andere
+      provincial: State, provincial, territorial, dependent, etc.
+      sac: Autonome of semi-autonome component
+      undetermined: Type overheidsinstantie onbepaald
+      unknown: Onbekend of de naam een overheidsinstantie is
+    identifier_type:
+      lac: Library and Archives Canada
+      loc: Library of Congress
+      local: Lokaal
+    instance_instance_type:
+      accession: Aanwinst
+      audio: Audio
+      books: Boeken
+      computer_disks: Computer disks
+      digital_object: Digitaal object
+      digital_object_link: Digitaal object koppeling
+      graphic_materials: Grafische materialen
+      maps: Kaarten
+      microform: Microform
+      mixed_materials: Gemengde materialen
+      moving_images: Bewegende beelden
+      realia: Realia
+      text: Tekst
+    language_iso639_2:
+      aar: Afar
+      abk: Abchazisch
+      ace: Atjehs
+      ach: Akoli
+      ada: Adangme
+      ady: Adygees
+      afa: Afro-Aziatische talen
+      afh: Afrihili
+      afr: Afrikaans
+      ain: Ainu
+      aka: Akan
+      akk: Akkadisch
+      alb: Albanees
+      ale: Aleoets
+      alg: Algonkische talen
+      alt: Zuid-Altaïsch
+      amh: Amhaars
+      ang: Oudengels (ca. 450-1100)
+      anp: Angika
+      apa: Na-Denétalen
+      ara: Arabisch
+      arc: Aramees
+      arg: Aragonees
+      arm: Armeens
+      arn: Mapudungun (Araukaans)
+      arp: Arapaho
+      art: Kunsttalen
+      arw: Arawak
+      asm: Assamees
+      ast: Asturisch
+      ath: Athabaskische talen
+      aus: Australische talen
+      ava: Avaars
+      ave: Avestisch
+      awa: Awadhi
+      aym: Aymara
+      aze: Azerbeidzjaans
+      bad: Bandatalen (Centraal-Afrika)
+      bai: Bamileke
+      bak: Basjkiers
+      bal: Baluchi
+      bam: Bambara
+      ban: Balinees
+      baq: Baskisch
+      bas: Basa
+      bat: Baltische talen
+      bej: Beja; Bedawi
+      bel: Wit-Russisch (Belarussisch)
+      bem: Bemba
+      ben: Bengaals
+      ber: Berber
+      bho: Bhojpuri
+      bih: Bihari
+      bik: Bicol
+      bin: Edo (Bini)
+      bis: Bislama
+      bla: Siksika (Blackfoot)
+      bnt: Bantoetalen
+      bos: Bosnisch
+      bra: Braj
+      bre: Bretons
+      btk: Bataktalen
+      bua: Boerjatisch
+      bug: Buginees
+      bul: Bulgaars
+      bur: Burmees
+      byn: Blin; Bilin
+      cad: Caddo
+      cai: Midden-Amerikaanse Indiaanse talen
+      car: Caribische talen
+      cat: Catalaans
+      cau: Kaukasische talen
+      ceb: Cebuano
+      cel: Keltische talen
+      cha: Chamorro
+      chb: Chibcha
+      che: Tsjetsjeens
+      chg: Chagatai (Tsjagatai)
+      chi: Chinees
+      chk: Chuukees
+      chm: Mari
+      chn: Chinook
+      cho: Choctaw
+      chp: Chipewyan
+      chr: Cherokee
+      chu: Kerkslavisch
+      chv: Tsjoevasjisch
+      chy: Cheyenne
+      cmc: Chamische talen
+      cnr: Montenegrijns
+      cop: Koptisch
+      cor: Cornisch
+      cos: Corsicaans
+      cpe: Engelse creoolse talen
+      cpf: Franse creoolse talen (overige)
+      cpp: Portugese creoolse talen (overige)
+      cre: Cree
+      crh: Krim-Tataars
+      crp: Creools en Pidgin (overige)
+      csb: Kasjoebisch
+      cus: Koesjitische talen (overige)
+      cze: Tsjechisch
+      dak: Dakota
+      dan: Deens
+      dar: Darginisch (Dargwa)
+      day: Dajaktalen
+      del: Unami (Delaware)
+      den: Slavey
+      dgr: Dogrib
+      din: Dinka (Thuongjang)
+      div: Divehi
+      doi: Dogri
+      dra: Dravidische talen (overige)
+      dsb: Nedersorbisch
+      dua: Duala
+      dum: Middelnederlands (ca.1050-1350)
+      dut: Nederlands
+      dyu: Dioula
+      dzo: Dzongkha
+      efi: Efik
+      egy: Oudegyptisch
+      eka: Ekajuk
+      elx: Elamitisch
+      eng: Engels
+      enm: Middelengels (1100-1500)
+      epo: Esperanto
+      est: Estisch
+      ewe: Ewe
+      ewo: Ewondo
+      fan: Fang
+      fao: Faeröers
+      fat: Fante
+      fij: Fijisch
+      fil: Filipijns
+      fin: Fins
+      fiu: Fins-Oegrische talen (overige)
+      fon: Fon
+      fre: Frans
+      frm: Middelfrans (ca.1400-1600)
+      fro: Oudfrans (842-ca.1400)
+      frr: Noord-Fries
+      frs: Oosterlauwers Fries
+      fry: Westerlauwers Fries
+      ful: Fula
+      fur: Friulisch
+      gaa: Ga
+      gay: Gajo
+      gba: Gbaya
+      gem: Germaanse talen
+      geo: Georgisch
+      ger: Duits
+      gez: Ge'ez
+      gil: Kiribatisch (Gilbertees)
+      gla: Schots-Gaelisch
+      gle: Iers
+      glg: Galicisch
+      glv: Manx-Gaelisch
+      gmh: Middelhoogduits (ca.1050-1500)
+      goh: Oudhoogduits (ca.750-1050)
+      gon: Gondi
+      gor: Gorontalo
+      got: Gotisch
+      grb: Grebo
+      grc: Oudgrieks (tot 1453)
+      gre: Mgrieks (modern)
+      grn: Guaraní
+      gsw: Zwitserduits
+      guj: Gujarati
+      gwi: Gwich’in
+      hai: Haida
+      hat: Haïtiaans Creools
+      hau: Hausa
+      haw: Hawaïaans
+      heb: Hebreeuws
+      her: Herero
+      hil: Hiligaynon
+      him: Himachali
+      hin: Hindi
+      hit: Hettitisch
+      hmn: Hmong
+      hmo: Hiri Motu
+      hrv: Kroatisch
+      hsb: Oppersorbisch
+      hun: Hongaars
+      hup: Hupa
+      iba: Iban
+      ibo: Igbo
+      ice: Ijslands
+      ido: Ido
+      iii: Yi
+      ijo: Ijawtalen
+      iku: Inuktitut
+      ile: Interlingue
+      ilo: Ilokano
+      ina: Interlingua
+      inc: Indo-Arische talen
+      ind: Indonesisch
+      ine: Indo-Europese talen
+      inh: Ingoesjetisch
+      ipk: Inupiak
+      ira: Iraanse talen
+      iro: Irokese talen
+      ita: Italiaans
+      jav: Javaans
+      jbo: Lojban
+      jpn: Japans
+      jpr: Judeo-Perzisch
+      jrb: Judeo-Arabisch
+      kaa: Karakalpaks
+      kab: Kabylisch
+      kac: Kachin (Jingpho)
+      kal: Groenlands
+      kam: Kamba
+      kan: Kannada (Kanarees, Kanara)
+      kar: Karen
+      kas: Kasjmiri
+      kau: Kanuri
+      kaw: Kawi
+      kaz: Kazachs
+      kbd: Kabardijns
+      kha: Khasi
+      khi: Khoisantalen
+      khm: Khmer, Cambodjaans
+      kho: Hotanees
+      kik: Gikuyu
+      kin: Kinyarwanda
+      kir: Kirgizisch
+      kmb: Kimbundu
+      kok: Konkani
+      kom: Zurjeens (Komi)
+      kon: Kongo
+      kor: Koreaans
+      kos: Kosraeaans
+      kpe: Kpelle
+      krc: Karatsjaj-Balkaars
+      krl: Karelisch
+      kro: Krutalen
+      kru: Kurukh
+      kua: Kwanyama
+      kum: Kumyk
+      kur: Koerdisch
+      kut: Kutenai
+      lad: Ladino
+      lah: Lahnda
+      lam: Lamba
+      lao: Laotiaans
+      lat: Latijn
+      lav: Lets
+      lez: Lezgisch
+      lim: Limburgs
+      lin: Lingala
+      lit: Litouws
+      lol: Mongo
+      loz: Lozi
+      ltz: Luxemburgs
+      lua: Luba-Lulua
+      lub: Luba-Katanga
+      lug: Luganda
+      lui: Luiseno
+      lun: Lunda
+      luo: Luo (Kenia en Tanzania)
+      lus: Lushai
+      mac: Macedonisch
+      mad: Madoerees
+      mag: Magahi
+      mah: Marshallees
+      mai: Maithili
+      mak: Makassaars
+      mal: Malayalam
+      man: Mandinka
+      mao: Maori
+      map: Austronesische talen
+      mar: Marathi
+      mas: Masai
+      may: Malay
+      mdf: Moksha
+      mdr: Mandar
+      men: Mende
+      mga: Middel-iers (900-1200)
+      mic: Micmac
+      min: Minangkabau
+      mis: niet gecodeerde talen
+      mkh: Mon-Khmertalen
+      mlg: Plateaumalagasi
+      mlt: Maltees
+      mnc: Mantsjoe
+      mni: Meitei (Manipuri)
+      mno: Manobotalen
+      moh: Mohawk
+      mon: Mongools
+      mos: Mossi
+      mul: meerdere talen
+      mun: Mundatalen
+      mus: Muskogitalen
+      mwl: Mirandees
+      mwr: Marwari
+      myn: Mayatalen
+      myv: Erzja
+      nah: Nahuatl
+      nai: Noord-Amerikaans Indiaanse talen
+      nap: Napolitaans
+      nau: Nauruaans
+      nav: Navajo
+      nbl: Zuid-Ndebele
+      nde: Noord-Ndebele
+      ndo: Ndonga
+      nds: Nederduits
+      nep: Nepalees
+      new: Nepalbhasa (Newari)
+      nia: Nias
+      nic: Niger-Congotalen (overige)
+      niu: Niueaans
+      nno: Nynorsk (Nieuw-Noors)
+      nob: Bokmål-Noors
+      nog: Nogai
+      non: Oudnoords
+      nor: Noors
+      nqo: N'ko
+      nso: Pedi (Sepedi, Noord-Sothotisch)
+      nub: Nubische talen
+      nwc: Klassiek Newari (Klassiek Nepalbhasa)
+      nya: Nyanja
+      nym: Nyamwezi
+      nyn: Nyankole
+      nyo: Nyoro
+      nzi: Nzima
+      oci: Occitaans
+      oji: Ojibweg
+      ori: Odia (Oriya)
+      orm: Afaan Oromo
+      osa: Osage
+      oss: Ossetisch
+      ota: Osmaans (Ottomaans) (1500-1928)
+      oto: Otomi
+      paa: Papoeatalen (overige)
+      pag: Pangasinan
+      pal: Pahlavi
+      pam: Pampanga
+      pan: Punjabi
+      pap: Papiaments
+      pau: Palaus
+      peo: Oudperzisch (ca.600-400 BC)
+      per: Perzisch
+      phi: Filipijns (overige)
+      phn: Fenicisch
+      pli: Pali
+      pol: Pools
+      pon: Pohnpeiaans
+      por: Portugees
+      pra: Prakrit
+      pro: Oudprovençaals (tot 1500); Oud-occitaans (tot 1500)
+      pus: Pasjtoe
+      que: Quechua
+      raj: Rajasthani
+      rap: Rapa Nui
+      rar: Rarotongaans
+      roa: Romaanse talen
+      roh: Reto-Romaans
+      rom: Romani
+      rum: Roemeens
+      run: Kirundi
+      rup: Aroemeens
+      rus: Russisch
+      sad: Sandawe
+      sag: Sango
+      sah: Jakoets
+      sai: Zuid-Amerikaanse Indiaanse talen
+      sal: Salishtalen
+      sam: Samaritaans
+      san: Sanskriet
+      sas: Sasak
+      sat: Santali
+      scn: Siciliaans
+      sco: Schots
+      sel: Selkoeps
+      sem: Semitische talen
+      sga: Oud-iers (tot 900)
+      sgn: Gebarentalen
+      shn: Shan
+      sid: Sidamo
+      sin: Singalees
+      sio: Sioux-Catawbatalen
+      sit: Sino-Tibetaanse talen
+      sla: Slavische talen
+      slo: Slowaaks
+      slv: Sloveens
+      sma: Zuid-Samisch
+      sme: Noord-Samisch (Noord-Laps)
+      smi: Samisch (Laps)
+      smj: Lule-Sami
+      smn: Inari-Sami
+      smo: Samoaans
+      sms: Skolt-Sami
+      sna: Shona
+      snd: Sindhi
+      snk: Soninke
+      sog: Sogdisch
+      som: Somalisch
+      son: Songhai
+      sot: Zuid-Sotho
+      spa: Spaans
+      srd: Sardijns
+      srn: Surinaams
+      srp: Servisch
+      srr: Sérères
+      ssa: Nilo-Saharaanse talen
+      ssw: Swazi
+      suk: Sukuma
+      sun: Soendanees
+      sus: Susu
+      sux: Soemerisch
+      swa: Swahili
+      swe: Zweeds
+      syc: Klassiek Syrisch
+      syr: Syrisch
+      tah: Tahitiaans
+      tai: Taitalen
+      tam: Tamil
+      tat: Tataars
+      tel: Telugu, Teloegoe
+      tem: Timne
+      ter: Tereno
+      tet: Tetun
+      tgk: Tadzjieks
+      tgl: Tagalog
+      tha: Thai
+      tib: Tibetaans
+      tig: Tigre
+      tir: Tigrinya
+      tiv: Tiv
+      tkl: Tokelaus
+      tlh: Klingon
+      tli: Tlingit
+      tmh: Tamashek
+      tog: Tonga (Nyasa)
+      ton: Tongaans, Tonga
+      tpi: Tok Pisin
+      tsi: Tsimshiantalen
+      tsn: Tswana
+      tso: Tsonga
+      tuk: Turkmeens
+      tum: ChiTumbuka
+      tup: Tupi-talen
+      tur: Turks
+      tut: Altaïsche talen
+      tvl: Tuvaluaans
+      twi: Twi
+      tyv: Toevaans
+      udm: Oedmoerts
+      uga: Ugaritisch
+      uig: Oeigoers
+      ukr: Oekraïens
+      umb: Umbundu
+      und: onbepaald
+      urd: Urdu
+      uzb: Oezbeeks
+      vai: Vai
+      ven: Venda
+      vie: Vietnamees
+      vol: Volapük, Volapuk
+      vot: Wotisch
+      wak: Wakashtalen
+      wal: Walamo
+      war: Waray-Waray
+      was: Washo
+      wel: Welsh
+      wen: Sorbische talen
+      wln: Waals
+      wol: Wolof
+      xal: Kalmuks
+      xho: Xhosa
+      yao: Yao
+      yap: Yapees
+      yid: Jiddisch
+      yor: Yoruba
+      ypk: Yupiktalen
+      zap: Zapoteeks
+      zbl: Blissymbolen
+      zen: Zenaga
+      zgh: Standard Moroccan Tamazight
+      zha: Zhuang, Tsjoeang
+      znd: Zande
+      zul: Zoeloe
+      zun: Zuni
+      zxx: geen taalkundige inhoud
+      zza: Zazaki (Dimili; Dimli; Kirdki; Kirmanjki; Zaza)
+    level_of_detail:
+      fully_established: Volledig
+      memorandum: Memorandum
+      natc: Geen poging tot coderen
+      not_applicable: Niet van toepassing
+      preliminary: Voorlopig
+      provisional: Provisioneel
+    linked_agent_archival_record_relators:
+      abr: Abridger
+      acp: Art copyist
+      act: Actor
+      adi: Art director
+      adp: Adapter
+      aft: Author of afterword, colophon, etc.
+      anl: Analyst
+      anm: Animator
+      ann: Annotator
+      ant: Bibliographic antecedent
+      ape: Appellee
+      apl: Appellant
+      app: Applicant
+      aqt: Author in quotations or text abstracts
+      arc: Architect
+      ard: Artistic director
+      arr: Arranger
+      art: Artist
+      asg: Assignee
+      asn: Associated name
+      ato: Autographer
+      att: Attributed name
+      auc: Auctioneer
+      aud: Author of dialog
+      aui: Author of introduction, etc.
+      aus: Author of screenplay, etc.
+      aut: Author
+      bdd: Binding designer
+      bjd: Bookjacket designer
+      bkd: Book designer
+      bkp: Book producer
+      blw: Blurb writer
+      bnd: Binder
+      bpd: Bookplate designer
+      brd: Broadcaster
+      brl: Braille embosser
+      bsl: Bookseller
+      cas: Caster
+      ccp: Conceptor
+      chr: Choreographer
+      clb: Collaborator
+      cli: Client
+      cll: Calligrapher
+      clr: Colorist
+      clt: Collotyper
+      cmm: Commentator
+      cmp: Composer
+      cmt: Compositor
+      cnd: Conductor
+      cng: Cinematographer
+      cns: Censor
+      coe: Contestant-appellee
+      col: Collector
+      com: Compiler
+      con: Conservator
+      cor: Collection registrar
+      cos: Contestant
+      cot: Contestant-appellant
+      cou: Court governed
+      cov: Cover designer
+      cpc: Copyright claimant
+      cpe: Complainant-appellee
+      cph: Copyright holder
+      cpl: Complainant
+      cpt: Complainant-appellant
+      cre: Creator
+      crp: Correspondent
+      crr: Corrector
+      crt: Court reporter
+      csl: Consultant
+      csp: Consultant to a project
+      cst: Costume designer
+      ctb: Contributor
+      cte: Contestee-appellee
+      ctg: Cartographer
+      ctr: Contractor
+      cts: Contestee
+      ctt: Contestee-appellant
+      cur: Curator of an exhibition
+      cwt: Commentator for written text
+      dbp: Distribution place
+      dfd: Defendant
+      dfe: Defendant-appellee
+      dft: Defendant-appellant
+      dgg: Degree grantor
+      dgs: Degree supervisor
+      dis: Dissertant
+      dln: Delineator
+      dnc: Dancer
+      dnr: Donor
+      dpc: Depicted
+      dpt: Depositor
+      drm: Draftsman
+      drt: Director
+      dsr: Designer
+      dst: Distributor
+      dtc: Data contributor
+      dte: Dedicatee
+      dtm: Data manager
+      dto: Dedicator
+      dub: Dubious author
+      edc: Editor of compilation
+      edm: Editor of moving image work
+      edt: Editor
+      egr: Engraver
+      elg: Electrician
+      elt: Electrotyper
+      eng: Engineer
+      enj: Enacting jurisdiction
+      etr: Etcher
+      evp: Event place
+      exp: Appraiser
+      fac: Facsimilist
+      fds: Film distributor
+      fld: Field director
+      flm: Film editor
+      fmd: Film director
+      fmk: Filmmaker
+      fmo: Former owner
+      fmp: Film producer
+      fnd: Funder
+      fpy: First party
+      frg: Forger
+      gis: Geographic information specialist
+      grt: Graphic technician
+      his: Host institution
+      hnr: Honoree
+      hst: Host
+      ill: Illustrator
+      ilu: Illuminator
+      ins: Inscriber
+      inv: Inventor
+      isb: Issuing body
+      itr: Instrumentalist
+      ive: Interviewee
+      ivr: Interviewer
+      jud: Judge
+      jug: Jurisdiction governed
+      lbr: Laboratory
+      lbt: Librettist
+      ldr: Laboratory director
+      led: Lead
+      lee: Libelee-appellee
+      lel: Libelee
+      len: Lender
+      let: Libelee-appellant
+      lgd: Lighting designer
+      lie: Libelant-appellee
+      lil: Libelant
+      lit: Libelant-appellant
+      lsa: Landscape architect
+      lse: Licensee
+      lso: Licensor
+      ltg: Lithographer
+      lyr: Lyricist
+      mcp: Music copyist
+      mdc: Metadata contact
+      med: Medium
+      mfp: Manufacture place
+      mfr: Manufacturer
+      mod: Moderator
+      mon: Monitor
+      mrb: Marbler
+      mrk: Markup editor
+      msd: Musical director
+      mte: Metal-engraver
+      mtk: Minute taker
+      mus: Musician
+      nrt: Narrator
+      opn: Opponent
+      org: Originator
+      orm: Organizer of meeting
+      osp: Onscreen presenter
+      oth: Other
+      own: Owner
+      pan: Panelist
+      pat: Patron
+      pbd: Publishing director
+      pbl: Publisher
+      pdr: Project director
+      pfr: Proofreader
+      pht: Photographer
+      plt: Platemaker
+      pma: Permitting agency
+      pmn: Production manager
+      pop: Printer of plates
+      ppm: Papermaker
+      ppt: Puppeteer
+      pra: Praeses
+      prc: Process contact
+      prd: Production personnel
+      pre: Presenter
+      prf: Performer
+      prg: Programmer
+      prm: Printmaker
+      prn: Production company
+      pro: Producer
+      prp: Production place
+      prs: Production designer
+      prt: Printer
+      prv: Provider
+      pta: Patent applicant
+      pte: Plaintiff-appellee
+      ptf: Plaintiff
+      pth: Patentee
+      ptt: Plaintiff-appellant
+      pup: Publication place
+      rbr: Rubricator
+      rcd: Recordist
+      rce: Recording engineer
+      rcp: Recipient
+      rdd: Radio director
+      red: Redaktor
+      ren: Renderer
+      res: Researcher
+      rev: Reviewer
+      rpc: Radio producer
+      rps: Repository
+      rpt: Reporter
+      rpy: Responsible party
+      rse: Respondent-appellee
+      rsg: Restager
+      rsp: Respondent
+      rsr: Restorationist
+      rst: Respondent-appellant
+      rth: Research team head
+      rtm: Research team member
+      sad: Scientific advisor
+      sce: Scenarist
+      scl: Sculptor
+      scr: Scribe
+      sds: Sound designer
+      sec: Secretary
+      sgd: Stage director
+      sgn: Signer
+      sht: Supporting host
+      sll: Seller
+      sng: Singer
+      spk: Speaker
+      spn: Sponsor
+      spy: Second party
+      srv: Surveyor
+      std: Set designer
+      stg: Setting
+      stl: Storyteller
+      stm: Stage manager
+      stn: Standards body
+      str: Stereotyper
+      tcd: Technical director
+      tch: Teacher
+      ths: Thesis advisor
+      tld: Television director
+      tlp: Television producer
+      trc: Transcriber
+      trl: Translator
+      tyd: Type designer
+      tyg: Typographer
+      uvp: University place
+      vac: Voice actor
+      vdg: Videographer
+      voc: Vocalist
+      wac: Writer of added commentary
+      wal: Writer of added lyrics
+      wam: Writer of accompanying material
+      wat: Writer of added text
+      wdc: Woodcutter
+      wde: Wood engraver
+      win: Writer of introduction
+      wit: Witness
+      wpr: Writer of preface
+      wst: Writer of supplementary textual content
+    linked_agent_event_roles:
+      authorizer: Autorisator
+      executing_program: Uitvoerend programma
+      implementer: Uitvoerder
+      recipient: Ontvanger
+      requester: Verzoeker
+      transmitter: Verzender
+      validator: Validator
+    linked_agent_role:
+      creator: Maker
+      source: Bron
+      subject: Onderwerp
+    linked_event_archival_record_roles:
+      context: Context
+      outcome: Resultaat
+      requested: Verzoek
+      source: Bron
+      transfer: Overdracht
+    location_function_type:
+      arrivals: Binnenkomend
+      av_materials: Audiovisuele materialen
+      shared: Gedeeld
+    location_temporary:
+      conservation: Conservering
+      exhibit: Tentoonstelling
+      loan: Leen
+      reading_room: Leeszaal
+    maintenance_agent_type:
+      human: Mens
+      machine: Machine
+    maintenance_event_type:
+      cancelled: Geannuleerd
+      created: Gemaakt
+      deleted: Verwijderd
+      derived: Afgeleid
+      revised: Gereviseerd
+      updated: Aangepast
+    maintenance_status:
+      cancelled_obsolete: Geannuleerd/verouderd
+      deleted: Verwijderd
+      deleted_replaced: Verwijderd-vervangen
+      deleted_split: Verwijderd-gesplitst
+      derived: Afgeleid
+      new: Nieuw
+      revised_corrected: Gereviseerd/gecorrigeerd
+      upgraded: Geüpgraded
+    metadata_license:
+      no_derivatives: Dit record is beschikbaar onder een Naamsvermelding-GeenAfgeleideWerken 4.0 Internationaal Creative Commons licentie.
+      non_commercial: Dit record is beschikbaar onder een Naamsvermelding-NietCommercieel-GelijkDelen 4.0 Internationaal Creative Commons licentie.
+      non_commercial_no_derivatives: Dit record is beschikbaar onder een Naamsvermelding-NietCommercieel-GeenAfgeleideWerken 4.0 Internationaal Creative Commons licentie.
+      non_commercial_share_a_like: Dit record is beschikbaar onder een Naamsvermelding-NietCommercieel-GelijkDelen 4.0 Internationaal Creative Commons licentie.
+      other: Niet nader bepaalde of aangepaste licentie.
+      public_domain: Dit record is beschikbaar onder een Universele 1.0 Publiek Domein  Creative Commons licentie.
+      share_a_like: Dit record is beschikbaar onder een Naamsvermelding-GelijkDelen 4.0 Internationaal Creative Commons licentie.
+    modified_record:
+      missing_characters: Ontbrekende tekens
+      natc: Geen poging tot coderen
+      not_modified: Niet aangepast
+      shortened: Ingekort
+    name_person_name_order:
+      direct: Direct
+      inverted: Indirect
+    name_rule:
+      aacr: Anglo-American Cataloging Rules
+      ccr: Cataloging Cultural Resources
+      dacs: 'Describing Archives: A Content Standard'
+      isaar: International Standard Archival Authority Record for Corporate Bodies, Persons, and Families
+      local: Lokaal regelwerk
+      rad: Rules for Archival Description
+      rda: Resource Description and Access
+    name_source:
+      cash: Canadian Subject Headings
+      ingest: Unspecified ingested source
+      lcnaf: Library of Congress Name Authority File
+      lcshac: Library of Congress Children's Subject Headings
+      local: Lokale bronnen
+      nad: NAD / ARK II Name Authority Database
+      naf: NACO Authority File
+      nal: National Agricultural Library subject headings
+      ram: Répertoire d'autorités RAMEAU
+      rvm: Répertoire de vedettes-matière
+      snac: SNAC
+      ulan: Union List of Artist Names
+    name_type:
+      differentiated: Gedifferentieerd
+      natc: Geen poging tot coderen
+      not_applicable: Niet van toepassing
+      undifferentiated: Niet gedifferentieerd
+    note_index_item_type:
+      corporate_entity: Organisatie
+      family: Familie
+      function: Functie
+      genre_form: Genre / Vorm
+      geographic_name: Geographische naam
+      name: Naam
+      occupation: Beroep
+      person: Persoon
+      subject: Onderwerp
+      title: Titel
+    note_rights_statement_act_type:
+      additional_information: Aanvullende informatie
+      expiration: Beëindiging
+      extension: Extensie
+      permissions: Toelatingen
+      restrictions: Beperkingen
+    note_rights_statement_type:
+      additional_information: Aanvullende informatie
+      materials: Materialen
+      type_note: Type noot
+    _note_types:
+      abstract: Abstract
+      accessrestrict: Voorwaarden voor raadpleging
+      accruals: Aanvullingen
+      acqinfo: Verwerving
+      altformavail: Bestaan en bewaarplaats van kopieën
+      appraisal: Selectie
+      arrangement: Ordening
+      bibliography: Bibliografie
+      bioghist: Biografische / historische noot
+      contact_note: Contact noot
+      custodhist: Geschiedenis archief
+      dimensions: Afmetingen
+      edition: Editie
+      extent: Extent
+      fileplan: Ordeningsplan
+      general_context: Algemene context
+      index: Index
+      inscription: Inscriptie
+      langmaterial: Taal van het materiaal
+      legal_status: Wettelijke status
+      legalstatus: Wettelijke status
+      mandate: Mandaat
+      materialspec: Materiaalspecifieke details
+      note: Algemene noot
+      note_bibliography: Bibliografie
+      odd: Algemeen
+      originalsloc: Bestaan en bewaarplaats van originelen
+      otherfindaid: Andere toegangen
+      physdesc: Fysieke beschrijving
+      physfacet: Fysiek aspect
+      physloc: Fysieke locatie
+      phystech: Fysieke kenmerken en technische vereisten
+      prefercite: Voorkeursvorm voor citatie
+      processinfo: Informatie over verwerking
+      relatedmaterial: Verwante materialen
+      rights_statement: Rechtenverklaring
+      scopecontent: Bereik en inhoud
+      separatedmaterial: Separated Materials@en
+      structure_or_genealogy: Structuu of genealogie
+      summary: Korte inhoud
+      userestrict: Voorwaarden voor gebruik
+    note_digital_object_type:
+      abstract: Abstract
+      accessrestrict: Voorwaarden voor raadpleging
+      accruals: Aanvullingen
+      acqinfo: Verwerving
+      altformavail: Bestaan en bewaarplaats van kopieën
+      appraisal: Selectie
+      arrangement: Ordening
+      bibliography: Bibliografie
+      bioghist: Biografische / historische noot
+      contact_note: Contact noot
+      custodhist: Geschiedenis archief
+      dimensions: Afmetingen
+      edition: Editie
+      extent: Extent
+      fileplan: Ordeningsplan
+      general_context: Algemene context
+      index: Index
+      inscription: Inscriptie
+      langmaterial: Taal van het materiaal
+      legal_status: Wettelijke status
+      legalstatus: Wettelijke status
+      mandate: Mandaat
+      materialspec: Materiaalspecifieke details
+      note: Algemene noot
+      note_bibliography: Bibliografie
+      odd: Algemeen
+      originalsloc: Bestaan en bewaarplaats van originelen
+      otherfindaid: Andere toegangen
+      physdesc: Fysieke beschrijving
+      physfacet: Fysiek aspect
+      physloc: Fysieke locatie
+      phystech: Fysieke kenmerken en technische vereisten
+      prefercite: Voorkeursvorm voor citatie
+      processinfo: Informatie over verwerking
+      relatedmaterial: Verwante materialen
+      rights_statement: Rechtenverklaring
+      scopecontent: Bereik en inhoud
+      separatedmaterial: Separated Materials@en
+      structure_or_genealogy: Structuu of genealogie
+      summary: Korte inhoud
+      userestrict: Voorwaarden voor gebruik
+    note_langmaterial_type:
+      abstract: Abstract
+      accessrestrict: Voorwaarden voor raadpleging
+      accruals: Aanvullingen
+      acqinfo: Verwerving
+      altformavail: Bestaan en bewaarplaats van kopieën
+      appraisal: Selectie
+      arrangement: Ordening
+      bibliography: Bibliografie
+      bioghist: Biografische / historische noot
+      contact_note: Contact noot
+      custodhist: Geschiedenis archief
+      dimensions: Afmetingen
+      edition: Editie
+      extent: Extent
+      fileplan: Ordeningsplan
+      general_context: Algemene context
+      index: Index
+      inscription: Inscriptie
+      langmaterial: Taal van het materiaal
+      legal_status: Wettelijke status
+      legalstatus: Wettelijke status
+      mandate: Mandaat
+      materialspec: Materiaalspecifieke details
+      note: Algemene noot
+      note_bibliography: Bibliografie
+      odd: Algemeen
+      originalsloc: Bestaan en bewaarplaats van originelen
+      otherfindaid: Andere toegangen
+      physdesc: Fysieke beschrijving
+      physfacet: Fysiek aspect
+      physloc: Fysieke locatie
+      phystech: Fysieke kenmerken en technische vereisten
+      prefercite: Voorkeursvorm voor citatie
+      processinfo: Informatie over verwerking
+      relatedmaterial: Verwante materialen
+      rights_statement: Rechtenverklaring
+      scopecontent: Bereik en inhoud
+      separatedmaterial: Separated Materials@en
+      structure_or_genealogy: Structuu of genealogie
+      summary: Korte inhoud
+      userestrict: Voorwaarden voor gebruik
+    note_multipart_type:
+      abstract: Abstract
+      accessrestrict: Voorwaarden voor raadpleging
+      accruals: Aanvullingen
+      acqinfo: Verwerving
+      altformavail: Bestaan en bewaarplaats van kopieën
+      appraisal: Selectie
+      arrangement: Ordening
+      bibliography: Bibliografie
+      bioghist: Biografische / historische noot
+      contact_note: Contact noot
+      custodhist: Geschiedenis archief
+      dimensions: Afmetingen
+      edition: Editie
+      extent: Extent
+      fileplan: Ordeningsplan
+      general_context: Algemene context
+      index: Index
+      inscription: Inscriptie
+      langmaterial: Taal van het materiaal
+      legal_status: Wettelijke status
+      legalstatus: Wettelijke status
+      mandate: Mandaat
+      materialspec: Materiaalspecifieke details
+      note: Algemene noot
+      note_bibliography: Bibliografie
+      odd: Algemeen
+      originalsloc: Bestaan en bewaarplaats van originelen
+      otherfindaid: Andere toegangen
+      physdesc: Fysieke beschrijving
+      physfacet: Fysiek aspect
+      physloc: Fysieke locatie
+      phystech: Fysieke kenmerken en technische vereisten
+      prefercite: Voorkeursvorm voor citatie
+      processinfo: Informatie over verwerking
+      relatedmaterial: Verwante materialen
+      rights_statement: Rechtenverklaring
+      scopecontent: Bereik en inhoud
+      separatedmaterial: Separated Materials@en
+      structure_or_genealogy: Structuu of genealogie
+      summary: Korte inhoud
+      userestrict: Voorwaarden voor gebruik
+    note_singlepart_type:
+      abstract: Abstract
+      accessrestrict: Voorwaarden voor raadpleging
+      accruals: Aanvullingen
+      acqinfo: Verwerving
+      altformavail: Bestaan en bewaarplaats van kopieën
+      appraisal: Selectie
+      arrangement: Ordening
+      bibliography: Bibliografie
+      bioghist: Biografische / historische noot
+      contact_note: Contact noot
+      custodhist: Geschiedenis archief
+      dimensions: Afmetingen
+      edition: Editie
+      extent: Extent
+      fileplan: Ordeningsplan
+      general_context: Algemene context
+      index: Index
+      inscription: Inscriptie
+      langmaterial: Taal van het materiaal
+      legal_status: Wettelijke status
+      legalstatus: Wettelijke status
+      mandate: Mandaat
+      materialspec: Materiaalspecifieke details
+      note: Algemene noot
+      note_bibliography: Bibliografie
+      odd: Algemeen
+      originalsloc: Bestaan en bewaarplaats van originelen
+      otherfindaid: Andere toegangen
+      physdesc: Fysieke beschrijving
+      physfacet: Fysiek aspect
+      physloc: Fysieke locatie
+      phystech: Fysieke kenmerken en technische vereisten
+      prefercite: Voorkeursvorm voor citatie
+      processinfo: Informatie over verwerking
+      relatedmaterial: Verwante materialen
+      rights_statement: Rechtenverklaring
+      scopecontent: Bereik en inhoud
+      separatedmaterial: Separated Materials@en
+      structure_or_genealogy: Structuu of genealogie
+      summary: Korte inhoud
+      userestrict: Voorwaarden voor gebruik
+    place_role:
+      assoc_country: Geassocieerd land
+      other_assoc: Andere
+      place_of_birth: Geboorteplaats
+      place_of_death: Plaats van overlijden
+      residence: Verblijfplaats
+    publication_status:
+      approved: Goedgekeurd
+      in_process: In verwerking
+    reference_evaluation:
+      natc: Geen poging tot coderen
+      not_applicable: Niet van toepassing
+      tr_consistent: Tracings consistent with headings
+      tr_inconsistent: Tracings inconsistent with headings
+    resource_finding_aid_description_rules:
+      aacr: Anglo-American Cataloguing Rules
+      cco: Cataloging Cultural Objects
+      dacs: 'Describing Archives: A Content Standard'
+      isadg: International Standard for Archival Description - General
+      rad: Rules for Archival Description
+    resource_finding_aid_status:
+      completed: Voltooid
+      in_progress: In uitvoering
+      under_revision: Onder revisie
+      unprocessed: Niet verwerkt
+    resource_resource_type:
+      collection: Verzameling
+      papers: Documenten
+      publications: Publicaties
+      records: Records
+    restriction_type:
+      ColdStorageBrbl: 5 - Andere
+      InProcessSpecColl: 4 - Toegangsbeperking in verwerking
+      RestrictedCurApprSpecColl: 2 - Toegangsbeperking door repository
+      RestrictedFragileSpecColl: 3 - Toegangsbeperking wegens kwetsbaarheid
+      RestrictedSpecColl: 1 - Toegangsbeperking door schenker/universiteit
+    rights_statement_act_restriction:
+      allow: Toegelaten
+      conditional: Voorwaardelijk
+      disallow: Niet toegelaten
+    rights_statement_act_type:
+      delete: Verwijder
+      disseminate: Publiceer
+      migrate: Migreer
+      modify: Wijzig
+      replicate: Repliceer
+      use: Gebruik
+    rights_statement_external_document_identifier_type:
+      agrovoc: 'AGROVOC multilingual agricultural thesaurus. (Rome: APIMONDIA)'
+      allmovie: AllMovie
+      allmusic: AllMusic
+      allocine: AlloCiné
+      amnbo: American National Biography Online
+      ansi: American National Standards Institute and National Information Standards Organisation number for an ANSI or ANSI/NISO standard
+      artsy: Artsy
+      bdusc: Biographical Directory of the United States Congress (United States Congress)
+      bfi: BFI - British Film Institute
+      bnfcg: 'BnF catalogue général (Paris: Bibliothèque nationale de France)'
+      cantic: CANTIC (Catàleg d'autoritats de noms i títols de Catalunya) (Biblioteca de Catalunya)
+      cgndb: Canadian Geographical Names Database (Natural Resources Canada)
+      danacode: 'Danacode (Bnei Brak, Israel: D.A.N.A. Systems)'
+      datoses: datos.bne.es (Biblioteca Nacional de España)
+      discogs: Discogs
+      dkfilm: Det Danske Filminstitut Filmdatabasen
+      doi: Digital Object Identifier
+      ean: International Article Number
+      eidr: 'EIDR: Entertainment Identifier Registry'
+      fast: 'Faceted Application of Subject Terminology (Dublin, Ohio: OCLC)'
+      filmport: filmportal.de
+      findagr: Find a Grave
+      freebase: Freebase
+      gec: Gran enciclopèdia catalana
+      geogndb: Geographic Names Database
+      geonames: GeoNames
+      gettytgn: Getty Thesaurus of Geographic Names Online (J. Paul Getty Trust)
+      gettyulan: Union List of Artist Names Online (J. Paul Getty Trust)
+      gnd: 'Gemeinsame Normdatei (Leipzig, Frankfurt: Deutsche Nationalbibliothek)'
+      gnis: Geographic Names Information System (GNIS) (United States Geological Survey, Board on Geographic Names)
+      gtin-14: Global Trade Identification Number 14 (EAN/UCC-128 or ITF-14)
+      hdl: Handle
+      ibdb: IBDB - Internet Broadway Database
+      idref: 'IdRef: le referentiel des autorites Sudoc (L''agence bibliographique de l''enseignement superieur (ABES))'
+      imdb: IMDb - Internet Movie Database
+      isan: International Standard Audiovisual Number
+      isbn: International Standard Book Number
+      isbn-a: International Standard Book Number (the actionable ISBN) (International DOI Foundation (IDF))
+      isbnre: ISBN (International Standard Book Number) registrant element
+      isil: ISIL (International Standard Identifier for Libraries and Related Organizations)
+      ismn: International Standard Music Number
+      isni: International Standard Name Identifier
+      iso: International Organization for Standardization number for an ISO standard
+      isrc: International Standard Recording Code
+      issn: International Standard Serial Number
+      issn-l: Linking International Standard Serial Number
+      issue-number: Sound recording issue number
+      istc: International Standard Text Code
+      iswc: International Standard Musical Work Code
+      itar: ITAR (Importtjeneste og autoritetsregistre)
+      kinopo: КиноПоиск = KinoPoisk
+      lccn: Library of Congress Control Number
+      lcmd: 'Library of Congress Manuscript Division (Washington, DC: Library of Congress)'
+      lcmpt: 'Library of Congress Medium of Performance Thesaurus for Music (LCMPT) (Washington, DC: Library of Congress)'
+      libaus: Libraries Australia (National Library of Australia)
+      local: Locally defined identifier
+      matrix-number: Sound recording matrix number
+      moma: 'Museum of Modern Art (New York: Museum of Modern Art)'
+      munzing: Munzinger (Munzinger Archiv)
+      music-plate: Publisher's music plate number
+      music-publisher: Publisher-assigned music number
+      musicb: MusicBrainz
+      natgazfid: U.S. National Gazetteer Feature Name Identifier
+      nga: 'National Gallery of Art (Washington DC: National Gallery of Art)'
+      nipo: Número de Identificación de las Publicaciones Oficiales
+      nndb: NNDB (Notable Names Database)
+      npg: 'National Portrait Gallery (London: National Portrait Gallery)'
+      odnb: Oxford Dictionary of National Biography (Oxford University Press)
+      opensm: OpenStreetMap
+      orcid: Open Researcher and Contributor IDentifier
+      oxforddnb: Oxford Biography Index
+      porthu: PORT.hu
+      rbmsbt: 'RBMS Controlled Vocabularies: Binding Terms (Rare Books and Manuscripts Section, Association of College & Research Libraries)'
+      rbmsgt: 'RBMS Controlled Vocabularies: Genre Terms (Rare Books and Manuscripts Section, Association of College & Research Libraries)'
+      rbmspe: 'RBMS Controlled Vocabularies: Provenance Evidence (Rare Books and Manuscripts Section, Association of College & Research Libraries)'
+      rbmsppe: 'RBMS Controlled Vocabularies: Printing and Publishing Evidence (Rare Books and Manuscripts Section, Association of College & Research Libraries)'
+      rbmspt: 'RBMS Controlled Vocabularies: Paper Terms (Rare Books and Manuscripts Section Association of College & Research Libraries)'
+      rbmsrd: 'RBMS Controlled Vocabularies: Relationship Designators (Rare Books and Manuscripts Section, Association of College & Research Libraries)'
+      rbmste: 'RBMS Controlled Vocabularies: Type Evidence (Rare Books and Manuscripts Section, Association of College & Research Libraries)'
+      rid: ResearcherID (Thomson Reuters)
+      rkda: 'RKDartists& (Den Haag: Rijksbureau voor Kunsthistorische Documentatie)'
+      saam: 'Smithsonian American Art Museum (Washington DC: Smithsonian Institution)'
+      scholaru: Scholar Universe
+      scope: Scope
+      scopus: Scopus Author Identifier
+      sici: Serial Item and Contribution Identifier
+      spotify: Spotify
+      sprfbsb: 'Sports Reference: Baseball'
+      sprfbsk: 'Sports Reference: Basketball'
+      sprfcbb: 'Sports Reference: College Basketball'
+      sprfcfb: 'Sports Reference: College Football'
+      sprfhoc: 'Sports Reference: Hockey'
+      sprfoly: 'Sports Reference: Olympic Sports'
+      sprfpfb: 'Sports Reference: Pro Football'
+      stock-number: Publisher, distributor, or vendor stock number
+      strn: Standard Technical Report Number
+      svfilm: Svensk Filmdatabas
+      tatearid: Tate Artist Identifier
+      theatr: Theatricalia
+      trove: Trove (National Library of Australia)
+      upc: Universal Product Code
+      uri: Uniform Resource Identifier
+      urn: Uniform Resource Name
+      viaf: Virtual International Authority File number
+      videorecording-identifier: Publisher-assigned videorecording number
+      wikidata: Wikidata (Wikimedia Foundation)
+      wndla: 'Web NDL Authorities (Tokyo: National Diet Library (NDL))'
+    rights_statement_ip_status:
+      copyrighted: Onder Copyright
+      public_domain: Publiek Domein
+      unknown: Onbekend
+    rights_statement_other_rights_basis:
+      donor: Schenker
+      policy: Beleid
+    rights_statement_rights_type:
+      copyright: Copyright
+      license: Licentie
+      other: Ander
+      statute: Statuut
+    romanization:
+      conv_rom_cat_agency: Conventional romanization or conventional form of name in language of cataloging agency
+      int_std: Internationale standaard
+      local_standard: Lokale standaard
+      nat_std: Nationale standaard
+      nl_assoc_std: National library association standard
+      nl_bib_agency_std: National library or bibliographic agency standard
+      not_applicable: Niet van toepassing
+      unknown_standard: Standaard van onbekende oorsprong
+    script_iso15924:
+      Adlm: Adlam
+      Afak: Afaka
+      Aghb: Caucasian Albanian
+      Ahom: Ahom, Tai Ahom
+      Arab: Arabisch
+      Aran: Arabic (Nastaliq variant)
+      Armi: Imperiaal Aramees
+      Armn: Armeens
+      Avst: Avestisch
+      Bali: Balinees
+      Bamu: Bamum
+      Bass: Bassa Vah
+      Batk: Batak
+      Beng: Bengaals
+      Bhks: Bhaiksuki
+      Blis: Blissymbolen
+      Bopo: Bopomofo
+      Brah: Brahmi
+      Brai: Braille
+      Bugi: Buginees
+      Buhd: Buhid
+      Cakm: Chakma
+      Cans: Unified Canadian Aboriginal Syllabics
+      Cari: Carian
+      Cham: Cham
+      Cher: Cherokee
+      Cirt: Cirth
+      Copt: Koptisch
+      Cpmn: Cypro-Minoan
+      Cprt: Cypriotisch
+      Cyrl: Cyrillisch
+      Cyrs: Cyrillic (Old Church Slavonic variant)
+      Deva: Devanagari (Nagari)
+      Dogr: Dogra
+      Dsrt: Deseret (Mormoons)
+      Dupl: Duployan snelschrift
+      Egyd: Egyptisch Demotisch
+      Egyh: Egyptisch Hiëratisch
+      Egyp: Egyptische hiërogliefen
+      Elba: Elbasan
+      Elym: Elymaic
+      Ethi: Ethiopisch (Ge'ez)
+      Geok: Khutsuri (Asomtavruli and Nuskhuri)
+      Geor: Georgisch (Mkhedruli)
+      Glag: Glagolitisch
+      Gong: Gunjala Gondi
+      Gonm: Masaram Gondi
+      Goth: Gotisch
+      Gran: Grantha
+      Grek: Grieks
+      Gujr: Gujarati
+      Guru: Gurmukhi
+      Hanb: Han with Bopomofo (alias for Han + Bopomofo)
+      Hang: Hangul
+      Hani: Han (Hanzi, Kanji, Hanja)
+      Hano: Hanunoo (Hanunóo)
+      Hans: Han (Vereenvoudigde variant)
+      Hant: Han (Traditionele variant)
+      Hatr: Hatran
+      Hebr: Hebreeuws
+      Hira: Hiragana
+      Hluw: Anatolian Hieroglyphs (Luwian Hieroglyphs, Hittite Hieroglyphs)
+      Hmng: Pahawh Hmong
+      Hmnp: Nyiakeng Puachue Hmong
+      Hrkt: (alias voor Hiragana + Katakana)
+      Hung: Oud Hongaars
+      Inds: Indus (Harappan)
+      Ital: Etruskisch
+      Jamo: Jamo (alias for Jamo subset of Hangul)
+      Java: Javaans
+      Jpan: Japans (alias voor Han + Hiragana + Katakana)
+      Jurc: Jurchen
+      Kali: Kayah Li
+      Kana: Katakana
+      Khar: Kharoshthi
+      Khmr: Khmer
+      Khoj: Khojki
+      Kitl: Khitan large script
+      Kits: Khitan small script
+      Knda: Kannada
+      Kore: Koreaans (alias voor Hangul + Han)
+      Kpel: Kpelle
+      Kthi: Kaithi
+      Lana: Tai Tham (Lanna)
+      Laoo: Lao
+      Latf: Latijns (Fraktur variant)
+      Latg: Latijns (Ierse variant)
+      Latn: Latijns
+      Leke: Leke
+      Lepc: Lepcha (Róng)
+      Limb: Limbu
+      Lina: Lineair A
+      Linb: Lineair B
+      Lisu: Lisu (Fraser)
+      Loma: Loma
+      Lyci: Lycisch
+      Lydi: Lydisch
+      Mahj: Mahajani
+      Maka: Makasar
+      Mand: Mandaïsch, Mandaean
+      Mani: Manichaean
+      Marc: Marchen
+      Maya: Mayan hiëroglyfen
+      Medf: Medefaidrin (Oberi Okaime, Oberi Ɔkaimɛ)
+      Mend: Mende
+      Merc: Meroitic Cursief
+      Mero: Meroitische Hiëroglyfen
+      Mlym: Malayalam
+      Modi: Modi, Moḍī
+      Mong: Mongolees
+      Moon: Moon (Moon code, Moon schrift, Moon type)
+      Mroo: Mro, Mru
+      Mtei: Meitei Mayek (Meithei, Meetei)
+      Mult: Multani
+      Mymr: Burmees
+      Nand: Nandinagari
+      Narb: Oud Noord-Arabisch
+      Nbat: Nabataean
+      Newa: Newa, Newar, Newari, Nepāla lipi
+      Nkdb: Naxi Dongba (na²¹ɕi³³ to³³ba²¹, Nakhi Tomba)
+      Nkgb: Nakhi Geba ('Na-'Khi ²Ggo-¹baw, Naxi Geba)
+      Nkoo: N'Ko
+      Nshu: Nüshu
+      Ogam: Ogham
+      Olck: Ol Chiki
+      Orkh: Oud Turks, Orkhon Runen
+      Orya: Oriya
+      Osge: Osage
+      Osma: Osmanya
+      Palm: Palmyreens
+      Pauc: Pau Cin Hau
+      Perm: Oud Permisch
+      Phag: Phagspa
+      Phli: Inscriptisch Pahlavi
+      Phlp: Psalter Pahlavi
+      Phlv: Boek Pahlavi
+      Phnx: Fenicisch
+      Piqd: Klingon (KLI pIqaD)
+      Plrd: Miao (Pollard)
+      Prti: Inscriptisch Parthisch
+      Qaaa: Gereserveerd voor privégebruik (start)
+      Qabx: Gereserveerd voor privégebruik (end)
+      Rjng: Redjang (Rejang, Kaganga)
+      Rohg: Hanifi Rohingya
+      Roro: Rongorongo
+      Runr: Runen
+      Samr: Samaritaans
+      Sara: Sarati
+      Sarb: Oud-Zuid Arabisch
+      Saur: Saurashtra
+      Sgnw: SignWriting
+      Shaw: Shavian (Shaw)
+      Shrd: Sharada, Śāradā
+      Shui: Shuishu
+      Sidd: Siddham, Siddhaṃ, Siddhamātṛkā
+      Sind: Sindhi
+      Sinh: Sinhala
+      Sogd: Sogdian
+      Sogo: Old Sogdian
+      Sora: Sora Sompeng
+      Soyo: Soyombo
+      Sund: Sundanees
+      Sylo: Syloti Nagri
+      Syrc: Syrisch
+      Syre: Syrisch (Estrangelo variant)
+      Syrj: Syrisch (Westerse variant)
+      Syrn: Syrisch (Oosterse variant)
+      Tagb: Tagbanwa
+      Takr: Takri, Ṭākrī, Ṭāṅkrī
+      Tale: Tai Le
+      Talu: New Tai Lue
+      Taml: Tamil
+      Tang: Tangut
+      Tavt: Tai Viet
+      Telu: Telugu
+      Teng: Tengwar
+      Tfng: Tifinagh (Berber)
+      Tglg: Tagalog (Baybayin, Alibata)
+      Thaa: Thaana
+      Thai: Thai
+      Tibt: Tibetaans
+      Tirh: Tirhuta
+      Ugar: Ugaritisch
+      Vaii: Vai
+      Visp: Visible Speech
+      Wara: Warang Citi (Varang Kshiti)
+      Wcho: Wancho
+      Wole: Woleai
+      Xpeo: Oud Perzisch
+      Xsux: Spijkerschrift, Sumerisch-Akkadisch
+      Yiii: Yi
+      Zanb: Zanabazar Square (Zanabazarin Dörböljin Useg, Xewtee Dörböljin Bicig, Horizontal Square Script)
+      Zinh: Code voor geërfd schrift
+      Zmth: Mathematical notation
+      Zsye: Symbols (Emoji variant)
+      Zsym: Symbols
+      Zxxx: Code voor ongeschreven documenten
+      Zyyy: Code voor onbepaalde schriften
+      Zzzz: Code voor ongecodeerd schrift
+    source:
+      local: Local
+      naf: NAF
+      snac: SNAC
+    subject_source:
+      aat: Art & Architecture Thesaurus
+      cash: Canadian Subject Headings
+      gmgpc: TGM II, Genre and physical characteristic terms
+      ingest: Unspecified ingested source
+      lcgft: Library of Congress Genre/Form Terms
+      lcsh: Library of Congress Subject Headings
+      lcshac: Library of Congress Children's Subject Headings
+      local: Lokale bronnen
+      mesh: Medical Subject Headings
+      nal: National Agricultural Library subject headings
+      ram: Répertoire d'autorités RAMEAU
+      rbgenr: 'Genre Terms: A Thesaurus for Use in Rare Book and Special Collections Cataloguing'
+      rvm: Répertoire de vedettes-matière
+      tgn: Getty Thesaurus of Geographic Names
+    subject_term_type:
+      cultural_context: Culturele context
+      function: Functie
+      genre_form: Genre / Vorm
+      geographic: Geographisch
+      occupation: Beroep
+      style_period: Stijl / Periode
+      technique: Techniek
+      temporal: Tijdgerelateerd
+      topical: Onderwerpgerelateerd
+      uniform_title: Uniforme titel
+    transliteration:
+      ala-lc: ALA-LC Romanization Tables
+    user_defined_enum_1:
+      novalue: No value defined
+    user_defined_enum_2:
+      novalue: No value defined
+    user_defined_enum_3:
+      novalue: No value defined
+    user_defined_enum_4:
+      novalue: No value defined
